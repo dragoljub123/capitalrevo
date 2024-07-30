@@ -165,40 +165,24 @@ export default function Home() {
         />
       </div>
 
-      <div className=" pozadinaboja bg-gradijent-pozadina">
+      <div className=" lg:flex lg:justify-center  ">
         <div className="  flex flex-col  justify-between items-center  ">
-          <div className=" my-10 w-fit border-b border-white flex flex-col  justify-between items-center">
-            <h2 className=" text-4xl p-2  text-white font-bold">
-              How it Works
+          <div className=" my-10 w-fit flex flex-col  justify-between items-start">
+            <h2 className=" text-4xl p-2  font-bold">
+              Innovative Trading Platform
             </h2>
-            <p className="text-white text-sm m-4">
-              Discover how our trading robots use AI algorithms to <br></br>{" "}
-              analyze market trends and execute trades automatically
+            <p className=" text-sm m-4">
+              Experience the power of integrated trading tools with real-time
+              data, customizable <br /> charts, and mobile trading.
             </p>
           </div>
         </div>
 
-        <div className=" belitekst  justify-center my-20 gap-10 flex flex-col sm:flex-row items-center">
-          <SmallcardThree
-            imageurlnumber="\one.png"
-            imageUrl="\Financial Growth.png"
-            title=" Market Analysis"
-            description="Our robots continuously monitor the markets 24/7, using advanced algorithms to analyze data and identify trading opportunities."
-            number="1"
-          />
-          <SmallcardThree
-            imageurlnumber="\two.png"
-            imageUrl="\Safety Box.png"
-            title=" Automated Execution"
-            description="Once a favorable condition is detected, the robot executes trades automatically, ensuring swift and accurate order placement."
-            number="2"
-          />
-          <SmallcardThree
-            imageurlnumber="\three.png"
-            imageUrl="\Risk.png"
-            title=" Risk Management"
-            description="The robots are designed to maximize your returns by implementing proven trading strategies and minimizing risks through precise execution."
-            number="3"
+        <div className=" ">
+          <img
+            src="./monitor.png"
+            alt="trade"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
       </div>
