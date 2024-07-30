@@ -1,113 +1,172 @@
 import Image from "next/image";
 
+import Smalcard from "./components/Smalcard";
+import Stars from "@/app/images/1Star.png";
+
+import { Navbar } from "./components/Navbar";
+import SmallcardThree from "./components/SmallcardThree";
+import BigCard3 from "./components/BigCard3";
+import moneyrise2 from "@/public/moneyrise2.png";
+import devojka from "@/public/devojka.png";
+import PopupButton from "./components/PopupButton";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <div>
+      <div className="pozadina  ">
+        <Navbar />
+        <div className="my-40 slideUpAnimacija ">
+          <div className="flex items-center justify-center   ">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src={Stars}
+              alt="slika"
+              className="max-h-screen object-contain"
             />
-          </a>
+            <p className="text-white text-xs">
+              {" "}
+              &nbsp; RATED 4.8/5 on TRUSTPILOT&nbsp;{" "}
+            </p>
+          </div>
+          <div className=" mx-auto flex items-center justify-center ">
+            <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+              <h1 className="text-2xl  text-white font-bold mb-6 mt-6 text-center lg:text-4xl">
+                Earn Passive Income with
+                <br></br>
+                <span className="zlatnozuta flex items-center justify-center ">
+                  AI Trading Robots
+                </span>
+              </h1>
+              <p className="text-white mb-4 text-center ">
+                Automated Trading Solutions for Gold, NASDAQ, Bitcoin, and Forex
+                Markets
+              </p>
+              <PopupButton />
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <div className=" justify-center flex flex-col sm:flex-row  items-center py-20 gap-28 ">
+        <div className=" flex flex-col items-center z-30">
+          <BigCard3
+            title2=" Gold"
+            title=" AI Robot"
+            imageSrc="\Group 125.png"
+            description="Prioritizes gold trading, leveraging market downturns to 
+           capitalize on opportunities.Utilizes advanced technical
+            analysis to identify potential buying or selling moments."
+          />
+        </div>
+        <div className=" flex flex-col items-center z-40">
+          <BigCard3
+            title2=" Forex "
+            title="AI Robot"
+            imageSrc="\Currency Exchange.png"
+            description="Analyzes currency markets and executes trades with precision . Employs various strategies such as technical analysis and news-based trading to maximize profits."
+          />
+        </div>
+      </div>
+      <div className=" pozadinaboja bg-gradijent-pozadina">
+        <div className="  flex flex-col  justify-between items-center  ">
+          <div className=" my-10 w-fit border-b border-white flex flex-col  justify-between items-center">
+            <h2 className=" text-4xl p-2  text-white font-bold">
+              How it Works
+            </h2>
+            <p className="text-white text-sm m-4">
+              Discover how our trading robots use AI algorithms to <br></br>{" "}
+              analyze market trends and execute trades automatically
+            </p>
+          </div>
+        </div>
+        <div className=" belitekst  justify-center my-20 gap-10 flex flex-col sm:flex-row items-center">
+          <SmallcardThree
+            imageurlnumber="\one.png"
+            imageUrl="\Financial Growth.png"
+            title=" Market Analysis"
+            description="Our robots continuously monitor the markets 24/7, using advanced algorithms to analyze data and identify trading opportunities."
+            number="1"
+          />
+          <SmallcardThree
+            imageurlnumber="\two.png"
+            imageUrl="\Safety Box.png"
+            title=" Automated Execution"
+            description="Once a favorable condition is detected, the robot executes trades automatically, ensuring swift and accurate order placement."
+            number="2"
+          />
+          <SmallcardThree
+            imageurlnumber="\three.png"
+            imageUrl="\Risk.png"
+            title=" Risk Management"
+            description="The robots are designed to maximize your returns by implementing proven trading strategies and minimizing risks through precise execution."
+            number="3"
+          />
+        </div>
+      </div>
+
+      <div className=" mx-auto flex items-center justify-center ">
+        <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+          <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
+            Your Funds are
+            <span className="zlatnozuta  "> Insured & Secure</span>
+          </h1>
+          <p className=" mb-4 text-center text-sm ">
+            Trade with confidence knowing your funds are protected by real
+            estate
+          </p>
+        </div>
+      </div>
+      <div className="sm:flex-row lg:flex  lg:justify-evenly">
+        <Smalcard
+          imageSrc1="/Money Bag.png"
+          title="Insured Funds "
+          text="Your funds are secured by 80% real estate collateral, ensuring both insurance and security on our trading robot platform."
+        />
+        <Smalcard
+          imageSrc1="\Secure.png"
+          title="Regulated and Secure "
+          text="We adhere to strict regulatory standards and employ robust security measures to safeguard your assets."
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className=" nevidljivo-mob m-10 flex justify-center">
+        <img src="\Section 6.png" alt="reviewcustomer" className="  " />
       </div>
-    </main>
+
+      <div className="m-4 flex flex-col justify-center items-center lg:hidden md:hidden xl:hidden">
+        <h1 className="text-2xl font-bold mb-6 mt-6 lg:text-4xl text-center">
+          Happy Customers
+        </h1>
+        <p className="text-center mb-4 text-sm">
+          Read the testimonials from our happy clients
+        </p>
+        <Image src={devojka} alt="slika" className="mb-4 w-2/3" />
+      </div>
+
+      <div className="pozadinaboja2 flex  justify-center items-center">
+        <div className=" pozadina2 mb-10 mt-10">
+          <div className="text-center lg:text-left lg:ml-16 lg:mt-36">
+            <h1 className="text-2xl  text-white font-bold mb-6 mt-6  lg:text-4xl  ">
+              Start Earning
+              <span className="zlatnozuta">
+                Passive <br></br>Income
+              </span>
+              <span>Today</span>
+            </h1>
+            <p className="text-white mb-4 ">
+              Empower your financial future with our AI trading<br></br> robots
+              and start earning passive income today.
+            </p>
+            <PopupButton />
+          </div>
+          <div className="">
+            <Image
+              src={moneyrise2}
+              alt="slika"
+              className="lg:hidden md:hidden xl:hidden mt-4 mb-4 "
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
