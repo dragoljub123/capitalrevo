@@ -186,7 +186,7 @@ export default function Home() {
             <h1 className="text-2xl  text-white font-bold mb-6 mt-6  lg:text-4xl  ">
               Start Earning
               <span className="zlatnozuta">
-                Passive <br></br>Income
+                Passive <br></br>Incom
               </span>
               <span>Today</span>
             </h1>
