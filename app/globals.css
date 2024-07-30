@@ -113,14 +113,14 @@
   margin-top: 20px;
 }
 
-.cardb3 {
+.pakets {
   border-radius: 18px;
-  background: #e9eef7;
+
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(3.5px);
 }
 @media (min-width: 768px) {
-  .cardb3 {
+  .pakets {
     width: 568px;
     height: 542px;
   }
@@ -140,25 +140,24 @@
   z-index: 1;
 }
 
-.card-bodyb3 {
+.paketsdesc {
   padding: 8px;
   width: 90%;
-  font-style: normal;
-  font-weight: 500;
+
   font-size: 16px;
   line-height: 24px;
 }
 
-.card-bodyb3 p {
+.paketsdesc p {
   margin-bottom: 10px;
 }
 
-.card-bodyb3 ul {
+.paketsdesc ul {
   list-style-type: disc; /* Change to 'disc' to display as dots */
   padding: 17px;
 }
 
-.card-bodyb3 li {
+.paketsdesc li {
   margin-bottom: 5px;
 }
 

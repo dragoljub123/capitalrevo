@@ -21,6 +21,7 @@ const config: Config = {
         lightblue: '#121B34',
         oblacicsiva:'#F9F9FB',
         navcolor:'#3A3A3A',
+        dugmeplava:'#1200FF',
         
       },
     },

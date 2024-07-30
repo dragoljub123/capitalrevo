@@ -3,7 +3,7 @@ import Smalcard from "./components/Smalcard";
 import Stars from "@/app/images/1Star.png";
 import { Navbar } from "./components/Navbar";
 import SmallcardThree from "./components/SmallcardThree";
-import BigCard3 from "./components/BigCard3";
+import Paketi from "./components/Paketi";
 import moneyrise2 from "@/public/moneyrise2.png";
 import devojka from "@/public/devojka.png";
 import PopupButton from "./components/PopupButton";
@@ -84,26 +84,87 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" justify-center flex flex-col sm:flex-row  items-center py-20 gap-28 ">
-        <div className=" flex flex-col items-center z-30">
-          <BigCard3
-            title2=" Gold"
-            title=" AI Robot"
-            imageSrc="\Group 125.png"
-            description="Prioritizes gold trading, leveraging market downturns to 
-           capitalize on opportunities.Utilizes advanced technical
-            analysis to identify potential buying or selling moments."
-          />
-        </div>
-        <div className=" flex flex-col items-center z-40">
-          <BigCard3
-            title2=" Forex "
-            title="AI Robot"
-            imageSrc="\Currency Exchange.png"
-            description="Analyzes currency markets and executes trades with precision . Employs various strategies such as technical analysis and news-based trading to maximize profits."
-          />
-        </div>
+      <div className=" lg:flex lg:gap-10 lg:justify-center m-10">
+        <Paketi
+          title="Basic plan"
+          imageSrc="\Dot.png"
+          description="$200 – $9,999"
+          listItems={[
+            "Access to all basic features",
+            "Basic reporting and analytics",
+            "Up to 10 individual users",
+            "20GB individual data each user",
+            "Basic chat and email support",
+          ]}
+        />
+        <Paketi
+          title="Silver Account"
+          imageSrc="\Dot.png"
+          description="$10,000 – $24,999"
+          listItems={[
+            "Access to all basic features",
+            "Basic reporting and analytics",
+            "Up to 10 individual users",
+            "20GB individual data each user",
+            "Basic chat and email support",
+            "Sessions with Market Analyst",
+            "Free Withdrawal Monthly",
+          ]}
+        />
+        <Paketi
+          title="Gold Account"
+          imageSrc="\Dot.png"
+          description="$25,000 – $49,999"
+          listItems={[
+            "Leverage 1:200",
+            "50% lower swaps",
+            "Advanced Education",
+            "Daily Market Reviews",
+            "Trading eBooks",
+            "Dedicated Market Analyst",
+            "Live Webinars with Senior Trading Strategist",
+            "3 Free Withdrawals Monthly",
+          ]}
+        />
       </div>
+      <div className="lg:flex lg:justify-center lg:gap-5 m-10">
+        <Paketi
+          title="Premium Account"
+          imageSrc="\Dot.png"
+          description="$100,000+"
+          listItems={[
+            "Leverage 1:300",
+            "75% lower swaps",
+            "Advanced Education",
+            "Spreads as low as 1.9",
+            "Daily Market Reviews",
+            "3 Risk-free trades",
+            "Unlimited Free Withdrawals",
+            "Dedicated Senior Account Manager",
+            "Market Analyst",
+            "Live Webinars with Senior Trading Strategist",
+            "Special offers",
+          ]}
+        />
+        <Paketi
+          title="VIP Account"
+          imageSrc="\Dot.png"
+          description="$250,000+"
+          listItems={[
+            "Leverage 1:400",
+            "Swap-free",
+            "Spreads as low as 1.5",
+            "Daily Market Reviews",
+            "3 Risk-free trades",
+            "Unlimited Free Withdrawals",
+            "Dedicated Senior Account Manager",
+            "Market Analyst",
+            "Live Webinars with Senior Trading Strategist",
+            "Special offers",
+          ]}
+        />
+      </div>
+
       <div className=" pozadinaboja bg-gradijent-pozadina">
         <div className="  flex flex-col  justify-between items-center  ">
           <div className=" my-10 w-fit border-b border-white flex flex-col  justify-between items-center">
@@ -116,6 +177,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+
         <div className=" belitekst  justify-center my-20 gap-10 flex flex-col sm:flex-row items-center">
           <SmallcardThree
             imageurlnumber="\one.png"
