@@ -10,11 +10,12 @@ import PopupButton from "@/app/components/PopupButton";
 
 export const Navbar = () => {
   const navigation = [
-    { title: "Home", href: "/" },
-    { title: "Trading robots", href: "/Tradingrobots" },
-    { title: "About", href: "/AboutUS" },
-    { title: "Contact", href: "/ContactUs" },
-    { title: "FAQ's", href: "/FAQs" },
+    { title: "About Us", href: "/AboutUS" },
+    { title: "Accounts", href: "/Accounts" },
+    { title: "Trading Platform", href: "/Trading Platform" },
+    { title: "Education", href: "/Education" },
+    { title: "News", href: "/News" },
+    { title: "Contact Us", href: "/Contact Us" },
   ];
   const [showLinks, setShowLinks] = useState(false);
 
@@ -23,7 +24,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-16 z-50">
+    <div className="w-full h-16 z-50 bg-navcolor">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
         <Logo title="Capitalrevo" className="text-black" />
         <div className="hidden lg:inline-flex items-center gap-10 ">
@@ -47,7 +48,7 @@ export const Navbar = () => {
             <FiMenu />
           </button>
           {showLinks && (
-            <div className="fixed top-0 right-0 w-64 h-full bg-lightblue text-white p-4 shadow-lg transition-transform transform translate-x-0 z-50">
+            <div className="fixed top-0 right-0 w-64 h-full bg-navcolor text-white p-4 shadow-lg transition-transform transform translate-x-0 z-50">
               <button
                 onClick={toggleLinks}
                 className="text-white text-2xl focus:outline-none mb-4"

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import glogo from "../images/gold expert.png";
+import glogo from "../images/crlogo.png";
 Image;
 interface Props {
   title?: string;

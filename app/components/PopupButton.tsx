@@ -16,10 +16,10 @@ const PopupButton: React.FC = () => {
   return (
     <div>
       <button
-        className="bg-customBlue text-white px-12 py-1 rounded-3xl hover:bg-zlatna transition-colors duration-300 w-25"
+        className=" text-white px-12 py-1 rounded-xl   border-[1px] border-white w-25"
         onClick={handleOpenPopup}
       >
-        Get started
+        Get started Now
       </button>
       {showPopup && <PopupForm onClose={handleClosePopup} />}
     </div>

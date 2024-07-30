@@ -40,11 +40,8 @@
   padding: 2px;
 }
 .pozadina {
-  background: #0a0f1b;
-  background-image: url("images/Mask group.png");
+  background-image: url("images/pozadinahp.png");
   background-size: cover;
-
-  height: 685px;
 }
 
 .pozadina2 {

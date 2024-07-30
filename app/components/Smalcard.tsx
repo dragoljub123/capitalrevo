@@ -12,10 +12,10 @@ const Smalcard: React.FC<props> = (props) => {
     <div className=" card1 ">
       <div className="flex p-2  font-bold">
         <img src={props.imageSrc1} alt="like" className="pr-2" />
-        <h2 className="lg:text-2xl">{props.title}</h2>
+        <h2 className="lg:text-2xl text-center">{props.title}</h2>
       </div>
 
-      <div className=" p-2 ">
+      <div className=" p-4 text-sm">
         <p className="">{props.text}</p>
       </div>
     </div>

@@ -15,7 +15,7 @@ import { link } from "fs";
 
 export const FooterHome: React.FC = () => {
   return (
-    <div className=" my-10 mx-10 ">
+    <div className="  bg-navcolor">
       <footer className="lg:flex  justify-between  border-b-[1px] mb-5">
         <div className="flex justify-center items-center">
           <Link href={"/"}>

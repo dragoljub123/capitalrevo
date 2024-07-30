@@ -20,6 +20,7 @@ const config: Config = {
         zlatna: '#c69638',
         lightblue: '#121B34',
         oblacicsiva:'#F9F9FB',
+        navcolor:'#3A3A3A',
         
       },
     },
