@@ -2,6 +2,7 @@ import React from "react";
 import goldexpertlogo2 from "../images/goldexpertlogo2.png";
 import Image from "next/image";
 import "../globals.css";
+import glogo from "../images/crlogo.png";
 
 import {
   FaFacebook,
@@ -15,37 +16,36 @@ import { link } from "fs";
 
 export const FooterHome: React.FC = () => {
   return (
-    <div className="  bg-navcolor">
+    <div className="  bg-black">
       <footer className="lg:flex  justify-between  border-b-[1px] mb-5">
-        <div className="flex justify-center items-center">
+        <div className="flex-col justify-center items-center">
           <Link href={"/"}>
-            <Image
-              src={goldexpertlogo2}
-              alt="slika"
-              className=" object-contain"
-            />
+            <Image src={glogo} alt="slika" className=" w-full" />
           </Link>
+          <p className="text-sm text-white">
+            Empower Your Trading Journey with CapitalRevo
+          </p>
         </div>
 
-        <ul className=" lg:flex  text-center lg:gap-7">
+        <ul className="  text-white  lg:gap-7">
           <li>
-            <a href="\AboutUS">About us</a>
+            <a href="\">Home </a>
           </li>
           <li>
-            <a href="\Tradingrobots">Trading robots</a>
+            <a href="\Accounts">Accounts</a>
           </li>
           <li>
-            <a href="\AboutUS">About</a>
+            <a href="\AboutUS">Trading Platform</a>
           </li>
           <li>
-            <a href="\ContactUs">Contact</a>
+            <a href="\Education">Education</a>
           </li>
           <li>
-            <a href="\FAQs">FAQs</a>
+            <a href="\FAQs">News</a>
           </li>
         </ul>
 
-        <div className="social-icons flex gap-4  justify-center items-center my-4">
+        <div className="social-icons flex gap-4  justify-center items-center my-4 text-white">
           <a
             href="https://www.facebook.com"
             target="_blank"
@@ -83,7 +83,7 @@ export const FooterHome: React.FC = () => {
           </a>
         </div>
       </footer>
-      <p className=" text-center ">2024 Goldexpert. All rights reserved</p>
+      <p className=" text-center ">2024 CapitalRevo. All rights reserved</p>
     </div>
   );
 };

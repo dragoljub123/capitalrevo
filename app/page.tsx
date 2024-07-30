@@ -54,7 +54,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className=" lg:flex lg:justify-evenly">
         <div>
           <h1 className="text-3xl p-4 font-bold ">About Us</h1>
@@ -83,7 +82,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className=" lg:flex lg:gap-10 lg:justify-center m-10">
         <Paketi
           title="Basic plan"
@@ -164,29 +162,41 @@ export default function Home() {
           ]}
         />
       </div>
-
-      <div className=" lg:flex lg:justify-center  ">
-        <div className="  flex flex-col  justify-between items-center  ">
-          <div className=" my-10 w-fit flex flex-col  justify-between items-start">
-            <h2 className=" text-4xl p-2  font-bold">
+      w
+      <div className="   ">
+        <div className=" lg:flex lg:justify-evenly ">
+          <div className="  flex flex-col  justify-between items-start">
+            <h2 className=" text-4xl  font-bold">
               Innovative Trading Platform
             </h2>
-            <p className=" text-sm m-4">
+            <p className=" text-sm ">
               Experience the power of integrated trading tools with real-time
               data, customizable <br /> charts, and mobile trading.
             </p>
           </div>
         </div>
 
-        <div className=" ">
-          <img
-            src="./monitor.png"
-            alt="trade"
-            style={{ width: "auto", height: "auto" }}
-          />
+        <div className="mt-20 lg:flex lg:justify-evenly">
+          <div>
+            <div className=" border-l border-l-[2px] border-gray-300">
+              <p className="ml-4 mb-10">Real-time data</p>
+              <p className="ml-4 mb-10">Customizable charts</p>
+              <p className="ml-4 mb-10">Mobile trading</p>
+              <p className="ml-4 mb-10">Secure transactions</p>
+            </div>
+            <button className="bg-dugmeplava text-white px-12 py-1 rounded-3xl hover:bg-blue-700 transition-colors duration-300 w-25 ml-2">
+              Explore the Platform
+            </button>
+          </div>
+          <div className="">
+            <img
+              src="./monitor.png"
+              alt="trade"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </div>
         </div>
       </div>
-
       <div className=" mx-auto flex items-center justify-center ">
         <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
           <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
@@ -211,11 +221,9 @@ export default function Home() {
           text="We adhere to strict regulatory standards and employ robust security measures to safeguard your assets."
         />
       </div>
-
       <div className=" nevidljivo-mob m-10 flex justify-center">
         <img src="\Section 6.png" alt="reviewcustomer" className="  " />
       </div>
-
       <div className="m-4 flex flex-col justify-center items-center lg:hidden md:hidden xl:hidden">
         <h1 className="text-2xl font-bold mb-6 mt-6 lg:text-4xl text-center">
           Happy Customers
@@ -225,7 +233,6 @@ export default function Home() {
         </p>
         <Image src={devojka} alt="slika" className="mb-4 w-2/3" />
       </div>
-
       <div className="pozadinaboja2 flex  justify-center items-center">
         <div className=" pozadina2 mb-10 mt-10">
           <div className="text-center lg:text-left lg:ml-16 lg:mt-36">
