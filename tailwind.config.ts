@@ -15,6 +15,9 @@ const config: Config = {
           "gradijent-pozadina":"linear-gradient(144deg, rgba(13, 18, 35, 1) 50%, rgba(13, 18, 35, 0.5) 50%)",
 
       },
+      maxWidth: {
+        'sirina': '1440px',
+      },
       colors: {
         customBlue: '#3852AC',
         zlatna: '#c69638',

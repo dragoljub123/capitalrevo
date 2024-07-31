@@ -12,10 +12,11 @@ import NewsBreakLogo from "@/public/NewsBreakLogo.png";
 import DigitalJournal from "@/public/DigitalJournal.png";
 import katman from "@/public/katman.png";
 import { PiCloudSlash } from "react-icons/pi";
+import ContactForm from "@/app/components/ContactForm";
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-w-sirina mx-auto ">
       <div className="pozadina  ">
         <Navbar />
         <div className=" m-32 slideUpAnimacija ">
@@ -162,7 +163,7 @@ export default function Home() {
           ]}
         />
       </div>
-      w
+
       <div className="   ">
         <div className=" lg:flex lg:justify-evenly ">
           <div className="  flex flex-col  justify-between items-start">
@@ -184,7 +185,7 @@ export default function Home() {
               <p className="ml-4 mb-10">Mobile trading</p>
               <p className="ml-4 mb-10">Secure transactions</p>
             </div>
-            <button className="bg-dugmeplava text-white px-12 py-1 rounded-3xl hover:bg-blue-700 transition-colors duration-300 w-25 ml-2">
+            <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
               Explore the Platform
             </button>
           </div>
@@ -200,63 +201,272 @@ export default function Home() {
       <div className=" mx-auto flex items-center justify-center ">
         <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
           <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
-            Your Funds are
-            <span className="zlatnozuta  "> Insured & Secure</span>
+            Learn to Trade with Confidence
           </h1>
           <p className=" mb-4 text-center text-sm ">
-            Trade with confidence knowing your funds are protected by real
-            estate
+            Access webinars, eBooks, market analysis, and trading strategies to
+            enhance your <br /> trading knowledge and skills.
           </p>
         </div>
       </div>
-      <div className="sm:flex-row lg:flex  lg:justify-evenly">
-        <Smalcard
-          imageSrc1="/Money Bag.png"
-          title="Insured Funds "
-          text="Your funds are secured by 80% real estate collateral, ensuring both insurance and security on our trading robot platform."
-        />
-        <Smalcard
-          imageSrc1="\Secure.png"
-          title="Regulated and Secure "
-          text="We adhere to strict regulatory standards and employ robust security measures to safeguard your assets."
-        />
+      <div className=" m-10 flex  justify-evenly items-center">
+        <span className="text-center">
+          <img
+            src="./oblacic.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
+          <p className="text-center">Webinars</p>
+        </span>
+        <span className="text-center">
+          <img
+            src="./gormic.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
+          <p className="text-center">eBooks</p>
+        </span>
+        <span className="text-center">
+          <img
+            src="./gormic.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
+          <p className="text-center">Market Analysis</p>
+        </span>
+        <span className="">
+          <img
+            src="./strategy.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
+          <p className="text-center">Trading Strategies</p>
+        </span>
       </div>
-      <div className=" nevidljivo-mob m-10 flex justify-center">
-        <img src="\Section 6.png" alt="reviewcustomer" className="  " />
+      <div className="  m-10 lg:flex lg:justify-evenly lg:items-center">
+        <div className=" ">
+          <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
+            Stay Informed
+          </h1>
+          <p className=" mb-4  text-sm ">
+            Keep up with the latest market news and updates, integrated directly
+            into the platform <br /> for real-time insights.
+          </p>
+        </div>
+        <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white">
+          Read More News
+        </button>
       </div>
-      <div className="m-4 flex flex-col justify-center items-center lg:hidden md:hidden xl:hidden">
-        <h1 className="text-2xl font-bold mb-6 mt-6 lg:text-4xl text-center">
-          Happy Customers
-        </h1>
-        <p className="text-center mb-4 text-sm">
-          Read the testimonials from our happy clients
-        </p>
-        <Image src={devojka} alt="slika" className="mb-4 w-2/3" />
-      </div>
-      <div className="pozadinaboja2 flex  justify-center items-center">
-        <div className=" pozadina2 mb-10 mt-10">
-          <div className="text-center lg:text-left lg:ml-16 lg:mt-36">
-            <h1 className="text-2xl  text-white font-bold mb-6 mt-6  lg:text-4xl  ">
-              Start Earning
-              <span className="zlatnozuta">
-                Passive <br></br>Incom
-              </span>
-              <span>Today</span>
-            </h1>
-            <p className="text-white mb-4 ">
-              Empower your financial future with our AI trading<br></br> robots
-              and start earning passive income today.
-            </p>
-            <PopupButton />
-          </div>
-          <div className="">
-            <Image
-              src={moneyrise2}
-              alt="slika"
-              className="lg:hidden md:hidden xl:hidden mt-4 mb-4 "
+      <div className=" mt-20 mb-10 lg:flex lg:justify-evenly lg:items-center">
+        <div className=" w-[398px] h-[440px] rounded-xl  overflow-hidden">
+          <div className="bg-cover bg-center rounded-t-xl">
+            <img
+              src="./slikakartica.png"
+              alt="webinars"
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
+
+          <p className="text-sm py-4 text-blue-800">Product</p>
+          <div className="  flex justify-between ">
+            <h1 className=" text-2xl font-bold">Product review </h1>
+            <img
+              src="./strelica.png"
+              alt="webinars"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </div>
+
+          <p className=" text-sm text-gray-700">
+            The rise of RESTful APIs has been met by a rise in tools <br /> for
+            creating, testing, and managing them.
+          </p>
+
+          <img
+            src="./Avatar label group.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
         </div>
+        <div className=" w-[398px] h-[440px] rounded-xl overflow-hidden">
+          <div className="bg-cover bg-center rounded-t-xl">
+            <img
+              src="./slikakartica.png"
+              alt="webinars"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </div>
+
+          <p className="text-sm py-4 text-blue-800">Product</p>
+          <div className="  flex justify-between ">
+            <h1 className=" text-2xl font-bold">Product review </h1>
+            <img
+              src="./strelica.png"
+              alt="webinars"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </div>
+
+          <p className=" text-sm text-gray-700">
+            The rise of RESTful APIs has been met by a rise in tools <br /> for
+            creating, testing, and managing them.
+          </p>
+
+          <img
+            src="./Avatar label group.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
+        </div>
+        <div className=" w-[398px] h-[440px] rounded-xl overflow-hidden">
+          <div className="bg-cover bg-center rounded-t-xl">
+            <img
+              src="./slikakartica.png"
+              alt="webinars"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </div>
+
+          <p className="text-sm py-4 text-blue-800">Product</p>
+          <div className="  flex justify-between ">
+            <h1 className=" text-2xl font-bold">Product review </h1>
+            <img
+              src="./strelica.png"
+              alt="webinars"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </div>
+
+          <p className=" text-sm text-gray-700">
+            The rise of RESTful APIs has been met by a rise in tools <br /> for
+            creating, testing, and managing them.
+          </p>
+
+          <img
+            src="./Avatar label group.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
+        </div>
+      </div>
+      <div className=" m-10 lg:flex lg:justify-evenly lg:items-center ">
+        <h2 className="text-2xl lg:text-4xl font-bold">What Our Clients Say</h2>
+        <div>
+          <h2 className="text-2xl ">
+            "CapitalRevo transformed my <br /> trading experience! The platform
+            is <br /> intuitive and the support is <br /> excellent."
+          </h2>
+          <div>
+            <p className="mt-10 text-sm font-bold">Lana Steiner</p>
+            <p className="text-sm">
+              Hear from some of our amazing customers who are automating <br />{" "}
+              their finances.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className=" ">
+        <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+          <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
+            Calculate Your Potential Earnings
+          </h1>
+        </div>
+        <div className="lg:flex lg:justify-center">
+          <div className=" ">
+            <p className="pt-48 mb-5">
+              {" "}
+              Use our trading calculator to see <br />
+              your potential profits based on your <br /> trading activities.
+            </p>
+            <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white">
+              Try It Now
+            </button>
+          </div>
+          <img
+            src="./iphone13mini.png"
+            alt="webinars"
+            style={{ width: "auto", height: "auto" }}
+          />
+        </div>
+      </div>
+      <div className="mb-10 lg:flex lg:justify-center lg:items-center">
+        <img
+          src="./Getintouch.png"
+          alt="webinars"
+          style={{ width: "auto", height: "auto" }}
+        />
+      </div>
+      <h1 className="text-2xl text-center  py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
+        Secure Payment Options
+      </h1>
+      <div className="flex lg:justify-evenly lg:items-center ">
+        <img
+          src="./visa.png"
+          alt="visa"
+          style={{ width: "auto", height: "auto" }}
+        />
+
+        <img
+          src="./master2.png"
+          alt="master2"
+          style={{ width: "auto", height: "auto" }}
+        />
+        <img
+          src="./master.png"
+          alt="master"
+          style={{ width: "auto", height: "auto" }}
+        />
+        <img
+          src="./apay.png"
+          alt="apay"
+          style={{ width: "auto", height: "auto" }}
+        />
+        <img
+          src="./gpay.png"
+          alt="gpay"
+          style={{ width: "auto", height: "auto" }}
+        />
+      </div>
+      <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
+        Get in Touch
+      </h1>
+      <div className="mt-10 mb-10 lg:flex lg:justify-evenly lg:justify-center">
+        <div className="">
+          <h1 className="font-bold">Email</h1>
+          <img
+            src="./coverta.png"
+            alt="mail"
+            style={{ width: "auto", height: "auto" }}
+          />
+          <p>Our friendly team is here to help.</p>
+          <p>hi@untitledui.com</p>
+        </div>
+        <div>
+          <h1 className="font-bold">Office</h1>
+          <img
+            src="./location.png"
+            alt="lokacija"
+            style={{ width: "auto", height: "auto" }}
+          />{" "}
+          <p>Come say hello at our office HQ.</p>
+          <p>
+            100 Smith Street <br />
+            Collingwood VIC 3066 AU
+          </p>
+        </div>
+        <div>
+          <h1 className="font-bold">Phone</h1>
+          <img
+            src="./phonecall.png"
+            alt="gpay"
+            style={{ width: "auto", height: "auto" }}
+          />
+          <p>Mon-Fri from 8am to 5pm.</p>
+          <p>+1 (555) 000-0000</p>
+        </div>
+      </div>
+      <div className="mt-10 mb-10">
+        <ContactForm />
       </div>
     </div>
   );
