@@ -175,7 +175,7 @@ export default function Home() {
 
         <div className="mt-20 lg:flex lg:justify-evenly">
           <div>
-            <div className=" border-l border-l-[2px] border-gray-300">
+            <div className="  border-l-[2px] border-gray-300">
               <p className="ml-4 mb-10">Real-time data</p>
               <p className="ml-4 mb-10">Customizable charts</p>
               <p className="ml-4 mb-10">Mobile trading</p>
@@ -392,7 +392,7 @@ export default function Home() {
           style={{ width: "auto", height: "auto" }}
         />
       </div>
-      <h1 className="text-2xl text-center  py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
+      <h1 className="text-2xl   py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
         Secure Payment Options
       </h1>
       <div className="flex lg:justify-evenly lg:items-center ">
@@ -426,7 +426,7 @@ export default function Home() {
       <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
         Get in Touch
       </h1>
-      <div className="mt-10 mb-10 lg:flex lg:justify-evenly lg:justify-center">
+      <div className="mt-10 mb-10 lg:flex lg:justify-center">
         <div className="">
           <h1 className="font-bold">Email</h1>
           <img

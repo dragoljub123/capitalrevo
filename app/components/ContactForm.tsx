@@ -8,20 +8,32 @@ const ContactForm: React.FC = () => {
     email: "",
     phone: "",
     message: "",
+    agreeToPrivacyPolicy: false, // Add state for the checkbox
   });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    const { name, value, type } = e.target;
+    if (type === "checkbox") {
+      setFormData({
+        ...formData,
+        [name]: (e.target as HTMLInputElement).checked, // Type guard for checkbox
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.agreeToPrivacyPolicy) {
+      alert("You must agree to our privacy policy.");
+      return;
+    }
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -39,6 +51,7 @@ const ContactForm: React.FC = () => {
           email: "",
           phone: "",
           message: "",
+          agreeToPrivacyPolicy: false,
         });
       } else {
         alert("Failed to send message.");
@@ -93,8 +106,8 @@ const ContactForm: React.FC = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row sm:space-x-4">
-          <div className="flex-1">
+        <div className=" sm:flex-row sm:space-x-4">
+          <div className="">
             <label
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
@@ -112,12 +125,12 @@ const ContactForm: React.FC = () => {
               className="text-white placeholder-white mt-1 block w-full h-14 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
-          <div className="flex-1">
+          <div className="">
             <label
               htmlFor="phone"
               className="block text-sm font-medium text-gray-700"
             >
-              Phone:
+              Phone Number
             </label>
             <input
               type="tel"
@@ -148,11 +161,28 @@ const ContactForm: React.FC = () => {
             className="text-white placeholder-white mt-1 block w-full h-64 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />
         </div>
+        <div className="flex items-center">
+          <input
+            type="checkbox"
+            id="agreeToPrivacyPolicy"
+            name="agreeToPrivacyPolicy"
+            checked={formData.agreeToPrivacyPolicy}
+            onChange={handleChange}
+            required
+            className="h-4 w-4 text-indigo-600 border-gray-300 rounded"
+          />
+          <label
+            htmlFor="agreeToPrivacyPolicy"
+            className="ml-2 block text-sm text-gray-700"
+          >
+            You agree to our friendly privacy policy.
+          </label>
+        </div>
         <button
           type="submit"
           className="bg-[#1200FF] text-white px-12 py-1 rounded-3xl hover:bg-zlatna transition-colors duration-300 w-full sm:w-auto"
         >
-          Send
+          Send message
         </button>
       </div>
     </form>
