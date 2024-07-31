@@ -18,6 +18,15 @@ const config: Config = {
       maxWidth: {
         'sirina': '1440px',
       },
+      height: {
+
+        '454': '454px',
+ },
+
+     top: {
+ '8586': '8586px',
+
+      },
       colors: {
         customBlue: '#3852AC',
         zlatna: '#c69638',
@@ -25,6 +34,7 @@ const config: Config = {
         oblacicsiva:'#F9F9FB',
         navcolor:'#3A3A3A',
         dugmeplava:'#1200FF',
+        tirkizna: '#00E5FF',
         
       },
     },

@@ -2,16 +2,12 @@ import Image from "next/image";
 import Smalcard from "./components/Smalcard";
 import Stars from "@/app/images/1Star.png";
 import { Navbar } from "./components/Navbar";
-import SmallcardThree from "./components/SmallcardThree";
 import Paketi from "./components/Paketi";
-import moneyrise2 from "@/public/moneyrise2.png";
-import devojka from "@/public/devojka.png";
 import PopupButton from "./components/PopupButton";
 import phoneimg from "@/public/phoneimg.png";
 import NewsBreakLogo from "@/public/NewsBreakLogo.png";
 import DigitalJournal from "@/public/DigitalJournal.png";
 import katman from "@/public/katman.png";
-import { PiCloudSlash } from "react-icons/pi";
 import ContactForm from "@/app/components/ContactForm";
 
 export default function Home() {
