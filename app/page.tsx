@@ -79,7 +79,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" lg:flex lg:gap-10 lg:justify-center m-10">
+      <div className="crafy ">
+        <div className=" mx-auto flex items-center justify-center ">
+          <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+            <h1 className="text-2xl py-4 text-white font-bold mb-6 mt-6 text-center lg:text-4xl ">
+              Choose the Right Account for You
+            </h1>
+            <p className=" mb-4 text-center text-sm  text-white">
+              Simple, transparent pricing that grows with you. Try any plan free
+              for 30 days.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className=" lg:flex lg:gap-10 lg:justify-center -mt-20 ">
         <Paketi
           title="Basic plan"
           imageSrc="\Dot.png"

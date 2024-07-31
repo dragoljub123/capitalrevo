@@ -24,7 +24,7 @@ const Paketi: React.FC<CardProps> = ({
         <h2 className=" ">{title}</h2>
       </div>
       <div className="paketsdesc   ">
-        <p className=" text-center text-2xl lg:text-3xl font-bold border-b border-b-[1px] border-gray-300">
+        <p className=" text-center text-2xl lg:text-3xl font-bold  border-b-[1px] border-gray-300">
           {description}
         </p>
         <ul>
