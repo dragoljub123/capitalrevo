@@ -16,7 +16,7 @@ const PopupButton: React.FC = () => {
   return (
     <div>
       <button
-        className=" text-white px-12 py-1 rounded-xl   border-[1px] border-white w-25"
+        className=" text-white px-12 py-1 rounded-md   border-[1px] border-white w-25"
         onClick={handleOpenPopup}
       >
         Get started Now

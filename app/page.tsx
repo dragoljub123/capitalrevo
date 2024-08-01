@@ -9,45 +9,54 @@ import NewsBreakLogo from "@/public/NewsBreakLogo.png";
 import DigitalJournal from "@/public/DigitalJournal.png";
 import katman from "@/public/katman.png";
 import ContactForm from "@/app/components/ContactForm";
+import trustpilotlogo from "@/app/images/trustpilot-logo.png";
 
 export default function Home() {
   return (
     <div className="max-w-sirina mx-auto ">
       <div className="pozadina  ">
         <Navbar />
-        <div className=" m-32 slideUpAnimacija ">
+        <div className=" m-32  ">
           <div className=" mx-auto lg:flex    ">
-            <div className="max-w-screen-xl mx-auto flex flex-col  justify-between  px-4 lg:px-0 h-full">
-              <h1 className="text-2xl  text-white font-bold  text-left lg:text-5xl">
+            <div className="slideUpAnimacija max-w-screen-xl mx-auto flex flex-col  justify-between  px-4 lg:px-0 h-full">
+              <h1 className="text-2xl  text-white font-bold  text-left lg:text-5xl lg:mt-10 lg:-ml-10">
                 Empower Your Trading <br />
                 Journey with CapitalRevo
               </h1>
-              <p className="text-white mt-4 mb-4 text-left ">
+              <p className="text-white mt-4 mb-4 text-left  lg:-ml-10">
                 Start trading with as little as $200 and leverage our expert
                 tools and resources.
               </p>
-              <div className="flex">
+              <div className="flex  justify-start items-center pt-2 lg:-ml-10">
                 <PopupButton />
-                <div className="lg:flex lg:items-center lg:justify-center pl-2  ">
+                <div className="flex  justify-center items-center pl-4   ">
                   <Image
-                    src={Stars}
+                    src={trustpilotlogo}
                     alt="slika"
                     className="max-h-screen object-contain"
                   />
-                  <p className="text-white text-xs">
-                    {" "}
-                    &nbsp; RATED 4.2 on TRUSTPILOT&nbsp;{" "}
-                  </p>
                 </div>
               </div>
             </div>
-            <Image src={phoneimg} alt="slika" className="  " />
+            <Image
+              src={phoneimg}
+              alt="slika"
+              className=" lg:-mt-20 sm:justify-center"
+            />
           </div>
-          <div className="lg:flex lg:justify-evenly mb-4">
-            <p className="text-white lg:flex">As featured in</p>
-            <Image src={NewsBreakLogo} alt="slika" className="  " />
-            <Image src={DigitalJournal} alt="slika" className="  " />
-            <Image src={katman} alt="slika" className="  " />
+          <div className="lg:flex lg:justify-start gap-20 pb-20">
+            <p className="text-white flex  ">As featured in</p>
+            <Image
+              src={NewsBreakLogo}
+              alt="slika"
+              className=" w-[135] h-[40px] "
+            />
+            <Image
+              src={DigitalJournal}
+              alt="slika"
+              className=" w-[135] h-[40px] "
+            />
+            <Image src={katman} alt="slika" className=" w-[135] h-[40px] " />
           </div>
         </div>
       </div>
@@ -68,13 +77,15 @@ export default function Home() {
           <Smalcard
             imageSrc1="/oblacici.png"
             title="Our Mission"
-            text="To empower traders with cutting-edge tools, unparalleled support, and the knowledge to succeed in the competitive world of online trading."
+            text="To empower traders with cutting-edge tools, unparalleled support,and
+            the knowledge to succeed in the competitive world of online trading."
           />
           <div className="mt-2">
             <Smalcard
               imageSrc1="/gromicon.png"
               title="Our History"
-              text="CapitalRevo has been at the forefront of the trading industry for over 15 years, helping thousands of traders achieve their financial goals."
+              text="CapitalRevo has been at the forefront of the trading industry for over 
+              15 years,helping thousands of traders achieve their financial goals."
             />
           </div>
         </div>
