@@ -6,7 +6,9 @@ import Link from "next/link";
 import { FiMenu } from "react-icons/fi";
 import "../globals.css";
 import { useState } from "react";
-import PopupButton from "@/app/components/PopupButton";
+
+import SingUpbutton from "../components/SingUpbutton";
+import Logindugme from "../components/Logindugme";
 
 export const Navbar = () => {
   const navigation = [
@@ -32,15 +34,16 @@ export const Navbar = () => {
             <Link
               key={item.title}
               href={item.href}
-              className="text-sm hover:text-zlatna text-white"
+              className="text-sm hover:text-zlatna text-white  "
             >
               {item.title}
             </Link>
           ))}
-          <PopupButton />
+          <Logindugme>Login</Logindugme>
+          <SingUpbutton>Sign Up</SingUpbutton>
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={toggleLinks}
             className="text-white text-2xl focus:outline-none"
@@ -64,6 +67,8 @@ export const Navbar = () => {
                   {item.title}
                 </Link>
               ))}
+              <Logindugme>Login</Logindugme>
+              <SingUpbutton>Sign Up</SingUpbutton>
             </div>
           )}
         </div>

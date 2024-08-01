@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Smalcard from "./components/Smalcard";
-import Stars from "@/app/images/1Star.png";
 import { Navbar } from "./components/Navbar";
 import Paketi from "./components/Paketi";
 import PopupButton from "./components/PopupButton";
@@ -19,7 +18,7 @@ export default function Home() {
         <div className=" m-32  ">
           <div className=" mx-auto lg:flex    ">
             <div className="slideUpAnimacija max-w-screen-xl mx-auto flex flex-col  justify-between  px-4 lg:px-0 h-full">
-              <h1 className="text-2xl  text-white font-bold  text-left lg:text-5xl lg:mt-10 lg:-ml-10">
+              <h1 className="text-xl  text-white font-bold   lg:text-5xl lg:mt-10 lg:-ml-10">
                 Empower Your Trading <br />
                 Journey with CapitalRevo
               </h1>
@@ -231,40 +230,40 @@ export default function Home() {
         </div>
       </div>
       <div className=" m-10 flex  justify-evenly items-center">
-        <span className="text-center">
+        <span className="flex flex-col items-center text-center">
           <img
             src="./oblacic.png"
             alt="webinars"
             style={{ width: "auto", height: "auto" }}
           />
-          <p className="text-center">Webinars</p>
+          <p className="text-center font-bold p-4">Webinars</p>
         </span>
-        <span className="text-center">
+        <span className="flex flex-col items-center text-center">
           <img
             src="./gormic.png"
             alt="webinars"
             style={{ width: "auto", height: "auto" }}
           />
-          <p className="text-center">eBooks</p>
+          <p className="text-center font-bold p-4">eBooks</p>
         </span>
-        <span className="text-center">
+        <span className="flex flex-col items-center text-center">
           <img
             src="./gormic.png"
             alt="webinars"
             style={{ width: "auto", height: "auto" }}
           />
-          <p className="text-center">Market Analysis</p>
+          <p className="text-center font-bold p-4">Market Analysis</p>
         </span>
-        <span className="">
+        <span className="flex flex-col items-center text-center">
           <img
             src="./strategy.png"
             alt="webinars"
             style={{ width: "auto", height: "auto" }}
           />
-          <p className="text-center">Trading Strategies</p>
+          <p className="text-center font-bold p-4">Trading Strategies</p>
         </span>
       </div>
-      <div className="  m-10 lg:flex lg:justify-evenly lg:items-center">
+      <div className=" mx-auto mt-20  lg:flex lg:justify-between lg:items-center">
         <div className=" ">
           <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
             Stay Informed
@@ -278,7 +277,7 @@ export default function Home() {
           Read More News
         </button>
       </div>
-      <div className=" mt-20 mb-10 lg:flex lg:justify-evenly lg:items-center">
+      <div className=" mt-20 mb-10 lg:flex lg:justify-between lg:items-center">
         <div className=" w-[398px] h-[440px] rounded-xl  overflow-hidden">
           <div className="bg-cover bg-center rounded-t-xl">
             <img

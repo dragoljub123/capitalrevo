@@ -1,42 +1,36 @@
 import React from "react";
-
 import Image from "next/image";
 import "../globals.css";
 import glogo from "../images/crlogo.png";
-
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-import { link } from "fs";
 
 export const FooterHome: React.FC = () => {
   return (
-    <div className=" max-w-sirina mx-auto bg-black  ">
-      <div className="lg:flex  justify-between  border-b-[1px] mb-5">
-        <div className="flex-col justify-center items-center">
+    <div className="max-w-sirina mx-auto bg-black text-white py-8 px-4">
+      <div className="lg:flex justify-between items-center border-b-[1px] border-gray-400  pb-6 mb-6">
+        <div className="text-center lg:text-left lg:flex-col lg:items-center lg:space-x-6">
           <Link href={"/"}>
-            <Image src={glogo} alt="slika" className=" w-full" />
+            <Image
+              src={glogo}
+              alt="CapitalRevo Logo"
+              className="mx-auto lg:mx-10 w-full max-w-xs"
+            />
           </Link>
-          <p className="text-sm text-white">
+          <p className="text-sm mt-4 lg:mt-0 lg:mx-10">
             Empower Your Trading Journey with CapitalRevo
           </p>
-          <div className="social-icons flex gap-4   my-4 text-white">
+          <div className="social-icons flex justify-center lg:justify-start gap-4 mt-4 lg:mt-0 ">
             <a
-              className="hover:bg-tirkizna transition duration-300 hover:rounded-full"
+              className="hover:bg-tirkizna p-2 rounded-full transition duration-300 "
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>
-
             <a
-              className="hover:bg-tirkizna transition duration-300"
+              className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +38,7 @@ export const FooterHome: React.FC = () => {
               <FaLinkedin />
             </a>
             <a
-              className="hover:bg-tirkizna transition duration-300 hover:rounded-full"
+              className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,50 +47,42 @@ export const FooterHome: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="lg:flex">
-          <ul className="  text-white  lg:gap-7">
+        <div className="text-center lg:text-left mt-8 lg:mt-20 lg:flex space-y-6 lg:space-y-0 lg:space-x-12">
+          <ul className="space-y-2 text-sm">
+            <li className="font-bold mb-2 ">Quick Links</li>
             <li>
-              <p className="font-bold mb-4 ">Quick Links</p>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="\">Home </a>
+              <Link href="/Accounts">Accounts</Link>
             </li>
             <li>
-              <a href="\Accounts">Accounts</a>
+              <Link href="/AboutUS">Trading Platform</Link>
             </li>
             <li>
-              <a href="\AboutUS">Trading Platform</a>
+              <Link href="/Education">Education</Link>
             </li>
             <li>
-              <a href="\Education">Education</a>
-            </li>
-            <li>
-              <a href="\FAQs">News</a>
+              <Link href="/FAQs">News</Link>
             </li>
           </ul>
-          <ul className="  text-white  lg:gap-7">
+          <ul className="space-y-2 text-sm">
+            <li className="font-bold mb-2">Company</li>
             <li>
-              <p className="font-bold mb-4 ">Company</p>
+              <Link href="/">About Us</Link>
             </li>
             <li>
-              <a href="\">About Us </a>
+              <Link href="/Contact">Contact Us</Link>
             </li>
-            <li>
-              <a href="\Accounts">Contact Us</a>
-            </li>{" "}
           </ul>
         </div>
       </div>
-      <div className="flex justify-between">
-        <p className=" text-center text-white">© 2024, CapitalRevo</p>
-        <div className=" text-white">
-          <a className="" href="#">
-            Privacy Policy
-          </a>
-
-          <a href="#">Terms of Service</a>
-
-          <a href="#">Risk Disclaimer</a>
+      <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+        <p className="text-center lg:text-left lg:mx-10">© 2024, CapitalRevo</p>
+        <div className="flex space-x-4 text-sm">
+          <Link href="/PrivacyPolicy">Privacy Policy</Link>
+          <Link href="/TermsOfService">Terms of Service</Link>
+          <Link href="/RiskDisclaimer">Risk Disclaimer</Link>
         </div>
       </div>
     </div>
