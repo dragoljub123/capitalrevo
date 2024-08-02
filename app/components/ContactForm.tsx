@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -10,7 +9,6 @@ const ContactForm: React.FC = () => {
     message: "",
     agreeToPrivacyPolicy: false, // Add state for the checkbox
   });
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -27,7 +25,6 @@ const ContactForm: React.FC = () => {
       });
     }
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.agreeToPrivacyPolicy) {
@@ -42,7 +39,6 @@ const ContactForm: React.FC = () => {
         },
         body: JSON.stringify(formData),
       });
-
       if (response.ok) {
         alert("Message sent successfully!");
         setFormData({
@@ -61,7 +57,6 @@ const ContactForm: React.FC = () => {
       alert("An error occurred while sending the message.");
     }
   };
-
   return (
     <form
       onSubmit={handleSubmit}
@@ -84,7 +79,7 @@ const ContactForm: React.FC = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
           <div className="flex-1">
@@ -102,7 +97,7 @@ const ContactForm: React.FC = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
         </div>
@@ -122,27 +117,27 @@ const ContactForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md border-[1px]  border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
-          <div className="">
-            <label
-              htmlFor="phone"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Enter your phone number"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-            />
-          </div>
+        </div>
+        <div>
+          <label
+            htmlFor="phone"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            className="text-white placeholder-white mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          />{" "}
         </div>
         <div>
           <label
@@ -158,7 +153,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="text-white placeholder-white mt-1 block w-full h-64 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className="text-white placeholder-white mt-1 block w-full h-64 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />
         </div>
         <div className="flex items-center">
@@ -180,7 +175,8 @@ const ContactForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="bg-[#1200FF] text-white px-12 py-1 rounded-3xl hover:bg-zlatna transition-colors duration-300 w-full sm:w-auto"
+          className="bg-[#1200FF
+] text-white px-12 py-1 rounded-3xl hover:bg-zlatna transition-colors duration-300 w-full sm:w-auto"
         >
           Send message
         </button>
@@ -188,5 +184,4 @@ const ContactForm: React.FC = () => {
     </form>
   );
 };
-
 export default ContactForm;

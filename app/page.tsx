@@ -427,7 +427,7 @@ export default function Home() {
             <img
               src="./iphone13mini.png"
               alt="webinars"
-              style={{ width: "auto", height: "auto" }}
+              style={{ width: "425px", height: "425px" }}
             />
           </div>
         </div>
@@ -452,16 +452,47 @@ export default function Home() {
         <h1 className="text-2xl   py-4 text-black font-bold pb-20 pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h1>
-        <div className="flex justify-evenly items-center pb-20 ">
-          <Image src="/visa.png" alt="visa" width={75} height={75} />
-
-          <Image src="/master2.png" alt="master2" width={75} height={75} />
-
-          <Image src="/master.png" alt="master" width={85} height={85} />
-
-          <Image src="/apay.png" alt="apay" width={85} height={85} />
-
-          <Image src="/gpay.png" alt="gpay" width={85} height={85} />
+        <div className="flex justify-evenly items-center pb-20 space-x-4 sm:space-x-2">
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+            <Image
+              src="/visa.png"
+              alt="visa"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>{" "}
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+            <Image
+              src="/master2.png"
+              alt="master2"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>{" "}
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+            <Image
+              src="/master.png"
+              alt="master"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>{" "}
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+            <Image
+              src="/apay.png"
+              alt="apay"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>{" "}
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+            <Image
+              src="/gpay.png"
+              alt="gpay"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         </div>
       </div>
       <div className="mb-20 " id="ContactUs">
