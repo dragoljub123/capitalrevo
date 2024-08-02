@@ -395,8 +395,8 @@ export default function Home() {
         </div>
         <div className="flex-col justify-center items-center ">
           <h2 className=" text-xl p-4 lg:p-0 lg:text-3xl ">
-            "CapitalRevo transformed my <br /> trading experience! The platform
-            is <br /> intuitive and the support is <br /> excellent."
+            CapitalRevo transformed my <br /> trading experience! The platform
+            is <br /> intuitive and the support is <br /> excellent.
           </h2>
           <div>
             <p className=" p-4 lg:p-0 mt-10 text-sm font-bold">Lana Steiner</p>
