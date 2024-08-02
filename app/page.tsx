@@ -15,9 +15,9 @@ export default function Home() {
     <div className="max-w-sirina mx-auto ">
       <div className="pozadina  ">
         <Navbar />
-        <div className="m-8 md:m-32">
-          <div className="slideUpAnimacija mx-auto flex flex-col lg:flex-row">
-            <div className="slideUpAnimacija max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-0 h-full">
+        <div className="slideUpAnimacija m-8 md:m-32">
+          <div className=" mx-auto flex flex-col lg:flex-row">
+            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-0 h-full">
               <h1 className="pt-5 pb-10 text-center text-3xl text-white font-bold lg:text-4xl lg:mt-10 lg:-ml-10 lg:text-left">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
@@ -409,8 +409,7 @@ export default function Home() {
         </div>
         <div className="lg:flex lg:justify-center ">
           <div className=" flex flex-col justify-center items-center  ">
-            <p className="pt-48 mb-5">
-              {" "}
+            <p className=" p-10 mb-5">
               Use our trading calculator to see <br />
               your potential profits based on your <br /> trading activities.
             </p>
@@ -448,32 +447,15 @@ export default function Home() {
           Secure Payment Options
         </h1>
         <div className="flex justify-evenly items-center pb-20 ">
-          <img
-            src="./visa.png"
-            alt="visa"
-            style={{ width: "75px", height: "75px" }}
-          />
+          <Image src="/visa.png" alt="visa" width={75} height={75} />
 
-          <img
-            src="./master2.png"
-            alt="master2"
-            style={{ width: "75px", height: "75px" }}
-          />
-          <img
-            src="./master.png"
-            alt="master"
-            style={{ width: "85px", height: "85px" }}
-          />
-          <img
-            src="./apay.png"
-            alt="apay"
-            style={{ width: "85px", height: "85px" }}
-          />
-          <img
-            src="./gpay.png"
-            alt="gpay"
-            style={{ width: "85px", height: "85px" }}
-          />
+          <Image src="/master2.png" alt="master2" width={75} height={75} />
+
+          <Image src="/master.png" alt="master" width={85} height={85} />
+
+          <Image src="/apay.png" alt="apay" width={85} height={85} />
+
+          <Image src="/gpay.png" alt="gpay" width={85} height={85} />
         </div>
       </div>
       <div className="mb-20">
