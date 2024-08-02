@@ -34,7 +34,7 @@ export const Navbar = () => {
             <Link
               key={item.title}
               href={item.href}
-              className="text-sm hover:text-zlatna text-white  "
+              className="text-sm hover:text-customBlue text-white  "
             >
               {item.title}
             </Link>
@@ -62,7 +62,7 @@ export const Navbar = () => {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="block mb-4 hover:text-zlatna"
+                  className="block mb-4 hover:text-customBlue"
                 >
                   {item.title}
                 </Link>

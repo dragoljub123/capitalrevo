@@ -15,20 +15,19 @@ export default function Home() {
     <div className="max-w-sirina mx-auto ">
       <div className="pozadina  ">
         <Navbar />
-        <div className=" m-32  ">
-          <div className=" mx-auto lg:flex    ">
-            <div className="slideUpAnimacija max-w-screen-xl mx-auto flex flex-col  justify-between  px-4 lg:px-0 h-full">
-              <h1 className="text-xl  text-white font-bold   lg:text-5xl lg:mt-10 lg:-ml-10">
-                Empower Your Trading <br />
-                Journey with CapitalRevo
+        <div className="m-8 md:m-32">
+          <div className="slideUpAnimacija mx-auto flex flex-col lg:flex-row">
+            <div className="slideUpAnimacija max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-0 h-full">
+              <h1 className="pt-5 pb-10 text-center text-3xl text-white font-bold lg:text-4xl lg:mt-10 lg:-ml-10 lg:text-left">
+                Empower Your Trading Journey with CapitalRevo
               </h1>
-              <p className="text-white mt-4 mb-4 text-left  lg:-ml-10">
+              <p className="text-white text-center  text-sm lg:mt-4 lg:mb-4 lg:text-left lg:-ml-10">
                 Start trading with as little as $200 and leverage our expert
                 tools and resources.
               </p>
-              <div className="flex  justify-start items-center pt-2 lg:-ml-10">
+              <div className="flex flex-col sm:flex-row justify-start items-center pt-5 lg:-ml-10">
                 <PopupButton />
-                <div className="flex  justify-center items-center pl-4   ">
+                <div className="flex justify-center items-center pl-4 mt-4 sm:mt-0">
                   <Image
                     src={trustpilotlogo}
                     alt="slika"
@@ -37,34 +36,40 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Image
-              src={phoneimg}
-              alt="slika"
-              className=" lg:-mt-20 sm:justify-center"
-            />
+            <div className=" lg:-mt-20 flex justify-center lg:justify-end">
+              <Image src={phoneimg} alt="slika" className="object-contain" />
+            </div>
           </div>
-          <div className="lg:flex lg:justify-start gap-20 pb-20">
-            <p className="text-white flex  ">As featured in</p>
-            <Image
-              src={NewsBreakLogo}
-              alt="slika"
-              className=" w-[135] h-[40px] "
-            />
-            <Image
-              src={DigitalJournal}
-              alt="slika"
-              className=" w-[135] h-[40px] "
-            />
-            <Image src={katman} alt="slika" className=" w-[135] h-[40px] " />
+          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0">
+            <p className="text-white flex justify-center lg:justify-start">
+              As featured in
+            </p>
+            <div className="flex  justify-center lg:justify-start gap-10 lg:gap-20">
+              <Image
+                src={NewsBreakLogo}
+                alt="slika"
+                className=" w-[75px] h-[autopx] lg:w-[135px]"
+              />
+              <Image
+                src={DigitalJournal}
+                alt="slika"
+                className=" w-[75px] h-[autopx] lg:w-[135px]"
+              />
+              <Image
+                src={katman}
+                alt="slika"
+                className=" w-[75px] h-[autopx] lg:w-[135px]"
+              />
+            </div>
           </div>
         </div>
       </div>
       <div className=" lg:flex lg:justify-evenly">
         <div>
           <h1 className="text-3xl p-4 font-bold ">About Us</h1>
-          <p className="p-4">
-            With over 15 years in the industry, CapitalRevo is dedicated to{" "}
-            <br /> providing traders with the best-in-class tools and support.
+          <p className="p-4  lg:w-[400px] ">
+            With over 15 years in the industry, CapitalRevo is dedicated to
+            providing traders with the best-in-class tools and support.
           </p>
 
           <p className="p-4">
@@ -92,7 +97,7 @@ export default function Home() {
       <div className="crafy ">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h1 className="text-2xl py-4 text-white font-bold mb-6 mt-6 text-center lg:text-4xl ">
+            <h1 className="text-4xl py-4 text-white font-bold mb-6 mt-0 lg:mt-6 text-center lg:text-4xl ">
               Choose the Right Account for You
             </h1>
             <p className=" mb-4 text-center text-sm  text-white">
@@ -102,95 +107,101 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className=" lg:flex lg:gap-10 lg:justify-center -mt-20 ">
-        <Paketi
-          title="Basic plan"
-          imageSrc="\Dot.png"
-          description="$200 – $9,999"
-          listItems={[
-            "Access to all basic features",
-            "Basic reporting and analytics",
-            "Up to 10 individual users",
-            "20GB individual data each user",
-            "Basic chat and email support",
-          ]}
-        />
-        <Paketi
-          title="Silver Account"
-          imageSrc="\Dot.png"
-          description="$10,000 – $24,999"
-          listItems={[
-            "Access to all basic features",
-            "Basic reporting and analytics",
-            "Up to 10 individual users",
-            "20GB individual data each user",
-            "Basic chat and email support",
-            "Sessions with Market Analyst",
-            "Free Withdrawal Monthly",
-          ]}
-        />
-        <Paketi
-          title="Gold Account"
-          imageSrc="\Dot.png"
-          description="$25,000 – $49,999"
-          listItems={[
-            "Leverage 1:200",
-            "50% lower swaps",
-            "Advanced Education",
-            "Daily Market Reviews",
-            "Trading eBooks",
-            "Dedicated Market Analyst",
-            "Live Webinars with Senior Trading Strategist",
-            "3 Free Withdrawals Monthly",
-          ]}
-        />
+      <div className="flex flex-col  justify-between items-center ">
+        <div className="  lg:flex  lg:gap-10 lg:justify-center lg:-mt-20 lg:p-0 ">
+          <Paketi
+            title="Basic plan"
+            imageSrc="\Dot.png"
+            description="$200 - $9,999"
+            listItems={[
+              "Access to all basic features",
+              "Basic reporting and analytics",
+              "Up to 10 individual users",
+              "20GB individual data each user",
+              "Basic chat and email support",
+            ]}
+          />
+          <Paketi
+            title="Silver Account"
+            imageSrc="\Dot.png"
+            description="$10,000 - $24,999"
+            listItems={[
+              "Access to all basic features",
+              "Basic reporting and analytics",
+              "Up to 10 individual users",
+              "20GB individual data each user",
+              "Basic chat and email support",
+              "Sessions with Market Analyst",
+              "Free Withdrawal Monthly",
+            ]}
+          />
+          <Paketi
+            title="Gold Account"
+            imageSrc="\Dot.png"
+            description="$25,000 - $49,999"
+            listItems={[
+              "Leverage 1:200",
+              "50% lower swaps",
+              "Advanced Education",
+              "Daily Market Reviews",
+              "Trading eBooks",
+              "Dedicated Market Analyst",
+              "Live Webinars with Senior Trading Strategist",
+              "3 Free Withdrawals Monthly",
+            ]}
+          />
+        </div>
+        <div className="  lg:flex lg:justify-center lg:gap-5 lg:m-10 lg:p-0">
+          <Paketi
+            title="Premium Account"
+            imageSrc="\Dot.png"
+            description="$100,000+"
+            listItems={[
+              "Leverage 1:300",
+              "75% lower swaps",
+              "Advanced Education",
+              "Spreads as low as 1.9",
+              "Daily Market Reviews",
+              "3 Risk-free trades",
+              "Unlimited Free Withdrawals",
+              "Dedicated Senior Account Manager",
+              "Market Analyst",
+              "Live Webinars with Senior Trading Strategist",
+              "Special offers",
+            ]}
+          />
+          <Paketi
+            title="VIP Account"
+            imageSrc="\Dot.png"
+            description="$250,000+"
+            listItems={[
+              "Leverage 1:400",
+              "Swap-free",
+              "Spreads as low as 1.5",
+              "Daily Market Reviews",
+              "3 Risk-free trades",
+              "Unlimited Free Withdrawals",
+              "Dedicated Senior Account Manager",
+              "Market Analyst",
+              "Live Webinars with Senior Trading Strategist",
+              "Special offers",
+            ]}
+          />
+        </div>
       </div>
-      <div className="lg:flex lg:justify-center lg:gap-5 m-10">
-        <Paketi
-          title="Premium Account"
-          imageSrc="\Dot.png"
-          description="$100,000+"
-          listItems={[
-            "Leverage 1:300",
-            "75% lower swaps",
-            "Advanced Education",
-            "Spreads as low as 1.9",
-            "Daily Market Reviews",
-            "3 Risk-free trades",
-            "Unlimited Free Withdrawals",
-            "Dedicated Senior Account Manager",
-            "Market Analyst",
-            "Live Webinars with Senior Trading Strategist",
-            "Special offers",
-          ]}
-        />
-        <Paketi
-          title="VIP Account"
-          imageSrc="\Dot.png"
-          description="$250,000+"
-          listItems={[
-            "Leverage 1:400",
-            "Swap-free",
-            "Spreads as low as 1.5",
-            "Daily Market Reviews",
-            "3 Risk-free trades",
-            "Unlimited Free Withdrawals",
-            "Dedicated Senior Account Manager",
-            "Market Analyst",
-            "Live Webinars with Senior Trading Strategist",
-            "Special offers",
-          ]}
-        />
+      <div className="flex justify-center items-center mb-20">
+        <button className=" flex justify-center items-center px-4 py-3 gap-2 w-48 h-14 bg-black rounded-xl shadow-xs text-white">
+          Compare Accounts
+        </button>
       </div>
 
       <div className="   ">
-        <div className=" lg:flex lg:justify-evenly ">
-          <div className="  flex flex-col  justify-between items-start">
-            <h2 className=" text-4xl  font-bold">
+        <div className=" lg:flex lg:justify-evenly lg:text-left">
+          <div className="   ">
+            <h2 className=" text-center text-4xl  font-bold p-4">
               Innovative Trading Platform
             </h2>
-            <p className=" text-sm ">
+            <p className=" text-sm  p-4 tetx-center">
               Experience the power of integrated trading tools with real-time
               data, customizable <br /> charts, and mobile trading.
             </p>
@@ -199,15 +210,25 @@ export default function Home() {
 
         <div className="mt-20 lg:flex lg:justify-evenly">
           <div>
-            <div className="  border-l-[2px] border-gray-300">
-              <p className="ml-4 mb-10">Real-time data</p>
-              <p className="ml-4 mb-10">Customizable charts</p>
-              <p className="ml-4 mb-10">Mobile trading</p>
-              <p className="ml-4 mb-10">Secure transactions</p>
+            <div className="  p-10 lg:p-0 border-l-[4px] border-gray-300">
+              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                <p className="ml-4 mb-10 ">Real-time data</p>
+              </div>
+              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                <p className="ml-4 mb-10 ">Customizable charts</p>
+              </div>
+              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                <p className="ml-4 mb-10 ">Mobile trading</p>
+              </div>
+              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                <p className="ml-4 mb-10 ">Secure transactions</p>
+              </div>
             </div>
-            <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
-              Explore the Platform
-            </button>
+            <div className="p-10 flex justify-center items-center">
+              <button className=" px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
+                Explore the Platform
+              </button>
+            </div>
           </div>
           <div className="">
             <img
@@ -229,7 +250,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className=" m-10 flex  justify-evenly items-center">
+      <div className=" m-10 lg:flex  lg:justify-evenly lg:items-center">
         <span className="flex flex-col items-center text-center">
           <img
             src="./oblacic.png"
@@ -263,7 +284,7 @@ export default function Home() {
           <p className="text-center font-bold p-4">Trading Strategies</p>
         </span>
       </div>
-      <div className=" mx-auto mt-20  lg:flex lg:justify-between lg:items-center">
+      <div className=" pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:items-center">
         <div className=" ">
           <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
             Stay Informed
@@ -277,17 +298,16 @@ export default function Home() {
           Read More News
         </button>
       </div>
-      <div className=" mt-20 mb-10 lg:flex lg:justify-between lg:items-center">
-        <div className=" w-[398px] h-[440px] rounded-xl  overflow-hidden">
+      <div className=" flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-between lg:items-center">
+        <div className=" w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl  overflow-hidden">
           <div className="bg-cover bg-center rounded-t-xl">
             <img
               src="./slikakartica.png"
               alt="webinars"
               style={{ width: "auto", height: "auto" }}
             />
-          </div>
-
-          <p className="text-sm py-4 text-blue-800">Product</p>
+          </div>{" "}
+          <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
           <div className="  flex justify-between ">
             <h1 className=" text-2xl font-bold">Product review </h1>
             <img
@@ -295,29 +315,26 @@ export default function Home() {
               alt="webinars"
               style={{ width: "auto", height: "auto" }}
             />
-          </div>
-
-          <p className=" text-sm text-gray-700">
+          </div>{" "}
+          <p className=" text-sm text-gray-700 pt-2 pb-5">
             The rise of RESTful APIs has been met by a rise in tools <br /> for
             creating, testing, and managing them.
-          </p>
-
+          </p>{" "}
           <img
             src="./Avatar label group.png"
             alt="webinars"
             style={{ width: "auto", height: "auto" }}
           />
         </div>
-        <div className=" w-[398px] h-[440px] rounded-xl overflow-hidden">
+        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
           <div className="bg-cover bg-center rounded-t-xl">
             <img
               src="./slikakartica.png"
               alt="webinars"
               style={{ width: "auto", height: "auto" }}
             />
-          </div>
-
-          <p className="text-sm py-4 text-blue-800">Product</p>
+          </div>{" "}
+          <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
           <div className="  flex justify-between ">
             <h1 className=" text-2xl font-bold">Product review </h1>
             <img
@@ -325,29 +342,26 @@ export default function Home() {
               alt="webinars"
               style={{ width: "auto", height: "auto" }}
             />
-          </div>
-
-          <p className=" text-sm text-gray-700">
+          </div>{" "}
+          <p className=" text-sm text-gray-700 pt-2 pb-5">
             The rise of RESTful APIs has been met by a rise in tools <br /> for
             creating, testing, and managing them.
-          </p>
-
+          </p>{" "}
           <img
             src="./Avatar label group.png"
             alt="webinars"
             style={{ width: "auto", height: "auto" }}
           />
         </div>
-        <div className=" w-[398px] h-[440px] rounded-xl overflow-hidden">
+        <div className=" w-[335px] h-[440px] lg:w-[398px] lg:h-[440px]  rounded-xl overflow-hidden">
           <div className="bg-cover bg-center rounded-t-xl">
             <img
               src="./slikakartica.png"
               alt="webinars"
               style={{ width: "auto", height: "auto" }}
             />
-          </div>
-
-          <p className="text-sm py-4 text-blue-800">Product</p>
+          </div>{" "}
+          <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
           <div className="  flex justify-between ">
             <h1 className=" text-2xl font-bold">Product review </h1>
             <img
@@ -355,13 +369,11 @@ export default function Home() {
               alt="webinars"
               style={{ width: "auto", height: "auto" }}
             />
-          </div>
-
-          <p className=" text-sm text-gray-700">
+          </div>{" "}
+          <p className=" text-sm text-gray-700 pt-2 pb-5">
             The rise of RESTful APIs has been met by a rise in tools <br /> for
             creating, testing, and managing them.
-          </p>
-
+          </p>{" "}
           <img
             src="./Avatar label group.png"
             alt="webinars"
@@ -369,30 +381,34 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className=" m-10 lg:flex lg:justify-evenly lg:items-center ">
-        <h2 className="text-2xl lg:text-4xl font-bold">What Our Clients Say</h2>
-        <div>
-          <h2 className="text-2xl ">
+      <div className=" mx-auto flex flex-col  justify-center items-center  mt-20  lg:flex lg:flex-row lg:justify-between ">
+        <div className=" ">
+          <h1 className=" text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
+            What Our Clients Say
+          </h1>
+        </div>
+        <div className="flex-col justify-center items-center ">
+          <h2 className=" text-xl p-4 lg:p-0 lg:text-3xl ">
             "CapitalRevo transformed my <br /> trading experience! The platform
             is <br /> intuitive and the support is <br /> excellent."
           </h2>
           <div>
-            <p className="mt-10 text-sm font-bold">Lana Steiner</p>
-            <p className="text-sm">
+            <p className=" p-4 lg:p-0 mt-10 text-sm font-bold">Lana Steiner</p>
+            <p className=" p-4 lg:p-0 text-sm lg:pb-20 bledunjavi">
               Hear from some of our amazing customers who are automating <br />{" "}
               their finances.
             </p>
           </div>
         </div>
       </div>
-      <div className=" ">
-        <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
+      <div className="sivkasta ">
+        <div className="pt-10 max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+          <h1 className="text-2xl py-4 text-black font-bold pb-6 pt-6 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h1>
         </div>
-        <div className="lg:flex lg:justify-center">
-          <div className=" ">
+        <div className="lg:flex lg:justify-center ">
+          <div className=" flex flex-col justify-center items-center  ">
             <p className="pt-48 mb-5">
               {" "}
               Use our trading calculator to see <br />
@@ -402,87 +418,110 @@ export default function Home() {
               Try It Now
             </button>
           </div>
-          <img
-            src="./iphone13mini.png"
-            alt="webinars"
-            style={{ width: "auto", height: "auto" }}
-          />
+          <div className="md:flex md:justify-center  md:items-center">
+            <img
+              src="./iphone13mini.png"
+              alt="webinars"
+              style={{ width: "auto", height: "auto" }}
+            />
+          </div>
         </div>
       </div>
-      <div className="mb-10 lg:flex lg:justify-center lg:items-center">
+      <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center">
         <img
           src="./Getintouch.png"
           alt="webinars"
           style={{ width: "auto", height: "auto" }}
         />
       </div>
-      <h1 className="text-2xl   py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
-        Secure Payment Options
-      </h1>
-      <div className="flex lg:justify-evenly lg:items-center ">
-        <img
-          src="./visa.png"
-          alt="visa"
-          style={{ width: "auto", height: "auto" }}
-        />
 
+      <div className="bg-[#F4F4F4] flex justify-center items-center md:hidden lg:hidden">
         <img
-          src="./master2.png"
-          alt="master2"
-          style={{ width: "auto", height: "auto" }}
-        />
-        <img
-          src="./master.png"
-          alt="master"
-          style={{ width: "auto", height: "auto" }}
-        />
-        <img
-          src="./apay.png"
-          alt="apay"
-          style={{ width: "auto", height: "auto" }}
-        />
-        <img
-          src="./gpay.png"
-          alt="gpay"
+          src="./Getintouchmob.png"
+          alt="webinars"
           style={{ width: "auto", height: "auto" }}
         />
       </div>
-      <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
-        Get in Touch
-      </h1>
-      <div className="mt-10 mb-10 lg:flex lg:justify-center">
-        <div className="">
-          <h1 className="font-bold">Email</h1>
+
+      <div className="sivkasta ">
+        <h1 className="text-2xl   py-4 text-black font-bold pb-20 pt-20 text-center lg:text-4xl ">
+          Secure Payment Options
+        </h1>
+        <div className="flex justify-evenly items-center pb-20 ">
           <img
-            src="./coverta.png"
-            alt="mail"
-            style={{ width: "auto", height: "auto" }}
+            src="./visa.png"
+            alt="visa"
+            style={{ width: "75px", height: "75px" }}
           />
-          <p>Our friendly team is here to help.</p>
-          <p>hi@untitledui.com</p>
-        </div>
-        <div>
-          <h1 className="font-bold">Office</h1>
+
           <img
-            src="./location.png"
-            alt="lokacija"
-            style={{ width: "auto", height: "auto" }}
-          />{" "}
-          <p>Come say hello at our office HQ.</p>
-          <p>
-            100 Smith Street <br />
-            Collingwood VIC 3066 AU
-          </p>
-        </div>
-        <div>
-          <h1 className="font-bold">Phone</h1>
+            src="./master2.png"
+            alt="master2"
+            style={{ width: "75px", height: "75px" }}
+          />
           <img
-            src="./phonecall.png"
+            src="./master.png"
+            alt="master"
+            style={{ width: "85px", height: "85px" }}
+          />
+          <img
+            src="./apay.png"
+            alt="apay"
+            style={{ width: "85px", height: "85px" }}
+          />
+          <img
+            src="./gpay.png"
             alt="gpay"
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "85px", height: "85px" }}
           />
-          <p>Mon-Fri from 8am to 5pm.</p>
-          <p>+1 (555) 000-0000</p>
+        </div>
+      </div>
+      <div className="mb-20">
+        <h2 className=" text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl ">
+          Get in Touch
+        </h2>
+        <div className=" text-center mt-10 mb-10 lg:flex lg:justify-evenly lg:items-center lg:gap-10">
+          <div className="flex flex-col items-center text-center">
+            <img
+              src="./coverta.png"
+              alt="mail"
+              style={{ width: "auto", height: "auto" }}
+            />
+            <h3 className="font-bold pb-2 pt-5">Email</h3>
+            <p className="">Our friendly team is here to help.</p>
+            <p className="text-dugmeplava pt-2">
+              <br />
+              hi@untitledui.com
+              <br />
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <img
+              src="./location.png"
+              alt="lokacija"
+              style={{ width: "auto", height: "auto" }}
+            />
+            <h3 className="font-bold pb-2 pt-5">Office</h3>
+            <p>Come say hello at our office HQ.</p>
+            <p className="text-dugmeplava pt-2">
+              100 Smith Street <br />
+              Collingwood VIC 3066 AU
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <img
+              src="./phonecall.png"
+              alt="gpay"
+              style={{ width: "auto", height: "auto" }}
+            />
+            <h3 className="font-bold pb-2 pt-5">Phone</h3>
+            <p>Mon-Fri from 8am to 5pm.</p>
+            <p className="text-dugmeplava pt-2">
+              <br />
+              +1 (555) 000-0000
+              <br />
+            </p>
+          </div>
         </div>
       </div>
       <div className="mt-10 mb-10">
