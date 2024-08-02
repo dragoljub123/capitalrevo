@@ -80,9 +80,9 @@ export const FooterHome: React.FC = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
         <p className="text-center lg:text-left lg:mx-10">© 2024, CapitalRevo</p>
         <div className="flex space-x-4 text-sm">
-          <Link href="/PrivacyPolicy">Privacy Policy</Link>
-          <Link href="/TermsOfService">Terms of Service</Link>
-          <Link href="/RiskDisclaimer">Risk Disclaimer</Link>
+          <Link href="/">Privacy Policy</Link>
+          <Link href="/">Terms of Service</Link>
+          <Link href="/">Risk Disclaimer</Link>
         </div>
       </div>
     </div>
