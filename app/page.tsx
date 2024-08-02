@@ -15,7 +15,7 @@ export default function Home() {
     <div className="max-w-sirina mx-auto ">
       <div className="pozadina  ">
         <Navbar />
-        <div className="slideUpAnimacija m-8 md:m-32">
+        <div className="  m-8 md:m-32">
           <div className=" mx-auto flex flex-col lg:flex-row">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-0 h-full">
               <h1 className="pt-5 pb-10 text-center text-3xl text-white font-bold lg:text-4xl lg:mt-10 lg:-ml-10 lg:text-left">
