@@ -258,3 +258,7 @@ ul {
 .sivkasta {
   background: #eeeeee66;
 }
+.aboutuspozadina {
+  background-image: url("images/blueworld.png");
+  background-size: cover;
+}

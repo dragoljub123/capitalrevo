@@ -12,12 +12,12 @@ import Logindugme from "../components/Logindugme";
 
 export const Navbar = () => {
   const navigation = [
-    { title: "About Us", href: "/AboutUS" },
-    { title: "Accounts", href: "/Accounts" },
-    { title: "Trading Platform", href: "/Trading Platform" },
-    { title: "Education", href: "/Education" },
-    { title: "News", href: "/News" },
-    { title: "Contact Us", href: "/Contact Us" },
+    { title: "About Us", href: "#AboutUs" },
+    { title: "Accounts", href: "#Accounts" },
+    { title: "Trading Platform", href: "#TradingPlatform" },
+    { title: "Education", href: "#Education" },
+    { title: "News", href: "#News" },
+    { title: "Contact Us", href: "#ContactUs" },
   ];
   const [showLinks, setShowLinks] = useState(false);
 

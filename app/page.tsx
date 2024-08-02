@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" lg:flex lg:justify-evenly">
+      <div className=" lg:flex lg:justify-evenly" id="AboutUs">
         <div>
           <h1 className="text-3xl p-4 font-bold ">About Us</h1>
           <p className="p-4  lg:w-[400px] ">
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="crafy ">
+      <div className="crafy " id="Accounts">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
             <h1 className="text-4xl py-4 text-white font-bold mb-6 mt-0 lg:mt-6 text-center lg:text-4xl ">
@@ -195,7 +195,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="   ">
+      <div className="  " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
           <div className="   ">
             <h2 className=" text-center text-4xl  font-bold p-4">
@@ -239,7 +239,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" mx-auto flex items-center justify-center ">
+      <div
+        className=" mx-auto flex items-center justify-center "
+        id="Education"
+      >
         <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
           <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
             Learn to Trade with Confidence
@@ -284,7 +287,10 @@ export default function Home() {
           <p className="text-center font-bold p-4">Trading Strategies</p>
         </span>
       </div>
-      <div className=" pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:items-center">
+      <div
+        className=" pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:items-center"
+        id="News"
+      >
         <div className=" ">
           <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
             Stay Informed
@@ -458,7 +464,7 @@ export default function Home() {
           <Image src="/gpay.png" alt="gpay" width={85} height={85} />
         </div>
       </div>
-      <div className="mb-20">
+      <div className="mb-20 " id="ContactUs">
         <h2 className=" text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl ">
           Get in Touch
         </h2>
