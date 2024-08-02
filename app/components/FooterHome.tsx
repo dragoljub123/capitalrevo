@@ -20,14 +20,14 @@ export const FooterHome: React.FC = () => {
           <p className="text-sm mt-4 lg:mt-0 lg:mx-10">
             Empower Your Trading Journey with CapitalRevo
           </p>
-          <div className="social-icons flex justify-center lg:justify-start gap-4 mt-4 lg:mt-0 ">
+          <div className="social-icons flex justify-center lg:justify-start gap-4 mt-4 lg:mt-20 ">
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300 "
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram />
+              <FaInstagram className="text-3xl" />
             </a>
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
@@ -35,7 +35,7 @@ export const FooterHome: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin />
+              <FaLinkedin className="text-3xl" />
             </a>
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
@@ -43,11 +43,11 @@ export const FooterHome: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook />
+              <FaFacebook className="text-3xl" />
             </a>
           </div>
         </div>
-        <div className="text-center lg:text-left mt-8 lg:mt-20 lg:flex space-y-6 lg:space-y-0 lg:space-x-12">
+        <div className="text-center lg:text-left mt-8 lg:mt-20 flex  justify-center space-x-12  space-y-6 lg:space-y-0 lg:space-x-12">
           <ul className="space-y-2 text-sm">
             <li className="font-bold mb-2 ">Quick Links</li>
             <li>
