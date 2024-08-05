@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" lg:flex lg:justify-evenly" id="AboutUs">
+      <div className=" pt-10 lg:flex lg:justify-evenly" id="AboutUs">
         <div>
           <h1 className="text-3xl p-4 font-bold ">About Us</h1>
           <p className="p-4  lg:w-[400px] ">
@@ -196,7 +196,7 @@ export default function Home() {
           Compare Accounts
         </button>
       </div>
-      <div className="  " id="TradingPlatform">
+      <div className=" pt-10 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
           <div className="   ">
             <h2 className=" text-center text-4xl  font-bold p-4">
@@ -270,7 +270,7 @@ export default function Home() {
       </div>
 
       <div
-        className=" pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:items-center"
+        className=" pt-10 pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:items-center"
         id="News"
       >
         <div className=" ">
@@ -468,7 +468,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mb-20" id="ContactUs">
+      <div className="pt-5 mb-20" id="ContactUs">
         <h2 className="text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h2>

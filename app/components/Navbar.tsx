@@ -28,10 +28,10 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed mx-auto w-full h-16 z-50 bg-navcolor lg:relative ">
+    <div className="fixed mx-auto w-full h-10 sm:h-16 z-50 bg-navcolor lg:relative ">
       <div className="  max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
         <Logo title="Capitalrevo" className="text-black " />
-        <div className="hidden lg:inline-flex items-center gap-10 md:text-xs md:gap-3 lg:gap-10 lg:text-md">
+        <div className="hidden lg:flex lg:items-center gap-10 text-xs   lg:text-md">
           {navigation.map((item) => (
             <Link
               key={item.title}
