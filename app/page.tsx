@@ -237,7 +237,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className=" mx-auto flex items-center justify-center "
+        className=" pt-5 mx-auto flex items-center justify-center "
         id="Education"
       >
         <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">

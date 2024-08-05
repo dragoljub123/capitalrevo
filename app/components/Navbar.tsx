@@ -53,18 +53,21 @@ export const Navbar = () => {
             <FiMenu />
           </button>
           {showLinks && (
-            <div className=" fixed top-0 right-0 w-64 h-full bg-navcolor text-white p-4 shadow-lg transition-transform transform translate-x-0 z-50">
-              <button
-                onClick={toggleLinks}
-                className="text-white text-2xl focus:outline-none mb-4"
-              >
-                &times;
-              </button>
+            <div className=" fixed top-0  left-0 w-full h-fit bg-navcolor text-white p-4 shadow-lg transition-transform transform translate-x-0 z-50">
+              <div className="flex  justify-between ">
+                <Logo title="Capitalrevo" className="text-black " />
+                <button
+                  onClick={toggleLinks}
+                  className="text-white text-3xl focus:outline-none mb-4 "
+                >
+                  &times;
+                </button>
+              </div>
               {navigation.map((item) => (
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="block mb-4 hover:text-customBlue"
+                  className="block mb-4 hover:text-customBlue p-1 text-sm"
                   onClick={closeMenu}
                 >
                   {item.title}
