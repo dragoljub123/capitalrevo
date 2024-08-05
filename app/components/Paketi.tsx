@@ -13,7 +13,7 @@ const Paketi: React.FC<CardProps> = ({
   listItems,
 }) => {
   return (
-    <div className="pakets " style={{ width: "364px" }}>
+    <div className=" pt-5 pakets " style={{ width: "364px" }}>
       <div className=" flex justify-center items-center  border-[1px] border-gray-300 rounded-2xl plan-name">
         <img
           src={imageSrc}
@@ -25,7 +25,7 @@ const Paketi: React.FC<CardProps> = ({
         </h2>
       </div>
       <div className="paketsdesc   ">
-        <p className=" pt-10 pb-10 text-center text-2xl lg:text-3xl font-bold  border-b-[1px] border-gray-300">
+        <p className=" pt-10 pb-10 text-center text-3xl lg:text-3xl font-bold  border-b-[1px] border-gray-300">
           {description}
         </p>
         <ul className="border-b-[1px] border-gray-300 mb-7 mt-5">

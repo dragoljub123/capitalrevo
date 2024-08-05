@@ -9,6 +9,17 @@ import DigitalJournal from "@/public/DigitalJournal.png";
 import katman from "@/public/katman.png";
 import ContactForm from "@/app/components/ContactForm";
 import trustpilotlogo from "@/app/images/trustpilot-logo.png";
+import CustomerCard from "./components/CustomerCard";
+
+const customers = [
+  {
+    name: "Lana Rothers",
+    comment:
+      "Hear from some of our amazing customers who are automating their finances.",
+  },
+  { name: "John Doe", comment: "Very satisfied with the product." },
+  { name: "Jane Smith", comment: "Excellent support and fast delivery." },
+];
 
 export default function Home() {
   return (
@@ -111,18 +122,20 @@ export default function Home() {
       </div>
       <div className="flex flex-col  justify-between items-center ">
         <div className=" lg:flex  lg:gap-10 lg:justify-center lg:-mt-20 lg:p-0 ">
-          <Paketi
-            title="Basic plan"
-            imageSrc="\Dot.png"
-            description="$200 - $9,999"
-            listItems={[
-              "Access to all basic features",
-              "Basic reporting and analytics",
-              "Up to 10 individual users",
-              "20GB individual data each user",
-              "Basic chat and email support",
-            ]}
-          />
+          <div className="-mt-36 md:mt-0 ">
+            <Paketi
+              title="Basic plan"
+              imageSrc="\Dot.png"
+              description="$200 - $9,999"
+              listItems={[
+                "Access to all basic features",
+                "Basic reporting and analytics",
+                "Up to 10 individual users",
+                "20GB individual data each user",
+                "Basic chat and email support",
+              ]}
+            />
+          </div>
           <Paketi
             title="Silver Account"
             imageSrc="\Dot.png"
@@ -192,7 +205,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center items-center mb-20">
-        <button className=" flex justify-center items-center px-4 py-3 gap-2 w-48 h-14 bg-black rounded-xl shadow-xs text-white">
+        <button className=" flex justify-center items-center px-4 py-3 gap-2 w-60 h-14 bg-black rounded-xl shadow-xs text-white text-[18px]">
           Compare Accounts
         </button>
       </div>
@@ -282,14 +295,14 @@ export default function Home() {
             into the platform <br /> for real-time insights.
           </p>
         </div>
-        <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white">
+        <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-20">
           Read More News
         </button>
       </div>
 
       <div className="flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-between lg:items-center">
-        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
-          <div className="bg-cover bg-center rounded-t-xl">
+        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
+          <div className="bg-cover bg-center rounded-t-xl ">
             <Image
               src="/slikakartica.png"
               alt="webinars"
@@ -314,7 +327,7 @@ export default function Home() {
           />
         </div>
         <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
-          <div className="bg-cover bg-center rounded-t-xl">
+          <div className="bg-cover bg-center rounded-t-xl ">
             <Image
               src="/slikakartica.png"
               alt="webinars"
@@ -339,7 +352,7 @@ export default function Home() {
           />
         </div>
         <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
-          <div className="bg-cover bg-center rounded-t-xl">
+          <div className="bg-cover bg-center rounded-t-xl ">
             <Image
               src="/slikakartica.png"
               alt="webinars"
@@ -375,12 +388,8 @@ export default function Home() {
             CapitalRevo transformed my <br /> trading experience! The platform
             is <br /> intuitive and the support is <br /> excellent.
           </h2>
-          <div>
-            <p className=" p-4 lg:p-0 mt-10 text-sm font-bold">Lana Steiner</p>
-            <p className=" p-4 lg:p-0 text-sm lg:pb-20 bledunjavi">
-              Hear from some of our amazing customers who are automating <br />{" "}
-              their finances.
-            </p>
+          <div className=" mb-10 lg:p-0 mt-10 text-sm ">
+            <CustomerCard customers={customers} />
           </div>
         </div>
       </div>
