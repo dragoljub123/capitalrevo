@@ -1,14 +1,12 @@
 "use client";
 
-import React from "react";
-import { Logo } from "./Logo";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FiMenu } from "react-icons/fi";
-import "../globals.css";
-import { useState } from "react";
-
+import { Logo } from "./Logo";
 import SingUpbutton from "../components/SingUpbutton";
 import Logindugme from "../components/Logindugme";
+import "../globals.css";
 
 export const Navbar = () => {
   const navigation = [
@@ -25,6 +23,10 @@ export const Navbar = () => {
     setShowLinks(!showLinks);
   };
 
+  const closeMenu = () => {
+    setShowLinks(false);
+  };
+
   return (
     <div className="w-full h-16 z-50 bg-navcolor">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
@@ -34,7 +36,7 @@ export const Navbar = () => {
             <Link
               key={item.title}
               href={item.href}
-              className="text-sm hover:text-customBlue text-white  "
+              className="text-sm hover:text-customBlue text-white"
             >
               {item.title}
             </Link>
@@ -51,7 +53,7 @@ export const Navbar = () => {
             <FiMenu />
           </button>
           {showLinks && (
-            <div className="fixed top-0 right-0 w-64 h-full bg-navcolor text-white p-4 shadow-lg transition-transform transform translate-x-0 z-50">
+            <div className=" fixed top-0 right-0 w-64 h-full bg-navcolor text-white p-4 shadow-lg transition-transform transform translate-x-0 z-50">
               <button
                 onClick={toggleLinks}
                 className="text-white text-2xl focus:outline-none mb-4"
@@ -63,6 +65,7 @@ export const Navbar = () => {
                   key={item.title}
                   href={item.href}
                   className="block mb-4 hover:text-customBlue"
+                  onClick={closeMenu}
                 >
                   {item.title}
                 </Link>

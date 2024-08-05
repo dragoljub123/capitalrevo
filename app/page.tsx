@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col  justify-between items-center ">
-        <div className="  lg:flex  lg:gap-10 lg:justify-center lg:-mt-20 lg:p-0 ">
+        <div className=" lg:flex  lg:gap-10 lg:justify-center lg:-mt-20 lg:p-0 ">
           <Paketi
             title="Basic plan"
             imageSrc="\Dot.png"
@@ -194,7 +194,6 @@ export default function Home() {
           Compare Accounts
         </button>
       </div>
-
       <div className="  " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
           <div className="   ">
@@ -210,7 +209,7 @@ export default function Home() {
 
         <div className="mt-20 lg:flex lg:justify-evenly">
           <div>
-            <div className="  p-10 lg:p-0 border-l-[4px] border-gray-300">
+            <div className="  p-10 lg:p-0 lg:border-l-[4px] lg: border-gray-300">
               <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
                 <p className="ml-4 mb-10 ">Real-time data</p>
               </div>
@@ -231,11 +230,7 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            <img
-              src="./monitor.png"
-              alt="trade"
-              style={{ width: "auto", height: "auto" }}
-            />
+            <Image src="/monitor.png" alt="trade" width={900} height={600} />
           </div>
         </div>
       </div>
@@ -253,40 +248,25 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className=" m-10 lg:flex  lg:justify-evenly lg:items-center">
+      <div className="m-10 lg:flex lg:justify-evenly lg:items-center">
         <span className="flex flex-col items-center text-center">
-          <img
-            src="./oblacic.png"
-            alt="webinars"
-            style={{ width: "auto", height: "auto" }}
-          />
+          <Image src="/oblacic.png" alt="webinars" width={48} height={48} />
           <p className="text-center font-bold p-4">Webinars</p>
         </span>
         <span className="flex flex-col items-center text-center">
-          <img
-            src="./gormic.png"
-            alt="webinars"
-            style={{ width: "auto", height: "auto" }}
-          />
+          <Image src="/gormic.png" alt="webinars" width={48} height={48} />
           <p className="text-center font-bold p-4">eBooks</p>
         </span>
         <span className="flex flex-col items-center text-center">
-          <img
-            src="./gormic.png"
-            alt="webinars"
-            style={{ width: "auto", height: "auto" }}
-          />
+          <Image src="/gormic.png" alt="webinars" width={48} height={48} />
           <p className="text-center font-bold p-4">Market Analysis</p>
         </span>
         <span className="flex flex-col items-center text-center">
-          <img
-            src="./strategy.png"
-            alt="webinars"
-            style={{ width: "auto", height: "auto" }}
-          />
+          <Image src="/strategy.png" alt="webinars" width={48} height={48} />
           <p className="text-center font-bold p-4">Trading Strategies</p>
         </span>
       </div>
+
       <div
         className=" pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:items-center"
         id="News"
@@ -304,86 +284,81 @@ export default function Home() {
           Read More News
         </button>
       </div>
-      <div className=" flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-between lg:items-center">
-        <div className=" w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl  overflow-hidden">
+
+      <div className="flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-between lg:items-center">
+        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
           <div className="bg-cover bg-center rounded-t-xl">
-            <img
-              src="./slikakartica.png"
+            <Image
+              src="/slikakartica.png"
               alt="webinars"
-              style={{ width: "auto", height: "auto" }}
+              width={335}
+              height={440}
             />
-          </div>{" "}
+          </div>
           <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="  flex justify-between ">
-            <h1 className=" text-2xl font-bold">Product review </h1>
-            <img
-              src="./strelica.png"
-              alt="webinars"
-              style={{ width: "auto", height: "auto" }}
-            />
-          </div>{" "}
-          <p className=" text-sm text-gray-700 pt-2 pb-5">
+          <div className="flex justify-between">
+            <h1 className="text-2xl font-bold">Product review</h1>
+            <Image src="/strelica.png" alt="webinars" width={20} height={20} />
+          </div>
+          <p className="text-sm text-gray-700 pt-2 pb-5">
             The rise of RESTful APIs has been met by a rise in tools <br /> for
             creating, testing, and managing them.
-          </p>{" "}
-          <img
-            src="./Avatar label group.png"
+          </p>
+          <Image
+            src="/Avatar label group.png"
             alt="webinars"
-            style={{ width: "auto", height: "auto" }}
+            width={120}
+            height={44}
           />
         </div>
         <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
           <div className="bg-cover bg-center rounded-t-xl">
-            <img
-              src="./slikakartica.png"
+            <Image
+              src="/slikakartica.png"
               alt="webinars"
-              style={{ width: "auto", height: "auto" }}
+              width={335}
+              height={440}
             />
-          </div>{" "}
+          </div>
           <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="  flex justify-between ">
-            <h1 className=" text-2xl font-bold">Product review </h1>
-            <img
-              src="./strelica.png"
-              alt="webinars"
-              style={{ width: "auto", height: "auto" }}
-            />
-          </div>{" "}
-          <p className=" text-sm text-gray-700 pt-2 pb-5">
+          <div className="flex justify-between">
+            <h1 className="text-2xl font-bold">Product review</h1>
+            <Image src="/strelica.png" alt="webinars" width={20} height={20} />
+          </div>
+          <p className="text-sm text-gray-700 pt-2 pb-5">
             The rise of RESTful APIs has been met by a rise in tools <br /> for
             creating, testing, and managing them.
-          </p>{" "}
-          <img
-            src="./Avatar label group.png"
+          </p>
+          <Image
+            src="/Avatar label group.png"
             alt="webinars"
-            style={{ width: "auto", height: "auto" }}
+            width={120}
+            height={44}
           />
         </div>
-        <div className=" w-[335px] h-[440px] lg:w-[398px] lg:h-[440px]  rounded-xl overflow-hidden">
+        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
           <div className="bg-cover bg-center rounded-t-xl">
-            <img
-              src="./slikakartica.png"
+            <Image
+              src="/slikakartica.png"
               alt="webinars"
-              style={{ width: "auto", height: "auto" }}
+              width={335}
+              height={440}
             />
-          </div>{" "}
+          </div>
           <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="  flex justify-between ">
-            <h1 className=" text-2xl font-bold">Product review </h1>
-            <img
-              src="./strelica.png"
-              alt="webinars"
-              style={{ width: "auto", height: "auto" }}
-            />
-          </div>{" "}
-          <p className=" text-sm text-gray-700 pt-2 pb-5">
+          <div className="flex justify-between">
+            <h1 className="text-2xl font-bold">Product review</h1>
+            <Image src="/strelica.png" alt="webinars" width={20} height={20} />
+          </div>
+          <p className="text-sm text-gray-700 pt-2 pb-5">
             The rise of RESTful APIs has been met by a rise in tools <br /> for
             creating, testing, and managing them.
-          </p>{" "}
-          <img
-            src="./Avatar label group.png"
+          </p>
+          <Image
+            src="/Avatar label group.png"
             alt="webinars"
-            style={{ width: "auto", height: "auto" }}
+            width={120}
+            height={44}
           />
         </div>
       </div>
@@ -424,90 +399,82 @@ export default function Home() {
             </button>
           </div>
           <div className="md:flex md:justify-center  md:items-center">
-            <img
-              src="./iphone13mini.png"
+            <Image
+              src="/iphone13mini.png"
               alt="webinars"
-              style={{ width: "425px", height: "425px" }}
+              width={425}
+              height={425}
             />
           </div>
         </div>
       </div>
       <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center">
-        <img
-          src="./Getintouch.png"
-          alt="webinars"
-          style={{ width: "auto", height: "auto" }}
-        />
+        <Image src="/Getintouch.png" alt="webinars" width={1440} height={400} />
       </div>
-
       <div className="bg-[#F4F4F4] flex justify-center items-center md:hidden lg:hidden">
-        <img
-          src="./Getintouchmob.png"
+        <Image
+          src="/Getintouchmob.png"
           alt="webinars"
-          style={{ width: "auto", height: "auto" }}
+          width={380}
+          height={672}
         />
       </div>
-
       <div className="sivkasta ">
         <h1 className="text-2xl   py-4 text-black font-bold pb-20 pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h1>
         <div className="flex justify-evenly items-center pb-20 space-x-4 sm:space-x-2">
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
             <Image
               src="/visa.png"
               alt="visa"
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
             />
-          </div>{" "}
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+          </div>
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
             <Image
               src="/master2.png"
               alt="master2"
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
             />
-          </div>{" "}
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+          </div>
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
             <Image
               src="/master.png"
               alt="master"
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
             />
-          </div>{" "}
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+          </div>
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
             <Image
               src="/apay.png"
               alt="apay"
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
             />
-          </div>{" "}
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:sm:h-20">
+          </div>
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
             <Image
               src="/gpay.png"
               alt="gpay"
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>
       </div>
-      <div className="mb-20 " id="ContactUs">
-        <h2 className=" text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl ">
+      <div className="mb-20" id="ContactUs">
+        <h2 className="text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h2>
-        <div className=" text-center mt-10 mb-10 lg:flex lg:justify-evenly lg:items-center lg:gap-10">
+        <div className="text-center mt-10 mb-10 lg:flex lg:justify-evenly lg:items-center lg:gap-10">
           <div className="flex flex-col items-center text-center">
-            <img
-              src="./coverta.png"
-              alt="mail"
-              style={{ width: "auto", height: "auto" }}
-            />
+            <Image src="/coverta.png" alt="mail" width={43} height={43} />
             <h3 className="font-bold pb-2 pt-5">Email</h3>
-            <p className="">Our friendly team is here to help.</p>
+            <p>Our friendly team is here to help.</p>
             <p className="text-dugmeplava pt-2">
               <br />
               hi@untitledui.com
@@ -515,11 +482,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center text-center">
-            <img
-              src="./location.png"
-              alt="lokacija"
-              style={{ width: "auto", height: "auto" }}
-            />
+            <Image src="/location.png" alt="location" width={43} height={43} />
             <h3 className="font-bold pb-2 pt-5">Office</h3>
             <p>Come say hello at our office HQ.</p>
             <p className="text-dugmeplava pt-2">
@@ -528,11 +491,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center text-center">
-            <img
-              src="./phonecall.png"
-              alt="gpay"
-              style={{ width: "auto", height: "auto" }}
-            />
+            <Image src="/phonecall.png" alt="phone" width={43} height={43} />
             <h3 className="font-bold pb-2 pt-5">Phone</h3>
             <p>Mon-Fri from 8am to 5pm.</p>
             <p className="text-dugmeplava pt-2">
@@ -543,6 +502,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="mt-10 mb-10">
         <ContactForm />
       </div>
