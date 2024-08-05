@@ -28,10 +28,10 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-16 z-50 bg-navcolor">
-      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
-        <Logo title="Capitalrevo" className="text-black" />
-        <div className="hidden lg:inline-flex items-center gap-10 ">
+    <div className="fixed mx-auto w-full h-16 z-50 bg-navcolor lg:relative ">
+      <div className="  max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-0 h-full">
+        <Logo title="Capitalrevo" className="text-black " />
+        <div className="hidden lg:inline-flex items-center gap-10 md:text-xs md:gap-3 lg:gap-10 lg:text-md">
           {navigation.map((item) => (
             <Link
               key={item.title}
@@ -45,7 +45,7 @@ export const Navbar = () => {
           <SingUpbutton>Sign Up</SingUpbutton>
         </div>
 
-        <div className="lg:hidden">
+        <div className=" fixed right-0 px-4 lg:hidden">
           <button
             onClick={toggleLinks}
             className="text-white text-2xl focus:outline-none"

@@ -13,21 +13,23 @@ import trustpilotlogo from "@/app/images/trustpilot-logo.png";
 export default function Home() {
   return (
     <div className="max-w-sirina mx-auto ">
-      <div className="pozadina  ">
-        <Navbar />
-        <div className="  m-8 md:m-32">
-          <div className=" mx-auto flex flex-col lg:flex-row">
-            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-0 h-full">
-              <h1 className="pt-5 pb-10 text-center text-3xl text-white font-bold lg:text-4xl lg:mt-10 lg:-ml-10 lg:text-left">
+      <Navbar />
+      <div className="pozadina pt-20 ">
+        <div className="  ">
+          <div className=" mx-auto flex flex-col lg:flex-row ">
+            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-20 h-full ">
+              <h1 className="pt-20 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[700px] lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
-              <p className="text-white text-center  text-sm lg:mt-4 lg:mb-4 lg:text-left lg:-ml-10">
+              <p className="text-white text-center  text-sm lg:mt-2 lg:mb- lg:text-left ">
                 Start trading with as little as $200 and leverage our expert
                 tools and resources.
               </p>
-              <div className="flex flex-col sm:flex-row justify-start items-center pt-5 lg:-ml-10">
-                <PopupButton />
-                <div className="flex justify-center items-center pl-4 mt-4 sm:mt-0">
+              <div className="flex flex-col justify-center  items-center md:flex md:justify-center md:items-center lg:flex lg:flex-row lg:justify-start  lg:items-start lg:gap-4 pb-10 pt-10 ">
+                <button className="flex justify-center items-center px-4 py-3 gap-2  w-48 h-12 bg-transparent rounded-md shadow-xs text-white border border-white border-1">
+                  Get Started Now
+                </button>
+                <div className="flex justify-center items-center mt-4 sm:mt-2 lg:-mt-2">
                   <Image
                     src={trustpilotlogo}
                     alt="slika"
@@ -36,29 +38,29 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className=" lg:-mt-20 flex justify-center lg:justify-end">
-              <Image src={phoneimg} alt="slika" className="object-contain" />
+            <div className=" flex justify-center lg:justify-end xl:mr-20">
+              <Image src={phoneimg} alt="slika" className="object-contain " />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0">
+          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-40 md:pl-28">
             <p className="text-white flex justify-center lg:justify-start">
               As featured in
             </p>
-            <div className="flex  justify-center lg:justify-start gap-10 lg:gap-20">
+            <div className="flex  justify-center lg:justify-start gap-10 lg:gap-20 ">
               <Image
                 src={NewsBreakLogo}
                 alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[135px]"
+                className=" w-[75px] h-[autopx] lg:w-[120px]"
               />
               <Image
                 src={DigitalJournal}
                 alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[135px]"
+                className=" w-[75px] h-[autopx] lg:w-[120px]"
               />
               <Image
                 src={katman}
                 alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[135px]"
+                className=" w-[75px] h-[autopx] lg:w-[120px]"
               />
             </div>
           </div>
