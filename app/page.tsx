@@ -64,17 +64,17 @@ export default function Home() {
               <Image
                 src={NewsBreakLogo}
                 alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[120px]"
+                className=" w-[75px] h-[autopx] lg:w-[200px] lg:h-[31px]"
               />
               <Image
                 src={DigitalJournal}
                 alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[120px]"
+                className=" w-[75px] h-[autopx] lg:w-[200px] lg:h-[27px]"
               />
               <Image
                 src={katman}
                 alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[120px]"
+                className=" w-[75px] h-[autopx] lg:w-[117px] lg:h-[43px]"
               />
             </div>
           </div>
