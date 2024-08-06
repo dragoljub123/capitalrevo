@@ -2,7 +2,6 @@ import Image from "next/image";
 import Smalcard from "./components/Smalcard";
 import { Navbar } from "./components/Navbar";
 import Paketi from "./components/Paketi";
-import PopupButton from "./components/PopupButton";
 import phoneimg from "@/public/phoneimg.png";
 import NewsBreakLogo from "@/public/NewsBreakLogo.png";
 import DigitalJournal from "@/public/DigitalJournal.png";
@@ -10,6 +9,7 @@ import katman from "@/public/katman.png";
 import ContactForm from "@/app/components/ContactForm";
 import trustpilotlogo from "@/app/images/trustpilot-logo.png";
 import CustomerCard from "./components/CustomerCard";
+import Link from "next/link";
 
 const customers = [
   {
@@ -37,9 +37,12 @@ export default function Home() {
                 tools and resources.
               </p>
               <div className="flex flex-col justify-center  items-center md:flex md:justify-center md:items-center lg:flex lg:flex-row lg:justify-start  lg:items-start lg:gap-4 pb-10 pt-10 ">
-                <button className="flex justify-center items-center px-4 py-3 gap-2  w-48 h-12 bg-transparent rounded-md shadow-xs text-white border border-white border-1">
+                <Link
+                  className="flex justify-center items-center px-4 py-3 gap-2  w-48 h-12 bg-transparent rounded-md shadow-xs text-white border border-white border-1"
+                  href="#ContactUs"
+                >
                   Get Started Now
-                </button>
+                </Link>
                 <div className="flex justify-center items-center mt-4 sm:mt-2 lg:-mt-2">
                   <Image
                     src={trustpilotlogo}
@@ -239,9 +242,11 @@ export default function Home() {
               </div>
             </div>
             <div className="p-10 flex justify-center items-center">
-              <button className=" px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
-                Explore the Platform
-              </button>
+              <Link href="#ContactUs">
+                <button className=" px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
+                  Explore the Platform
+                </button>
+              </Link>
             </div>
           </div>
           <div className="">
@@ -283,7 +288,7 @@ export default function Home() {
       </div>
 
       <div
-        className=" pt-10 pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:items-center"
+        className=" pt-10 pl-4 mx-auto mt-20  lg:flex lg:justify-evenly lg:pl-0 lg:items-center"
         id="News"
       >
         <div className=" ">
@@ -295,12 +300,14 @@ export default function Home() {
             into the platform <br /> for real-time insights.
           </p>
         </div>
-        <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-20">
-          Read More News
-        </button>
+        <Link href="#whatourclientssay">
+          <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-20">
+            Read More News
+          </button>
+        </Link>
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-between lg:items-center">
+      <div className="flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-center lg:items-center">
         <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
           <div className="bg-cover bg-center rounded-t-xl ">
             <Image
@@ -377,18 +384,21 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className=" mx-auto flex flex-col  justify-center items-center  mt-20  lg:flex lg:flex-row lg:justify-between ">
+      <div
+        className="  mx-auto flex flex-col  justify-center items-center  mt-20 lg:px-20 lg:flex lg:flex-row lg:justify-between "
+        id="whatourclientssay"
+      >
         <div className=" ">
-          <h1 className=" text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
+          <h1 className="  text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
             What Our Clients Say
           </h1>
         </div>
         <div className="flex-col justify-center items-center ">
-          <h2 className=" text-xl p-4 lg:p-0 lg:text-3xl ">
+          <h2 className=" text-xl lg:p-0 lg:text-3xl ">
             CapitalRevo transformed my <br /> trading experience! The platform
             is <br /> intuitive and the support is <br /> excellent.
           </h2>
-          <div className=" mb-10 lg:p-0 mt-10 text-sm ">
+          <div className=" mb-10 lg:p-0 mt-10 text-sm  ">
             <CustomerCard customers={customers} />
           </div>
         </div>
@@ -405,9 +415,11 @@ export default function Home() {
               Use our trading calculator to see <br />
               your potential profits based on your <br /> trading activities.
             </p>
-            <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white">
-              Try It Now
-            </button>
+            <Link href="#ContactUs">
+              <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white">
+                Try It Now
+              </button>
+            </Link>
           </div>
           <div className="md:flex md:justify-center  md:items-center">
             <Image

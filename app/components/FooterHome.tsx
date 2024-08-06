@@ -124,7 +124,7 @@ export const FooterHome: React.FC = () => {
                   <Link href="#AboutUs">About Us</Link>
                 </li>
                 <li>
-                  <Link href="#Contact">Contact Us</Link>
+                  <Link href="#ContactUs">Contact Us</Link>
                 </li>
               </ul>
             </div>

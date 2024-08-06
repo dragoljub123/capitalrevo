@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface CardProps {
@@ -13,7 +14,7 @@ const Paketi: React.FC<CardProps> = ({
   listItems,
 }) => {
   return (
-    <div className=" pt-5 pakets " style={{ width: "364px" }}>
+    <div className=" pt-5 pakets w-[335px] md:w-[364px] ">
       <div className=" flex justify-center items-center  border-[1px] border-gray-300 rounded-2xl plan-name">
         <img
           src={imageSrc}
@@ -40,7 +41,9 @@ const Paketi: React.FC<CardProps> = ({
         </ul>
       </div>
       <div className="card-footerb3 ">
-        <button className="bluebutton">Get started</button>
+        <Link className="bluebutton" href="#ContactUs">
+          Get started
+        </Link>
       </div>
     </div>
   );
