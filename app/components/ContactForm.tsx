@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="text-white placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-black placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
           <div className="flex-1">
@@ -97,7 +97,7 @@ const ContactForm: React.FC = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="text-white placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-black placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
         </div>
@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="text-white placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px]  border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-black placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px]  border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
         </div>
@@ -136,7 +136,7 @@ const ContactForm: React.FC = () => {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="text-white placeholder-gray  mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className="text-black placeholder-gray  mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />{" "}
         </div>
         <div>
@@ -153,7 +153,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="text-white placeholder-gray mt-1 block w-full h-64 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className="text-black placeholder-gray mt-1 block w-full h-64 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />
         </div>
         <div className="flex items-center">
