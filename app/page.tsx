@@ -225,23 +225,35 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-20 lg:flex lg:justify-evenly">
+        <div className="mx-5 mt-20 lg:flex lg:justify-evenly">
           <div>
             <div className="  p-10 lg:p-0 lg:border-l-[4px] lg: border-gray-300">
-              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
-                <p className="ml-4 mb-10 ">Real-time data</p>
+              <div className="flex text-sm gap-2 md:flex md:flex-col md:gap-0">
+                <div className=" -ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
+                    Real-time data
+                  </p>
+                </div>
+                <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg ">
+                    Customizable charts
+                  </p>
+                </div>
               </div>
-              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
-                <p className="ml-4 mb-10 ">Customizable charts</p>
-              </div>
-              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
-                <p className="ml-4 mb-10 ">Mobile trading</p>
-              </div>
-              <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
-                <p className="ml-4 mb-10 ">Secure transactions</p>
+              <div className="flex text-sm gap-2 mt-4  md:flex md:flex-col md:gap-0 md:mt-0">
+                <div className="-ml-1 border-l-4  border-gray-300 hover:border-blue-500">
+                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
+                    Mobile trading
+                  </p>
+                </div>
+                <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
+                    Secure transactions
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="p-10 flex justify-center items-center">
+            <div className="p-10 flex justify-center items-center lg:p-0 lg:py-10">
               <Link href="#ContactUs">
                 <button className=" px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
                   Explore the Platform
@@ -288,7 +300,7 @@ export default function Home() {
       </div>
 
       <div
-        className=" pt-10 pl-4 mx-auto mt-20  lg:flex lg:justify-evenly lg:pl-0 lg:items-center"
+        className=" pt-10 pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:pl-32 lg:pr-32 lg:items-center"
         id="News"
       >
         <div className=" ">

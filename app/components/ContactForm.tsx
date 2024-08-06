@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-white placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
           <div className="flex-1">
@@ -97,7 +97,7 @@ const ContactForm: React.FC = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-white placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
         </div>
@@ -113,11 +113,11 @@ const ContactForm: React.FC = () => {
               type="email"
               id="email"
               name="email"
-              placeholder="Enter your email address"
+              placeholder="you@company.com"
               value={formData.email}
               onChange={handleChange}
               required
-              className="text-white placeholder-white mt-1 block w-full h-14 rounded-md border-[1px]  border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="text-white placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px]  border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
         </div>
@@ -132,11 +132,11 @@ const ContactForm: React.FC = () => {
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Enter your phone number"
+            placeholder="+1 (555) 000-0000"
             value={formData.phone}
             onChange={handleChange}
             required
-            className="text-white placeholder-white mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className="text-white placeholder-gray  mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />{" "}
         </div>
         <div>
@@ -149,11 +149,11 @@ const ContactForm: React.FC = () => {
           <textarea
             id="message"
             name="message"
-            placeholder="Write your message"
+            placeholder="Leave us a message..."
             value={formData.message}
             onChange={handleChange}
             required
-            className="text-white placeholder-white mt-1 block w-full h-64 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            className="text-white placeholder-gray mt-1 block w-full h-64 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />
         </div>
         <div className="flex items-center">
