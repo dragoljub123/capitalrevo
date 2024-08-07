@@ -587,8 +587,8 @@ export default async function Home() {
         </div>
       </div>
       <div className="hidden">
-        {" "}
-        {posts?.length > 0 && posts?.map((post) => <p>{post.title}</p>)}
+        {posts?.length > 0 &&
+          posts?.map((post, index) => <p key={index}>{post.title}</p>)}
       </div>
 
       <div className="mt-10 mb-10">
