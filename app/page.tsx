@@ -10,6 +10,26 @@ import ContactForm from "@/app/components/ContactForm";
 import trustpilotlogo from "@/app/images/trustpilot-logo.png";
 import CustomerCard from "./components/CustomerCard";
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
+import { Post } from "@/app/utilitis/interface";
+
+async function getPosts() {
+  const query = `
+  *[_type == "post"] {
+    title,
+    slug,
+    publishedAt,
+    excerpt,
+    tags[]-> {
+      _id,
+      slug,
+      name
+    }
+  }
+  `;
+  const data = await client.fetch(query);
+  return data;
+}
 
 const customers = [
   {
@@ -21,12 +41,15 @@ const customers = [
   { name: "Jane Smith", comment: "Excellent support and fast delivery." },
 ];
 
-export default function Home() {
+export default async function Home() {
+  const posts: Post[] = await getPosts();
+  console.log(posts, "posts");
+
   return (
-    <div className="max-w-sirina mx-auto ">
+    <div className=" mx-auto ">
       <Navbar />
       <div className="pozadina pt-20 ">
-        <div className="  ">
+        <div className=" max-w-sirina mx-auto ">
           <div className=" mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-20 h-full ">
               <h1 className="pt-20 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[700px] lg:pb-5  ">
@@ -81,32 +104,34 @@ export default function Home() {
         </div>
       </div>
       <div className=" pt-10 lg:flex lg:justify-evenly" id="AboutUs">
-        <div>
-          <h1 className="text-3xl p-4 font-bold ">About Us</h1>
-          <p className="p-4  lg:w-[400px] ">
-            With over 15 years in the industry, CapitalRevo is dedicated to
-            providing traders with the best-in-class tools and support.
-          </p>
+        <div className="max-w-sirina md:flex">
+          <div className="">
+            <h1 className="text-3xl p-4 font-bold ">About Us</h1>
+            <p className="p-4  lg:w-[400px] ">
+              With over 15 years in the industry, CapitalRevo is dedicated to
+              providing traders with the best-in-class tools and support.
+            </p>
 
-          <p className="p-4">
-            Our mission is to enable access to world-class trading <br />
-            opportunities for everyone.
-          </p>
-        </div>
-        <div className="">
-          <Smalcard
-            imageSrc1="/oblacici.png"
-            title="Our Mission"
-            text="To empower traders with cutting-edge tools, unparalleled support,and
-            the knowledge to succeed in the competitive world of online trading."
-          />
-          <div className="mt-2">
+            <p className="p-4">
+              Our mission is to enable access to world-class trading <br />
+              opportunities for everyone.
+            </p>
+          </div>
+          <div className="">
             <Smalcard
-              imageSrc1="/gromicon.png"
-              title="Our History"
-              text="CapitalRevo has been at the forefront of the trading industry for over 
-              15 years,helping thousands of traders achieve their financial goals."
+              imageSrc1="/oblacici.png"
+              title="Our Mission"
+              text="To empower traders with cutting-edge tools, unparalleled support,and
+            the knowledge to succeed in the competitive world of online trading."
             />
+            <div className="mt-2">
+              <Smalcard
+                imageSrc1="/gromicon.png"
+                title="Our History"
+                text="CapitalRevo has been at the forefront of the trading industry for over 
+              15 years,helping thousands of traders achieve their financial goals."
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -225,44 +250,46 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mx-5 mt-20 lg:flex lg:justify-evenly">
-          <div>
-            <div className="  p-10 lg:p-0 lg:border-l-[4px] lg: border-gray-300">
-              <div className="flex text-sm gap-2 md:flex md:flex-col md:gap-0">
-                <div className=" -ml-1 border-l-4 border-gray-300 hover:border-blue-500">
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
-                    Real-time data
-                  </p>
+        <div className="mx-5 mt-20 lg:flex lg:justify-evenly ">
+          <div className="max-w-sirina md:flex">
+            <div className="md:px-20">
+              <div className="  p-10 lg:p-0 lg:border-l-[4px] lg: border-gray-300">
+                <div className="flex text-sm gap-2 md:flex md:flex-col md:gap-0">
+                  <div className=" -ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                    <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
+                      Real-time data
+                    </p>
+                  </div>
+                  <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                    <p className="mx-2 my-4 mb-10 text-xs md:text-lg ">
+                      Customizable charts
+                    </p>
+                  </div>
                 </div>
-                <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg ">
-                    Customizable charts
-                  </p>
+                <div className="flex text-sm gap-2 mt-4  md:flex md:flex-col md:gap-0 md:mt-0">
+                  <div className="-ml-1 border-l-4  border-gray-300 hover:border-blue-500">
+                    <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
+                      Mobile trading
+                    </p>
+                  </div>
+                  <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
+                    <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
+                      Secure transactions
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex text-sm gap-2 mt-4  md:flex md:flex-col md:gap-0 md:mt-0">
-                <div className="-ml-1 border-l-4  border-gray-300 hover:border-blue-500">
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
-                    Mobile trading
-                  </p>
-                </div>
-                <div className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500">
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
-                    Secure transactions
-                  </p>
-                </div>
+              <div className="p-10 flex justify-center items-center lg:p-0 lg:py-10">
+                <Link href="#ContactUs">
+                  <button className=" px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
+                    Explore the Platform
+                  </button>
+                </Link>
               </div>
             </div>
-            <div className="p-10 flex justify-center items-center lg:p-0 lg:py-10">
-              <Link href="#ContactUs">
-                <button className=" px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
-                  Explore the Platform
-                </button>
-              </Link>
+            <div className="">
+              <Image src="/monitor.png" alt="trade" width={900} height={600} />
             </div>
-          </div>
-          <div className="">
-            <Image src="/monitor.png" alt="trade" width={900} height={600} />
           </div>
         </div>
       </div>
@@ -281,26 +308,28 @@ export default function Home() {
         </div>
       </div>
       <div className="m-10 lg:flex lg:justify-evenly lg:items-center">
-        <span className="flex flex-col items-center text-center">
-          <Image src="/oblacic.png" alt="webinars" width={48} height={48} />
-          <p className="text-center font-bold p-4">Webinars</p>
-        </span>
-        <span className="flex flex-col items-center text-center">
-          <Image src="/gormic.png" alt="webinars" width={48} height={48} />
-          <p className="text-center font-bold p-4">eBooks</p>
-        </span>
-        <span className="flex flex-col items-center text-center">
-          <Image src="/gormic.png" alt="webinars" width={48} height={48} />
-          <p className="text-center font-bold p-4">Market Analysis</p>
-        </span>
-        <span className="flex flex-col items-center text-center">
-          <Image src="/strategy.png" alt="webinars" width={48} height={48} />
-          <p className="text-center font-bold p-4">Trading Strategies</p>
-        </span>
+        <div className="max-w-sirina sm:flex">
+          <span className="flex flex-col items-center text-center">
+            <Image src="/oblacic.png" alt="webinars" width={48} height={48} />
+            <p className="text-center font-bold p-4">Webinars</p>
+          </span>
+          <span className="flex flex-col items-center text-center">
+            <Image src="/gormic.png" alt="webinars" width={48} height={48} />
+            <p className="text-center font-bold p-4">eBooks</p>
+          </span>
+          <span className="flex flex-col items-center text-center">
+            <Image src="/gormic.png" alt="webinars" width={48} height={48} />
+            <p className="text-center font-bold p-4">Market Analysis</p>
+          </span>
+          <span className="flex flex-col items-center text-center">
+            <Image src="/strategy.png" alt="webinars" width={48} height={48} />
+            <p className="text-center font-bold p-4">Trading Strategies</p>
+          </span>
+        </div>
       </div>
 
       <div
-        className=" pt-10 pl-4 mx-auto mt-20  lg:flex lg:justify-between lg:pl-32 lg:pr-32 lg:items-center"
+        className="pt-10 pl-4 mx-auto mt-20 lg:flex lg:justify-between lg:pl-32 lg:pr-32 lg:items-center max-w-sirina"
         id="News"
       >
         <div className=" ">
@@ -397,11 +426,11 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="  mx-auto flex flex-col  justify-center items-center  mt-20 lg:px-20 lg:flex lg:flex-row lg:justify-between "
+        className="mx-auto flex flex-col justify-center items-center mt-20 max-w-sirina lg:px-20 lg:flex lg:flex-row lg:justify-between"
         id="whatourclientssay"
       >
         <div className=" ">
-          <h1 className="  text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
+          <h1 className=" text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
             What Our Clients Say
           </h1>
         </div>
@@ -454,88 +483,112 @@ export default function Home() {
           height={672}
         />
       </div>
-      <div className="sivkasta ">
+
+      <div className="sivkasta flex-col justify-center ">
         <h1 className="text-2xl   py-4 text-black font-bold pb-20 pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h1>
-        <div className="flex justify-evenly items-center pb-20 space-x-4 sm:space-x-2">
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <Image
-              src="/visa.png"
-              alt="visa"
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <Image
-              src="/master2.png"
-              alt="master2"
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <Image
-              src="/master.png"
-              alt="master"
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <Image
-              src="/apay.png"
-              alt="apay"
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <Image
-              src="/gpay.png"
-              alt="gpay"
-              fill
-              style={{ objectFit: "contain" }}
-            />
+      </div>
+      <div className="sivkasta">
+        <div className="flex justify-center items-center pb-20">
+          <div className="w-full max-w-[1440px] flex justify-between items-center space-x-8 sm:mx-auto sm:px-20  px-10 lg:px-52  ">
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <Image
+                src="/visa.png"
+                alt="visa"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <Image
+                src="/master2.png"
+                alt="master2"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <Image
+                src="/master.png"
+                alt="master"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <Image
+                src="/apay.png"
+                alt="apay"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <Image
+                src="/gpay.png"
+                alt="gpay"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </div>
         </div>
       </div>
+
       <div className="pt-5 mb-20" id="ContactUs">
         <h2 className="text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h2>
-        <div className="text-center mt-10 mb-10 lg:flex lg:justify-evenly lg:items-center lg:gap-10">
-          <div className="flex flex-col items-center text-center">
-            <Image src="/coverta.png" alt="mail" width={43} height={43} />
-            <h3 className="font-bold pb-2 pt-5">Email</h3>
-            <p>Our friendly team is here to help.</p>
-            <p className="text-dugmeplava pt-2">
-              <br />
-              hi@untitledui.com
-              <br />
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <Image src="/location.png" alt="location" width={43} height={43} />
-            <h3 className="font-bold pb-2 pt-5">Office</h3>
-            <p>Come say hello at our office HQ.</p>
-            <p className="text-dugmeplava pt-2">
-              100 Smith Street <br />
-              Collingwood VIC 3066 AU
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <Image src="/phonecall.png" alt="phone" width={43} height={43} />
-            <h3 className="font-bold pb-2 pt-5">Phone</h3>
-            <p>Mon-Fri from 8am to 5pm.</p>
-            <p className="text-dugmeplava pt-2">
-              <br />
-              +1 (555) 000-0000
-              <br />
-            </p>
+        <div className="flex justify-center">
+          <div className="max-w-sirina">
+            <div className="text-center mt-10 mb-10 lg:flex lg:justify-evenly lg:items-center lg:gap-10 ">
+              <div className="flex flex-col items-center text-center">
+                <Image src="/coverta.png" alt="mail" width={43} height={43} />
+                <h3 className="font-bold pb-2 pt-5">Email</h3>
+                <p>Our friendly team is here to help.</p>
+                <p className="text-dugmeplava pt-2">
+                  <br />
+                  hi@untitledui.com
+                  <br />
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src="/location.png"
+                  alt="location"
+                  width={43}
+                  height={43}
+                />
+                <h3 className="font-bold pb-2 pt-5">Office</h3>
+                <p>Come say hello at our office HQ.</p>
+                <p className="text-dugmeplava pt-2">
+                  100 Smith Street <br />
+                  Collingwood VIC 3066 AU
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src="/phonecall.png"
+                  alt="phone"
+                  width={43}
+                  height={43}
+                />
+                <h3 className="font-bold pb-2 pt-5">Phone</h3>
+                <p>Mon-Fri from 8am to 5pm.</p>
+                <p className="text-dugmeplava pt-2">
+                  <br />
+                  +1 (555) 000-0000
+                  <br />
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="hidden">
+        {" "}
+        {posts?.length > 0 && posts?.map((post) => <p>{post.title}</p>)}
       </div>
 
       <div className="mt-10 mb-10">
