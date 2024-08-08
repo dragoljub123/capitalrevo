@@ -35,10 +35,18 @@ const customers = [
   {
     name: "Lana Rothers",
     comment:
-      "Hear from some of our amazing customers who are automating their finances.",
+      "CapitalRevo transformed my trading experience! The platform is intuitive and the support is excellent.",
   },
-  { name: "John Doe", comment: "Very satisfied with the product." },
-  { name: "Jane Smith", comment: "Excellent support and fast delivery." },
+  {
+    name: "John Doe",
+    comment:
+      "The educational resources are invaluable. I've learned so much and feel confident in my trades.",
+  },
+  {
+    name: "Jane Smith",
+    comment:
+      "Excellent customer support and platform. I've seen significant growth in my investments.",
+  },
 ];
 
 export default async function Home() {
@@ -239,8 +247,8 @@ export default async function Home() {
       </div>
       <div className=" pt-10 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
-          <div className="   ">
-            <h2 className=" text-center text-4xl  font-bold p-4">
+          <div className=" ">
+            <h2 className=" text-center text-4xl  font-bold p-4 md:text-left">
               Innovative Trading Platform
             </h2>
             <p className=" text-sm  p-4 tetx-center">
@@ -252,7 +260,7 @@ export default async function Home() {
 
         <div className="mx-5 mt-20 lg:flex lg:justify-evenly ">
           <div className="max-w-sirina md:flex">
-            <div className="md:px-20">
+            <div className=" md:pl-0 md:pr-40">
               <div className="  p-10 lg:p-0 lg:border-l-[4px] lg: border-gray-300">
                 <div className="flex text-sm gap-2 md:flex md:flex-col md:gap-0">
                   <div className=" -ml-1 border-l-4 border-gray-300 hover:border-blue-500">
