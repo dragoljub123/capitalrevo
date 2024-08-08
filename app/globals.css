@@ -262,3 +262,7 @@ ul {
   background-image: url("images/blueworld.png");
   background-size: cover;
 }
+
+.plavigradijent {
+  background: linear-gradient(90deg, #ebf8fe, #b3e5fc);
+}

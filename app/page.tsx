@@ -12,6 +12,7 @@ import CustomerCard from "./components/CustomerCard";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { Post } from "@/app/utilitis/interface";
+import CompareAccountsButton from "./components/CompareAccountsButton";
 
 async function getPosts() {
   const query = `
@@ -240,10 +241,12 @@ export default async function Home() {
           />
         </div>
       </div>
-      <div className="flex justify-center items-center mb-20">
-        <button className=" flex justify-center items-center px-4 py-3 gap-2 w-60 h-14 bg-black rounded-xl shadow-xs text-white text-[18px]">
-          Compare Accounts
-        </button>
+      <div className="flex justify-center items-center mb-20">     
+        <div className=" flex justify-center items-center">
+         <CompareAccountsButton>
+           Compare Accounts
+         </CompareAccountsButton>
+        </div>
       </div>
       <div className=" pt-10 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
