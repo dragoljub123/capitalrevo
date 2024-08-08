@@ -14,7 +14,7 @@ const Paketi: React.FC<CardProps> = ({
   listItems,
 }) => {
   return (
-    <div className=" pt-5 pakets w-[335px] md:w-[364px] ">
+    <div className=" pt-5 pakets w-[335px] md:w-[364px] lg:w-[313px] xl:md:w-[364px] ">
       <div className=" flex justify-center items-center  border-[1px] border-gray-300 rounded-2xl plan-name">
         <img
           src={imageSrc}

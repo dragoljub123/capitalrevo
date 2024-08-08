@@ -60,7 +60,7 @@ export default async function Home() {
         <div className=" max-w-sirina mx-auto ">
           <div className=" mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-20 h-full ">
-              <h1 className="pt-20 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[700px] lg:pb-5  ">
+              <h1 className="pt-20 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
               <p className="text-white text-center  text-sm lg:mt-2 lg:mb- lg:text-left ">
@@ -87,7 +87,7 @@ export default async function Home() {
               <Image src={phoneimg} alt="slika" className="object-contain " />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-40 md:pl-28">
+          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-20 xl:pl-40 md:pl-28">
             <p className="text-white flex justify-center lg:justify-start">
               As featured in
             </p>
@@ -470,7 +470,7 @@ export default async function Home() {
               </button>
             </Link>
           </div>
-          <div className="md:flex md:justify-center  md:items-center">
+          <div className="flex justify-center items-center ">
             <Image
               src="/iphone13mini.png"
               alt="webinars"
