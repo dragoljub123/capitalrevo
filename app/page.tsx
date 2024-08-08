@@ -83,11 +83,11 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            <div className=" flex justify-center lg:justify-end xl:mr-20">
+            <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10">
               <Image src={phoneimg} alt="slika" className="object-contain " />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-20 xl:pl-40 md:pl-28">
+          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-20 xl:pl-32 md:pl-28">
             <p className="text-white flex justify-center lg:justify-start">
               As featured in
             </p>
