@@ -114,7 +114,7 @@ export default async function Home() {
       </div>
       <div className=" pt-10 lg:flex lg:justify-evenly" id="AboutUs">
         <div className="max-w-sirina md:flex">
-          <div className="">
+          <div className="my-10">
             <h1 className="text-3xl p-4 font-bold ">About Us</h1>
             <p className="p-4  lg:w-[400px] ">
               With over 15 years in the industry, CapitalRevo is dedicated to
@@ -126,7 +126,7 @@ export default async function Home() {
               opportunities for everyone.
             </p>
           </div>
-          <div className="">
+          <div className="my-10">
             <Smalcard
               imageSrc1="/oblacici.png"
               title="Our Mission"
@@ -250,7 +250,7 @@ export default async function Home() {
       </div>
       <div className=" pt-10 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
-          <div className=" ">
+          <div className="my-10">
             <h2 className=" text-center text-4xl  font-bold p-4 md:text-left">
               Innovative Trading Platform
             </h2>
@@ -304,8 +304,9 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <div className="my-10">
       <div
-        className=" pt-5 mx-auto flex items-center justify-center "
+        className=" pt-10 mx-auto flex items-center justify-center "
         id="Education"
       >
         <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
@@ -317,6 +318,7 @@ export default async function Home() {
             enhance your <br /> trading knowledge and skills.
           </p>
         </div>
+      </div>
       </div>
       <div className="m-10 lg:flex lg:justify-evenly lg:items-center">
         <div className="max-w-sirina sm:flex">
