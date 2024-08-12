@@ -11,7 +11,7 @@ interface Props {
 export const Logo = ({ title, className }: Props) => {
   return (
     <Link href={"/"}>
-      <Image src={glogo} alt="slika" className=" object-contain" />
+      <Image src={glogo} alt="slika" className=" object-contain" priority />
     </Link>
   );
 };

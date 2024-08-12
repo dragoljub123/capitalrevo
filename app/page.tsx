@@ -13,6 +13,9 @@ import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { Post } from "@/app/utilitis/interface";
 import CompareAccountsButton from "./components/CompareAccountsButton";
+import slikakartica from "@/public/slikakartica.png";
+import strelica from "@/public/strelica.png";
+import Getintouch from "@/public/Getintouch.png";
 
 async function getPosts() {
   const query = `
@@ -112,7 +115,10 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className=" pt-10 lg:flex lg:justify-evenly" id="AboutUs">
+      <div
+        className=" pl-10 lg:pl-0 pt-10 lg:flex lg:justify-evenly"
+        id="AboutUs"
+      >
         <div className="max-w-sirina md:flex">
           <div className="">
             <h1 className="text-3xl p-4 font-bold ">About Us</h1>
@@ -159,7 +165,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-col  justify-between items-center ">
         <div className=" lg:flex  lg:gap-10 lg:justify-center lg:-mt-20 lg:p-0 ">
-          <div className="-mt-36 md:mt-0 ">
+          <div className="-mt-36 lg:mt-0 ">
             <Paketi
               title="Basic plan"
               imageSrc="\Dot.png"
@@ -241,20 +247,18 @@ export default async function Home() {
           />
         </div>
       </div>
-      <div className="flex justify-center items-center mb-20">     
+      <div className="flex justify-center items-center mb-20">
         <div className=" flex justify-center items-center">
-         <CompareAccountsButton>
-           Compare Accounts
-         </CompareAccountsButton>
+          <CompareAccountsButton>Compare Accounts</CompareAccountsButton>
         </div>
       </div>
       <div className=" pt-10 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
           <div className=" ">
-            <h2 className=" text-center text-4xl  font-bold p-4 md:text-left">
+            <h2 className=" text-center text-4xl  font-bold p-4 md:text-left md:pl-10 ">
               Innovative Trading Platform
             </h2>
-            <p className=" text-sm  p-4 tetx-center">
+            <p className=" text-sm  p-4 tetx-center md:pl-10 ">
               Experience the power of integrated trading tools with real-time
               data, customizable <br /> charts, and mobile trading.
             </p>
@@ -299,7 +303,13 @@ export default async function Home() {
               </div>
             </div>
             <div className="">
-              <Image src="/monitor.png" alt="trade" width={900} height={600} />
+              <Image
+                src="/monitor.png"
+                alt="trade"
+                width={900}
+                height={600}
+                style={{ width: "auto", height: "auto" }}
+              />
             </div>
           </div>
         </div>
@@ -318,33 +328,38 @@ export default async function Home() {
           </p>
         </div>
       </div>
-      <div className="m-10 lg:flex lg:justify-evenly lg:items-center">
-        <div className="max-w-sirina sm:flex">
-          <span className="flex flex-col items-center text-center">
-            <Image src="/oblacic.png" alt="webinars" width={48} height={48} />
-            <p className="text-center font-bold p-4">Webinars</p>
+      <div className="m-10  lg:flex lg:justify-evenly lg:items-center">
+        <div className="max-w-sirina flex flex-col gap-10  sm:flex sm:flex-row">
+          <span className="flex flex-col items-center text-center ">
+            <Image src="/oblacic.png" alt="webinars8" width={48} height={48} />
+            <p className="text-center font-bold px-6 ">Webinars</p>
           </span>
           <span className="flex flex-col items-center text-center">
-            <Image src="/gormic.png" alt="webinars" width={48} height={48} />
-            <p className="text-center font-bold p-4">eBooks</p>
+            <Image src="/gormic.png" alt="webinars9" width={48} height={48} />
+            <p className="text-center font-bold px-6">eBooks</p>
           </span>
           <span className="flex flex-col items-center text-center">
-            <Image src="/gormic.png" alt="webinars" width={48} height={48} />
-            <p className="text-center font-bold p-4">Market Analysis</p>
+            <Image src="/gormic.png" alt="webinars10" width={48} height={48} />
+            <p className="text-center font-bold px-6">Market Analysis</p>
           </span>
           <span className="flex flex-col items-center text-center">
-            <Image src="/strategy.png" alt="webinars" width={48} height={48} />
-            <p className="text-center font-bold p-4">Trading Strategies</p>
+            <Image
+              src="/strategy.png"
+              alt="webinars11"
+              width={48}
+              height={48}
+            />
+            <p className="text-center font-bold px-6 ">Trading Strategies</p>
           </span>
         </div>
       </div>
 
       <div
-        className="pt-10 pl-4 mx-auto mt-20 lg:flex lg:justify-between lg:pl-32 lg:pr-32 lg:items-center max-w-sirina"
+        className="pt-10 pl-4 mx-auto mt-20 md:pl-20 lg:flex lg:justify-between lg:pl-28  lg:items-center max-w-sirina"
         id="News"
       >
         <div className=" ">
-          <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
+          <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl  ">
             Stay Informed
           </h1>
           <p className=" mb-4  text-sm ">
@@ -359,80 +374,98 @@ export default async function Home() {
         </Link>
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-center lg:items-center">
+      <div className="flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-center lg:items-center lg:pl-10 xl:gap-10">
         <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
           <div className="bg-cover bg-center rounded-t-xl ">
             <Image
-              src="/slikakartica.png"
-              alt="webinars"
-              width={335}
-              height={440}
+              src={slikakartica}
+              alt="webinars1234"
+              className=" w-[335px] h-[200px] lg:w-[300px] lg:h-[200px] xl:w-[398px] xl:h-[240px]"
             />
           </div>
           <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="flex justify-between">
+          <div className="flex justify-between w-[335px] lg:w-[300px]  xl:w-[398px]  ">
             <h1 className="text-2xl font-bold">Product review</h1>
-            <Image src="/strelica.png" alt="webinars" width={20} height={20} />
+            <Image
+              src={strelica}
+              alt="webinars347"
+              width={20}
+              height={20}
+              style={{ width: "auto", height: "auto" }}
+            />
           </div>
-          <p className="text-sm text-gray-700 pt-2 pb-5">
-            The rise of RESTful APIs has been met by a rise in tools <br /> for
+          <p className="text-sm text-gray-700 pt-2 pb-5 w-[335px] lg:w-[300px]  xl:w-[398px] ">
+            The rise of RESTful APIs has been met by a rise in tools for
             creating, testing, and managing them.
           </p>
           <Image
             src="/Avatar label group.png"
-            alt="webinars"
+            alt="webinars987"
             width={120}
             height={44}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
-        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
+        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
           <div className="bg-cover bg-center rounded-t-xl ">
             <Image
-              src="/slikakartica.png"
-              alt="webinars"
-              width={335}
-              height={440}
+              src={slikakartica}
+              alt="webinars122"
+              className=" w-[335px] h-[200px] lg:w-[300px] lg:h-[200px] xl:w-[398px] xl:h-[240px]"
             />
           </div>
           <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="flex justify-between">
+          <div className="flex justify-between w-[335px] lg:w-[300px]  xl:w-[398px]  ">
             <h1 className="text-2xl font-bold">Product review</h1>
-            <Image src="/strelica.png" alt="webinars" width={20} height={20} />
+            <Image
+              src={strelica}
+              alt="webinars2233"
+              width={20}
+              height={20}
+              style={{ width: "auto", height: "auto" }}
+            />
           </div>
-          <p className="text-sm text-gray-700 pt-2 pb-5">
-            The rise of RESTful APIs has been met by a rise in tools <br /> for
+          <p className="text-sm text-gray-700 pt-2 pb-5 w-[335px] lg:w-[300px]  xl:w-[398px] ">
+            The rise of RESTful APIs has been met by a rise in tools for
             creating, testing, and managing them.
           </p>
           <Image
             src="/Avatar label group.png"
-            alt="webinars"
+            alt="webinars1235"
             width={120}
             height={44}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
-        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden">
+        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
           <div className="bg-cover bg-center rounded-t-xl ">
             <Image
-              src="/slikakartica.png"
-              alt="webinars"
-              width={335}
-              height={440}
+              src={slikakartica}
+              alt="webinars3235"
+              className=" w-[335px] h-[200px] lg:w-[300px] lg:h-[200px] xl:w-[398px] xl:h-[240px]"
             />
           </div>
           <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="flex justify-between">
+          <div className="flex justify-between w-[335px] lg:w-[300px]  xl:w-[398px]  ">
             <h1 className="text-2xl font-bold">Product review</h1>
-            <Image src="/strelica.png" alt="webinars" width={20} height={20} />
+            <Image
+              src={strelica}
+              alt="webinars32325"
+              width={20}
+              height={20}
+              style={{ width: "auto", height: "auto" }}
+            />
           </div>
-          <p className="text-sm text-gray-700 pt-2 pb-5">
-            The rise of RESTful APIs has been met by a rise in tools <br /> for
+          <p className="text-sm text-gray-700 pt-2 pb-5 w-[335px] lg:w-[300px]  xl:w-[398px] ">
+            The rise of RESTful APIs has been met by a rise in tools for
             creating, testing, and managing them.
           </p>
           <Image
             src="/Avatar label group.png"
-            alt="webinars"
+            alt="webinars3431"
             width={120}
             height={44}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
       </div>
@@ -441,7 +474,7 @@ export default async function Home() {
         id="whatourclientssay"
       >
         <div className=" ">
-          <h1 className=" text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl ">
+          <h1 className=" text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl lg:pl-5 ">
             What Our Clients Say
           </h1>
         </div>
@@ -479,12 +512,19 @@ export default async function Home() {
               alt="webinars"
               width={425}
               height={425}
+              className=" object-contain "
             />
           </div>
         </div>
       </div>
       <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center">
-        <Image src="/Getintouch.png" alt="webinars" width={1440} height={400} />
+        <Image
+          src={Getintouch}
+          alt="webinars1"
+          width={1440}
+          height={400}
+          className=" object-contain "
+        />
       </div>
       <div className="bg-[#F4F4F4] flex justify-center items-center md:hidden lg:hidden">
         <Image
@@ -492,6 +532,7 @@ export default async function Home() {
           alt="webinars"
           width={380}
           height={672}
+          className=" object-contain "
         />
       </div>
 
@@ -502,12 +543,13 @@ export default async function Home() {
       </div>
       <div className="sivkasta">
         <div className="flex justify-center items-center pb-20">
-          <div className="w-full max-w-[1440px] flex justify-between items-center space-x-8 sm:mx-auto sm:px-20  px-10 lg:px-52  ">
+          <div className="w-full max-w-[1440px] flex justify-between items-center space-x-8 sm:mx-auto sm:px-20 px-10 lg:px-52">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
               <Image
                 src="/visa.png"
                 alt="visa"
                 fill
+                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
             </div>
@@ -516,6 +558,7 @@ export default async function Home() {
                 src="/master2.png"
                 alt="master2"
                 fill
+                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
             </div>
@@ -524,6 +567,7 @@ export default async function Home() {
                 src="/master.png"
                 alt="master"
                 fill
+                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
             </div>
@@ -532,6 +576,7 @@ export default async function Home() {
                 src="/apay.png"
                 alt="apay"
                 fill
+                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
             </div>
@@ -540,6 +585,7 @@ export default async function Home() {
                 src="/gpay.png"
                 alt="gpay"
                 fill
+                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
             </div>
