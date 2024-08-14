@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/cr.ico" />
+        <meta property="og:image" content="/Capitalrevo.png" />
       </head>
       <body className={inter.className}>
         {children}
