@@ -306,7 +306,7 @@ export default async function Home() {
               <Image
                 src="/monitor.png"
                 alt="trade"
-                width={900}
+                width={600}
                 height={600}
                 style={{ width: "auto", height: "auto" }}
               />
