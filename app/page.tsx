@@ -16,46 +16,22 @@ import CompareAccountsButton from "./components/CompareAccountsButton";
 import slikakartica from "@/public/slikakartica.png";
 import strelica from "@/public/strelica.png";
 import Getintouch from "@/public/Getintouch.png";
+import { PostComponent } from "./components/PostComponent";
 
 async function getPosts() {
   const query = `
-  *[_type == "post"] {
-    title,
-    slug,
-    publishedAt,
-    excerpt,
-    tags[]-> {
-      _id,
-      slug,
-      name
-    }
-  }
-  `;
+*[_type == 'post'] `;
   const data = await client.fetch(query);
   return data;
 }
 
-const customers = [
-  {
-    name: "Lana Rothers",
-    comment:
-      "CapitalRevo transformed my trading experience! The platform is intuitive and the support is excellent.",
-  },
-  {
-    name: "John Doe",
-    comment:
-      "The educational resources are invaluable. I've learned so much and feel confident in my trades.",
-  },
-  {
-    name: "Jane Smith",
-    comment:
-      "Excellent customer support and platform. I've seen significant growth in my investments.",
-  },
-];
-
 export default async function Home() {
   const posts: Post[] = await getPosts();
-  console.log(posts, "posts");
+  const customers = posts.map((post) => ({
+    name: post.title,
+
+    comment: post.excerpt,
+  }));
 
   return (
     <div className=" mx-auto ">
@@ -647,7 +623,9 @@ export default async function Home() {
       </div>
       <div className="hidden">
         {posts?.length > 0 &&
-          posts?.map((post, index) => <p key={index}>{post.title}</p>)}
+          posts?.map((post, index) => (
+            <PostComponent key={index} post={post} />
+          ))}
       </div>
 
       <div className="mt-10 mb-10">

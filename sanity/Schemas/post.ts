@@ -18,30 +18,14 @@ export const post = {
         options: { source: "title" },
         validation: (Rule: Rule) => Rule.required().error("Required"),
       },
-      {
-        name: "publishedAt",
-        title: "Published at",
-        type: "datetime",
-        initialValue: () => new Date().toISOString(),
-      },
+      
       {
         name: "excerpt",
         title: "Excerpt",
         type: "text",
         validation: (Rule: Rule) => Rule.max(200).error("Max 200 characters"),
       },
-      {
-        name: "body",
-        title: "Body",
-        type: "array",
-        of: [
-          { type: "block" },
-          {
-            type: "image",
-            fields: [{ type: "text", name: "alt", title: "Alt" }],
-          },
-        ],
-      },
+      
       
     ],
   };
