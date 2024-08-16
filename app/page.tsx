@@ -20,7 +20,10 @@ import { PostComponent } from "./components/PostComponent";
 
 async function getPosts() {
   const query = `
-*[_type == 'post'] `;
+*[_type == 'post'] {
+  title,
+    excerpt,
+}`;
   const data = await client.fetch(query);
   return data;
 }
