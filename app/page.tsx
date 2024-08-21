@@ -19,10 +19,9 @@ import Getintouch from "@/public/Getintouch.png";
 import { PostComponent } from "./components/PostComponent";
 
 async function getPosts() {
-  const query = `
-*[_type == 'post'] {
+  const query = `*[_type == 'post'] {
   title,
-    excerpt,
+    excerpt
 }`;
   const data = await client.fetch(query);
   return data;
@@ -233,11 +232,11 @@ export default async function Home() {
       </div>
       <div className=" pt-10 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
-          <div className=" ">
+          <div className=" md:pl-10">
             <h2 className=" text-center text-4xl  font-bold p-4 md:text-left">
               Innovative Trading Platform
             </h2>
-            <p className=" text-sm  p-4 tetx-center md:pl-10 ">
+            <p className=" text-sm  p-4 tetx-center text-gray-700">
               Experience the power of integrated trading tools with real-time
               data, customizable <br /> charts, and mobile trading.
             </p>
@@ -302,7 +301,7 @@ export default async function Home() {
             <h1 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
               Learn to Trade with Confidence
             </h1>
-            <p className=" mb-4 text-center text-sm ">
+            <p className=" mb-4 text-center text-sm text-gray-700">
               Access webinars, eBooks, market analysis, and trading strategies
               to enhance your <br /> trading knowledge and skills.
             </p>
