@@ -3,3 +3,8 @@ export interface Post {
   slug: { current: string };
   excerpt: string;
 }
+export interface Paket {
+  title: string;
+  description: string;
+  listItems: string[];
+}

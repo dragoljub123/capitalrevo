@@ -17,7 +17,7 @@ import slikakartica from "@/public/slikakartica.png";
 import strelica from "@/public/strelica.png";
 import Getintouch from "@/public/Getintouch.png";
 import { PostComponent } from "./components/PostComponent";
-
+import { Paket } from "@/app/utilitis/interface";
 async function getPosts() {
   const query = `*[_type == 'post'] {
   title,
@@ -27,6 +27,19 @@ async function getPosts() {
   return data;
 }
 
+async function getPaketi() {
+  const query = `*[_type == 'paketi'] {
+  title,
+    description,
+    listItems
+ 
+}`;
+  const datap = await client.fetch(query);
+  return datap;
+}
+
+export const revalidate = 60;
+
 export default async function Home() {
   const posts: Post[] = await getPosts();
   const customers = posts.map((post) => ({
@@ -34,6 +47,7 @@ export default async function Home() {
 
     comment: post.excerpt,
   }));
+  const paketi: Paket[] = await getPaketi();
 
   return (
     <div className=" mx-auto ">
@@ -145,83 +159,37 @@ export default async function Home() {
         <div className=" lg:flex  lg:gap-10 lg:justify-center lg:-mt-20 lg:p-0 ">
           <div className="-mt-36 lg:mt-0 ">
             <Paketi
-              title="Basic plan"
+              title={paketi[0]?.title}
               imageSrc="\Dot.png"
-              description="$200 - $9,999"
-              listItems={[
-                "Access to all basic features",
-                "Basic reporting and analytics",
-                "Up to 10 individual users",
-                "20GB individual data each user",
-                "Basic chat and email support",
-              ]}
+              description={paketi[0]?.description}
+              listItems={paketi[0]?.listItems}
             />
           </div>
           <Paketi
-            title="Silver Account"
+            title={paketi[4]?.title}
             imageSrc="\Dot.png"
-            description="$10,000 - $24,999"
-            listItems={[
-              "Access to all basic features",
-              "Basic reporting and analytics",
-              "Up to 10 individual users",
-              "20GB individual data each user",
-              "Basic chat and email support",
-              "Sessions with Market Analyst",
-              "Free Withdrawal Monthly",
-            ]}
+            description={paketi[4]?.description}
+            listItems={paketi[4]?.listItems}
           />
           <Paketi
-            title="Gold Account"
+            title={paketi[1]?.title}
             imageSrc="\Dot.png"
-            description="$25,000 - $49,999"
-            listItems={[
-              "Leverage 1:200",
-              "50% lower swaps",
-              "Advanced Education",
-              "Daily Market Reviews",
-              "Trading eBooks",
-              "Dedicated Market Analyst",
-              "Live Webinars with Senior Trading Strategist",
-              "3 Free Withdrawals Monthly",
-            ]}
+            description={paketi[1]?.description}
+            listItems={paketi[1]?.listItems}
           />
         </div>
         <div className="  lg:flex lg:justify-center lg:gap-5 lg:m-10 lg:p-0">
           <Paketi
-            title="Premium Account"
+            title={paketi[2]?.title}
             imageSrc="\Dot.png"
-            description="$100,000+"
-            listItems={[
-              "Leverage 1:300",
-              "75% lower swaps",
-              "Advanced Education",
-              "Spreads as low as 1.9",
-              "Daily Market Reviews",
-              "3 Risk-free trades",
-              "Unlimited Free Withdrawals",
-              "Dedicated Senior Account Manager",
-              "Market Analyst",
-              "Live Webinars with Senior Trading Strategist",
-              "Special offers",
-            ]}
+            description={paketi[2]?.description}
+            listItems={paketi[2]?.listItems}
           />
           <Paketi
-            title="VIP Account"
+            title={paketi[3]?.title}
             imageSrc="\Dot.png"
-            description="$250,000+"
-            listItems={[
-              "Leverage 1:400",
-              "Swap-free",
-              "Spreads as low as 1.5",
-              "Daily Market Reviews",
-              "3 Risk-free trades",
-              "Unlimited Free Withdrawals",
-              "Dedicated Senior Account Manager",
-              "Market Analyst",
-              "Live Webinars with Senior Trading Strategist",
-              "Special offers",
-            ]}
+            description={paketi[3]?.description}
+            listItems={paketi[3]?.listItems}
           />
         </div>
       </div>
