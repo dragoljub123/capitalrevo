@@ -38,7 +38,7 @@ async function getPaketi() {
   return datap;
 }
 
-export const revalidate = 60;
+export const revalidate = 3600;
 
 export default async function Home() {
   const posts: Post[] = await getPosts();
