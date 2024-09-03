@@ -66,7 +66,7 @@ export default async function Home() {
               <div className="flex flex-col justify-center  items-center md:flex md:justify-center md:items-center lg:flex lg:flex-row lg:justify-start  lg:items-start lg:gap-4 pb-10 pt-10 ">
                 <Link
                   className="flex justify-center items-center px-4 py-3 gap-2  w-48 h-12 bg-transparent rounded-md shadow-xs text-white border border-white border-1"
-                  href="#ContactUs"
+                  href="https://platform.capitalrevo.com/login"
                 >
                   Get Started Now
                 </Link>
@@ -241,7 +241,7 @@ export default async function Home() {
                 </div>
               </div>
               <div className="p-10 flex justify-center items-center lg:p-0 lg:py-10">
-                <Link href="#ContactUs">
+                <Link href="https://platform.capitalrevo.com/login">
                   <button className=" px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
                     Explore the Platform
                   </button>

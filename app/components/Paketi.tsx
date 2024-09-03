@@ -41,7 +41,10 @@ const Paketi: React.FC<CardProps> = ({
         </ul>
       </div>
       <div className="card-footerb3 ">
-        <Link className="bluebutton" href="#ContactUs">
+        <Link
+          className="bluebutton"
+          href="https://platform.capitalrevo.com/login"
+        >
           Get started
         </Link>
       </div>
