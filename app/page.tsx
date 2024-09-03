@@ -522,7 +522,7 @@ export default async function Home() {
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
               <Image
                 src="/apay.png"
-                alt="apay"
+                alt="applepay"
                 fill
                 sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
