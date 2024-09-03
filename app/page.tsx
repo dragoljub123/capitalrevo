@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TradingViewWidget from "./components/TradingViewWidget";
 import Smalcard from "./components/Smalcard";
 import { Navbar } from "./components/Navbar";
 import Paketi from "./components/Paketi";
@@ -18,6 +19,7 @@ import strelica from "@/public/strelica.png";
 import Getintouch from "@/public/Getintouch.png";
 import { PostComponent } from "./components/PostComponent";
 import { Paket } from "@/app/utilitis/interface";
+
 async function getPosts() {
   const query = `*[_type == 'post'] {
   title,
@@ -52,7 +54,11 @@ export default async function Home() {
   return (
     <div className=" mx-auto ">
       <Navbar />
-      <div className="pozadina pt-20 ">
+
+      <div className="pozadina  ">
+        <div className="pt-10 sm:pt-14 z-10">
+          <TradingViewWidget />
+        </div>
         <div className=" max-w-sirina mx-auto ">
           <div className=" mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-20 h-full ">
