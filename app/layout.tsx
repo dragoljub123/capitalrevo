@@ -23,6 +23,17 @@ export default function RootLayout({
         <link rel="icon" href="/cr.ico" />
         <meta property="og:image" content="/Capitalrevo.png" />
         <meta name="google-site-verification" content="LacVDWR8EcIov_giDxPejNwywj5UFL4DwWeTU4IYU1c" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZV9VZB4PK"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7ZV9VZB4PK');
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         {children}
