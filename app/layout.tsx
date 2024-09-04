@@ -22,6 +22,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/cr.ico" />
         <meta property="og:image" content="/Capitalrevo.png" />
+        <meta name="google-site-verification" content="LacVDWR8EcIov_giDxPejNwywj5UFL4DwWeTU4IYU1c" />
       </head>
       <body className={inter.className}>
         {children}
