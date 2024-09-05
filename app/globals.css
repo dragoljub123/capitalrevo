@@ -266,3 +266,7 @@ ul {
 .plavigradijent {
   background: linear-gradient(90deg, #ebf8fe, #b3e5fc);
 }
+
+.custom-prose p {
+  margin-bottom: 1rem; 
+}

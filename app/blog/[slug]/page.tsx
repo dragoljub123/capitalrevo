@@ -37,24 +37,26 @@ const BlogPostPage = async ({ params }: BlogPostProps) => {
   }
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto bg-gray-100">
       <Navbar />
-      <div className="pt-20">
-        <div className="max-w-sirina mx-auto">
-          <h1 className="text-4xl font-bold text-center mt-8">
+      <div className="pt-20 pb-20 px-4 lg:px-8">
+        <div className="max-w-screen-xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+          <h1 className="text-xl md:text-2xl lg:text-4xl font-extrabold text-center mb-6">
             {blogPost.title}
           </h1>
-          {blogPost.image && (
-            <img
-              src={blogPost.image.asset.url}
-              alt={blogPost.image.alt}
-              className="w-full h-auto object-cover mt-4"
-            />
-          )}
-          <div className="mt-8">
+          <div className="flex justify-center mb-8">
+            {blogPost.image && (
+              <img
+                src={blogPost.image.asset.url}
+                alt={blogPost.image.alt}
+                className="w-4/5 max-w-2xl h-auto object-cover rounded-lg shadow-md"
+              />
+            )}
+          </div>
+          <div className="prose lg:prose-xl mx-auto mb-8 custom-prose">
             <PortableText value={blogPost.body} />
           </div>
-          <p className="text-sm text-gray-500 mt-2">
+          <p className="text-sm text-gray-500 text-center mt-4">
             Published on: {new Date(blogPost.createdDate).toLocaleDateString()}
           </p>
         </div>

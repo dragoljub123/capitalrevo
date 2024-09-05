@@ -7,9 +7,9 @@ import { FooterHome } from "./components/FooterHome";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CapitalRevo.com",
+  title: "CapitalRevo - Trade Online with a Leading Trading Broker",
   description:
-    "CapitalRevo.com aims to provide a user-friendly, professional trading platform for both novice and experienced traders. Utilizing the Match-Trader white label solution, the platform will offer seamless integration of trading tools, news feeds, and calculators to enhance the user experience. This proposal outlines a comprehensive mobile-first wireframe and content plan to create an engaging, informative, and conversion-focused website.",
+    "Discover the leading online trading platform at CapitalRevo. Trade forex, stocks, commodities, and more with a trusted and regulated broker.",
 };
 
 export default function RootLayout({
@@ -34,6 +34,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <link rel="canonical" href="https://capitalrevo.com"/>
       </head>
       <body className={inter.className}>
         {children}
