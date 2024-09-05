@@ -65,7 +65,7 @@ export const FooterHome: React.FC = () => {
                   <Link href="#Education">Education</Link>
                 </li>
                 <li>
-                  <Link href="#News">News</Link>
+                  <Link href="/blog">News</Link>
                 </li>
               </ul>
               <ul className="space-y-2 text-sm">
@@ -116,7 +116,7 @@ export const FooterHome: React.FC = () => {
                     <Link href="#Education">Education</Link>
                   </li>
                   <li>
-                    <Link href="#News">News</Link>
+                    <Link href="/blog">News</Link>
                   </li>
                 </ul>
                 <ul className="space-y-2 text-sm">

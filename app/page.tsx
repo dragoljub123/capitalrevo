@@ -321,7 +321,7 @@ export default async function Home() {
             into the platform <br /> for real-time insights.
           </p>
         </div>
-        <Link href="#whatourclientssay">
+        <Link href="/blog">
           <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-20">
             Read More News
           </button>

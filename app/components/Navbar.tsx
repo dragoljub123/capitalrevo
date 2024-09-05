@@ -14,7 +14,7 @@ export const Navbar = () => {
     { title: "Accounts", href: "/#Accounts" },
     { title: "Trading Platform", href: "/#TradingPlatform" },
     { title: "Education", href: "/#Education" },
-    { title: "News", href: "/#News" },
+    { title: "News", href: "/blog" },
     { title: "Contact Us", href: "/#ContactUs" },
   ];
   const [showLinks, setShowLinks] = useState(false);
