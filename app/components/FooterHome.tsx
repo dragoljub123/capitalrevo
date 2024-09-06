@@ -67,6 +67,9 @@ export const FooterHome: React.FC = () => {
                 <li>
                   <Link href="/blog">News</Link>
                 </li>
+                <li>
+                  <Link href="/blog">Blog</Link>
+                </li>
               </ul>
               <ul className="space-y-2 text-sm">
                 <li className="font-bold mb-2">Company</li>
@@ -117,6 +120,9 @@ export const FooterHome: React.FC = () => {
                   </li>
                   <li>
                     <Link href="/blog">News</Link>
+                  </li>
+                  <li>
+                    <Link href="/blog">Blog</Link>
                   </li>
                 </ul>
                 <ul className="space-y-2 text-sm">
