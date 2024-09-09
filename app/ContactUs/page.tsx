@@ -10,7 +10,7 @@ export default function ContactUs() {
       <div className="bg-gray-50">
         <div className="pt-20 pb-10 flex-row justify-center items-center">
           <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
-            We're Here to Help.
+            We&apos;re Here to Help.
             <br />
             Get in Touch with CapitalRevo
           </h1>
@@ -19,7 +19,7 @@ export default function ContactUs() {
             <p className="text-center text-[#475467] mt-10 p-4 max-w-[900px] ">
               Our support team is dedicated to helping you get the most out of
               your trading experience. Whether you have a question about your
-              account or need help navigating the platform, we're here to
+              account or need help navigating the platform, we&apos;re here to
               assist.
             </p>
           </div>

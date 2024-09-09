@@ -16,8 +16,8 @@ export default function News() {
             <p className="text-center text-[#475467] mt-10 p-4 max-w-[900px] ">
               Keeping up with market news is essential for every trader. At
               CapitalRevo, we provide you with real-time news and analysis to
-              keep you informed of every market movement, ensuring you're always
-              ready to make your next trade.
+              keep you informed of every market movement, ensuring you&apos;re
+              always ready to make your next trade.
             </p>
           </div>
         </div>
@@ -30,8 +30,9 @@ export default function News() {
           </h3>
           <p className=" mb-4  text-sm max-w-[600px]">
             Our integrated news feed covers breaking stories across forex,
-            stocks, commodities, and more. Whether you're trading currencies or
-            looking for stock market analysis, we've got you covered.
+            stocks, commodities, and more. Whether you&apos;re trading
+            currencies or looking for stock market analysis, we&apos;ve got you
+            covered.
           </p>
         </div>
 

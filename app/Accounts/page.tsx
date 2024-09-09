@@ -30,9 +30,9 @@ export default async function Accounts() {
               </h2>
               <p className=" mb-4 text-center text-sm  text-white max-w-[900px]">
                 At CapitalRevo, we understand that every trader has different
-                goals and requirements. That's why we offer a variety of account
-                types, tailored to suit your trading style, experience level,
-                and financial objectives.
+                goals and requirements. That&apos;s why we offer a variety of
+                account types, tailored to suit your trading style, experience
+                level, and financial objectives.
               </p>
             </div>
           </div>
