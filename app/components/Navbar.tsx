@@ -10,12 +10,12 @@ import "../globals.css";
 
 export const Navbar = () => {
   const navigation = [
-    { title: "About Us", href: "/#AboutUs" },
-    { title: "Accounts", href: "/#Accounts" },
-    { title: "Trading Platform", href: "/#TradingPlatform" },
+    { title: "About Us", href: "/AboutUs" },
+    { title: "Accounts", href: "/Accounts" },
+    { title: "Trading Platform", href: "/TradingPlatform" },
     { title: "Education", href: "/#Education" },
-    { title: "News", href: "/blog" },
-    { title: "Contact Us", href: "/#ContactUs" },
+    { title: "News", href: "/News" },
+    { title: "Contact Us", href: "/ContactUs" },
   ];
   const [showLinks, setShowLinks] = useState(false);
 

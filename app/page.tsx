@@ -14,11 +14,10 @@ import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { Post } from "@/app/utilitis/interface";
 import CompareAccountsButton from "./components/CompareAccountsButton";
-import slikakartica from "@/public/slikakartica.png";
-import strelica from "@/public/strelica.png";
 import Getintouch from "@/public/Getintouch.png";
 import { PostComponent } from "./components/PostComponent";
 import { Paket } from "@/app/utilitis/interface";
+import TradingViewWidgetNews from "./components/TradingViewWidgetNews";
 
 async function getPosts() {
   const query = `*[_type == 'post'] {
@@ -328,100 +327,8 @@ export default async function Home() {
         </Link>
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-20 mb-10 lg:flex lg:flex-row lg:justify-center lg:items-center lg:pl-10 xl:gap-10">
-        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
-          <div className="bg-cover bg-center rounded-t-xl ">
-            <Image
-              src={slikakartica}
-              alt="webinars1234"
-              className=" w-[335px] h-[200px] lg:w-[300px] lg:h-[200px] xl:w-[398px] xl:h-[240px]"
-            />
-          </div>
-          <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="flex justify-between w-[335px] lg:w-[300px]  xl:w-[398px]  ">
-            <h1 className="text-2xl font-bold">Product review</h1>
-            <Image
-              src={strelica}
-              alt="webinars347"
-              width={20}
-              height={20}
-              style={{ width: "auto", height: "auto" }}
-            />
-          </div>
-          <p className="text-sm text-gray-700 pt-2 pb-5 w-[335px] lg:w-[300px]  xl:w-[398px] ">
-            The rise of RESTful APIs has been met by a rise in tools for
-            creating, testing, and managing them.
-          </p>
-          <Image
-            src="/Avatar label group.png"
-            alt="webinars987"
-            width={120}
-            height={44}
-            style={{ width: "auto", height: "auto" }}
-          />
-        </div>
-        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
-          <div className="bg-cover bg-center rounded-t-xl ">
-            <Image
-              src={slikakartica}
-              alt="webinars122"
-              className=" w-[335px] h-[200px] lg:w-[300px] lg:h-[200px] xl:w-[398px] xl:h-[240px]"
-            />
-          </div>
-          <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="flex justify-between w-[335px] lg:w-[300px]  xl:w-[398px]  ">
-            <h1 className="text-2xl font-bold">Product review</h1>
-            <Image
-              src={strelica}
-              alt="webinars2233"
-              width={20}
-              height={20}
-              style={{ width: "auto", height: "auto" }}
-            />
-          </div>
-          <p className="text-sm text-gray-700 pt-2 pb-5 w-[335px] lg:w-[300px]  xl:w-[398px] ">
-            The rise of RESTful APIs has been met by a rise in tools for
-            creating, testing, and managing them.
-          </p>
-          <Image
-            src="/Avatar label group.png"
-            alt="webinars1235"
-            width={120}
-            height={44}
-            style={{ width: "auto", height: "auto" }}
-          />
-        </div>
-        <div className="w-[335px] h-[440px] lg:w-[398px] lg:h-[440px] rounded-xl overflow-hidden ">
-          <div className="bg-cover bg-center rounded-t-xl ">
-            <Image
-              src={slikakartica}
-              alt="webinars3235"
-              className=" w-[335px] h-[200px] lg:w-[300px] lg:h-[200px] xl:w-[398px] xl:h-[240px]"
-            />
-          </div>
-          <p className="text-sm py-4 text-blue-800 font-bold">Product</p>
-          <div className="flex justify-between w-[335px] lg:w-[300px]  xl:w-[398px]  ">
-            <h1 className="text-2xl font-bold">Product review</h1>
-            <Image
-              src={strelica}
-              alt="webinars32325"
-              width={20}
-              height={20}
-              style={{ width: "auto", height: "auto" }}
-            />
-          </div>
-          <p className="text-sm text-gray-700 pt-2 pb-5 w-[335px] lg:w-[300px]  xl:w-[398px] ">
-            The rise of RESTful APIs has been met by a rise in tools for
-            creating, testing, and managing them.
-          </p>
-          <Image
-            src="/Avatar label group.png"
-            alt="webinars3431"
-            width={120}
-            height={44}
-            style={{ width: "auto", height: "auto" }}
-          />
-        </div>
+      <div className="flex justify-center">
+        <TradingViewWidgetNews />
       </div>
       <div
         className="mx-auto flex flex-col justify-center items-center mt-20 max-w-sirina lg:px-20 lg:flex lg:flex-row lg:justify-between"

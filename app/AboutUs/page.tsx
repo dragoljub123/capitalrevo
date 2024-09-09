@@ -1,0 +1,75 @@
+import React from "react";
+import { Navbar } from "../components/Navbar";
+import AboutUsCard from "../components/AboutUsCard";
+import AboutUsCard2 from "../components/AboutUsCard2";
+import FaturedCrad from "../components/FaturedCrad";
+
+export default function AboutUs() {
+  return (
+    <div className="mx-auto">
+      <Navbar />
+      <div className="pt-20 pb-20 flex justify-center">
+        <div className="max-w-sirina mx-auto">
+          <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
+            Who We Are
+          </h1>
+          <p className="text-center text-[#475467] mt-10 p-4">
+            With over 15 years of experience in the financial industry,
+            CapitalRevo has grown into a trusted name
+            <br />
+            in the trading world. We are committed to delivering an exceptional
+            trading experience by providing
+            <br />
+            traders access to the best tools and resources available.
+          </p>
+          <div className="mt-20 ">
+            <AboutUsCard
+              imageSrc1="/Featured icon(2).png"
+              title="Our Mission"
+              text="Our mission is simple: to empower traders of all levels to achieve financial freedom by providing cutting-edge technology, educational resources, and personalized support."
+              imageSrc2="/ourmisionstrelica.png"
+            />
+            <div className="mt-10 mb-10">
+              <AboutUsCard2
+                imageSrc1="/Featured icon(1).png"
+                title="Our Story"
+                text="CapitalRevo was established to address the challenges traders face in a fast-paced, ever-evolving market. From day one, our vision has been clear: provide world-class trading solutions accessible to everyone, regardless of experience level."
+                imageSrc2="/ourstory.png"
+              />
+            </div>
+            <AboutUsCard
+              imageSrc1="/Featured icon.png"
+              title="Our Team"
+              text="CapitalRevo boasts a team of highly experienced financial professionals, analysts, and support staff, all dedicated to helping traders succeed. We work continuously to improve our services, ensuring that each trader has access to market-leading resources."
+              imageSrc2="/ourteam.png"
+            />
+          </div>
+
+          <h2 className=" text-center text-4xl font-bold mt-10">
+            Why CapitalRevo?
+          </h2>
+          <div className="flex-row md:flex justify-center mt-10 ">
+            <FaturedCrad
+              title="Innovation"
+              description="We constantly enhance our platform to ensure our traders have the latest tools at their disposal."
+              iconSrc="/Featured icon(6).png"
+              iconAlt="Innovation"
+            />
+            <FaturedCrad
+              title="Transparency"
+              description="We believe in open and transparent trading conditions, with no hidden fees or surprises."
+              iconSrc="/Featured icon(7).png"
+              iconAlt="Transparency"
+            />
+            <FaturedCrad
+              title="Support"
+              description="Our 24/7 customer support is always available to assist you with any challenges you face."
+              iconSrc="/Featured icon(8).png"
+              iconAlt="Support"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

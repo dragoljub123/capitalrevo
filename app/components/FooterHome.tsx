@@ -56,16 +56,16 @@ export const FooterHome: React.FC = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="#Accounts">Accounts</Link>
+                  <Link href="/Accounts">Accounts</Link>
                 </li>
                 <li>
-                  <Link href="#TradingPlatform">Trading Platform</Link>
+                  <Link href="/TradingPlatform">Trading Platform</Link>
                 </li>
                 <li>
                   <Link href="#Education">Education</Link>
                 </li>
                 <li>
-                  <Link href="/blog">News</Link>
+                  <Link href="/News">News</Link>
                 </li>
                 <li>
                   <Link href="/blog">Blog</Link>
@@ -74,10 +74,10 @@ export const FooterHome: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 <li className="font-bold mb-2">Company</li>
                 <li>
-                  <Link href="#AboutUs">About Us</Link>
+                  <Link href="/AboutUs">About Us</Link>
                 </li>
                 <li>
-                  <Link href="#Contact">Contact Us</Link>
+                  <Link href="/ContactUs">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -119,7 +119,7 @@ export const FooterHome: React.FC = () => {
                     <Link href="#Education">Education</Link>
                   </li>
                   <li>
-                    <Link href="/blog">News</Link>
+                    <Link href="/News">News</Link>
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
