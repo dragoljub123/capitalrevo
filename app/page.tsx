@@ -18,6 +18,7 @@ import Getintouch from "@/public/Getintouch.png";
 import { PostComponent } from "./components/PostComponent";
 import { Paket } from "@/app/utilitis/interface";
 import TradingViewWidgetNews from "./components/TradingViewWidgetNews";
+import TradingViewWidgetNews2 from "./components/TradingViewWidgetNews2";
 
 async function getPosts() {
   const query = `*[_type == 'post'] {
@@ -320,15 +321,21 @@ export default async function Home() {
             into the platform <br /> for real-time insights.
           </p>
         </div>
-        <Link href="/blog">
+        <Link href="/News">
           <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-20">
             Read More News
           </button>
         </Link>
       </div>
-
-      <div className="flex justify-center">
-        <TradingViewWidgetNews />
+      <div className="  md:flex md:justify-center mt-10 pl-4 ">
+        <div className="max-w-sirina ">
+          <div className=" hidden md:block ">
+            <TradingViewWidgetNews />
+          </div>
+          <div className=" block md:hidden ">
+            <TradingViewWidgetNews2 />
+          </div>
+        </div>
       </div>
       <div
         className="mx-auto flex flex-col justify-center items-center mt-20 max-w-sirina lg:px-20 lg:flex lg:flex-row lg:justify-between"

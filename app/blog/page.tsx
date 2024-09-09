@@ -30,7 +30,7 @@ const Blog = async () => {
       <Navbar />
       <div className="pt-20 pb-20 flex justify-center">
         <div className="max-w-sirina mx-auto">
-          <h1 className="text-4xl font-bold text-center mt-8">News</h1>
+          <h1 className="text-4xl font-bold text-center mt-8">Blog</h1>
           <div className="mt-12 space-y-8">
             {blogPosts.map((post) => (
               <Link

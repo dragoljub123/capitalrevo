@@ -89,12 +89,12 @@ export default function TradingPlatform() {
               />
             )}
             {activeTab === "advancedWidget" && (
-              <div className="w-[640px] h-[400px]">
+              <div className="h-[500px] md:w-[640px] ">
                 <TradingViewAdvancedChartWidget />
               </div>
             )}
             {activeTab === "symbolOverviewWidget" && (
-              <div className="w-[640px] ">
+              <div className=" h-[500px] md:w-[640px] ">
                 <TradingViewSymbolOverviewWidget />
               </div>
             )}

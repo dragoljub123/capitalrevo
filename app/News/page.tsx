@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar } from "../components/Navbar";
 import TradingViewWidgetNews from "../components/TradingViewWidgetNews";
 import TradingViewEventsWidget from "../components/TradingViewEventsWidget";
+import TradingViewWidgetNews2 from "../components/TradingViewWidgetNews2";
+import TradingViewEventsWidget2 from "../components/TradingViewEventsWidget2";
 
 export default function News() {
   return (
@@ -36,7 +38,14 @@ export default function News() {
           </p>
         </div>
 
-        <TradingViewWidgetNews />
+        <div className="max-w-sirina ">
+          <div className=" hidden md:block ">
+            <TradingViewWidgetNews />
+          </div>
+          <div className=" block md:hidden ">
+            <TradingViewWidgetNews2 />
+          </div>
+        </div>
       </div>
 
       <div className="pt-10 pl-4 mx-auto mt-20 md:pl-20 lg:flex-row lg:justify-between lg:pl-28  lg:items-center max-w-sirina pb-20">
@@ -50,8 +59,14 @@ export default function News() {
             your portfolio, and make well-informed decisions.
           </p>
         </div>
-        <div className=" ">
-          <TradingViewEventsWidget />
+
+        <div className="max-w-sirina ">
+          <div className="hidden md:block ">
+            <TradingViewEventsWidget />
+          </div>
+          <div className=" block md:hidden ">
+            <TradingViewEventsWidget2 />
+          </div>
         </div>
       </div>
     </div>
