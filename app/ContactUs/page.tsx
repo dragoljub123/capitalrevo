@@ -66,7 +66,7 @@ export default function ContactUs() {
                 />
                 <h3 className="font-bold pb-2 pt-5">Phone</h3>
                 <p>Mon-Fri from 8am to 5pm.</p>
-                <p className="text-dugmeplava pt-2">
+                <p className="text-dugmeplava pt-2" id="contactform">
                   <br />
                   +1 (555) 000-0000
                   <br />
