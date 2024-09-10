@@ -19,7 +19,7 @@ const AboutUsCard2: React.FC<Props> = ({
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
       {/* Leva strana - Slika */}
-      <div className="lg:w-1/2 w-full pr-4 flex justify-center lg:justify-start">
+      <div className="hidden md:w-1/2 w-full md:flex md:justify-center lg:justify-start">
         <Image
           src={imageSrc2}
           alt="slika"
@@ -32,8 +32,8 @@ const AboutUsCard2: React.FC<Props> = ({
       {/* Desna strana - Slika, Naslov i Tekst */}
       <div className="lg:w-1/2 w-full p-4 space-y-4">
         <Image src={imageSrc1} alt="like" width={40} height={40} />
-        <div className="text-center lg:text-left">
-          <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
+        <div className=" lg:text-left">
+          <h2 className="text-xl text-center lg:text-2xl font-bold">{title}</h2>
         </div>
         <div className="pt-2 text-[#475467] max-w-[500px] text-sm">
           <p>{text}</p>

@@ -30,7 +30,7 @@ const AboutUsCard: React.FC<Props> = ({
       </div>
 
       {/* Desna strana - Slika */}
-      <div className="lg:w-1/2 w-full pl-4 flex justify-center lg:justify-end">
+      <div className="lg:w-1/2 w-full  flex justify-center lg:justify-end">
         <Image
           src={imageSrc2}
           alt="slika"
