@@ -77,7 +77,7 @@ export const FooterHome: React.FC = () => {
                   <Link href="/AboutUs">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/ContactUs">Contact Us</Link>
+                  <Link href="/ContactUs/#contactform">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -93,7 +93,7 @@ export const FooterHome: React.FC = () => {
             </div>
           </div>
           <div className="text-center px-20 py-8">
-            <p className="text-gray-500 text-justify pb-5">
+            <p className="text-gray-500 text-justify pb-5 text-xs leading-6">
               <u>CapitalRevo:</u> <br />
               CapitalRevo is operated by CapitalRevo Ltd with a registered
               address at Ground Floor, The Sotheby Building, Rodney Village,
@@ -103,16 +103,17 @@ export const FooterHome: React.FC = () => {
               inducement, offer or solicitation to anyone and is not intended
               for distribution to, or use by, any person in any country or
               jurisdiction where such distribution or use would be contrary to
-              local law or regulation. The content of this website is not
-              intended for citizens or residents of the European Union, the
-              wider European Economic Area, or the United Kingdom. We do not
-              solicit clients residing in the above regions and only accept
-              clients that register at their own initiative. Some countries may
-              be restricted from using the services of CapitalRevo and it does
-              not accept clients from certain jurisdictions, including the USA
-              ,US Reportable Persons, Iran, and North Korea.
+              local law or regulation. <br />
+              The content of this website is not intended for citizens or
+              residents of the European Union, the wider European Economic Area,
+              or the United Kingdom. We do not solicit clients residing in the
+              above regions and only accept clients that register at their own
+              initiative. <br /> Some countries may be restricted from using the
+              services of CapitalRevo and it does not accept clients from
+              certain jurisdictions, including the USA &#40;US Reportable
+              Persons&#41;,Iran, and North Korea.
             </p>
-            <p className="text-gray-500 text-justify pb-5">
+            <p className="text-gray-500 text-justify pb-5 text-xs leading-6">
               <u>Risk warning:</u>
               <br />
               Virtual instruments including CFDs are complex financial products
@@ -131,12 +132,13 @@ export const FooterHome: React.FC = () => {
               advice, recommendations or opinions in relation to acquiring,
               holding or disposing of any financial product. CapitalRevo Limited
               is not a financial adviser and all services are provided on an
-              execution only basis. Before engaging with this website and the
-              services made available through it, you should read all relevant
-              Terms & Conditions, policies, and accompanying documentation which
-              govern the terms of use of all CapitalRevo products and services.
-              By using the services of CapitalRevo, you affirm your agreement
-              with the Terms & Conditions.
+              execution only basis. <br />
+              Before engaging with this website and the services made available
+              through it, you should read all relevant Terms &amp; Conditions,
+              policies, and accompanying documentation which govern the terms of
+              use of all CapitalRevo products and services. By using the
+              services of CapitalRevo, you affirm your agreement with the Terms
+              &amp; Conditions.
             </p>
           </div>
         </div>
@@ -157,10 +159,10 @@ export const FooterHome: React.FC = () => {
                     <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="#Accounts">Accounts</Link>
+                    <Link href="/Accounts">Accounts</Link>
                   </li>
                   <li>
-                    <Link href="#TradingPlatform">Trading Platform</Link>
+                    <Link href="/TradingPlatform">Trading Platform</Link>
                   </li>
                   <li>
                     <Link href="#Education">Education</Link>
@@ -175,10 +177,10 @@ export const FooterHome: React.FC = () => {
                 <ul className="space-y-2 text-sm">
                   <li className="font-bold mb-2">Company</li>
                   <li>
-                    <Link href="#AboutUs">About Us</Link>
+                    <Link href="/AboutUs">About Us</Link>
                   </li>
                   <li>
-                    <Link href="#ContactUs">Contact Us</Link>
+                    <Link href="/ContactUs/#contactform">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -221,7 +223,7 @@ export const FooterHome: React.FC = () => {
             © 2024, CapitalRevo
           </p>
           <div className="text-center px-1 py-8">
-            <p className="text-gray-500 text-justify pb-5">
+            <p className="text-gray-500 text-justify pb-5 text-xs">
               <u>CapitalRevo:</u> <br />
               CapitalRevo is operated by CapitalRevo Ltd with a registered
               address at Ground Floor, The Sotheby Building, Rodney Village,
@@ -238,9 +240,9 @@ export const FooterHome: React.FC = () => {
               clients that register at their own initiative. Some countries may
               be restricted from using the services of CapitalRevo and it does
               not accept clients from certain jurisdictions, including the USA
-              ,US Reportable Persons, Iran, and North Korea.
+              &#40;US Reportable Persons&#41;,Iran, and North Korea.
             </p>
-            <p className="text-gray-500 text-justify pb-5">
+            <p className="text-gray-500 text-justify pb-5 text-xs">
               <u>Risk warning:</u>
               <br />
               Virtual instruments including CFDs are complex financial products
@@ -259,12 +261,13 @@ export const FooterHome: React.FC = () => {
               advice, recommendations or opinions in relation to acquiring,
               holding or disposing of any financial product. CapitalRevo Limited
               is not a financial adviser and all services are provided on an
-              execution only basis. Before engaging with this website and the
-              services made available through it, you should read all relevant
-              Terms & Conditions, policies, and accompanying documentation which
-              govern the terms of use of all CapitalRevo products and services.
-              By using the services of CapitalRevo, you affirm your agreement
-              with the Terms & Conditions.
+              execution only basis. <br />
+              Before engaging with this website and the services made available
+              through it, you should read all relevant Terms &amp; Conditions,
+              policies, and accompanying documentation which govern the terms of
+              use of all CapitalRevo products and services. By using the
+              services of CapitalRevo, you affirm your agreement with the Terms
+              &amp; Conditions.
             </p>
           </div>
         </div>

@@ -7,7 +7,6 @@ import { notFound } from "next/navigation";
 interface BlogPostProps {
   params: { slug: string };
 }
-
 const fetchBlogPost = async (slug: string): Promise<BlogPost | null> => {
   const query = `*[_type == 'blogPost' && slug.current == $slug][0] {
     title,
@@ -22,20 +21,31 @@ const fetchBlogPost = async (slug: string): Promise<BlogPost | null> => {
       },
       alt
     },
-    createdDate
+    createdDate,
+    metaTitle,
+    metaDescription
   }`;
-
   const data = await client.fetch(query, { slug });
   return data || null;
-};
-
+}; // Dinamičko generisanje meta podataka pre rendera
+export async function generateMetadata({ params }: BlogPostProps) {
+  const blogPost = await fetchBlogPost(params.slug);
+  if (!blogPost) {
+    return {
+      title: "Post Not Found",
+      description: "The post you are looking for does not exist.",
+    };
+  }
+  return {
+    title: blogPost.metaTitle || blogPost.title,
+    description: blogPost.metaDescription || blogPost.description,
+  };
+}
 const BlogPostPage = async ({ params }: BlogPostProps) => {
   const blogPost = await fetchBlogPost(params.slug);
-
   if (!blogPost) {
-    notFound(); // Handle the case where the blog post is not found
+    notFound(); // Handle case where blog post is not found
   }
-
   return (
     <div className="mx-auto bg-gray-100">
       <Navbar />
@@ -54,7 +64,42 @@ const BlogPostPage = async ({ params }: BlogPostProps) => {
             )}
           </div>
           <div className="prose lg:prose-xl mx-auto mb-8 custom-prose">
-            <PortableText value={blogPost.body} />
+            <PortableText
+              value={blogPost.body}
+              components={{
+                block: {
+                  normal: ({ children }) => (
+                    <p className=" text-gray-800 leading-relaxed ">
+                      {children}
+                    </p>
+                  ),
+                  h1: ({ children }) => (
+                    <h1 className="text-4xl font-bold mt-7 mb-5">{children}</h1>
+                  ),
+                  h2: ({ children }) => (
+                    <h2 className="text-3xl font-bold mt-7 mb-5">{children}</h2>
+                  ),
+                  h3: ({ children }) => (
+                    <h3 className="text-2xl font-bold mt-7 mb-5">{children}</h3>
+                  ),
+                },
+                marks: {
+                  link: ({ children, value }) => {
+                    const href = value.href;
+                    return (
+                      <a
+                        href={href}
+                        className="text-blue-500 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {children}
+                      </a>
+                    );
+                  },
+                },
+              }}
+            />
           </div>
           <p className="text-sm text-gray-500 text-center mt-4">
             Published on: {new Date(blogPost.createdDate).toLocaleDateString()}
@@ -64,5 +109,4 @@ const BlogPostPage = async ({ params }: BlogPostProps) => {
     </div>
   );
 };
-
 export default BlogPostPage;
