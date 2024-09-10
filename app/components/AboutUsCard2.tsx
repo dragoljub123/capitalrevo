@@ -17,23 +17,25 @@ const AboutUsCard2: React.FC<Props> = ({
   imageSrc2,
 }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-4">
-      <div className="lg:w-1/2 w-full pl-4">
+    <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
+      {/* Leva strana - Slika */}
+      <div className="lg:w-1/2 w-full pr-4 flex justify-center lg:justify-start">
         <Image
           src={imageSrc2}
           alt="slika"
-          className="w-3/4"
+          className="w-full lg:w-3/4 object-cover"
           width={720}
           height={560}
         />
       </div>
 
-      <div className="card1 lg:w-1/2 w-full p-4 space-y-6">
+      {/* Desna strana - Slika, Naslov i Tekst */}
+      <div className="lg:w-1/2 w-full p-4 space-y-4">
         <Image src={imageSrc1} alt="like" width={40} height={40} />
-        <div className="flex-row justify-center items-center  font-bold">
-          <h2 className="lg:text-2xl ">{title}</h2>
+        <div className="text-center lg:text-left">
+          <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
         </div>
-        <div className="pt-2 text-sm text-[#475467] max-w-[500px]">
+        <div className="pt-2 text-[#475467] max-w-[500px] text-sm">
           <p>{text}</p>
         </div>
       </div>

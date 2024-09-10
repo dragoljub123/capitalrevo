@@ -3,13 +3,10 @@ import React from "react";
 import { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import Image from "next/image";
-import Link from "next/link";
-import TradingViewAdvancedChartWidget from "../components/TradingViewAdvancedChartWidget";
-import TradingViewSymbolOverviewWidget from "../components/TradingViewSymbolOverviewWidget";
 import Getintouch from "@/public/Getintouch.png";
+import TabsComponent from "../components/TabsComponent";
 
 export default function TradingPlatform() {
-  const [activeTab, setActiveTab] = useState("advancedWidget");
   return (
     <div className="">
       <Navbar />
@@ -29,129 +26,7 @@ export default function TradingPlatform() {
         </div>
       </div>
 
-      <div className="mx-5 mt-20 lg:flex lg:justify-center  mb-10">
-        <div className="max-w-sirina md:flex">
-          <div className="md:pl-0 md:pr-40">
-            <div className="p-10 lg:p-0 lg:border-l-[4px] lg:border-gray-300">
-              <div className="flex text-sm gap-2 md:flex md:flex-col md:gap-0">
-                <div
-                  className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
-                  onClick={() => setActiveTab("advancedWidget")}
-                >
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
-                    Real-time data
-                  </p>
-                </div>
-                <div
-                  className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
-                  onClick={() => setActiveTab("symbolOverviewWidget")}
-                >
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
-                    Customizable charts
-                  </p>
-                </div>
-              </div>
-              <div className="flex text-sm gap-2 mt-4 md:flex md:flex-col md:gap-0 md:mt-0">
-                <div
-                  className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
-                  onClick={() => setActiveTab("image")}
-                >
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
-                    Mobile trading
-                  </p>
-                </div>
-                <div
-                  className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
-                  onClick={() => setActiveTab("paymentMethods")}
-                >
-                  <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
-                    Secure transactions
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-10 flex justify-center items-center lg:p-0 lg:py-10">
-              <Link href="https://platform.capitalrevo.com/login">
-                <button className="px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
-                  Explore the Platform
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div className="relative w-full">
-            {activeTab === "image" && (
-              <Image
-                src="/monitor.png"
-                alt="trade"
-                width={600}
-                height={600}
-                style={{ width: "auto", height: "auto" }}
-              />
-            )}
-            {activeTab === "advancedWidget" && (
-              <div className="h-[500px] md:w-[640px] ">
-                <TradingViewAdvancedChartWidget />
-              </div>
-            )}
-            {activeTab === "symbolOverviewWidget" && (
-              <div className=" h-[500px] md:w-[640px] ">
-                <TradingViewSymbolOverviewWidget />
-              </div>
-            )}
-            {activeTab === "paymentMethods" && (
-              <div className=" ml-32">
-                <div className=" flex    space-x-12">
-                  <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-                    <Image
-                      src="/visa.png"
-                      alt="visa"
-                      fill
-                      sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                  <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-                    <Image
-                      src="/master2.png"
-                      alt="master2"
-                      fill
-                      sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                  <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-                    <Image
-                      src="/master.png"
-                      alt="master"
-                      fill
-                      sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                  <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-                    <Image
-                      src="/apay.png"
-                      alt="applepay"
-                      fill
-                      sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                  <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-                    <Image
-                      src="/gpay.png"
-                      alt="gpay"
-                      fill
-                      sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
+      <TabsComponent />
 
       <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center">
         <Image
