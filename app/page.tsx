@@ -428,7 +428,7 @@ export default async function Home() {
                 <p>Our friendly team is here to help.</p>
                 <p className="text-dugmeplava pt-2">
                   <br />
-                  hi@untitledui.com
+                  support@capitalrevo.com
                   <br />
                 </p>
               </div>
@@ -464,12 +464,6 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="hidden">
-        {posts?.length > 0 &&
-          posts?.map((post, index) => (
-            <PostComponent key={index} post={post} />
-          ))}
       </div>
 
       <div className="mt-10 mb-10">

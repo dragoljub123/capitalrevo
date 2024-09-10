@@ -39,7 +39,7 @@ export default function ContactUs() {
                 <p>Our friendly team is here to help.</p>
                 <p className="text-dugmeplava pt-2">
                   <br />
-                  hi@untitledui.com
+                  support@capitalrevo.com
                   <br />
                 </p>
               </div>

@@ -92,6 +92,53 @@ export const FooterHome: React.FC = () => {
               <Link href="/">Risk Disclaimer</Link>
             </div>
           </div>
+          <div className="text-center px-20 py-8">
+            <p className="text-gray-500 text-justify pb-5">
+              <u>CapitalRevo:</u> <br />
+              CapitalRevo is operated by CapitalRevo Ltd with a registered
+              address at Ground Floor, The Sotheby Building, Rodney Village,
+              Rodney Bay, Gros-Islet St Lucia with registration number
+              202400363. <br />
+              The information on this website is not intended to be an
+              inducement, offer or solicitation to anyone and is not intended
+              for distribution to, or use by, any person in any country or
+              jurisdiction where such distribution or use would be contrary to
+              local law or regulation. The content of this website is not
+              intended for citizens or residents of the European Union, the
+              wider European Economic Area, or the United Kingdom. We do not
+              solicit clients residing in the above regions and only accept
+              clients that register at their own initiative. Some countries may
+              be restricted from using the services of CapitalRevo and it does
+              not accept clients from certain jurisdictions, including the USA
+              ,US Reportable Persons, Iran, and North Korea.
+            </p>
+            <p className="text-gray-500 text-justify pb-5">
+              <u>Risk warning:</u>
+              <br />
+              Virtual instruments including CFDs are complex financial products
+              and come with a high risk of losing money rapidly due to leverage.
+              More than 73% of trading accounts lose investments when using
+              leveraged products. You should consider whether you understand how
+              CFDs work and whether you can afford to take the high risk of
+              losing your money. Past performance does not constitute a reliable
+              indicator of future results. Future forecasts do not constitute a
+              reliable indicator of future performance. Before deciding to
+              trade, you should carefully consider your investment objectives,
+              level of experience and risk tolerance. You should not deposit
+              more than you are prepared to lose. Please ensure you fully
+              understand the risk associated with the product envisaged and seek
+              independent advice, if necessary. CapitalRevo does not issue
+              advice, recommendations or opinions in relation to acquiring,
+              holding or disposing of any financial product. CapitalRevo Limited
+              is not a financial adviser and all services are provided on an
+              execution only basis. Before engaging with this website and the
+              services made available through it, you should read all relevant
+              Terms & Conditions, policies, and accompanying documentation which
+              govern the terms of use of all CapitalRevo products and services.
+              By using the services of CapitalRevo, you affirm your agreement
+              with the Terms & Conditions.
+            </p>
+          </div>
         </div>
 
         <div className="block md:hidden">
@@ -173,6 +220,53 @@ export const FooterHome: React.FC = () => {
           <p className="text-left mt-10 lg:text-left lg:mx-20">
             © 2024, CapitalRevo
           </p>
+          <div className="text-center px-1 py-8">
+            <p className="text-gray-500 text-justify pb-5">
+              <u>CapitalRevo:</u> <br />
+              CapitalRevo is operated by CapitalRevo Ltd with a registered
+              address at Ground Floor, The Sotheby Building, Rodney Village,
+              Rodney Bay, Gros-Islet St Lucia with registration number
+              202400363. <br />
+              The information on this website is not intended to be an
+              inducement, offer or solicitation to anyone and is not intended
+              for distribution to, or use by, any person in any country or
+              jurisdiction where such distribution or use would be contrary to
+              local law or regulation. The content of this website is not
+              intended for citizens or residents of the European Union, the
+              wider European Economic Area, or the United Kingdom. We do not
+              solicit clients residing in the above regions and only accept
+              clients that register at their own initiative. Some countries may
+              be restricted from using the services of CapitalRevo and it does
+              not accept clients from certain jurisdictions, including the USA
+              ,US Reportable Persons, Iran, and North Korea.
+            </p>
+            <p className="text-gray-500 text-justify pb-5">
+              <u>Risk warning:</u>
+              <br />
+              Virtual instruments including CFDs are complex financial products
+              and come with a high risk of losing money rapidly due to leverage.
+              More than 73% of trading accounts lose investments when using
+              leveraged products. You should consider whether you understand how
+              CFDs work and whether you can afford to take the high risk of
+              losing your money. Past performance does not constitute a reliable
+              indicator of future results. Future forecasts do not constitute a
+              reliable indicator of future performance. Before deciding to
+              trade, you should carefully consider your investment objectives,
+              level of experience and risk tolerance. You should not deposit
+              more than you are prepared to lose. Please ensure you fully
+              understand the risk associated with the product envisaged and seek
+              independent advice, if necessary. CapitalRevo does not issue
+              advice, recommendations or opinions in relation to acquiring,
+              holding or disposing of any financial product. CapitalRevo Limited
+              is not a financial adviser and all services are provided on an
+              execution only basis. Before engaging with this website and the
+              services made available through it, you should read all relevant
+              Terms & Conditions, policies, and accompanying documentation which
+              govern the terms of use of all CapitalRevo products and services.
+              By using the services of CapitalRevo, you affirm your agreement
+              with the Terms & Conditions.
+            </p>
+          </div>
         </div>
       </div>
     </div>
