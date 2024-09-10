@@ -3,7 +3,7 @@ import { BlogPost } from "@/app/utilitis/interface";
 import { client } from "@/sanity/lib/client";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
-
+import Head from "next/head";
 interface BlogPostProps {
   params: { slug: string };
 }
@@ -69,7 +69,7 @@ const BlogPostPage = async ({ params }: BlogPostProps) => {
               components={{
                 block: {
                   normal: ({ children }) => (
-                    <p className=" text-gray-800 leading-relaxed ">
+                    <p className="text-lg text-gray-800 leading-relaxed ">
                       {children}
                     </p>
                   ),
@@ -81,6 +81,9 @@ const BlogPostPage = async ({ params }: BlogPostProps) => {
                   ),
                   h3: ({ children }) => (
                     <h3 className="text-2xl font-bold mt-7 mb-5">{children}</h3>
+                  ),
+                  ul: ({ children }) => (
+                    <ul className="custom-prose">{children}</ul>
                   ),
                 },
                 marks: {

@@ -4,7 +4,7 @@ import { client } from "@/sanity/lib/client";
 import Link from "next/link";
 
 const fetchBlogPosts = async (): Promise<BlogPost[]> => {
-  const query = `*[_type == 'blogPost'] {
+  const query = `*[_type == 'blogPost'] | order(createdDate desc) {
     title,
     slug {
       current
@@ -21,7 +21,9 @@ const fetchBlogPosts = async (): Promise<BlogPost[]> => {
 
   return client.fetch(query);
 };
+
 export const revalidate = 300;
+
 const Blog = async () => {
   const blogPosts: BlogPost[] = await fetchBlogPosts();
 
@@ -36,7 +38,7 @@ const Blog = async () => {
               <Link
                 key={post.slug.current}
                 href={`/blog/${post.slug.current}`}
-                className=" w-[360px] sm:w-[400px] lg:w-[650px] h-[200px] border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex overflow-hidden"
+                className="w-[360px] sm:w-[400px] lg:w-[650px] h-[200px] border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex overflow-hidden"
               >
                 {post.image && (
                   <img
@@ -54,7 +56,7 @@ const Blog = async () => {
                       {new Date(post.createdDate).toLocaleDateString()}
                     </p>
                   </div>
-                  <p className="text-gray-600 mt-2 text-xs md:text-sm ">
+                  <p className="text-gray-600 mt-2 text-xs md:text-sm">
                     {post.description}
                   </p>
                 </div>
