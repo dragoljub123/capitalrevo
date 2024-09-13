@@ -53,8 +53,8 @@ export default function ContactUs() {
                 <h3 className="font-bold pb-2 pt-5">Office</h3>
                 <p>Come say hello at our office HQ.</p>
                 <p className="text-dugmeplava pt-2">
-                  100 Smith Street <br />
-                  Collingwood VIC 3066 AU
+                  Sotheby Building, Rodney Bay, <br />
+                  Rodney Village, Gros Islet, St. Lucia, 1111
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
@@ -68,7 +68,7 @@ export default function ContactUs() {
                 <p>Mon-Fri from 8am to 5pm.</p>
                 <p className="text-dugmeplava pt-2" id="contactform">
                   <br />
-                  +1 (555) 000-0000
+                  +447441938990
                   <br />
                 </p>
               </div>
