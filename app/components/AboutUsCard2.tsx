@@ -33,7 +33,7 @@ const AboutUsCard2: React.FC<Props> = ({
       <div className="lg:w-1/2 w-full p-4 space-y-4">
         <Image src={imageSrc1} alt="like" width={40} height={40} />
         <div className=" lg:text-left">
-          <h2 className="text-xl text-center lg:text-2xl font-bold">{title}</h2>
+          <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
         </div>
         <div className="pt-2 text-[#475467] max-w-[500px] text-sm">
           <p>{text}</p>
