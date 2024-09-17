@@ -26,7 +26,7 @@ export default function AboutUs() {
             <AboutUsCard
               imageSrc1="/Featured icon(2).png"
               title="Our Mission"
-              text="Our mission is simple: to empower traders of all levels to achieve financial freedom by providing cutting-edge technology, educational resources, and personalized support."
+              text="Our mission is simple: to empower traders of all levels to achieve financial freedom by providing cutting-edge technology, educational resources and personalized support."
               imageSrc2="/ourmisionstrelica.png"
             />
             <div className="mt-10 mb-10">
