@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import "../globals.css";
 import glogo from "../images/crlogo.png";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
 export const FooterHome: React.FC = () => {
@@ -25,7 +25,7 @@ export const FooterHome: React.FC = () => {
               <div className="social-icons flex justify-center lg:justify-start gap-4 mt-4 lg:mt-20 ">
                 <a
                   className="hover:bg-tirkizna p-2 rounded-full transition duration-300 "
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/capital_revo/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -33,12 +33,13 @@ export const FooterHome: React.FC = () => {
                 </a>
                 <a
                   className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
-                  href="https://www.linkedin.com"
+                  href="https://www.youtube.com/@CapitalRevo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin className="text-3xl" />
+                  <FaYoutube className="text-3xl" />
                 </a>
+
                 <a
                   className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
                   href="https://www.facebook.com"
@@ -189,7 +190,7 @@ export const FooterHome: React.FC = () => {
           <div className="social-icons flex lg:justify-start gap-4 mt-4 lg:mt-20 ">
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300 "
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/capital_revo/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -197,12 +198,13 @@ export const FooterHome: React.FC = () => {
             </a>
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
-              href="https://www.linkedin.com"
+              href="https://www.youtube.com/@CapitalRevo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-2xl" />
+              <FaYoutube className="text-2xl" />
             </a>
+
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
               href="https://www.facebook.com"
