@@ -33,7 +33,7 @@ export const FooterHome: React.FC = () => {
                 </a>
                 <a
                   className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
-                  href="https://www.youtube.com/@CapitalRevo"
+                  href="https://www.youtube.com/@Capital_Revo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -42,7 +42,7 @@ export const FooterHome: React.FC = () => {
 
                 <a
                   className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/people/Capital-Revo/61552517622119/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -198,7 +198,7 @@ export const FooterHome: React.FC = () => {
             </a>
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
-              href="https://www.youtube.com/@CapitalRevo"
+              href="https://www.youtube.com/@Capital_Revo"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -207,7 +207,7 @@ export const FooterHome: React.FC = () => {
 
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/people/Capital-Revo/61552517622119/"
               target="_blank"
               rel="noopener noreferrer"
             >
