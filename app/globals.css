@@ -207,11 +207,11 @@ ul {
   background: linear-gradient(90deg, #00e5ff 0%, #1200ff 100%);
 } /*----------------paketi-----------*/
 .plan-name {
-  margin: 5% 25% 0%;
+  margin: 5% 18% 0%;
 }
 .plan-name-name {
   margin: 3% 3% 3% -10%;
-  padding: 1% 10% 1% 10%;
+  padding: 1% 5% 1% 10%;
 }
 .custom-li {
   background-image: url("./images/check-Icon.svg");

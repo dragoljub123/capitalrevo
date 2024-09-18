@@ -21,7 +21,7 @@ const Paketi: React.FC<CardProps> = ({
           alt="Card"
           style={{ width: "auto", height: "auto", padding: "2px" }}
         />
-        <h4 className="border-[1px] border-gray-300 rounded-lg plan-name-name text-sm">
+        <h4 className="border-[1px] border-gray-300 rounded-lg plan-name-name text-xl">
           {title}
         </h4>
       </div>
