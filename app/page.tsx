@@ -21,6 +21,10 @@ import TradingViewWidgetNews from "./components/TradingViewWidgetNews";
 import TradingViewWidgetNews2 from "./components/TradingViewWidgetNews2";
 import TabsComponent from "./components/TabsComponent";
 
+import GPayLogo from './components/GPayLogo';
+import ApplePayLogo from "./components/ApplePayLogo";
+
+
 async function getPosts() {
   const query = `*[_type == 'post'] {
   title,
@@ -41,7 +45,7 @@ async function getPaketi() {
   return datap;
 }
 
-export const revalidate = 3600;
+export const revalidate = 300;
 
 export default async function Home() {
   const posts: Post[] = await getPosts();
@@ -323,7 +327,7 @@ export default async function Home() {
               Use our trading calculator to see <br />
               your potential profits based on your <br /> trading activities.
             </p>
-            <Link href="#ContactUs">
+            <Link href="https://platform.capitalrevo.com/register?demo=false">
               <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white">
                 Try It Now
               </button>
@@ -368,49 +372,51 @@ export default async function Home() {
         <div className="flex justify-center items-center pb-20">
           <div className="w-full max-w-[1440px] flex justify-between items-center space-x-8 sm:mx-auto sm:px-20 px-10 lg:px-52">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-              <Image
-                src="/visa.png"
-                alt="visa"
+            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
+            <Image
+                src="/Visa_2021.svg"
+                alt="Visa"
                 fill
                 sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
+            </a>
+
             </div>
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-              <Image
-                src="/master2.png"
-                alt="master2"
+            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
+            <Image
+                src="/Mastercard-logo.svg"
+                alt="Mastercard"
                 fill
                 sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
+
+            
+            </a>
             </div>
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-              <Image
-                src="/master.png"
-                alt="master"
+            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
+            <Image
+                src="/Maestro.svg"
+                alt="Maestro"
                 fill
                 sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
                 style={{ objectFit: "contain" }}
               />
+            </a>
             </div>
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-              <Image
-                src="/apay.png"
-                alt="applepay"
-                fill
-                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                style={{ objectFit: "contain" }}
-              />
+            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
+              <ApplePayLogo/>
+              </a>
             </div>
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-              <Image
-                src="/gpay.png"
-                alt="gpay"
-                fill
-                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                style={{ objectFit: "contain" }}
-              />
+              <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
+              <GPayLogo/>
+              </a>
+            
             </div>
           </div>
         </div>

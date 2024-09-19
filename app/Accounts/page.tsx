@@ -15,6 +15,9 @@ async function getPaketi() {
   const datap = await client.fetch(query);
   return datap;
 }
+
+export const revalidate = 300;
+
 export default async function Accounts() {
   const paketi: Paket[] = await getPaketi();
 

@@ -81,11 +81,11 @@ const TabsComponent = () => {
           {activeTab === "paymentMethods" && (
             <div className="w-[640px] flex justify-center space-x-4">
               {[
-                "/visa.png",
-                "/master2.png",
-                "/master.png",
-                "/apay.png",
-                "/gpay.png",
+                "/Visa_2021.svg",
+                "/Mastercard-logo.svg",
+                "/Maestro.svg",
+                "/apple-pay-logo.svg",
+                "/Google_Pay_Logo.svg",
               ].map((src, index) => (
                 <div
                   key={index}
