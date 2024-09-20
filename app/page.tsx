@@ -3,7 +3,7 @@ import TradingViewWidget from "./components/TradingViewWidget";
 import Smalcard from "./components/Smalcard";
 import { Navbar } from "./components/Navbar";
 import Paketi from "./components/Paketi";
-import phoneimg from "@/public/phoneimg.png";
+import capitalrevomobplatform from "@/public/capitalrevomobplatform.png";
 import NewsBreakLogo from "@/public/NewsBreakLogo.png";
 import DigitalJournal from "@/public/DigitalJournal.png";
 import katman from "@/public/katman.png";
@@ -23,6 +23,7 @@ import TabsComponent from "./components/TabsComponent";
 
 import GPayLogo from './components/GPayLogo';
 import ApplePayLogo from "./components/ApplePayLogo";
+import Strategygetintouch from '@/public/strategygetintouch.png'
 
 
 async function getPosts() {
@@ -89,7 +90,7 @@ export default async function Home() {
               </div>
             </div>
             <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10">
-              <Image src={phoneimg} alt="slika" className="object-contain " />
+              <Image src={capitalrevomobplatform} alt="capitalrevo platform" className="object-contain " style={{ width: '80%' }} />
             </div>
           </div>
           <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-20 xl:pl-32 md:pl-28">
@@ -346,7 +347,7 @@ export default async function Home() {
       </div>
       <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center">
         <Image
-          src={Getintouch}
+          src={Strategygetintouch}
           alt="webinars1"
           width={1440}
           height={400}
