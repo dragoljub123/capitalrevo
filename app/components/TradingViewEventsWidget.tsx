@@ -10,7 +10,7 @@ const TradingViewEventsWidget: React.FC = () => {
       "https://s3.tradingview.com/external-embedding/embed-widget-events.js";
     script.async = true;
     script.innerHTML = JSON.stringify({
-      colorTheme: "light",
+      colorTheme: "dark",
       isTransparent: false,
       width: "1260",
       height: "504",

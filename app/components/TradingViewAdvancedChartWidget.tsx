@@ -14,7 +14,7 @@ const TradingViewAdvancedChartWidget: React.FC = () => {
       symbol: "NASDAQ:AAPL",
       interval: "D",
       timezone: "Etc/UTC",
-      theme: "light",
+      theme: "dark",
       style: "1",
       locale: "en",
       allow_symbol_change: true,

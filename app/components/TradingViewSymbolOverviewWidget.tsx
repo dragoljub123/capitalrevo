@@ -25,7 +25,7 @@ const TradingViewSymbolOverviewWidget: React.FC = () => {
       width: "100%",
       height: "100%",
       locale: "en",
-      colorTheme: "light",
+      colorTheme: "dark",
       autosize: true,
       showVolume: false,
       showMA: false,

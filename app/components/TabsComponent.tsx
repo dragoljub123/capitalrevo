@@ -61,7 +61,7 @@ const TabsComponent = () => {
         <div className="relative w-full min-h-[500px] flex justify-center">
           {activeTab === "image" && (
             <Image
-              src="/monitor.png"
+              src="/Screenapp.svg"
               alt="trade"
               width={640}
               height={600}

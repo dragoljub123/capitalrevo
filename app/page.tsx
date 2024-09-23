@@ -14,17 +14,15 @@ import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { Post } from "@/app/utilitis/interface";
 import CompareAccountsButton from "./components/CompareAccountsButton";
-import Getintouch from "@/public/Getintouch.png";
-import { PostComponent } from "./components/PostComponent";
+
 import { Paket } from "@/app/utilitis/interface";
 import TradingViewWidgetNews from "./components/TradingViewWidgetNews";
 import TradingViewWidgetNews2 from "./components/TradingViewWidgetNews2";
 import TabsComponent from "./components/TabsComponent";
 
-import GPayLogo from './components/GPayLogo';
+import GPayLogo from "./components/GPayLogo";
 import ApplePayLogo from "./components/ApplePayLogo";
-import Strategygetintouch from '@/public/strategygetintouch.png'
-
+import Strategygetintouch from "@/public/strategygetintouch.png";
 
 async function getPosts() {
   const query = `*[_type == 'post'] {
@@ -62,7 +60,6 @@ export default async function Home() {
       <Navbar />
 
       <div className="pozadina  ">
-        
         <div className=" max-w-sirina mx-auto ">
           <div className=" pt-10 sm:pt-14 mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-20 h-full ">
@@ -90,7 +87,12 @@ export default async function Home() {
               </div>
             </div>
             <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10">
-              <Image src={capitalrevomobplatform} alt="capitalrevo platform" className="object-contain " style={{ width: '80%' }} />
+              <Image
+                src={capitalrevomobplatform}
+                alt="capitalrevo platform"
+                className="object-contain "
+                style={{ width: "80%" }}
+              />
             </div>
           </div>
           <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-20 xl:pl-32 md:pl-28">
@@ -373,51 +375,62 @@ export default async function Home() {
         <div className="flex justify-center items-center pb-20">
           <div className="w-full max-w-[1440px] flex justify-between items-center space-x-8 sm:mx-auto sm:px-20 px-10 lg:px-52">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
-            <Image
-                src="/Visa_2021.svg"
-                alt="Visa"
-                fill
-                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                style={{ objectFit: "contain" }}
-              />
-            </a>
-
-            </div>
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
-            <Image
-                src="/Mastercard-logo.svg"
-                alt="Mastercard"
-                fill
-                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                style={{ objectFit: "contain" }}
-              />
-
-            
-            </a>
-            </div>
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
-            <Image
-                src="/Maestro.svg"
-                alt="Maestro"
-                fill
-                sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
-                style={{ objectFit: "contain" }}
-              />
-            </a>
-            </div>
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-            <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
-              <ApplePayLogo/>
+              <a
+                href="https://platform.capitalrevo.com/register?demo=false"
+                target="_blank"
+              >
+                <Image
+                  src="/Visa_2021.svg"
+                  alt="Visa"
+                  fill
+                  sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
+                  style={{ objectFit: "contain" }}
+                />
               </a>
             </div>
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
-              <a href="https://platform.capitalrevo.com/register?demo=false" target="_blank">
-              <GPayLogo/>
+              <a
+                href="https://platform.capitalrevo.com/register?demo=false"
+                target="_blank"
+              >
+                <Image
+                  src="/Mastercard-logo.svg"
+                  alt="Mastercard"
+                  fill
+                  sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
+                  style={{ objectFit: "contain" }}
+                />
               </a>
-            
+            </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <a
+                href="https://platform.capitalrevo.com/register?demo=false"
+                target="_blank"
+              >
+                <Image
+                  src="/Maestro.svg"
+                  alt="Maestro"
+                  fill
+                  sizes="(max-width: 768px) 10vw, (min-width: 1024px) 16px"
+                  style={{ objectFit: "contain" }}
+                />
+              </a>
+            </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <a
+                href="https://platform.capitalrevo.com/register?demo=false"
+                target="_blank"
+              >
+                <ApplePayLogo />
+              </a>
+            </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
+              <a
+                href="https://platform.capitalrevo.com/register?demo=false"
+                target="_blank"
+              >
+                <GPayLogo />
+              </a>
             </div>
           </div>
         </div>
