@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import Image from "next/image";
-import Getintouch from "@/public/Getintouch.png";
+import Strategygetintouch from "@/public/strategygetintouch.svg";
 import TabsComponent from "../components/TabsComponent";
 
 export default function TradingPlatform() {
@@ -30,7 +29,7 @@ export default function TradingPlatform() {
 
       <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center">
         <Image
-          src={Getintouch}
+          src={Strategygetintouch}
           alt="webinars1"
           width={1440}
           height={400}

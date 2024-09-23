@@ -22,7 +22,7 @@ import TabsComponent from "./components/TabsComponent";
 
 import GPayLogo from "./components/GPayLogo";
 import ApplePayLogo from "./components/ApplePayLogo";
-import Strategygetintouch from "@/public/strategygetintouch.png";
+import Strategygetintouch from "@/public/strategygetintouch.svg";
 
 async function getPosts() {
   const query = `*[_type == 'post'] {
