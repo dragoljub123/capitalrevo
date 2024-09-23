@@ -14,12 +14,10 @@ import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { Post } from "@/app/utilitis/interface";
 import CompareAccountsButton from "./components/CompareAccountsButton";
-
 import { Paket } from "@/app/utilitis/interface";
 import TradingViewWidgetNews from "./components/TradingViewWidgetNews";
 import TradingViewWidgetNews2 from "./components/TradingViewWidgetNews2";
 import TabsComponent from "./components/TabsComponent";
-
 import GPayLogo from "./components/GPayLogo";
 import ApplePayLogo from "./components/ApplePayLogo";
 import Strategygetintouch from "@/public/strategygetintouch.svg";
@@ -122,41 +120,7 @@ export default async function Home() {
           <TradingViewWidget />
         </div>
       </div>
-      <div
-        className=" pl-10 lg:pl-0 pt-10 lg:flex lg:justify-evenly"
-        id="AboutUs"
-      >
-        <div className="max-w-sirina md:flex">
-          <div className="my-10">
-            <h2 className="text-3xl p-4 font-bold ">About Us</h2>
-            <p className="p-4  lg:w-[400px] ">
-              With over 15 years in the industry, CapitalRevo is dedicated to
-              providing traders with the best-in-class tools and support.
-            </p>
 
-            <p className="p-4">
-              Our mission is to enable access to world-class trading <br />
-              opportunities for everyone.
-            </p>
-          </div>
-          <div className="my-10">
-            <Smalcard
-              imageSrc1="/oblacici.png"
-              title="Our Mission"
-              text="To empower traders with cutting-edge tools, unparalleled support,and
-            the knowledge to succeed in the competitive world of online trading."
-            />
-            <div className="mt-2">
-              <Smalcard
-                imageSrc1="/gromicon.png"
-                title="Our History"
-                text="CapitalRevo has been at the forefront of the trading industry for over 
-              15 years,helping thousands of traders achieve their financial goals."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="crafy " id="Accounts">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
@@ -435,7 +399,41 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <div
+        className=" pl-10 lg:pl-0 pt-10 lg:flex lg:justify-evenly"
+        id="AboutUs"
+      >
+        <div className="max-w-sirina md:flex">
+          <div className="my-10">
+            <h2 className="text-3xl p-4 font-bold ">About Us</h2>
+            <p className="p-4  lg:w-[400px] ">
+              With over 15 years in the industry, CapitalRevo is dedicated to
+              providing traders with the best-in-class tools and support.
+            </p>
 
+            <p className="p-4">
+              Our mission is to enable access to world-class trading <br />
+              opportunities for everyone.
+            </p>
+          </div>
+          <div className="my-10">
+            <Smalcard
+              imageSrc1="/oblacici.png"
+              title="Our Mission"
+              text="To empower traders with cutting-edge tools, unparalleled support,and
+            the knowledge to succeed in the competitive world of online trading."
+            />
+            <div className="mt-2">
+              <Smalcard
+                imageSrc1="/gromicon.png"
+                title="Our History"
+                text="CapitalRevo has been at the forefront of the trading industry for over 
+              15 years,helping thousands of traders achieve their financial goals."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="pt-5 mb-20" id="ContactUs">
         <h3 className="text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
