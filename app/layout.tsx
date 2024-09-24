@@ -22,8 +22,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/cr.ico" />
         <meta property="og:image" content="/Capitalrevo.png" />
-        <meta name="google-site-verification" content="LacVDWR8EcIov_giDxPejNwywj5UFL4DwWeTU4IYU1c" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZV9VZB4PK"></script>
+        <meta
+          name="google-site-verification"
+          content="LacVDWR8EcIov_giDxPejNwywj5UFL4DwWeTU4IYU1c"
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7ZV9VZB4PK"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -34,11 +40,29 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="canonical" href="https://capitalrevo.com"/>
+        <link rel="canonical" href="https://capitalrevo.com" />
       </head>
       <body className={inter.className}>
         {children}
         <FooterHome />
+        {/* Start of Tawk.to Script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+              (function(){
+                var s1=document.createElement("script"),
+                s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/66f159314cbc4814f7dd8316/1i8fc8q96';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+              })();
+            `,
+          }}
+        />
+        {/* End of Tawk.to Script */}
       </body>
     </html>
   );

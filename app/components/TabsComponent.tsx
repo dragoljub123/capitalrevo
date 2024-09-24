@@ -64,12 +64,12 @@ const TabsComponent = () => {
               src="/Screenapp.svg"
               alt="trade"
               width={640}
-              height={600}
+              height={390}
               style={{ objectFit: "contain" }}
             />
           )}
           {activeTab === "advancedWidget" && (
-            <div className="h-[500px] md:w-[640px]">
+            <div className="h-[500px] w-[380px] lg:w-[640px]">
               <TradingViewAdvancedChartWidget />
             </div>
           )}
