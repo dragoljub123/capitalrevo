@@ -277,7 +277,7 @@ export default async function Home() {
             CapitalRevo transformed my <br /> trading experience! The platform
             is <br /> intuitive and the support is <br /> excellent.
           </h2>
-          <div className=" mb-10 lg:p-0 mt-10 text-sm  ">
+          <div className=" mb-10 lg:p-0 mt-10 text-sm ">
             <CustomerCard customers={customers} />
           </div>
         </div>
@@ -320,9 +320,9 @@ export default async function Home() {
           className=" object-contain "
         />
       </div>
-      <div className="bg-[#F4F4F4] flex justify-center items-center md:hidden lg:hidden">
+      <div className="bg-[#F4F4F4] flex justify-center items-center md:hidden lg:hidden ">
         <Image
-          src="/mobapp.png"
+          src="/TradeOngo.svg"
           alt="webinars"
           width={380}
           height={672}
@@ -415,6 +415,11 @@ export default async function Home() {
               Our mission is to enable access to world-class trading <br />
               opportunities for everyone.
             </p>
+            <Link href="/AboutUs" className="p-4">
+              <button className="px-4 py-3 gap-2 w-60 h-14 bg-[#3A3A3A] rounded-lg shadow-xs text-white text-[18px]">
+                Learn More
+              </button>
+            </Link>
           </div>
           <div className="my-10">
             <Smalcard

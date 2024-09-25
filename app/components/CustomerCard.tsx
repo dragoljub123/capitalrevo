@@ -26,7 +26,7 @@ const CustomerCard: React.FC<CustomerCardProps> = ({ customers }) => {
   };
 
   return (
-    <div className="bg-white w-[300px] md:w-[467px]   flex ">
+    <div className="bg-white w-[300px] md:w-[467px]   flex justify-between  h-[150px]">
       <div className="flex-col ">
         {" "}
         <h2 className=" font-bold mb-4">{customers[currentIndex].name}</h2>
@@ -35,13 +35,13 @@ const CustomerCard: React.FC<CustomerCardProps> = ({ customers }) => {
       <div className="flex justify-between gap-4 pl-10">
         <button
           onClick={handlePrev}
-          className=" text-gray-600 font-bold rounded-full w-8 h-8 border-gray-300 hover:bg-gray-200 transition-colors duration-300"
+          className="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full hover:bg-gray-200 transition-colors duration-300 pb-1"
         >
           &#8592;
         </button>
         <button
           onClick={handleNext}
-          className=" text-gray-600 font-bold  rounded-full w-8 h-8  border-gray-300 hover:bg-gray-200 transition-colors duration-300"
+          className="flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full hover:bg-gray-200 transition-colors duration-300 pb-1"
         >
           &#8594;
         </button>
