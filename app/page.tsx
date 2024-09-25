@@ -322,7 +322,7 @@ export default async function Home() {
       </div>
       <div className="bg-[#F4F4F4] flex justify-center items-center md:hidden lg:hidden">
         <Image
-          src="/Getintouchmob.png"
+          src="/mobapp.png"
           alt="webinars"
           width={380}
           height={672}

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import "../globals.css";
 import glogo from "../images/crlogo.png";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
