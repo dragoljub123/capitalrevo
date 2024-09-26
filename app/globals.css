@@ -37,11 +37,7 @@
   background-image: url("images/pozadinahp.png");
   background-size: cover;
 }
-.pozadina2 {
-  background-image: url("images/moneyrise.png");
-  height: 521px;
-  width: 1240px;
-}
+
 .pozadinaboja {
   background: #0a0f1b;
   background-size: cover;
@@ -256,10 +252,6 @@ ul {
 
 .sivkasta {
   background: #eeeeee66;
-}
-.aboutuspozadina {
-  background-image: url("images/blueworld.png");
-  background-size: cover;
 }
 
 .plavigradijent {
