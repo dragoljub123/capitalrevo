@@ -315,7 +315,7 @@ export default async function Home() {
         <Image
           src={Strategygetintouch}
           alt="webinars1"
-          width={1440}
+          width={1280}
           height={400}
           className=" object-contain "
         />
