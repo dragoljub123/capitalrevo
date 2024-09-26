@@ -60,7 +60,7 @@ export default async function Home() {
       <div className="pozadina  ">
         <div className=" max-w-sirina mx-auto ">
           <div className=" pt-10 sm:pt-14 mx-auto flex flex-col lg:flex-row ">
-            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-20 h-full ">
+            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-28  h-full ">
               <h1 className="pt-20 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>

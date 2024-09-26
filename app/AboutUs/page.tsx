@@ -9,7 +9,7 @@ export default function AboutUs() {
     <div className="mx-auto">
       <Navbar />
       <div className="pt-20 pb-20 flex justify-center">
-        <div className="max-w-sirina mx-auto">
+        <div className="max-w-screen-xl mx-auto xl:px-10">
           <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
             Who We Are
           </h1>

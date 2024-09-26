@@ -3,17 +3,17 @@ import { Navbar } from "../components/Navbar";
 
 const CompareAccounts: FC = () => {
   return (
-    <div className=" mx-auto ">
+    <div className="mx-auto">
       <Navbar />
-      <div className="pt-20 ">
-        <div className=" max-w-sirina mx-auto ">
+      <div className="pt-20">
+        <div className="max-w-sirina mx-auto">
           <div className="p-4 lg:p-8 mb-10">
             <h1 className="text-4xl font-bold mb-8 text-center">
               Compare Account Plans
             </h1>
 
             {/* Tabela poređenja */}
-            <div className="overflow-x-auto pt-5  border-b-[1px] border-gray-300">
+            <div className="overflow-x-auto pt-5 border-b-[1px] border-gray-300">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -57,8 +57,8 @@ const CompareAccounts: FC = () => {
                     <td className="px-6 py-3 text-sm font-semibold">
                       Leverage
                     </td>
-                    <td className="px-6 py-3 text-sm">1:30</td>
-                    <td className="px-6 py-3 text-sm">1:100</td>
+                    <td className="px-6 py-3 text-sm">N/A</td>
+                    <td className="px-6 py-3 text-sm">N/A</td>
                     <td className="px-6 py-3 text-sm plavigradijent font-semibold">
                       1:200
                     </td>
@@ -96,7 +96,7 @@ const CompareAccounts: FC = () => {
                       Education
                     </td>
                     <td className="px-6 py-3 text-sm">Basic Education</td>
-                    <td className="px-6 py-3 text-sm">3 Advanced Lessons</td>
+                    <td className="px-6 py-3 text-sm">Basic Education</td>
                     <td className="px-6 py-3 text-sm plavigradijent font-semibold">
                       Advanced Education
                     </td>
@@ -151,12 +151,8 @@ const CompareAccounts: FC = () => {
                     <td className="px-6 py-3 text-sm font-semibold">
                       Webinars
                     </td>
-                    <td className="px-6 py-3 text-sm">
-                      Live Webinars with Senior Trading Strategist
-                    </td>
-                    <td className="px-6 py-3 text-sm">
-                      Live Webinars with Senior Trading Strategist
-                    </td>
+                    <td className="px-6 py-3 text-sm">Live Webinars</td>
+                    <td className="px-6 py-3 text-sm">Live Webinars</td>
                     <td className="px-6 py-3 text-sm plavigradijent font-semibold">
                       Live Webinars with Senior Trading Strategist
                     </td>
@@ -193,13 +189,13 @@ const CompareAccounts: FC = () => {
                     <td className="px-6 py-3 text-sm font-semibold">
                       Special Offers
                     </td>
-                    <td className="px-6 py-3 text-sm">N/A</td>
-                    <td className="px-6 py-3 text-sm">N/A</td>
+                    <td className="px-6 py-3 text-sm">No Offers</td>
+                    <td className="px-6 py-3 text-sm">No Offers</td>
                     <td className="px-6 py-3 text-sm plavigradijent font-semibold">
-                      N/A
+                      Trading Bonus
                     </td>
-                    <td className="px-6 py-3 text-sm">Special offers</td>
-                    <td className="px-6 py-3 text-sm">Special offers</td>
+                    <td className="px-6 py-3 text-sm">Trading Bonus</td>
+                    <td className="px-6 py-3 text-sm">Trading Bonus</td>
                   </tr>
                 </tbody>
               </table>
