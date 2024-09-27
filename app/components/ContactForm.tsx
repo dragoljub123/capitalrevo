@@ -1,13 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
-
-// Declare global grecaptcha
-declare global {
-  interface Window {
-    grecaptcha: any; // or a more specific type if available
-  }
-}
-
+import React, { useState } from "react";
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -15,9 +7,8 @@ const ContactForm: React.FC = () => {
     email: "",
     phone: "",
     message: "",
-    agreeToPrivacyPolicy: false, // State for the checkbox
+    agreeToPrivacyPolicy: false, // Add state for the checkbox
   });
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -34,76 +25,42 @@ const ContactForm: React.FC = () => {
       });
     }
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.agreeToPrivacyPolicy) {
       alert("You must agree to our privacy policy.");
       return;
     }
-
-    // Check if grecaptcha is loaded
-    if (typeof window.grecaptcha !== "undefined") {
-      window.grecaptcha.enterprise.ready(async () => {
-        const token = await window.grecaptcha.enterprise.execute(
-          "YOUR_SITE_KEY", // replace with your actual site key
-          { action: "submit" }
-        );
-
-        // Submit form data along with the reCAPTCHA token
-        try {
-          const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              ...formData,
-              "g-recaptcha-response": token,
-            }),
-          });
-
-          if (response.ok) {
-            alert("Message sent successfully!");
-            setFormData({
-              firstName: "",
-              lastName: "",
-              email: "",
-              phone: "",
-              message: "",
-              agreeToPrivacyPolicy: false,
-            });
-          } else {
-            alert("Failed to send message.");
-          }
-        } catch (error) {
-          console.error("Error:", error);
-          alert("An error occurred while sending the message.");
-        }
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-    } else {
-      alert("reCAPTCHA failed to load. Please try again later.");
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+          agreeToPrivacyPolicy: false,
+        });
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred while sending the message.");
     }
   };
-
-  useEffect(() => {
-    // Load the grecaptcha script
-    const script = document.createElement("script");
-    script.src =
-      "https://www.google.com/recaptcha/enterprise.js?render=YOUR_SITE_KEY"; // Replace with your site key
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto p-4 space-y-4 max-w-lg sm:max-w-2xl"
+      className="mx-auto p-4 space-y-4  max-w-lg sm:max-w-2xl"
     >
       <div className="flex flex-col space-y-4">
         <div className="flex flex-col sm:flex-row sm:space-x-4">
@@ -122,7 +79,7 @@ const ContactForm: React.FC = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="text-black placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm px-2"
+              className="text-black placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm px-2"
             />
           </div>
           <div className="flex-1">
@@ -140,11 +97,11 @@ const ContactForm: React.FC = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="px-2 text-black placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="px-2 text-black placeholder-gray mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
         </div>
-        <div className="sm:flex-row sm:space-x-4">
+        <div className=" sm:flex-row sm:space-x-4">
           <div className="">
             <label
               htmlFor="email"
@@ -160,7 +117,7 @@ const ContactForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="px-2 text-black placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="px-2 text-black placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px]  border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
             />
           </div>
         </div>
@@ -179,8 +136,8 @@ const ContactForm: React.FC = () => {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="px-2 text-black placeholder-gray mt-1 block w-full h-14 rounded-md border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-          />
+            className=" px-2 text-black placeholder-gray  mt-1 block w-full h-14 rounded-md  border-[1px] border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+          />{" "}
         </div>
         <div>
           <label
@@ -218,7 +175,7 @@ const ContactForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="px-12 py-1 rounded-md text-white bg-dugmeplava transition-colors duration-300 w-full sm:w-auto"
+          className="  px-12 py-1 rounded-md text-white bg-dugmeplava transition-colors duration-300 w-full sm:w-auto"
         >
           Send message
         </button>
@@ -226,5 +183,4 @@ const ContactForm: React.FC = () => {
     </form>
   );
 };
-
 export default ContactForm;
