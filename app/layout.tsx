@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcsQVAqAAAAAOBism_HvYu3YrnQcNab1mkkMM1P"></script>
         <link rel="icon" href="/cr.ico" />
         <meta property="og:image" content="/Capitalrevo.png" />
         <meta
