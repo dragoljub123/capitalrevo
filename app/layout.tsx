@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { FooterHome } from "./components/FooterHome";
+import Script from "next/script"; // Import the Script component
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,18 +20,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcsQVAqAAAAAOBism_HvYu3YrnQcNab1mkkMM1P"></script>
+        {/* Load the reCAPTCHA script asynchronously */}
+        <Script
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LcsQVAqAAAAAOBism_HvYu3YrnQcNab1mkkMM1P"
+          strategy="afterInteractive" // Load the script after the page is interactive
+          onLoad={() => console.log("reCAPTCHA script loaded successfully.")}
+          onError={() => console.error("Failed to load the reCAPTCHA script.")}
+        />
         <link rel="icon" href="/cr.ico" />
         <meta property="og:image" content="/Capitalrevo.png" />
         <meta
           name="google-site-verification"
           content="LacVDWR8EcIov_giDxPejNwywj5UFL4DwWeTU4IYU1c"
         />
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-7ZV9VZB4PK"
-        ></script>
-        <script
+        />
+        <Script
+          id="gtag-init"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -46,7 +54,8 @@ export default function RootLayout({
         {children}
         <FooterHome />
         {/* Start of Tawk.to Script */}
-        <script
+        <Script
+          id="tawk-to-script"
           dangerouslySetInnerHTML={{
             __html: `
               var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
