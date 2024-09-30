@@ -247,7 +247,7 @@ export default async function Home() {
             into the platform <br /> for real-time insights.
           </p>
         </div>
-        <Link href="/News">
+        <Link href="/news">
           <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-20">
             Read More News
           </button>
@@ -415,7 +415,7 @@ export default async function Home() {
               Our mission is to enable access to world-class trading <br />
               opportunities for everyone.
             </p>
-            <Link href="/AboutUs" className="p-4">
+            <Link href="/about-us" className="p-4">
               <button className="px-4 py-3 gap-2 w-60 h-14 bg-[#3A3A3A] rounded-lg shadow-xs text-white text-[18px]">
                 Learn More
               </button>
