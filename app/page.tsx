@@ -195,7 +195,7 @@ export default async function Home() {
       <div className="my-10">
         <div
           className=" pt-10 mx-auto flex items-center justify-center "
-          id="Education"
+          id="education"
         >
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
             <h2 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">

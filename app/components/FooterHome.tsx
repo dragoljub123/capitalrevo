@@ -56,16 +56,16 @@ export const FooterHome: React.FC = () => {
                   <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <Link href="/Accounts">Accounts</Link>
+                  <Link href="/accounts">Accounts</Link>
                 </li>
                 <li>
-                  <Link href="/TradingPlatform">Trading Platform</Link>
+                  <Link href="/tradingplatform">Trading Platform</Link>
                 </li>
                 <li>
-                  <Link href="#Education">Education</Link>
+                  <Link href="#education">Education</Link>
                 </li>
                 <li>
-                  <Link href="/News">News</Link>
+                  <Link href="/news">News</Link>
                 </li>
                 <li>
                   <Link href="/blog">Blog</Link>
@@ -74,10 +74,10 @@ export const FooterHome: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 <li className="font-bold mb-2">Company</li>
                 <li>
-                  <Link href="/AboutUs">About Us</Link>
+                  <Link href="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/ContactUs/#contactform">Contact Us</Link>
+                  <Link href="/contact-us/#contactform">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -159,16 +159,16 @@ export const FooterHome: React.FC = () => {
                     <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="/Accounts">Accounts</Link>
+                    <Link href="/accounts">Accounts</Link>
                   </li>
                   <li>
-                    <Link href="/TradingPlatform">Trading Platform</Link>
+                    <Link href="/trading-platform">Trading Platform</Link>
                   </li>
                   <li>
-                    <Link href="#Education">Education</Link>
+                    <Link href="#education">Education</Link>
                   </li>
                   <li>
-                    <Link href="/News">News</Link>
+                    <Link href="/news">News</Link>
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
@@ -177,10 +177,10 @@ export const FooterHome: React.FC = () => {
                 <ul className="space-y-2 text-sm">
                   <li className="font-bold mb-2">Company</li>
                   <li>
-                    <Link href="/AboutUs">About Us</Link>
+                    <Link href="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/ContactUs/#contactform">Contact Us</Link>
+                    <Link href="/contact-us/#contactform">Contact Us</Link>
                   </li>
                 </ul>
               </div>

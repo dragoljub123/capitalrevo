@@ -2,6 +2,13 @@ import React from "react";
 import { Navbar } from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | CapitalRevo",
+  description:
+    "Get in touch with Capital Revo for inquiries and support. Our team is ready to assist you with your business needs and questions.",
+};
 
 export default function ContactUs() {
   return (

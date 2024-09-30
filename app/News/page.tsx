@@ -4,6 +4,13 @@ import TradingViewWidgetNews from "../components/TradingViewWidgetNews";
 import TradingViewEventsWidget from "../components/TradingViewEventsWidget";
 import TradingViewWidgetNews2 from "../components/TradingViewWidgetNews2";
 import TradingViewEventsWidget2 from "../components/TradingViewEventsWidget2";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "News | CapitalRevo",
+  description:
+    "Discover the latest updates and insights from Capital Revo. Stay ahead with news on industry trends, innovations, and company announcements.",
+};
 
 export default function News() {
   return (

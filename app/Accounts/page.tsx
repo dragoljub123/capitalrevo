@@ -4,6 +4,13 @@ import Paketi from "../components/Paketi";
 import { Paket } from "@/app/utilitis/interface";
 import { client } from "@/sanity/lib/client";
 import CompareAccountsButton from "@/app/components/CompareAccountsButton";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Accounts | CapitalRevo",
+  description:
+    "CapitalRevo offers specialized accounts that empower businesses. Experience tailored financial solutions to drive your success.",
+};
 
 async function getPaketi() {
   const query = `*[_type == 'paketi'] {

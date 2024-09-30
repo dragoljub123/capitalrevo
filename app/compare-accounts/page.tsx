@@ -1,5 +1,12 @@
 import { FC } from "react";
 import { Navbar } from "../components/Navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Compare Accounts | CapitalRevo",
+  description:
+    "Explore and compare account options at Capital Revo. Discover tailored solutions that meet your business needs and financial goals.",
+};
 
 const CompareAccounts: FC = () => {
   return (

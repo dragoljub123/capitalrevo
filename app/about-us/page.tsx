@@ -3,6 +3,13 @@ import { Navbar } from "../components/Navbar";
 import AboutUsCard from "../components/AboutUsCard";
 import AboutUsCard2 from "../components/AboutUsCard2";
 import FaturedCrad from "../components/FaturedCrad";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | CapitalRevo",
+  description:
+    "We are committed to delivering an exceptional trading experience by providing traders access to the best tools and resources available.",
+};
 
 export default function AboutUs() {
   return (
