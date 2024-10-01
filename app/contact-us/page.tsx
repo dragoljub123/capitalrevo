@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Contact Us | CapitalRevo",
   description:
     "Get in touch with Capital Revo for inquiries and support. Our team is ready to assist you with your business needs and questions.",
+  alternates: {
+    canonical: "https://capitalrevo.com/contact-us",
+  },
 };
 
 export default function ContactUs() {

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Ai Support | CapitalRevo",
   description:
     "AI trading systems effortlessly perform complex technical analyses across multiple markets",
+  alternates: {
+    canonical: "https://capitalrevo.com/ai-support",
+  },
 };
 
 export default function AiSupport() {

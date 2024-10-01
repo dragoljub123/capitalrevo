@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Accounts | CapitalRevo",
   description:
     "CapitalRevo offers specialized accounts that empower businesses. Experience tailored financial solutions to drive your success.",
+  alternates: {
+    canonical: "https://capitalrevo.com/accounts",
+  },
 };
 
 async function getPaketi() {

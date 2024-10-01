@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "News | CapitalRevo",
   description:
     "Discover the latest updates and insights from Capital Revo. Stay ahead with news on industry trends, innovations, and company announcements.",
+  alternates: {
+    canonical: "https://capitalrevo.com/news",
+  },
 };
 
 export default function News() {

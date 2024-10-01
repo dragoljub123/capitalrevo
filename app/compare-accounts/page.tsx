@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Compare Accounts | CapitalRevo",
   description:
     "Explore and compare account options at Capital Revo. Discover tailored solutions that meet your business needs and financial goals.",
+  alternates: {
+    canonical: "https://capitalrevo.com/compare-accounts",
+  },
 };
 
 const CompareAccounts: FC = () => {
