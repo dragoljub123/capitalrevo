@@ -33,8 +33,8 @@ const AibanerM = () => {
         <p className="text-xs">
           AI trading bots handle vast amounts of market data in real-time,
           analyzing it faster than any human ever could. This lightning-fast
-          speed ensures you're always one step ahead in making informed trading
-          decisions.
+          speed ensures you&apos;re always one step ahead in making informed
+          trading decisions.
         </p>
       </div>
 
