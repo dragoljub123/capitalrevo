@@ -12,6 +12,7 @@ export const Navbar = () => {
   const navigation = [
     { title: "About Us", href: "/about-us" },
     { title: "Accounts", href: "/accounts" },
+    { title: "AI", href: "/ai-support" },
     { title: "Trading Platform", href: "/trading-platform" },
     { title: "Education", href: "/#education" },
     { title: "News", href: "/news" },
@@ -36,7 +37,7 @@ export const Navbar = () => {
             <Link
               key={item.title}
               href={item.href}
-              className="text-xs xl:text-sm hover:text-customBlue text-white"
+              className="text-xs xl:text-xs hover:text-customBlue text-white"
             >
               {item.title}
             </Link>
