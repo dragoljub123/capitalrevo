@@ -23,6 +23,7 @@ import ApplePayLogo from "./components/ApplePayLogo";
 import Strategygetintouch from "@/public/strategygetintouch.svg";
 import AibanerC from "./components/AibanerC";
 import AibanerM from "./components/AibanerM";
+import DailyNewsWidget from "./components/DailyNewsWidget";
 
 async function getPosts() {
   const query = `*[_type == 'post'] {
@@ -122,7 +123,7 @@ export default async function Home() {
           <TradingViewWidget />
         </div>
       </div>
-
+      <DailyNewsWidget />
       <div className="crafy " id="Accounts">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">

@@ -11,9 +11,9 @@ import "../globals.css";
 export const Navbar = () => {
   const navigation = [
     { title: "About Us", href: "/about-us" },
-    { title: "Accounts", href: "/accounts" },
-    { title: "AI", href: "/ai-support" },
     { title: "Trading Platform", href: "/trading-platform" },
+    { title: "AI Support", href: "/ai-support" },
+    { title: "Accounts", href: "/accounts" },
     { title: "Education", href: "/#education" },
     { title: "News", href: "/news" },
     { title: "Contact Us", href: "/contact-us/#contactform" },
@@ -32,7 +32,7 @@ export const Navbar = () => {
     <div className="fixed mx-auto w-full h-12 sm:h-16 z-50 bg-navcolor">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 lg:px-10 xl:px-10 h-full">
         <Logo title="Capitalrevo" className="text-black" />
-        <div className="hidden lg:flex lg:items-center gap-10 lg:gap-4 xl:gap-10">
+        <div className="hidden lg:flex lg:items-center gap-10 lg:gap-3 xl:gap-8">
           {navigation.map((item) => (
             <Link
               key={item.title}
