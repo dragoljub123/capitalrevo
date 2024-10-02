@@ -4,7 +4,15 @@ import Link from "next/link";
 const AiPageM = () => {
   return (
     <div className="mx-auto p-10 text-white">
-      {/* Naslov */}
+      <h2 className="   pt-10 text-white text-3xl text-center font-bold mb-4 ">
+        CapitalRevo AI support
+      </h2>
+      <div className="  flex justify-center ">
+        <hr className="border-t-[2px] border-[#990033] w-[90%] my-2 " />
+      </div>
+      <h3 className=" text-xl mt-2 mb-2 text-white font-bold text-center">
+        Leave out the guessing from your trading success!
+      </h3>
 
       {/* Slika */}
       <div className="w-full mb-4">
@@ -16,7 +24,7 @@ const AiPageM = () => {
           className="w-full"
         />
       </div>
-      <h2 className="mb-4 text-2xl font-bold  underline text-[#990033]">
+      <h2 className="mb-4 text-lg font-bold   text-[#990033]">
         AI - Your Fast Track to Profitable Trading
       </h2>
 
@@ -62,7 +70,9 @@ const AiPageM = () => {
           highly liquid market.
         </p>
       </div>
-
+      <div className="  flex justify-center ">
+        <hr className="border-t-[2px] border-[#990033] w-[100%] my-2 mb-5 " />
+      </div>
       {/* Slika */}
       <div className="w-full mb-4">
         <Image
@@ -118,7 +128,9 @@ const AiPageM = () => {
         trends. Combining technical indicators and deep analysis, it ensures
         every trade is executed at just the right moment.
       </p>
-
+      <div className="  flex justify-center ">
+        <hr className="border-t-[2px] border-[#990033] w-[100%] my-2 mb-5" />
+      </div>
       <div className="w-full mb-4">
         <Image
           src="/HP AI Image 3.png" // zameni sa putanjom do tvoje slike

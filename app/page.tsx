@@ -72,16 +72,16 @@ export default async function Home() {
 
       <div className="pozadina  ">
         <div className=" max-w-sirina mx-auto ">
-          <div className=" pt-10 sm:pt-14 mx-auto flex flex-col lg:flex-row ">
+          <div className=" pt-10 mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-28  h-full ">
-              <h1 className="pt-20 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
+              <h1 className="pt-10 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
               <p className="text-white text-center  text-sm lg:mt-2 lg:mb- lg:text-left ">
                 Start trading with as little as $200 and leverage our expert
                 tools and resources.
               </p>
-              <div className="flex flex-col justify-center  items-center md:flex md:justify-center md:items-center lg:flex lg:flex-row lg:justify-start  lg:items-start lg:gap-4 pb-10 pt-10 ">
+              <div className="flex flex-col justify-center  items-center md:flex md:justify-center md:items-center lg:flex lg:flex-row lg:justify-start  lg:items-start lg:gap-4 pt-2 md:pb-10 md:pt-10 ">
                 <Link
                   className="flex justify-center items-center px-4 py-3 gap-2  w-48 h-12 bg-transparent rounded-md shadow-xs text-white border border-white border-1"
                   href="https://platform.capitalrevo.com/login"
@@ -106,7 +106,7 @@ export default async function Home() {
               />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20 pb-20 mt-8 lg:mt-0 lg:pl-20 xl:pl-32 md:pl-28">
+          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20  mt-8 lg:mt-0 lg:pl-20 xl:pl-32 md:pl-28">
             <p className="text-white flex justify-center lg:justify-start">
               As featured in
             </p>
@@ -137,10 +137,10 @@ export default async function Home() {
       <div className="crafy " id="Accounts">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-4xl py-4 text-white font-bold mb-6 mt-0 lg:mt-6 text-center lg:text-4xl ">
+            <h2 className="text-4xl py-4 lg:py-2 text-white font-bold mb-2 text-center lg:text-4xl ">
               Choose the Right Account for You
             </h2>
-            <p className=" mb-4 text-center text-sm  text-white">
+            <p className=" mb-4 text-center   text-white">
               Simple, transparent pricing that grows with you. Try any plan free
               for 30 days.
             </p>
@@ -185,15 +185,15 @@ export default async function Home() {
           />
         </div>
       </div>
-      <div className="flex justify-center items-center mb-20">
+      <div className="flex justify-center items-center mb-10">
         <div className=" flex justify-center items-center">
           <CompareAccountsButton>Compare Accounts</CompareAccountsButton>
         </div>
       </div>
-      <div className=" pt-10 " id="TradingPlatform">
+      <div className=" pt-0 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
           <div className=" md:pl-10">
-            <h3 className=" text-center text-4xl  font-bold p-4 md:text-left">
+            <h3 className="  naslovboja2 text-center text-4xl  font-bold p-4 md:text-left">
               Innovative Trading Platform
             </h3>
             <p className=" text-sm  p-4 tetx-center text-gray-700">
@@ -212,13 +212,13 @@ export default async function Home() {
       <div className="flex md:hidden justify-center bg-[#191A1E] ">
         <AibanerM />
       </div>
-      <div className="my-10">
+      <div className="my-0">
         <div
           className=" pt-10 mx-auto flex items-center justify-center "
           id="education"
         >
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-2xl py-4 text-black font-bold mb-6 mt-6 text-center lg:text-4xl ">
+            <h2 className="text-2xl py-4 text-black font-bold mb-2 mt-2 text-center lg:text-4xl ">
               Learn to Trade with Confidence
             </h2>
             <p className=" mb-4 text-center text-sm text-gray-700">
@@ -255,11 +255,11 @@ export default async function Home() {
       </div>
 
       <div
-        className="pt-10 pl-4 mx-auto mt-20 md:pl-20 lg:flex lg:justify-between lg:pl-28  lg:items-center max-w-sirina"
+        className="pt-10 pl-4 mx-auto mt-10 md:pl-20 lg:flex lg:justify-between lg:pl-28  lg:items-center max-w-sirina"
         id="News"
       >
         <div className=" ">
-          <h3 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl  ">
+          <h3 className="text-2xl py-2 text-black font-bold mb-6 mt-6  lg:text-4xl  ">
             Stay Informed
           </h3>
           <p className=" mb-4  text-sm ">

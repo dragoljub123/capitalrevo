@@ -35,10 +35,10 @@ export default async function Accounts() {
     <div className="mx-auto">
       <Navbar />
       <div className=" pb-20 flex-row justify-center ">
-        <div className="crafy ">
+        <div className="crafy  ">
           <div className=" mx-auto flex items-center justify-center ">
             <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-              <h2 className="text-4xl py-4 text-white font-bold mb-6 mt-0 lg:mt-6 text-center lg:text-4xl ">
+              <h2 className="text-4xl py-4 text-white font-bold mb-6 mt-10 lg:mt-20 text-center lg:text-4xl ">
                 Choose the Right Account for Your Trading Needs
               </h2>
               <p className=" mb-4 text-center text-sm  text-white max-w-[900px]">

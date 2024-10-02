@@ -5,6 +5,7 @@ import TradingViewEventsWidget from "../components/TradingViewEventsWidget";
 import TradingViewWidgetNews2 from "../components/TradingViewWidgetNews2";
 import TradingViewEventsWidget2 from "../components/TradingViewEventsWidget2";
 import { Metadata } from "next";
+import DailyNewsWidget from "../components/DailyNewsWidget";
 
 export const metadata: Metadata = {
   title: "News | CapitalRevo",
@@ -35,9 +36,9 @@ export default function News() {
         </div>
       </div>
 
-      <div className="pt-10 pl-4 mx-auto mt-20 md:pl-20 lg:flex-row lg:justify-between lg:pl-28  lg:items-center max-w-sirina">
+      <div className="pt-10 pl-4 mx-auto  md:pl-20 lg:flex-row lg:justify-between lg:pl-28  lg:items-center max-w-sirina">
         <div className=" ">
-          <h3 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl  ">
+          <h3 className="text-2xl py-2 text-black font-bold mb-6  lg:text-4xl  ">
             Latest News
           </h3>
           <p className=" mb-4  text-sm max-w-[600px]">
@@ -49,7 +50,7 @@ export default function News() {
         </div>
 
         <div className="max-w-sirina ">
-          <div className=" hidden md:block ">
+          <div className=" hidden md:block  ">
             <TradingViewWidgetNews />
           </div>
           <div className=" block md:hidden ">
@@ -58,9 +59,9 @@ export default function News() {
         </div>
       </div>
 
-      <div className="pt-10 pl-4 mx-auto mt-20 md:pl-20 lg:flex-row lg:justify-between lg:pl-28  lg:items-center max-w-sirina pb-20">
+      <div className=" pl-4 mx-auto mt-10 md:pl-20 lg:flex-row lg:justify-between lg:pl-28  lg:items-center max-w-sirina pb-20">
         <div className=" ">
-          <h3 className="text-2xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl  ">
+          <h3 className="text-2xl py-2 text-black font-bold mb-6 mt-6  lg:text-4xl  ">
             Expert Commentary
           </h3>
           <p className=" mb-4  text-sm max-w-[600px]">

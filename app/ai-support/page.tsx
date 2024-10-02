@@ -18,13 +18,16 @@ export default function AiSupport() {
   return (
     <div className="mx-auto bg-[#191A1E]">
       <Navbar />
-      <h2 className=" pt-32 text-white text-4xl text-center font-bold mb-4 underline decoration-[#990033] decoration-2 underline-offset-[20px]">
+      <h2 className=" hidden md:block  pt-32 text-white text-4xl text-center font-bold mb-4 ">
         CapitalRevo AI support
       </h2>
-      <h3 className="text-2xl mt-10 text-white font-bold text-center">
+      <div className="hidden md:flex  justify-center ">
+        <hr className="border-t-[1px] border-[#990033] w-[50%] my-2 " />
+      </div>
+      <h3 className="hidden md:block  text-2xl mt-6 text-white font-bold text-center">
         Leave out the guessing from your trading success!
       </h3>
-      <div className=" hidden md:flex md:justify-center  pt-32 ">
+      <div className=" hidden md:flex md:justify-center  pt-10 ">
         <div className="max-w-screen-xl flex justify-center text-white  h-[470px] ">
           {/* Leva strana */}
 
@@ -35,7 +38,7 @@ export default function AiSupport() {
 
             {/* Prvi paragraf */}
             <div className="mb-4">
-              <p className="text-xs">
+              <p className="text-sm">
                 Unlock the power of CapitalRevo&apos;s AI-powered trading
                 platform and seize opportunities in the ever-changing foreign
                 exchange markets.
@@ -44,7 +47,7 @@ export default function AiSupport() {
 
             {/* Drugi paragraf */}
             <div className="mb-4">
-              <p className="text-xs">
+              <p className="text-sm">
                 With CapitalRevo, you can capitalize on price fluctuations in
                 one of the world&apos;s most dynamic arenas.
               </p>
@@ -52,7 +55,7 @@ export default function AiSupport() {
 
             {/* Treći paragraf */}
             <div className="mb-4">
-              <p className="text-xs">
+              <p className="text-sm">
                 Our web trader and mobile app leverage cutting-edge machine
                 learning technology to trade across a wide spectrum of major,
                 minor, and exotic currency pairs.
@@ -61,7 +64,7 @@ export default function AiSupport() {
 
             {/* Četvrti paragraf */}
             <div className="mb-4">
-              <p className="text-xs">
+              <p className="text-sm">
                 Simply sign up, deposit your funds, and let CapitalRevo&apos;s
                 AI handle the heavy lifting—automating analysis, risk
                 management, and trade execution seamlessly.
@@ -70,7 +73,7 @@ export default function AiSupport() {
 
             {/* Peti paragraf */}
             <div className="mb-4">
-              <p className="text-xs">
+              <p className="text-sm">
                 With AI in charge, you&apos;ll act on emerging opportunities in
                 real-time, tapping into the trillions of dollars traded daily on
                 this highly liquid market.
@@ -93,7 +96,7 @@ export default function AiSupport() {
       <div className="hidden md:flex  justify-center ">
         <hr className="border-t-[1px] border-[#990033] w-[50%] my-4 " />
       </div>
-      <div className=" hidden md:flex md:justify-center  pt-20">
+      <div className=" hidden md:flex md:justify-center  pt-10">
         <div className="max-w-screen-xl flex justify-center text-white ">
           <div className="w-full p-4 xl:p-10">
             <Image
@@ -104,8 +107,8 @@ export default function AiSupport() {
               className="w-full"
             />
           </div>
-          <div className="text-white text-xs p-4 xl:p-10">
-            <p className="mb-4">
+          <div className="text-white text-xs md:text-sm p-4 xl:p-10 ">
+            <p className="mb-6">
               <strong>A Revolutionary AI Trading Bot</strong>
               <br />
               CapitalRevo&apos;s AI-driven bot is built with groundbreaking deep
@@ -115,7 +118,7 @@ export default function AiSupport() {
               AI-powered trading.
             </p>
 
-            <p className="mb-4">
+            <p className="mb-6">
               <strong>AI That Thinks Like You</strong>
               <br />
               Harnessing the latest deep neural networks, CapitalRevo&apos;s AI
@@ -124,7 +127,7 @@ export default function AiSupport() {
               anticipate market movements with ever-increasing accuracy.
             </p>
 
-            <p className="mb-4">
+            <p className="mb-6">
               <strong>Big Data Meets Precision Trading</strong>
               <br />
               With the ability to process massive datasets, CapitalRevo&apos;s
@@ -134,7 +137,7 @@ export default function AiSupport() {
               smarter, faster trades.
             </p>
 
-            <p className="mb-4">
+            <p className="mb-6">
               <strong>Mastering Risk Management</strong>
               <br />
               Our AI doesn&apos;t just trade—it protects. Using sophisticated
@@ -158,7 +161,7 @@ export default function AiSupport() {
       <div className="hidden md:flex justify-center ">
         <hr className="border-t-[1px] border-[#990033] w-[50%] my-4 " />
       </div>
-      <div className="hidden md:flex md:justify-center pt-20">
+      <div className="hidden md:flex md:justify-center pt-10">
         <div className="max-w-screen-xl flex justify-center text-white">
           {/* Deo sa tekstom */}
           <div className=" p-4 xl:p-10">
@@ -173,31 +176,31 @@ export default function AiSupport() {
             </h2>
 
             {/* Paragrafi sa tekstom */}
-            <p className="text-white text-xs my-4">
+            <p className="text-white text-sm  my-4">
               <strong>Lightning-fast execution:</strong> Never miss a trading
               opportunity
             </p>
-            <p className="text-white text-xs my-4">
+            <p className="text-white text-sm my-4">
               <strong>Efficiency and speed:</strong> Save time and cut
               operational costs
             </p>
-            <p className="text-white text-xs my-4">
+            <p className="text-white text-sm my-4">
               <strong>Advanced data processing:</strong> Analyze multiple
               sources in seconds
             </p>
-            <p className="text-white text-xs my-4">
+            <p className="text-white text-sm my-4">
               <strong>Automated risk management:</strong> Assess and mitigate
               exposure with ease
             </p>
-            <p className="text-white text-xs my-4">
+            <p className="text-white text-sm my-4">
               <strong>Enhanced pattern recognition:</strong> Spot emerging
               trends faster than ever
             </p>
-            <p className="text-white text-xs my-4">
+            <p className="text-white text-sm my-4">
               <strong>Emotion-free decisions:</strong> Pure logic, no emotional
               bias
             </p>
-            <p className="text-white text-xs my-4">
+            <p className="text-white text-sm my-4">
               <strong>Scalability:</strong> Handle a high volume of forex trades
               simultaneously
             </p>
