@@ -14,7 +14,7 @@ export const Navbar = () => {
     { title: "Trading Platform", href: "/trading-platform" },
     { title: "AI Support", href: "/ai-support" },
     { title: "Accounts", href: "/accounts" },
-    { title: "Education", href: "/#education" },
+    { title: "Education", href: "/education" },
     { title: "News", href: "/news" },
     { title: "Contact Us", href: "/contact-us/#contactform" },
   ];
