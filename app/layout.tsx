@@ -39,7 +39,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="canonical" href="https://capitalrevo.com" />
+        
       </head>
       <body className={inter.className}>
         {children}

@@ -24,6 +24,16 @@ import Strategygetintouch from "@/public/strategygetintouch.svg";
 import AibanerC from "./components/AibanerC";
 import AibanerM from "./components/AibanerM";
 import DailyNewsWidget from "./components/DailyNewsWidget";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "CapitalRevo - Trade Online with a Leading Trading Broker",
+  description:
+    "Discover the leading online trading platform at CapitalRevo. Trade forex, stocks, commodities, and more with a trusted and regulated broker.",
+  alternates: {
+    canonical: "https://capitalrevo.com",
+  },
+};
 
 async function getPosts() {
   const query = `*[_type == 'post'] {

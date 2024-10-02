@@ -21,20 +21,20 @@ const DailyNewsWidget = () => {
   return (
     <div>
       <div className="bg-gray-50">
-        <div className="pt-10 pb-10 flex-row justify-center items-center">
-          <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
+        <div className="pt-3 pb-5 flex-row justify-center items-center">
+          <h2 className=" naslovboja2 text-center text-4xl font-bold mt-10">
             CapitalRevo Daily News!
-          </h1>
+          </h2>
           <div className="flex justify-center ">
-            <p className="text-xl text-center mt-2 p-4 max-w-[900px] font-bold">
+            <p className="text-xl text-center mt-1 px-4 max-w-[900px] font-bold">
               The biggest news and trends in the world of finance - <br /> EVERY
               MARKET DAY!
             </p>
           </div>
         </div>
-        <div className="flex justify-center pb-20 ">
+        <div className="flex justify-center pb-10 ">
           <div
-            className="w-5/6 md:w-1/2 border-blue-500 border-[10px] rounded-xl "
+            className="w-5/6 md:w-1/2 border-blue-500 border-[6px] rounded-xl "
             data-dyntube-key="ktX1QPiPO0SsPAbSykwCg"
           ></div>
         </div>
