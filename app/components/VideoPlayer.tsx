@@ -16,6 +16,10 @@ type VideoCategories = {
 const videos: VideoCategories = {
   Beginner: [
     {
+      title: "Basic Forex Education",
+      src: "",
+    },
+    {
       title: "1. Why Trade Forex",
       src: "https://play.dyntube.io/iframe/ojYsM6Gakkuj98xT026iw",
     },
@@ -199,6 +203,10 @@ const videos: VideoCategories = {
     },
   ],
   Intermediate: [
+    {
+      title: "Forex Indicators",
+      src: "",
+    },
     {
       title: "1. Forex Indicators",
       src: "https://play.dyntube.io/iframe/60yCRtBIlkexWvyQUURd2A",
@@ -385,6 +393,10 @@ const videos: VideoCategories = {
 
   Advanced: [
     {
+      title: "Stock market introduction",
+      src: "",
+    },
+    {
       title: "1. Introduction To The Stock Market",
       src: "https://play.dyntube.io/iframe/sUaUgYsDGUipJYkltXwZew",
     },
@@ -534,8 +546,11 @@ const videos: VideoCategories = {
       title: "11. Trading IPOs - Day Trading And Swing Trading",
       src: "https://play.dyntube.io/iframe/P1gAwSKfNEybfUR0UOCJpQ",
     },
-  ],
-  "Top Trader": [
+
+    {
+      title: "Top Trader",
+      src: "",
+    },
     {
       title: "1. Advanced Trading And Technical Analysis",
       src: "https://play.dyntube.io/iframe/YMVFQlwx8EONTDQKK8lkw",
@@ -560,8 +575,11 @@ const videos: VideoCategories = {
       title: "6. Trade Management",
       src: "https://play.dyntube.io/iframe/MHcb4LVhkSIwAseEVdow",
     },
-  ],
-  "Advanced trading tools and techniques": [
+
+    {
+      title: "Advanced trading tools and techniques",
+      src: "",
+    },
     {
       title: "1. Introduction To MT5",
       src: "https://play.dyntube.io/iframe/dAs4yTakbE2xYGbPbXATbg",
@@ -590,20 +608,59 @@ const videos: VideoCategories = {
 };
 
 export default function VideoPlayer() {
-  const [selectedCategory, setSelectedCategory] =
-    useState<keyof typeof videos>("null");
-  const [currentVideo, setCurrentVideo] = useState(videos.Beginner[0].src);
+  const [selectedCategory, setSelectedCategory] = useState("Beginner");
+  const [currentVideo, setCurrentVideo] = useState(videos["Beginner"][1].src); // Set the first video of Beginner as default
 
-  const handleCategoryClick = (category: keyof typeof videos) => {
-    // Toggle category: set to null if already selected, otherwise set to the selected category
-    setSelectedCategory(selectedCategory === category ? "null" : category);
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
+
+    if (videos[category] && videos[category][0].src) {
+      setCurrentVideo(videos[category][0].src); // Automatically set the first video of the selected category
+    }
   };
 
+  const handleSubtitleClick = (subtitle: string) => {
+    // Do nothing, as subtitles don't have a src property
+  };
   return (
     <div className="flex flex-col md:flex-row justify-center items-start p-4 max-w-5xl mx-auto">
-      {/* Left Side: Video Player */}
-      <div className="w-full md:w-2/3 pr-4">
-        <div className="relative w-full overflow-hidden rounded-lg ">
+      {/* Buttons Above Video Player */}
+      <div className="w-full md:w-2/3 mb-4">
+        <div className="flex justify-center space-x-4 mb-4">
+          <button
+            className={`px-4 py-2 rounded-lg font-semibold ${
+              selectedCategory === "Beginner"
+                ? "bg-blue-600 text-white"
+                : "bg-gray-200"
+            }`}
+            onClick={() => handleCategoryClick("Beginner")}
+          >
+            Beginner
+          </button>
+          <button
+            className={`px-4 py-2 rounded-lg font-semibold ${
+              selectedCategory === "Intermediate"
+                ? "bg-blue-600 text-white"
+                : "bg-gray-200"
+            }`}
+            onClick={() => handleCategoryClick("Intermediate")}
+          >
+            Intermediate
+          </button>
+          <button
+            className={`px-4 py-2 rounded-lg font-semibold ${
+              selectedCategory === "Advanced"
+                ? "bg-blue-600 text-white"
+                : "bg-gray-200"
+            }`}
+            onClick={() => handleCategoryClick("Advanced")}
+          >
+            Advanced
+          </button>
+        </div>
+
+        {/* Video Player */}
+        <div className="relative w-full overflow-hidden rounded-lg">
           <div className="dyntube-iframe-container relative w-full overflow-hidden pb-[56.25%] rounded-lg">
             <iframe
               className="dyntube-responsive-iframe absolute top-0 left-0 w-full h-full border-none rounded-lg"
@@ -614,47 +671,37 @@ export default function VideoPlayer() {
         </div>
       </div>
 
-      {/* Right Side: Categories and Video Titles */}
-      <div className="w-full md:w-1/3 bg-gray-100 h-[380px] overflow-y-auto mt-10 md:mt-0 rounded-lg shadow-lg">
-        {Object.keys(videos).map((category) => (
-          <div key={category} className="mb-4">
-            <h3
-              className={`cursor-pointer text-sm font-semibold flex justify-between items-center p-2 rounded-lg transition duration-200 hover:bg-gray-200 ${
-                selectedCategory === category
-                  ? "text-blue-600"
-                  : "text-gray-800"
-              }`}
-              onClick={() =>
-                handleCategoryClick(category as keyof typeof videos)
-              }
-            >
-              {category}
-              {/* Arrow indicator for dropdown menu */}
-              <span
-                className={`ml-2 transform ${
-                  selectedCategory === category ? "rotate-180" : "rotate-0"
-                } transition-transform`}
-              >
-                ▼
-              </span>
-            </h3>
+      {/* Right Side: Video Titles for the Selected Category */}
+      <div className="w-full md:w-1/3 bg-gray-100 h-[410px] overflow-y-auto mt-10 md:mt-0 rounded-lg shadow-lg">
+        <ul className="pl-4 mt-2 space-y-2">
+          {videos[selectedCategory]?.map((video, index) => {
+            if (video.src) {
+              // Check if the video has a src property
 
-            {/* Video titles for the selected category */}
-            {selectedCategory === category && (
-              <ul className="pl-4 mt-2 space-y-2">
-                {videos[selectedCategory].map((video, index) => (
-                  <li
-                    key={index}
-                    className="cursor-pointer text-sm text-gray-700 hover:text-blue-600 transition duration-200"
-                    onClick={() => setCurrentVideo(video.src)}
-                  >
-                    {video.title}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+              return (
+                <li
+                  key={index}
+                  className="cursor-pointer text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-200 transition duration-200"
+                  onClick={() => setCurrentVideo(video.src)}
+                >
+                  {video.title}
+                </li>
+              );
+            } else {
+              // If it's a subtitle, use the handleSubtitleClick function
+
+              return (
+                <li
+                  key={index}
+                  className={`cursor-pointer text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-200 transition duration-200 ${!video.src && "font-bold"}`}
+                  onClick={() => handleSubtitleClick(video.title)}
+                >
+                  {video.title}
+                </li>
+              );
+            }
+          })}
+        </ul>
       </div>
     </div>
   );

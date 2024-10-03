@@ -26,7 +26,7 @@ export default function News() {
             Stay Updated with the Latest Market News
           </h1>
           <div className="flex justify-center ">
-            <p className="text-center text-[#475467] mt-10 p-4 max-w-[900px] ">
+            <p className="text-center text-[#475467]  p-4 max-w-[900px] ">
               Keeping up with market news is essential for every trader. At
               CapitalRevo, we provide you with real-time news and analysis to
               keep you informed of every market movement, ensuring you&apos;re

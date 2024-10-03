@@ -62,7 +62,7 @@ export const FooterHome: React.FC = () => {
                   <Link href="/trading-platform">Trading Platform</Link>
                 </li>
                 <li>
-                  <Link href="#education">Education</Link>
+                  <Link href="/education">Education</Link>
                 </li>
                 <li>
                   <Link href="/news">News</Link>
@@ -165,7 +165,7 @@ export const FooterHome: React.FC = () => {
                     <Link href="/trading-platform">Trading Platform</Link>
                   </li>
                   <li>
-                    <Link href="#education">Education</Link>
+                    <Link href="/education">Education</Link>
                   </li>
                   <li>
                     <Link href="/news">News</Link>

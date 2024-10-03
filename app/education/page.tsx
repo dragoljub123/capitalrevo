@@ -23,7 +23,7 @@ export default function AiSupport() {
             Education
           </h1>
           <div className="flex justify-center ">
-            <p className="text-center text-[#475467] mt-10 p-4 max-w-[900px] ">
+            <p className="text-center text-[#475467]  p-4 max-w-[900px] ">
               Learn to Trade with Confidence
             </p>
           </div>

@@ -26,7 +26,7 @@ export default function ContactUs() {
           </h1>
           <div className="flex justify-center ">
             {" "}
-            <p className="text-center text-[#475467] mt-10 p-4 max-w-[900px] ">
+            <p className="text-center text-[#475467] p-4 max-w-[900px] ">
               Our support team is dedicated to helping you get the most out of
               your trading experience. Whether you have a question about your
               account or need help navigating the platform, we&apos;re here to
