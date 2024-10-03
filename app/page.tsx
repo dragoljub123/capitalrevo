@@ -97,7 +97,7 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10">
+            <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10 md:px-48 lg:px-0">
               <Image
                 src={capitalrevomobplatform}
                 alt="capitalrevo platform"
@@ -107,24 +107,24 @@ export default async function Home() {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20  mt-8 lg:mt-0 lg:pl-20 xl:pl-32 md:pl-28">
-            <p className="text-white flex justify-center lg:justify-start">
+            <p className="text-white flex justify-center lg:justify-start items-center">
               As featured in
             </p>
-            <div className="flex  justify-center lg:justify-start gap-10 lg:gap-20 ">
+            <div className="flex justify-center lg:justify-start lg:items-center gap-10 lg:gap-20">
               <Image
                 src={NewsBreakLogo}
-                alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[200px] lg:h-[31px]"
+                alt="NewsBreak Logo"
+                className="w-[75px] lg:w-[200px] h-auto"
               />
               <Image
                 src={DigitalJournal}
-                alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[200px] lg:h-[27px]"
+                alt="Digital Journal Logo"
+                className="w-[75px] lg:w-[200px] h-auto"
               />
               <Image
                 src={katman}
-                alt="slika"
-                className=" w-[75px] h-[autopx] lg:w-[117px] lg:h-[43px]"
+                alt="Katman Logo"
+                className="w-[75px] lg:w-[100px] h-auto"
               />
             </div>
           </div>

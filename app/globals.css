@@ -276,3 +276,77 @@ ul {
   font-size: 1.125rem;
   line-height: 1.625;
 }
+/*---- widgeti ---trading tools --- podesavanja-------*/
+.common-iframes {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .currencycalculator {
+    height: 600px;
+  }
+  .fibonacci-calculator {
+    height: 1240px;
+  }
+  .pivot-point {
+    height: 980px;
+  }
+  .cfd-calculator {
+    height: 768px;
+  }
+  .stop-loss-limit {
+    height: 971px;
+  }
+  .economic-calendar {
+    height: 971px;
+  }
+  .daily-signals {
+    height: 744px;
+  }
+  .margin-calculator {
+    height: 980px;
+  }
+  .pip-value {
+    height: 880px;
+  }
+  .heatmap {
+    height: 1500px;
+  }
+}
+
+@media (min-width: 769px) {
+  .currencycalculator {
+    height: 380px;
+  }
+  .fibonacci-calculator {
+    height: 560px;
+  }
+  .pivot-point {
+    height: 800px;
+  }
+  .cfd-calculator {
+    height: 540px;
+  }
+  .stop-loss-limit {
+    height: 740px;
+  }
+  .economic-calendar {
+    height: 740px;
+  }
+  .daily-signals {
+    height: 644px;
+  }
+  .margin-calculator {
+    height: 710px;
+  }
+  .pip-value {
+    height: 710px;
+  }
+  .heatmap {
+    height: 1800px;
+  }
+}

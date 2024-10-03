@@ -5,7 +5,7 @@ const AibanerM = () => {
   return (
     <div className="mx-auto p-10 text-white">
       {/* Naslov */}
-      <h2 className="text-3xl font-bold mb-2 underline decoration-[#990033] decoration-2 underline-offset-4">
+      <h2 className="text-3xl font-bold mb-2 underline decoration-[#990033] decoration-2 underline-offset-[10px]">
         CapitalRevo AI support
       </h2>
 

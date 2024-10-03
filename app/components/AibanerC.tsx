@@ -7,7 +7,7 @@ const AibanerC = () => {
       <div className="max-w-screen-xl flex justify-center text-white">
         {/* Leva strana */}
         <div className="md:p-12 lg:p-10 ">
-          <h2 className="md:text-2xl lg:text-4xl font-bold mb-4 underline decoration-[#990033] decoration-2 underline-offset-[10px] ">
+          <h2 className="md:text-2xl lg:text-4xl font-bold mb-4 underline decoration-[#990033] decoration-2 underline-offset-[12px] ">
             CapitalRevo AI support
           </h2>
           <h3 className="md:text-xl lg:text-3xl mb-4 font-bold ">
@@ -15,7 +15,7 @@ const AibanerC = () => {
           </h3>
 
           {/* Prvi paragraf */}
-          <div className="mb-4">
+          <div className="mb-4 ">
             <h3 className="text-lg font-semibold text-[#990033] ">
               Unmatched Processing Speed
             </h3>

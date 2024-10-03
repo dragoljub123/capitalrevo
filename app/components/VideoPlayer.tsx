@@ -63,8 +63,10 @@ const videos: VideoCategories = {
       title: "12. Trendlines",
       src: "https://play.dyntube.io/iframe/Vt19pFXtEOUI6dHGixRw",
     },
-  ],
-  Fibonacci: [
+    {
+      title: "Fibonacci",
+      src: "",
+    },
     {
       title: "1. Fibonacci",
       src: "https://play.dyntube.io/iframe/uOIHywZUeiGAAIXpUy3A",
@@ -82,8 +84,10 @@ const videos: VideoCategories = {
         "4. Learn Forex Combining Fibonacci With Other Technical Analysis Tools",
       src: "https://play.dyntube.io/iframe/EPK3Xn4G0WanOrISERNQ",
     },
-  ],
-  Candlesticks: [
+    {
+      title: "Candlesticks",
+      src: "",
+    },
     {
       title: "1. Candlesticks",
       src: "https://play.dyntube.io/iframe/Cfz9HMUmGEKM8ASdD6nw",
@@ -136,8 +140,11 @@ const videos: VideoCategories = {
       title: "13. Rising And Falling Three Methods",
       src: "https://play.dyntube.io/iframe/Ap5nnu5SLEezF6YQFNTgPQ",
     },
-  ],
-  "Chart formation patterns": [
+
+    {
+      title: "Chart formation patterns",
+      src: "",
+    },
     {
       title: "1. Forex Double Top And Double Bottom Formation Patterns",
       src: "https://play.dyntube.io/iframe/p4a7XDTUCEuqwFFyWY0EQ",
@@ -232,8 +239,11 @@ const videos: VideoCategories = {
       title: "10. Forex Pivot Points",
       src: "https://play.dyntube.io/iframe/myQ9OPKnSU6cDq5LIuYb4Q",
     },
-  ],
-  "Timing in Forex": [
+
+    {
+      title: "Timing in Forex",
+      src: "",
+    },
     {
       title: "1. Timing Your Entries When Trading Forex",
       src: "https://play.dyntube.io/iframe/6ODKVATfjUe3IvzWzgciOQ",
@@ -242,8 +252,10 @@ const videos: VideoCategories = {
       title: "2. Timing Your Exits When Trading Forex",
       src: "https://play.dyntube.io/iframe/Ht0QhtoQUqZjJV53gr2oA",
     },
-  ],
-  MT4: [
+    {
+      title: "MT4",
+      src: "",
+    },
     {
       title: "1. Getting Started With MT4",
       src: "https://play.dyntube.io/iframe/15JXEnFbCEOpfWqeiLVqIA",
@@ -292,8 +304,11 @@ const videos: VideoCategories = {
       title: "12. Indicators And Scripts",
       src: "https://play.dyntube.io/iframe/ablHGkKvk2lObFI5U61hw",
     },
-  ],
-  Cryptocurrencies: [
+
+    {
+      title: "Cryptocurrencies",
+      src: "",
+    },
     {
       title: "1. Background - Early Digital Currencies (1980-2009)",
       src: "https://play.dyntube.io/iframe/XFpzY9rKW0WfIlWZ7r7FJg",
@@ -421,8 +436,11 @@ const videos: VideoCategories = {
       title: "13. Volumes And Trends",
       src: "https://play.dyntube.io/iframe/Mc4InQwDgUaY3DYgWWYsAA",
     },
-  ],
-  "Advanced stock market trading - Level 1": [
+
+    {
+      title: "Advanced stock market trading - Level 1",
+      src: "",
+    },
     {
       title: "1. Market Indicators",
       src: "https://play.dyntube.io/iframe/8WgdZ2Kj7EikcLFOcMfMQg",
@@ -467,8 +485,11 @@ const videos: VideoCategories = {
       title: "11. Trading Preparation & Sectors",
       src: "https://play.dyntube.io/iframe/pQgQxiIk30J6rD0pDmXxg",
     },
-  ],
-  "Advanced stock market trading - Level 2": [
+
+    {
+      title: "Advanced stock market trading - Level 2",
+      src: "",
+    },
     {
       title: "1. Trading Small Caps",
       src: "https://play.dyntube.io/iframe/Lydu1NdL0mpfuvuGEGV1Q",
@@ -582,7 +603,7 @@ export default function VideoPlayer() {
     <div className="flex flex-col md:flex-row justify-center items-start p-4 max-w-5xl mx-auto">
       {/* Left Side: Video Player */}
       <div className="w-full md:w-2/3 pr-4">
-        <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
+        <div className="relative w-full overflow-hidden rounded-lg ">
           <div className="dyntube-iframe-container relative w-full overflow-hidden pb-[56.25%] rounded-lg">
             <iframe
               className="dyntube-responsive-iframe absolute top-0 left-0 w-full h-full border-none rounded-lg"
@@ -594,7 +615,7 @@ export default function VideoPlayer() {
       </div>
 
       {/* Right Side: Categories and Video Titles */}
-      <div className="w-full md:w-1/3 bg-gray-100 h-[400px] overflow-y-auto mt-10 md:mt-0 rounded-lg shadow-lg">
+      <div className="w-full md:w-1/3 bg-gray-100 h-[380px] overflow-y-auto mt-10 md:mt-0 rounded-lg shadow-lg">
         {Object.keys(videos).map((category) => (
           <div key={category} className="mb-4">
             <h3
