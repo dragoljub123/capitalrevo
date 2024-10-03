@@ -614,7 +614,7 @@ export default function VideoPlayer() {
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
 
-    if (videos[category] && videos[category][0].src) {
+    if (videos[category] && videos[category][1].src) {
       setCurrentVideo(videos[category][1].src); // Automatically set the first video of the selected category
     }
   };
