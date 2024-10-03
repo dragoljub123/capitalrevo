@@ -615,7 +615,7 @@ export default function VideoPlayer() {
     setSelectedCategory(category);
 
     if (videos[category] && videos[category][0].src) {
-      setCurrentVideo(videos[category][0].src); // Automatically set the first video of the selected category
+      setCurrentVideo(videos[category][1].src); // Automatically set the first video of the selected category
     }
   };
 
