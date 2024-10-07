@@ -215,7 +215,7 @@ export default async function Home() {
       </div>
       <div className=" hidden m-10  lg:flex lg:justify-center lg:items-center ">
         <div className="max-w-screen-xl  flex flex-col justify-between  sm:flex sm:flex-row lg:px-10">
-          <div className="">
+          <div className="w-[52%]">
             <h2 className="text-2xl  text-blue-500 font-black  lg:text-4xl ">
               CapitalRevo Education Center
             </h2>
@@ -225,7 +225,7 @@ export default async function Home() {
             <h3 className="text-blue-500 font-bold text-2xl pt-12 ">
               Unlimited access to our trading lesson library
             </h3>
-            <p className=" text-lg pr-20 ">
+            <p className=" text-lg  ">
               Embark on a comprehensive learning journey with hundreds of
               lessons catering to all skill levels, meticulously organized into
               courses for effortless progress through the material.
@@ -241,9 +241,9 @@ export default async function Home() {
           <Image
             src="/CREdu.PNG"
             alt="educaion"
-            width={500}
+            width={600}
             height={200}
-            className=" object-contain  border-blue-500 border-[4px] rounded-xl max-h-[300px] "
+            className=" object-cover  border-blue-500 border-[4px] rounded-xl max-h-[300px] "
           />
         </div>
       </div>
@@ -251,7 +251,7 @@ export default async function Home() {
       <div className="flex flex-col items-center lg:hidden">
         <div className="max-w-screen-xl flex flex-col justify-between sm:flex sm:flex-row px-10">
           <div>
-            <h2 className="text-2xl text-center  text-blue-500 font-black lg:text-4xl">
+            <h2 className=" pt-5 text-2xl text-center  text-blue-500 font-black lg:text-4xl">
               CapitalRevo Education Center
             </h2>
             <p className="mb-1 text-center  text-lg">
