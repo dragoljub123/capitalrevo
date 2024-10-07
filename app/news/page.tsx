@@ -6,6 +6,7 @@ import TradingViewWidgetNews2 from "../components/TradingViewWidgetNews2";
 import TradingViewEventsWidget2 from "../components/TradingViewEventsWidget2";
 import { Metadata } from "next";
 import DailyNewsWidget from "../components/DailyNewsWidget";
+import TradingViewWidgetNews3 from "../components/TradingViewWidgetNews3";
 
 export const metadata: Metadata = {
   title: "News | CapitalRevo",
@@ -50,8 +51,11 @@ export default function News() {
         </div>
 
         <div className="max-w-sirina ">
-          <div className=" hidden md:block  ">
+          <div className=" hidden lg:block  ">
             <TradingViewWidgetNews />
+          </div>
+          <div className=" hidden md:block lg:hidden ">
+            <TradingViewWidgetNews3 />
           </div>
           <div className=" block md:hidden ">
             <TradingViewWidgetNews2 />
@@ -72,10 +76,10 @@ export default function News() {
         </div>
 
         <div className="max-w-sirina ">
-          <div className="hidden md:block ">
+          <div className="hidden lg:block ">
             <TradingViewEventsWidget />
           </div>
-          <div className=" block md:hidden ">
+          <div className=" block lg:hidden ">
             <TradingViewEventsWidget2 />
           </div>
         </div>

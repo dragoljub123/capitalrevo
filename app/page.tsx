@@ -17,6 +17,7 @@ import CompareAccountsButton from "./components/CompareAccountsButton";
 import { Paket } from "@/app/utilitis/interface";
 import TradingViewWidgetNews from "./components/TradingViewWidgetNews";
 import TradingViewWidgetNews2 from "./components/TradingViewWidgetNews2";
+import TradingViewWidgetNews3 from "./components/TradingViewWidgetNews3";
 import TabsComponent from "./components/TabsComponent";
 import GPayLogo from "./components/GPayLogo";
 import ApplePayLogo from "./components/ApplePayLogo";
@@ -213,7 +214,7 @@ export default async function Home() {
         <AibanerM />
       </div>
       <div className=" hidden m-10  lg:flex lg:justify-center lg:items-center ">
-        <div className="max-w-screen-xl  flex flex-col justify-between  sm:flex sm:flex-row px-10">
+        <div className="max-w-screen-xl  flex flex-col justify-between  sm:flex sm:flex-row lg:px-10">
           <div className="">
             <h2 className="text-2xl  text-blue-500 font-black  lg:text-4xl ">
               CapitalRevo Education Center
@@ -246,9 +247,52 @@ export default async function Home() {
           />
         </div>
       </div>
+
+      <div className="flex flex-col items-center lg:hidden">
+        <div className="max-w-screen-xl flex flex-col justify-between sm:flex sm:flex-row px-10">
+          <div>
+            <h2 className="text-2xl text-center  text-blue-500 font-black lg:text-4xl">
+              CapitalRevo Education Center
+            </h2>
+            <p className="mb-1 text-center  text-lg">
+              Access dozens of trading lessons for all levels!
+            </p>
+
+            {/* Dodana slika između <p> i <h3> */}
+            <div className=" flex justify-center my-4">
+              <Link href="/education">
+                <Image
+                  src="/CREdu.PNG"
+                  alt="education"
+                  width={300}
+                  height={150}
+                  className="object-contain border-blue-500 border-[4px] rounded-xl"
+                />
+              </Link>
+            </div>
+
+            <h3 className="text-blue-500 font-bold text-center text-2xl pt-5">
+              Unlimited access to our trading lesson library
+            </h3>
+            <p className="text-sm text-center sm:pr-20">
+              Embark on a comprehensive learning journey with hundreds of
+              lessons catering to all skill levels, meticulously organized into
+              courses for effortless progress through the material.
+            </p>
+            <div className="mt-4 mb-10 flex justify-center ">
+              <Link href="/education">
+                <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded shadow hover:bg-blue-700 transition">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="my-0">
         <div
-          className=" pt-10 mx-auto flex items-center justify-center "
+          className=" mx-auto flex items-center justify-center "
           id="education"
         >
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
@@ -289,7 +333,7 @@ export default async function Home() {
       </div>
 
       <div
-        className="pt-10 pl-4 mx-auto mt-10 md:pl-20 lg:flex lg:justify-between lg:pl-28  lg:items-center max-w-sirina"
+        className="pt-10 pl-10  mx-auto mt-10 md:pl-20 lg:flex lg:justify-between lg:pl-10  lg:items-center max-w-screen-xl"
         id="News"
       >
         <div className=" ">
@@ -302,17 +346,20 @@ export default async function Home() {
           </p>
         </div>
         <Link href="/news">
-          <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-20">
+          <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#1200FF] rounded-xl shadow-xs text-white lg:mr-10">
             Read More News
           </button>
         </Link>
       </div>
-      <div className="  md:flex md:justify-center mt-10 pl-4 ">
-        <div className="max-w-sirina ">
-          <div className=" hidden md:block ">
+      <div className="   mt-10 flex justify-center ">
+        <div className="max-w-screen-xl flex">
+          <div className=" hidden lg:block ">
             <TradingViewWidgetNews />
           </div>
-          <div className=" block md:hidden ">
+          <div className=" hidden md:block lg:hidden ">
+            <TradingViewWidgetNews3 />
+          </div>
+          <div className=" block md:hidden ml-10">
             <TradingViewWidgetNews2 />
           </div>
         </div>
@@ -365,11 +412,11 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center">
+      <div className="bg-[#F4F4F4] hidden sm:hidden md:block lg:flex lg:justify-center lg:items-center ">
         <Image
           src={Strategygetintouch}
           alt="webinars1"
-          width={1280}
+          width={1200}
           height={400}
           className=" object-contain "
         />

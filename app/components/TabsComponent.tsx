@@ -69,7 +69,7 @@ const TabsComponent = () => {
             />
           )}
           {activeTab === "advancedWidget" && (
-            <div className="h-[500px] w-[380px] lg:w-[640px]">
+            <div className="h-[500px] w-[350px] lg:w-[640px]">
               <TradingViewAdvancedChartWidget />
             </div>
           )}
