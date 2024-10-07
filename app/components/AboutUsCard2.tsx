@@ -19,7 +19,7 @@ const AboutUsCard2: React.FC<Props> = ({
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
       {/* Leva strana - Slika */}
-      <div className="hidden md:w-1/2 w-full md:flex md:justify-center lg:justify-start">
+      <div className="hidden md:w-1/2 w-full px-4 lg:flex lg::justify-center lg:justify-start">
         <Image
           src={imageSrc2}
           alt="slika"

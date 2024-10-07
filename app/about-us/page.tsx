@@ -24,7 +24,7 @@ export default function AboutUs() {
           <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
             Who We Are
           </h1>
-          <p className="text-center text-[#475467] mt-10 p-4">
+          <p className="text-center text-[#475467] mt-5 p-4">
             With over 15 years of experience in the financial industry,
             CapitalRevo has grown into a trusted name
             <br />

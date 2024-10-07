@@ -73,8 +73,8 @@ export default async function Home() {
       <div className="pozadina  ">
         <div className=" max-w-sirina mx-auto ">
           <div className=" pt-10 mx-auto flex flex-col lg:flex-row ">
-            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-28  h-full ">
-              <h1 className="pt-10 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10  lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
+            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-28   h-full ">
+              <h1 className="pt-10 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
               <p className="text-white text-center  text-sm lg:mt-2 lg:mb- lg:text-left ">
@@ -110,16 +110,16 @@ export default async function Home() {
             <p className="text-white flex justify-center lg:justify-start items-center">
               As featured in
             </p>
-            <div className="flex justify-center lg:justify-start lg:items-center gap-10 lg:gap-20">
+            <div className="flex justify-center lg:justify-start lg:items-center gap-6 md:gap-8 lg:gap-20">
               <Image
                 src={NewsBreakLogo}
                 alt="NewsBreak Logo"
-                className="w-[75px] lg:w-[200px] h-auto"
+                className="w-[95px] lg:w-[200px] h-auto"
               />
               <Image
                 src={DigitalJournal}
                 alt="Digital Journal Logo"
-                className="w-[75px] lg:w-[200px] h-auto"
+                className="w-[115px] lg:w-[200px] h-auto"
               />
               <Image
                 src={katman}
@@ -211,6 +211,40 @@ export default async function Home() {
       </div>
       <div className="flex md:hidden justify-center bg-[#191A1E] ">
         <AibanerM />
+      </div>
+      <div className=" hidden m-10  lg:flex lg:justify-center lg:items-center ">
+        <div className="max-w-screen-xl  flex flex-col justify-between  sm:flex sm:flex-row px-10">
+          <div className="">
+            <h2 className="text-2xl  text-blue-500 font-black  lg:text-4xl ">
+              CapitalRevo Education Center
+            </h2>
+            <p className=" mb-1  text-xl  ">
+              Access dozens of trading lessons for all levels!
+            </p>
+            <h3 className="text-blue-500 font-bold text-2xl pt-12 ">
+              Unlimited access to our trading lesson library
+            </h3>
+            <p className=" text-lg pr-20 ">
+              Embark on a comprehensive learning journey with hundreds of
+              lessons catering to all skill levels, meticulously organized into
+              courses for effortless progress through the material.
+            </p>
+            <div className="mt-4 mb-10 flex justify-center  ">
+              <Link href="/education">
+                <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded shadow hover:bg-blue-700 transition">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>
+          <Image
+            src="/CREdu.PNG"
+            alt="educaion"
+            width={500}
+            height={200}
+            className=" object-contain  border-blue-500 border-[4px] rounded-xl max-h-[300px] "
+          />
+        </div>
       </div>
       <div className="my-0">
         <div
@@ -486,9 +520,8 @@ export default async function Home() {
                 <h3 className="font-bold pb-2 pt-5">Office</h3>
                 <p>Come say hello at our office HQ.</p>
                 <p className="text-dugmeplava pt-2">
-                  Sotheby Building, Rodney Bay,
-                  <br />
-                  Rodney Village, Gros Islet, St. Lucia, 1111
+                  London, 18 King William St, EC4N 7BP, United Kingdom <br />
+                  Rodney Bay, Rodney Village, Gros Islet, 1111, St. Lucia
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">

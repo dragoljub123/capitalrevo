@@ -24,13 +24,13 @@ const AboutUsCard: React.FC<Props> = ({
         <div className="text-center lg:text-left">
           <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
         </div>
-        <div className="pt-2 text-[#475467] max-w-[500px] text-sm">
+        <div className="pt-2 text-[#475467]  text-sm">
           <p>{text}</p>
         </div>
       </div>
 
       {/* Desna strana - Slika */}
-      <div className="lg:w-1/2 w-full  flex justify-center lg:justify-end">
+      <div className="px-2 lg:px-4 xl:px-0 sm:w-3/5 lg:w-1/2  w-full  flex justify-center lg:justify-end">
         <Image
           src={imageSrc2}
           alt="slika"

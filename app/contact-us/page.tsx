@@ -46,7 +46,7 @@ export default function ContactUs() {
               <div className="flex flex-col items-center text-center">
                 <Image src="/coverta.png" alt="mail" width={43} height={43} />
                 <h3 className="font-bold pb-2 pt-5">Email</h3>
-                <p>Our friendly team is here to help.</p>
+                <p className="text-sm">Our friendly team is here to help.</p>
                 <p className="text-dugmeplava pt-2">
                   <br />
                   support@capitalrevo.com
@@ -61,10 +61,10 @@ export default function ContactUs() {
                   height={43}
                 />
                 <h3 className="font-bold pb-2 pt-5">Office</h3>
-                <p>Come say hello at our office HQ.</p>
-                <p className="text-dugmeplava pt-2">
-                  Sotheby Building, Rodney Bay, <br />
-                  Rodney Village, Gros Islet, St. Lucia, 1111
+                <p className="">Come say hello at our office HQ.</p>
+                <p className="text-dugmeplava pt-2 text-sm">
+                  London, 18 King William St, EC4N 7BP, United Kingdom <br />
+                  Rodney Bay, Rodney Village, Gros Islet, 1111, St. Lucia
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
@@ -75,7 +75,7 @@ export default function ContactUs() {
                   height={43}
                 />
                 <h3 className="font-bold pb-2 pt-5">Phone</h3>
-                <p>Mon-Fri from 8am to 5pm.</p>
+                <p className="text-sm">Mon-Fri from 8am to 5pm.</p>
                 <p className="text-dugmeplava pt-2" id="contactform">
                   <br />
                   +447441938990
