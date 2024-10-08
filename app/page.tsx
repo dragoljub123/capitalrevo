@@ -97,18 +97,18 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10 md:px-48 lg:px-0 ">
+            <div className=" flex justify-center lg:justify-end xl:mr-10 xl:mt-10 md:px-48 lg:px-0 ">
               <Image
                 src="/capitalrevomobplatformm.png"
                 alt="capitalrevo platform"
                 width={500}
                 height={510}
                 className="object-cover "
-                style={{ width: "80%" }}
+                style={{ width: "70%" }}
               />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20  mt-8 lg:mt-0   lg:pl-10">
+          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-10  mt-8 lg:mt-0   lg:pl-10">
             <p className="text-white flex justify-center lg:justify-start items-center">
               As featured in
             </p>
