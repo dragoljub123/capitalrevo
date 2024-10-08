@@ -3,7 +3,6 @@ import TradingViewWidget from "./components/TradingViewWidget";
 import Smalcard from "./components/Smalcard";
 import { Navbar } from "./components/Navbar";
 import Paketi from "./components/Paketi";
-import capitalrevomobplatform from "@/public/capitalrevomobplatform.png";
 import NewsBreakLogo from "@/public/NewsBreakLogo.png";
 import DigitalJournal from "@/public/DigitalJournal.png";
 import katman from "@/public/katman.png";
@@ -100,8 +99,10 @@ export default async function Home() {
             </div>
             <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10 md:px-48 lg:px-0">
               <Image
-                src={capitalrevomobplatform}
+                src="/capitalrevomobplatform.png"
                 alt="capitalrevo platform"
+                width={400}
+                height={510}
                 className="object-contain "
                 style={{ width: "80%" }}
               />

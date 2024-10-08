@@ -6,7 +6,6 @@ import { FiMenu } from "react-icons/fi";
 import { Logo } from "./Logo";
 import SingUpbutton from "../components/SingUpbutton";
 import Logindugme from "../components/Logindugme";
-import "../globals.css";
 
 export const Navbar = () => {
   const navigation = [

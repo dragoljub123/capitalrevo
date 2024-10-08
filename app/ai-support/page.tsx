@@ -102,8 +102,8 @@ export default function AiSupport() {
             <Image
               src="/HP AI Image 2.png" // zameni sa putanjom do tvoje slike
               alt="Opis slike"
-              width={500} // prilagodi širinu
-              height={500} // prilagodi visinu
+              width={500}
+              height={500}
               className="w-full"
             />
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../globals.css";
+
 interface props {
   imageSrc1: string;
   title: string;
