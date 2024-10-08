@@ -71,9 +71,9 @@ export default async function Home() {
       <Navbar />
 
       <div className="pozadina  ">
-        <div className=" max-w-sirina mx-auto ">
+        <div className=" max-w-screen-xl mx-auto ">
           <div className=" pt-10 mx-auto flex flex-col lg:flex-row ">
-            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between px-4 lg:px-28   h-full ">
+            <div className=" max-w-screen-xl mx-auto flex flex-col justify-between   px-10 h-full ">
               <h1 className="pt-10 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
@@ -97,18 +97,18 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10 md:px-48 lg:px-0">
+            <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10 md:px-48 lg:px-0 ">
               <Image
                 src="/capitalrevomobplatform.png"
                 alt="capitalrevo platform"
-                width={400}
+                width={500}
                 height={510}
-                className="object-contain "
+                className="object-cover "
                 style={{ width: "80%" }}
               />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20  mt-8 lg:mt-0 lg:pl-20 xl:pl-32 md:pl-28">
+          <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-20  mt-8 lg:mt-0   lg:pl-10">
             <p className="text-white flex justify-center lg:justify-start items-center">
               As featured in
             </p>
@@ -216,7 +216,7 @@ export default async function Home() {
       </div>
       <div className=" hidden m-10  lg:flex lg:justify-center lg:items-center ">
         <div className="max-w-screen-xl  flex flex-col justify-between  sm:flex sm:flex-row lg:px-10">
-          <div className="w-[52%]">
+          <div className="w-[47.6%]">
             <h2 className="text-2xl  text-blue-500 font-black  lg:text-4xl ">
               CapitalRevo Education Center
             </h2>
@@ -226,7 +226,7 @@ export default async function Home() {
             <h3 className="text-blue-500 font-bold text-2xl pt-12 ">
               Unlimited access to our trading lesson library
             </h3>
-            <p className=" text-lg  ">
+            <p className=" text-sm  ">
               Embark on a comprehensive learning journey with hundreds of
               lessons catering to all skill levels, meticulously organized into
               courses for effortless progress through the material.
