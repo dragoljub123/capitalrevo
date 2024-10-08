@@ -99,7 +99,7 @@ export default async function Home() {
             </div>
             <div className=" flex justify-center lg:justify-end xl:mr-20 xl:mt-10 md:px-48 lg:px-0 ">
               <Image
-                src="/capitalrevomobplatform.png"
+                src="/capitalrevomobplatformm.png"
                 alt="capitalrevo platform"
                 width={500}
                 height={510}
@@ -239,13 +239,15 @@ export default async function Home() {
               </Link>
             </div>
           </div>
-          <Image
-            src="/CREdu.PNG"
-            alt="educaion"
-            width={600}
-            height={200}
-            className=" object-cover  border-blue-500 border-[4px] rounded-xl max-h-[300px] "
-          />
+          <Link href="/education">
+            <Image
+              src="/CREdu.PNG"
+              alt="educaion"
+              width={600}
+              height={200}
+              className=" object-cover  border-blue-500 border-[4px] rounded-xl max-h-[300px] "
+            />
+          </Link>
         </div>
       </div>
 
@@ -360,7 +362,7 @@ export default async function Home() {
           <div className=" hidden md:block lg:hidden ">
             <TradingViewWidgetNews3 />
           </div>
-          <div className=" block md:hidden ml-10">
+          <div className=" block md:hidden ">
             <TradingViewWidgetNews2 />
           </div>
         </div>
