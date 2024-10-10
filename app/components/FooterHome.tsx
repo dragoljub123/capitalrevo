@@ -84,7 +84,7 @@ export const FooterHome: React.FC = () => {
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <p className="text-center lg:text-left lg:mx-20">
-              © 2023. CapitalRevo
+              © 2009 - 2024 CapitalRevo
             </p>
             <div className="flex space-x-4 text-sm md:pr-20">
               <Link href="/">Privacy Policy</Link>
@@ -221,7 +221,7 @@ export const FooterHome: React.FC = () => {
             </div>
           </div>
           <p className="text-left mt-10 lg:text-left lg:mx-20">
-            © 2023. CapitalRevo
+            © 2009 - 2024 CapitalRevo
           </p>
           <div className="text-center px-1 py-8">
             <p className="text-gray-500 text-justify pb-5 text-xs">
