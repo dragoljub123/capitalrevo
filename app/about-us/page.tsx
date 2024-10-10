@@ -19,9 +19,9 @@ export default function AboutUs() {
   return (
     <div className="mx-auto">
       <Navbar />
-      <div className="pt-20 pb-20 flex justify-center">
+      <div className="pt-10 md:pt-20 pb-20 flex justify-center">
         <div className="max-w-screen-xl mx-auto xl:px-10">
-          <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
+          <h1 className=" text-blue-500 text-center text-4xl font-bold mt-10">
             Who We Are
           </h1>
           <p className="text-center text-[#475467] mt-5 p-4">

@@ -7,7 +7,7 @@ import NewsBreakLogo from "@/public/NewsBreakLogo.png";
 import DigitalJournal from "@/public/DigitalJournal.png";
 import katman from "@/public/katman.png";
 import ContactForm from "@/app/components/ContactForm";
-import trustpilotlogo from "@/app/images/trustpilot-logo.png";
+import trustpilotlogo from "@/app/images/Trustpilot-Rated43.png";
 import CustomerCard from "./components/CustomerCard";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
@@ -383,13 +383,13 @@ export default async function Home() {
             CapitalRevo transformed my <br /> trading experience! The platform
             is <br /> intuitive and the support is <br /> excellent.
           </h2>
-          <div className=" mb-10 lg:p-0 mt-10 text-sm ">
+          <div className=" mb-5 lg:p-0 mt-10 text-sm ">
             <CustomerCard customers={customers} />
           </div>
         </div>
       </div>
       <div className="sivkasta ">
-        <div className="pt-10 max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+        <div className=" max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
           <h3 className="text-2xl py-4 text-blue-500 font-bold pb-6 pt-6 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>

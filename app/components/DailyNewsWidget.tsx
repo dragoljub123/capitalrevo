@@ -22,13 +22,13 @@ const DailyNewsWidget = () => {
     <div>
       <div className="">
         <div className="pt-3 pb-5 flex-row justify-center items-center">
-          <h2 className=" naslovboja2 text-center text-4xl font-bold mt-6 px-20 md:px-0">
+          <h2 className=" text-blue-500 text-center text-4xl font-bold mt-6 px-20 md:px-0">
             CapitalRevo Daily News!
           </h2>
           <div className="flex justify-center ">
             <p className="text-md md:text-xl text-center my-2 px-4 max-w-[900px] font-bold">
               The biggest news and trends in the world of finance - <br />
-              <span className="naslovboja2"> EVERY MARKET DAY!</span>
+              <span className="text-blue-500 "> EVERY MARKET DAY!</span>
             </p>
           </div>
         </div>

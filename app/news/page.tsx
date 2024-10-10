@@ -23,7 +23,7 @@ export default function News() {
       <Navbar />
       <div className="bg-gray-50">
         <div className="pt-20 pb-10 flex-row justify-center items-center">
-          <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
+          <h1 className=" text-blue-500 text-center text-4xl font-bold md:mt-10">
             Stay Updated with the Latest Market News
           </h1>
           <div className="flex justify-center ">

@@ -18,8 +18,8 @@ export default function ContactUs() {
     <div className="mx-auto">
       <Navbar />
       <div className="bg-gray-50">
-        <div className="pt-20 pb-10 flex-row justify-center items-center">
-          <h1 className=" naslovboja2 text-center text-4xl font-bold mt-10">
+        <div className="pt-10 md:pt-20 pb-10 flex-row justify-center items-center">
+          <h1 className=" text-blue-500 text-center text-4xl font-bold mt-10">
             We&apos;re Here to Help.
             <br />
             Get in Touch with CapitalRevo
