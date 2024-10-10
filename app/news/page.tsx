@@ -36,8 +36,8 @@ export default function News() {
           </div>
         </div>
       </div>
-
-      <div className="pt-10 pl-4 mx-auto  md:pl-20 lg:flex-row lg:justify-between lg:pl-28  lg:items-center max-w-sirina">
+      <DailyNewsWidget />
+      <div className="pl-4 mx-auto  md:pl-20 lg:flex-row lg:justify-between lg:pl-28  lg:items-center max-w-sirina">
         <div className=" ">
           <h3 className="text-2xl py-2 text-black font-bold mb-6  lg:text-4xl  ">
             Latest News

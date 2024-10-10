@@ -20,7 +20,7 @@ const DailyNewsWidget = () => {
 
   return (
     <div>
-      <div className="bg-gray-50">
+      <div className="">
         <div className="pt-3 pb-5 flex-row justify-center items-center">
           <h2 className=" naslovboja2 text-center text-4xl font-bold mt-6 px-20 md:px-0">
             CapitalRevo Daily News!

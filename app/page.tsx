@@ -135,7 +135,9 @@ export default async function Home() {
           <TradingViewWidget />
         </div>
       </div>
-      <DailyNewsWidget />
+      <div className="bg-gray-50">
+        <DailyNewsWidget />
+      </div>
       <div className="crafy " id="Accounts">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
@@ -195,7 +197,7 @@ export default async function Home() {
       <div className=" pt-0 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
           <div className=" md:pl-10">
-            <h3 className="  naslovboja2 text-center text-4xl  font-bold p-4 md:text-left">
+            <h3 className="  text-blue-500 text-center text-4xl  font-bold p-4 md:text-left">
               Innovative Trading Platform
             </h3>
             <p className=" text-sm  p-4 tetx-center text-gray-700">
@@ -299,7 +301,7 @@ export default async function Home() {
           id="education"
         >
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-2xl py-4 text-black font-bold mb-2 mt-2 text-center lg:text-4xl ">
+            <h2 className="text-2xl py-4 text-blue-500 font-bold mb-2 mt-2 text-center lg:text-4xl ">
               Learn to Trade with Confidence
             </h2>
             <p className=" mb-4 text-center text-sm text-gray-700">
@@ -340,7 +342,7 @@ export default async function Home() {
         id="News"
       >
         <div className=" ">
-          <h3 className="text-2xl py-2 text-black font-bold mb-6 mt-6  lg:text-4xl  ">
+          <h3 className="text-2xl py-2 text-blue-500 font-bold mb-6 mt-6  lg:text-4xl  ">
             Stay Informed
           </h3>
           <p className=" mb-4  text-sm ">
@@ -372,7 +374,7 @@ export default async function Home() {
         id="whatourclientssay"
       >
         <div className=" ">
-          <h3 className=" text-3xl py-4 text-black font-bold mb-6 mt-6  lg:text-4xl lg:pl-5 ">
+          <h3 className=" text-3xl py-4 text-blue-500 font-bold mb-6 mt-6  lg:text-4xl lg:pl-5 ">
             What Our Clients Say
           </h3>
         </div>
@@ -388,7 +390,7 @@ export default async function Home() {
       </div>
       <div className="sivkasta ">
         <div className="pt-10 max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h3 className="text-2xl py-4 text-black font-bold pb-6 pt-6 text-center lg:text-4xl ">
+          <h3 className="text-2xl py-4 text-blue-500 font-bold pb-6 pt-6 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>
         </div>
@@ -435,7 +437,7 @@ export default async function Home() {
       </div>
 
       <div className="sivkasta flex-col justify-center ">
-        <h3 className="text-2xl   py-4 text-black font-bold pb-20 pt-20 text-center lg:text-4xl ">
+        <h3 className="text-2xl   py-4 text-blue-500 font-bold pb-20 pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h3>
       </div>
@@ -544,7 +546,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="pt-5 mb-20" id="ContactUs">
-        <h3 className="text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl">
+        <h3 className="text-2xl py-4 text-blue-500 font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
         <div className="flex justify-center">
@@ -585,7 +587,7 @@ export default async function Home() {
                 <p>Mon-Fri from 8am to 5pm.</p>
                 <p className="text-dugmeplava pt-2">
                   <br />
-                  +447441938990
+                  +447441906409
                   <br />
                 </p>
               </div>

@@ -33,9 +33,11 @@ export default function ContactUs() {
               assist.
             </p>
           </div>
-        </div>{" "}
+        </div>
       </div>
-
+      <div className="mt-10 mb-10">
+        <ContactForm />
+      </div>
       <div className="pt-5 mb-20">
         <h3 className="text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
@@ -78,17 +80,13 @@ export default function ContactUs() {
                 <p className="text-sm">Mon-Fri from 8am to 5pm.</p>
                 <p className="text-dugmeplava pt-2" id="contactform">
                   <br />
-                  +447441938990
+                  +447441906409
                   <br />
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="mt-10 mb-10">
-        <ContactForm />
       </div>
     </div>
   );

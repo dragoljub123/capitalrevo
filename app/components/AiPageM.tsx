@@ -4,11 +4,11 @@ import Link from "next/link";
 const AiPageM = () => {
   return (
     <div className="mx-auto p-10 text-white">
-      <h2 className="   pt-10 text-white text-3xl text-center font-bold mb-4 ">
+      <h2 className="   pt-10 text-white text-2xl text-center font-black mb-3 ">
         CapitalRevo AI support
       </h2>
       <div className="  flex justify-center ">
-        <hr className="border-t-[2px] border-[#990033] w-[90%] my-2 " />
+        <hr className="border-t-[2px] border-[#990033] w-[90%] my-1 " />
       </div>
       <h3 className=" text-xl mt-2 mb-2 text-white font-bold text-center">
         Leave out the guessing from your trading success!

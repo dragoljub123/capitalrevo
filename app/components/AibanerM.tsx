@@ -5,12 +5,13 @@ const AibanerM = () => {
   return (
     <div className="mx-auto p-10 text-white">
       {/* Naslov */}
-      <h2 className="text-3xl font-bold mb-2 underline decoration-[#990033] decoration-2 underline-offset-[10px]">
-        CapitalRevo AI support
-      </h2>
+      <h2 className="text-2xl font-bold mb-2 ">CapitalRevo AI support</h2>
+      <div className="   ">
+        <hr className="border-t-[2px] border-[#990033] w-[90%] my-2 " />
+      </div>
 
       {/* Podnaslov */}
-      <h3 className="text-xl mb-4 font-bold">
+      <h3 className="text-lg mb-4 font-bold">
         Leave out the guessing from your trading success!
       </h3>
 
@@ -51,7 +52,7 @@ const AibanerM = () => {
       </div>
 
       {/* Treći paragraf */}
-      <div className="mb-4">
+      <div className="mb-3">
         <h3 className="text-lg font-semibold text-[#990033]">
           Advanced Analytical Power
         </h3>
@@ -63,7 +64,7 @@ const AibanerM = () => {
       </div>
 
       {/* Četvrti paragraf */}
-      <div className="mb-4">
+      <div className="mb-3">
         <h3 className="text-lg font-semibold text-[#990033]">
           Emotionless, Data-Driven Decisions
         </h3>
@@ -75,7 +76,7 @@ const AibanerM = () => {
       </div>
 
       {/* Peti paragraf */}
-      <div className="mb-4">
+      <div className="mb-3">
         <h3 className="text-lg font-semibold text-[#990033]">
           Market Access For Everyone
         </h3>
@@ -88,7 +89,7 @@ const AibanerM = () => {
       </div>
 
       {/* Dugme Learn More */}
-      <div className="mt-4 flex justify-center">
+      <div className="mt-3 flex justify-center">
         <Link href="/ai-support">
           <button className="bg-white text-navcolor py-2 px-4 rounded shadow hover:bg-gray-100 transition">
             Learn More
