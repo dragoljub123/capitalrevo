@@ -4,6 +4,8 @@ import { Navbar } from "../components/Navbar";
 import { Metadata } from "next";
 import VideoPlayer from "../components/VideoPlayer";
 
+import Ebooks from "../components/Ebooks";
+
 export const metadata: Metadata = {
   title: " Education | CapitalRevo",
   description:
@@ -38,8 +40,15 @@ export default function AiSupport() {
           </div>
         </div>
       </div>
-      <div className=" ">
+      <div className="">
+
         <VideoPlayer />
+      </div>
+      <div className="pt-5 bg-gray-50">
+      <h2 className="text-4xl py-4 lg:py-2 text-blue-500 font-bold mb-2 text-center lg:text-4xl ">
+      eBooks
+        </h2>
+        <Ebooks />
       </div>
     </div>
   );
