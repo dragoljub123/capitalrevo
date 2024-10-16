@@ -4,7 +4,7 @@ const PipValue: React.FC = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <p className="mx-auto px-4 sm:px-0 text-[#475467] text-center md:text-left">
-      Accurately calculate pip values and manage your trade risks. A 'Pip', short for 'point in percentage', quantifies exchange rate movements between two currencies in Forex trading. Utilizing these small measurement units helps protect new traders from substantial losses.
+      Accurately calculate pip values and manage your trade risks. A &apos;Pip&apos;, short for &apos;point in percentage&apos;, quantifies exchange rate movements between two currencies in Forex trading. Utilizing these small measurement units helps protect new traders from substantial losses.
       </p>
       <br />
       <iframe
