@@ -287,19 +287,25 @@ ul {
 
 @media (max-width: 768px) {
   .currencycalculator {
-    height: 600px;
+    height: 300px;
   }
   .fibonacci-calculator {
-    height: 1240px;
+    height: 1000px!important;
   }
   .pivot-point {
-    height: 980px;
+    height: 900px;
   }
   .cfd-calculator {
-    height: 768px;
+    height: 570px;
   }
   .stop-loss-limit {
-    height: 971px;
+    height: 680px;
+  }
+  .margin-calculator {
+    height: 680px;
+  }
+  .pip-value {
+    height: 550px;
   }
   .economic-calendar {
     height: 971px;
@@ -307,14 +313,9 @@ ul {
   .daily-signals {
     height: 744px;
   }
-  .margin-calculator {
-    height: 980px;
-  }
-  .pip-value {
-    height: 880px;
-  }
+
   .heatmap {
-    height: 1500px;
+    height: 1200px;
   }
 }
 
@@ -347,6 +348,6 @@ ul {
     height: 710px;
   }
   .heatmap {
-    height: 1800px;
+    height: 1280px;
   }
 }
