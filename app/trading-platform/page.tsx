@@ -16,6 +16,8 @@ import Heatmap from "../components/Heatmap";
 import WidgetsCalculators from "../components/WidgetsCalculators";
 import Link from "next/link";
 
+import MobileWidgetsCalculators from "../components/MobileWidgetsCalculators";
+
 
 export default function TradingPlatform() {
   return (
@@ -42,7 +44,7 @@ export default function TradingPlatform() {
               </h2>
               <img
                 src="/Screenapp.svg"
-                alt="trade"
+                alt="CapitalRevo Trading platform"
                 width={600}
                 height={390}
                 style={{ objectFit: "contain" }}
@@ -69,73 +71,23 @@ export default function TradingPlatform() {
           <h2 className=" text-center text-3xl font-bold pt-10 pb-2">
             CapitalRevo Trading Tools!
           </h2>
-          <p className="text-center text-[#475467]">
+          <p className="text-center text-[#475467] px-14 pb-2">
             Tools designed to help you make SMART DECISIONS!
           </p>
           <div className="hidden md:block">
-          <WidgetsCalculators />
+            <WidgetsCalculators />
           </div>
-          </div>
-          </div>
-
           <div className="block md:hidden">
-  <div className="max-w-screen-xl mx-auto">
-    {/* Currency Converter */}
-    <div className="py-10 text-center">
-      <h3 className="text-2xl font-bold pb-5">Currency Converter</h3>
-      <CurrencyCalculator />
-    </div>
-
-    {/* Fibonacci Calculator */}
-    <div className="py-10 text-center">
-      <h2 className="text-2xl font-bold pb-5">Fibonacci Calculator</h2>
-      <FibonacciCalculator />
-    </div>
-
-    {/* Pivot Calculator */}
-    <div className="bg-gray-50 py-10 text-center">
-      <h2 className="text-3xl font-bold pb-5">Pivot Calculator</h2>
-      <PivotPoint />
-    </div>
-
-    {/* CFD Profit/Loss Calculator */}
-    <div className="py-10 text-center">
-      <h2 className="text-3xl font-bold pb-5">CFD Profit<br/>Loss Calculator</h2>
-      <CfdCalculator />
-    </div>
-
-    {/* Stop Loss Limit */}
-    <div className="py-10 text-center">
-      <h2 className="text-3xl font-bold pb-5">Stop Loss Limit</h2>
-      <StopLossLimit />
-    </div>
-
-    {/* Margin Calculator */}
-    <div className="py-10 text-center">
-      <h2 className="text-3xl font-bold pb-5">Margin Calculator</h2>
-      <MarginCalculator />
-    </div>
-
-    {/* Pip Value */}
-    <div className="py-10 text-center">
-      <h2 className="text-3xl font-bold pb-5">Pip Value</h2>
-      <PipValue />
-    </div>
-
-    {/* Heatmap */}
-    <div className="py-10 text-center">
-      <h2 className="text-3xl font-bold pb-5">Heatmap</h2>
-      <Heatmap />
-    </div>
-  </div>
-</div>
-
+            <MobileWidgetsCalculators />
+          </div>
+        </div>
+      </div>
 
 
       <div className="hidden md:block lg:flex max-w-screen-xl mx-auto xl:px-10">
         <Image
           src={Strategygetintouch}
-          alt="webinars1"
+          alt="Get the capitalrevo app"
           width={1440}
           height={400}
           className=" object-contain "
@@ -144,7 +96,7 @@ export default function TradingPlatform() {
       <div className="flex justify-center items-center md:hidden lg:hidden">
       <Image
           src="/TradeOngo.svg"
-          alt="webinars"
+          alt="Get the capitalrevo app for ios or android"
           width={380}
           height={672}
           className=" object-contain "

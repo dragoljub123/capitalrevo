@@ -299,13 +299,13 @@ ul {
     height: 870px;
   }
   .stop-loss-limit {
-    height: 880px;
+    height: 980px;
   }
   .margin-calculator {
-    height: 880px;
+    height: 980px;
   }
   .pip-value {
-    height: 1250px;
+    height: 950px;
   }
   .economic-calendar {
     height: 1271px;
@@ -315,7 +315,7 @@ ul {
   }
 
   .heatmap {
-    height: 1200px;
+    height: 1400px;
   }
 }
 
@@ -350,4 +350,12 @@ ul {
   .heatmap {
     height: 1280px;
   }
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none; 
+}
+
+.hide-scroll-bar.hide-scroll-bar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }

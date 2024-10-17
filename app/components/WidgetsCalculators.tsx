@@ -21,17 +21,19 @@ const WidgetsCalculators = () => {
       { id: "cfdCalculator", label: "CFD Profit/Loss Calculator", component: <CfdCalculator /> },
       { id: "marginCalculator", label: "Margin Calculator", component: <MarginCalculator /> },
       { id: "stopLossLimit", label: "Stop Loss Limit", component: <StopLossLimit /> },
-      { id: "pipValue", label: "Pip Value", component: <PipValue /> }, 
+      { id: "pipValue", label: "Pip Value", component: <PipValue /> }, // Dodan PipValue
       { id: "heatmap", label: "Heatmap", component: <Heatmap /> }, 
     ];
   
     return (
-        <div className="max-w-screen-xl mx-auto xl:px-10">
-  <div className="mt-5 lg:flex lg:justify-between mb-10">
-    <div className="max-w-sirina md:flex flex-shrink-0">
-      <div className="p-10 lg:p-2">
+
+      <div className="max-w-screen-xl mx-auto xl:px-10">
+  <div className="mt-5 inline-flex justify-between mb-10 w-full"> {/* Dodajte w-full ovde */}
+    {/* Deo sa nazivima widgeta */}
+    <div className="max-w-sirina flex-shrink-0 md:w-1/4 flex flex-col w-full"> {/* Dodajte w-full ovde */}
+      <div className="p-4 lg:p-2">
         <div className="flex text-sm gap-2 md:flex md:flex-col md:gap-0 pl-2">
-        {tabs.map((tab) => (
+          {tabs.map((tab) => (
             <div
               key={tab.id}
               className={`-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer ${activeTab === tab.id ? 'border-blue-500' : ''}`}
@@ -52,10 +54,11 @@ const WidgetsCalculators = () => {
         </div>
       </div>
     </div>
-    <div className="relative w-full h-full flex justify-center flex-grow mt-4">
+    {/* Deo sa widgetima */}
+    <div className="relative w-full flex justify-center flex-grow mt-4 md:w-2/3"> 
       {tabs.map((tab) => (
         activeTab === tab.id && (
-          <div key={tab.id} className="h-full w-full lg:pl-10">
+          <div key={tab.id} className="h-full w-fullS ">
             {tab.component}
           </div>
         )
@@ -63,7 +66,6 @@ const WidgetsCalculators = () => {
     </div>
   </div>
 </div>
-
 
       
     );
