@@ -3,16 +3,6 @@ import React from "react";
 import { Navbar } from "../components/Navbar";
 import Image from "next/image";
 import Strategygetintouch from "@/public/strategygetintouch.svg";
-import TabsComponent from "../components/TabsComponent";
-
-import CurrencyCalculator from "../components/CurrencyCalculator";
-import FibonacciCalculator from "../components/Fibonacci";
-import PivotPoint from "../components/PivotPoint";
-import CfdCalculator from "../components/CfdCalculator";
-import StopLossLimit from "../components/StopLossLimit";
-import MarginCalculator from "../components/MarginCalculator";
-import PipValue from "../components/PipValue";
-import Heatmap from "../components/Heatmap";
 import WidgetsCalculators from "../components/WidgetsCalculators";
 import Link from "next/link";
 
@@ -39,9 +29,11 @@ export default function TradingPlatform() {
         </div>
         <div className="flex relative justify-center pb-5">
             <div className="relative ">
+            <Link href="https://platform.capitalrevo.com/login">
               <h2 className="  absolute top-1/2 p-4 w-fit h-fit bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800 ">
                 Real-time data
               </h2>
+              </Link>
               <img
                 src="/Screenapp.svg"
                 alt="CapitalRevo Trading platform"
@@ -51,15 +43,17 @@ export default function TradingPlatform() {
               />
               
               <div className="absolute top-2/3 right-0  w-fit h-fit p-2 bg-white/50 backdrop-blur-sm flex items-center justify-center hover:bg-white">
-                <Link href="/trading-platform">
+              <Link href="https://platform.capitalrevo.com/login">
                   <h2 className="text-xs md:text-xl font-black text-gray-800 p-2 md:px-10">
                     Trading Platform
                   </h2>
                 </Link>
               </div>
+              <Link href="https://platform.capitalrevo.com/login">
               <h2 className=" absolute top-10 right-0 w-fit h-fit p-4 bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800">
                 Customizable charts
               </h2>
+              </Link>
             </div>
           </div>
       </div>
@@ -93,15 +87,16 @@ export default function TradingPlatform() {
           className=" object-contain "
         />
       </div>
-      <div className="flex justify-center items-center md:hidden lg:hidden">
-      <Image
-          src="/TradeOngo.svg"
-          alt="Get the capitalrevo app for ios or android"
-          width={380}
-          height={672}
-          className=" object-contain "
-        />
-      </div>
+      <div className="flex justify-center items-center md:hidden lg:hidden w-full h-screen relative"> {/* Postavi relative */}
+    <Image
+        src="/TradeOngo.svg"
+        alt="Get the capitalrevo app for ios or android"
+        layout="fill" 
+        objectFit="cover" 
+        className="object-cover" 
+    />
+</div>
+
     </div>
   );
 }
