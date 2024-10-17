@@ -74,7 +74,7 @@ export default async function Home() {
         <div className=" max-w-screen-xl mx-auto ">
           <div className=" pt-10 mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between   px-10 h-full ">
-              <h1 className="pt-10 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
+              <h1 className="pt-10 pb-10 text-center text-4xl text-white font-black md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
               <p className="text-white text-center  text-sm lg:mt-2 lg:mb- lg:text-left ">
@@ -141,7 +141,7 @@ export default async function Home() {
       <div className="crafy " id="Accounts">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-4xl py-4 lg:py-2 text-white font-bold mb-2 text-center lg:text-4xl ">
+            <h2 className="text-4xl py-4 lg:py-2 text-white font-black mb-2 text-center lg:text-4xl ">
               Choose the Right Account for You
             </h2>
             <p className=" mb-4 text-center   text-white">
@@ -197,7 +197,7 @@ export default async function Home() {
       <div className=" pt-0 " id="TradingPlatform">
         <div className=" lg:flex lg:justify-evenly lg:text-left">
           <div className=" md:pl-10">
-            <h3 className="  text-blue-500 text-center text-4xl  font-bold p-4 md:text-left">
+            <h3 className="  text-blue-500 text-center text-4xl  font-black p-4 md:text-left">
               Innovative Trading Platform
             </h3>
             <p className=" text-sm  p-4 tetx-center text-gray-700">
@@ -301,7 +301,7 @@ export default async function Home() {
           id="education"
         >
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-2xl py-4 text-blue-500 font-bold mb-2 mt-2 text-center lg:text-4xl ">
+            <h2 className="text-2xl py-4 text-blue-500 font-black mb-2 mt-2 text-center lg:text-4xl ">
               Learn to Trade with Confidence
             </h2>
             <p className=" mb-4 text-center text-sm text-gray-700">
@@ -390,7 +390,7 @@ export default async function Home() {
       </div>
       <div className="sivkasta ">
         <div className=" max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h3 className="text-2xl py-4 text-blue-500 font-bold pb-6 pt-6 text-center lg:text-4xl ">
+          <h3 className="text-2xl py-4 text-blue-500 font-black pb-6 pt-6 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>
         </div>
@@ -437,7 +437,7 @@ export default async function Home() {
       </div>
 
       <div className="sivkasta flex-col justify-center ">
-        <h3 className="text-2xl   py-4 text-blue-500 font-bold pb-20 pt-20 text-center lg:text-4xl ">
+        <h3 className="text-2xl   py-4 text-blue-500 font-black pb-20 pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h3>
       </div>
@@ -511,7 +511,7 @@ export default async function Home() {
       >
         <div className="max-w-sirina md:flex">
           <div className="my-10">
-            <h2 className="text-3xl p-4 font-bold ">About Us</h2>
+            <h2 className="text-3xl p-4 font-black ">About Us</h2>
             <p className="p-4  lg:w-[400px] ">
               With over 15 years in the industry, CapitalRevo is dedicated to
               providing traders with the best-in-class tools and support.
@@ -546,7 +546,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="pt-5 mb-20" id="ContactUs">
-        <h3 className="text-2xl py-4 text-blue-500 font-bold mb-0 mt-20 text-center lg:text-4xl">
+        <h3 className="text-2xl py-4 text-blue-500 font-black mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
         <div className="flex justify-center">

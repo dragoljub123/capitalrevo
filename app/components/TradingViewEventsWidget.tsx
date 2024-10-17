@@ -12,7 +12,7 @@ const TradingViewEventsWidget: React.FC = () => {
     script.innerHTML = JSON.stringify({
       colorTheme: "dark",
       isTransparent: false,
-      width: "1260",
+      width: "1180",
       height: "504",
       locale: "en",
       importanceFilter: "-1,0,1", // Filters by event importance level

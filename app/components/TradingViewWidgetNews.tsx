@@ -14,8 +14,8 @@ const TradingViewWidgetNews: React.FC = () => {
       feedMode: "all_symbols",
       isTransparent: false,
       displayMode: "regular",
-      width: "1260", // Set the specific width you need
-      height: "504", // Set the specific height you need
+      width: "1180", // Set the specific width you need
+      height: "310", // Set the specific height you need
       colorTheme: "light",
       locale: "en",
     });
