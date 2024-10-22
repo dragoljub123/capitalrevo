@@ -9,6 +9,10 @@ import DailyNewsWidget from "../components/DailyNewsWidget";
 import TradingViewWidgetNews3 from "../components/TradingViewWidgetNews3";
 import EconomicCalendar from "../components/EconomicCalendar";
 import DailySignals from "../components/DailySignals";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
 export const metadata: Metadata = {
   title: "News | CapitalRevo",
   description:
@@ -22,19 +26,31 @@ export default function News() {
     <div className="">
       <Navbar />
       <div className="bg-gray-50">
+<<<<<<< HEAD
         <div className="pt-20 pb-5 flex flex-col items-center">
           <h1 className="text-[#00dbfe] font-black text-center text-4xl md:mt-10">
+=======
+        <div className="pt-20 pb-10 flex flex-col items-center">
+          <h1 className="text-blue-500 font-black text-center text-4xl md:mt-10">
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
             Stay Updated with the Latest Market News
           </h1>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
             Keeping up with market news is essential for every trader. At
+<<<<<<< HEAD
             CapitalRevo, we provide you with real-time news and analysis to keep
             you informed of every market movement, ensuring you&apos;re always
             ready to make your next trade.
+=======
+            CapitalRevo, we provide you with real-time news and analysis to
+            keep you informed of every market movement, ensuring you&apos;re
+            always ready to make your next trade.
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
           </p>
         </div>
       </div>
       <DailyNewsWidget />
+<<<<<<< HEAD
       <div className="max-w-screen-xl mx-auto xl:px-20">
         <div className=" pb-5 flex flex-col items-center">
           <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
@@ -48,6 +64,21 @@ export default function News() {
       <div className="max-w-screen-xl mx-auto text-center">
         <div className="pt-5 pb-5 flex flex-col items-center">
           <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
+=======
+
+      <div className="max-w-screen-xl mx-auto xl:px-20">
+        <div className="pt-5 pb-5 flex flex-col items-center">
+          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+            Daily Signals
+          </h2>
+        </div>
+          <DailySignals />
+      </div>
+
+      <div className="max-w-screen-xl mx-auto text-center">
+        <div className="pt-5 pb-5 flex flex-col items-center">
+          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
             Economic Calendar
           </h2>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
@@ -57,6 +88,7 @@ export default function News() {
             market, GDP growth, foreign trade, government, business confidence,
             consumer sentiment, housing market.
           </p>
+<<<<<<< HEAD
         </div>
         <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8 sm:px-0">
           <EconomicCalendar />
@@ -65,6 +97,18 @@ export default function News() {
       <div className="max-w-screen-xl mx-auto text-center">
         <div className="pt-5 pb-5 flex flex-col items-center">
           <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
+=======
+          </div>
+          <div className="max-w-[1180px] mx-auto px-4 md:px-6 lg:px-8 sm:px-0">
+          <EconomicCalendar />
+          </div>
+          
+      </div>
+
+      <div className="max-w-screen-xl mx-auto text-center">
+        <div className="pt-5 pb-5 flex flex-col items-center">
+          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
             Latest News
           </h2>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
@@ -73,6 +117,10 @@ export default function News() {
             currencies or looking for stock market analysis, we&apos;ve got you
             covered.
           </p>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
           <div className="max-w-screen-xl text-center">
             <div className="hidden lg:block">
               <TradingViewWidgetNews />
@@ -86,9 +134,16 @@ export default function News() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className="max-w-screen-xl mx-auto text-center">
         <div className="pt-5 pb-5 flex flex-col items-center">
           <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
+=======
+
+      <div className="max-w-screen-xl mx-auto text-center">
+        <div className="pt-5 pb-5 flex flex-col items-center">
+          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
             Expert Commentary
           </h2>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
@@ -96,6 +151,10 @@ export default function News() {
             insights. Get detailed explanations on how market events can affect
             your portfolio, and make well-informed decisions.
           </p>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
           <div className="max-w-screen-xl">
             <div className="hidden lg:block">
               <TradingViewEventsWidget />

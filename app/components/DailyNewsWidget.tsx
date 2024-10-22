@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 
 const DailyNewsWidget = () => {
   useEffect(() => {
-    // Učitavanje Dyntube skripte
+    
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.async = true;
@@ -12,8 +12,7 @@ const DailyNewsWidget = () => {
 
     document.head.appendChild(script);
 
-    return () => {
-      // Čistimo nakon uklanjanja komponente
+    return () => { 
       document.head.removeChild(script);
     };
   }, []);
@@ -21,12 +20,18 @@ const DailyNewsWidget = () => {
   return (
     <div>
       <div className="">
+<<<<<<< HEAD
         <div className="pt-5 pb-5 flex-row justify-center items-center">
           <h2 className=" text-[#00dbfe] text-center text-xl lg:text-4xl font-bold mt-6  md:px-0">
             <span className="underline underline-offset-[10px]">
               Daily News
             </span>{" "}
             covering the biggest trends in finance!
+=======
+        <div className="pt-3 pb-5 flex-row justify-center items-center">
+          <h2 className=" text-blue-500 text-center text-4xl font-black mt-6 px-20 md:px-0">
+            CapitalRevo Daily News!
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
           </h2>
         </div>
         <div className="flex justify-center pb-10 ">

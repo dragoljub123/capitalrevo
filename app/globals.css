@@ -273,7 +273,7 @@ ul {
   }
 
   .fibonacci-calculator {
-    height: 1200px !important;
+    height: 1240px;
   }
 
   .pivot-point {
@@ -285,9 +285,14 @@ ul {
   }
 
   .stop-loss-limit {
-    height: 980px;
+    height: 971px;
   }
-
+  .economic-calendar {
+    height: 971px;
+  }
+  .daily-signals {
+    height: 744px;
+  }
   .margin-calculator {
     height: 980px;
   }
@@ -295,15 +300,6 @@ ul {
   .pip-value {
     height: 950px;
   }
-
-  .economic-calendar {
-    height: 1271px;
-  }
-
-  .daily-signals {
-    height: 944px;
-  }
-
   .heatmap {
     height: 1400px;
   }
@@ -349,14 +345,4 @@ ul {
   .heatmap {
     height: 1280px;
   }
-}
-
-.hide-scroll-bar::-webkit-scrollbar {
-  display: none;
-}
-
-.hide-scroll-bar.hide-scroll-bar {
-  -ms-overflow-style: none;
-
-  scrollbar-width: none;
 }

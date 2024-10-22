@@ -74,7 +74,7 @@ export default async function Home() {
         <div className=" max-w-screen-xl mx-auto ">
           <div className=" pt-10 mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between   px-10 h-full ">
-              <h1 className="pt-10 pb-5 text-center text-3xl text-white font-bold md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5   ">
+              <h1 className="pt-10 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
               <p className="text-white text-center lg:pr-20 lg:text-xl lg:-mt-3 lg:text-left ">
@@ -183,7 +183,7 @@ export default async function Home() {
       <div className=" mx-auto flex items-center justify-center ">
         <div className=" crafy rounded-lg" id="Accounts">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-4xl py-1  text-white font-black  text-center lg:text-4xl ">
+            <h2 className="text-4xl py-4 lg:py-2 text-white font-bold mb-2 text-center lg:text-4xl ">
               Choose the Right Account for You
             </h2>
             <p className="  text-lg text-center font-bold  text-white">
@@ -251,10 +251,10 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="max-w-screen-xl px-10 pt-5 ">
-          <div className="mb-8 lg:mt-5 ">
-            <h3 className=" mt-5 text-3xl  text-[#00dbfe] font-black   lg:text-4xl text-center ">
+      <div className=" pt-0 " id="TradingPlatform">
+        <div className=" lg:flex lg:justify-evenly lg:text-left">
+          <div className=" md:pl-10">
+            <h3 className="  text-blue-500 text-center text-4xl  font-bold p-4 md:text-left">
               Innovative Trading Platform
             </h3>
             <p className="text-sm md:text-lg mt-2 md:mt-0 text-gray-600 text-center">
@@ -387,69 +387,46 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:flex lg:justify-center">
-        <div className="lg:flex lg:justify-between lg:max-w-screen-xl">
-          <div className="my-0 xl:pl-10">
-            <div>
-              <div className="lg:px-10 xl:px-0 lg:h-full">
-                <h2 className="text-2xl py-2 text-[#00dbfe] font-black   mb-2 mt-2 text-center lg:text-left lg:text-4xl">
-                  Learn to Trade with Confidence
-                </h2>
-                <p className="mb-4 px-10 md:px-10 lg:px-0 text-sm text-gray-700 lg:text-lg">
-                  Access webinars, eBooks, market analysis, and trading
-                  strategies to enhance your trading knowledge and skills.
-                </p>
-              </div>
-            </div>
+
+      <div className="my-0">
+        <div
+          className=" mx-auto flex items-center justify-center "
+          id="education"
+        >
+          <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+            <h2 className="text-2xl py-4 text-blue-500 font-bold mb-2 mt-2 text-center lg:text-4xl ">
+              Learn to Trade with Confidence
+            </h2>
+            <p className=" mb-4 text-center text-sm text-gray-700">
+              Access webinars, eBooks, market analysis, and trading strategies
+              to enhance your <br /> trading knowledge and skills.
+            </p>
           </div>
-          <div className="mt-5 flex justify-center items-center lg:w-full">
-            <div className="fle-row md:flex justify-between w-full max-w-2xl xl:mt-20">
-              <span className="flex flex-col items-center text-center ">
-                <Image
-                  src="/oblacic.png"
-                  alt="webinars8"
-                  width={48}
-                  height={48}
-                />
-                <p className="text-center text-sm font-bold px-6 text-gray-600">
-                  Webinars
-                </p>
-              </span>
-              <span className="flex flex-col items-center text-center">
-                <Image
-                  src="/gormic.png"
-                  alt="webinars9"
-                  width={48}
-                  height={48}
-                />
-                <p className="text-center text-sm font-bold px-6 text-gray-600">
-                  eBooks
-                </p>
-              </span>
-              <span className="flex flex-col items-center text-center">
-                <Image
-                  src="/gormic.png"
-                  alt="webinars10"
-                  width={48}
-                  height={48}
-                />
-                <p className="text-center text-sm font-bold px-6 text-gray-600">
-                  Market Analysis
-                </p>
-              </span>
-              <span className="flex flex-col items-center text-center">
-                <Image
-                  src="/strategy.png"
-                  alt="webinars11"
-                  width={48}
-                  height={48}
-                />
-                <p className="text-center text-sm font-bold px-6 text-gray-600">
-                  Trading Strategies
-                </p>
-              </span>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className="m-10  lg:flex lg:justify-evenly lg:items-center">
+        <div className="max-w-sirina flex flex-col gap-10  sm:flex sm:flex-row">
+          <span className="flex flex-col items-center text-center ">
+            <Image src="/oblacic.png" alt="webinars8" width={48} height={48} />
+            <p className="text-center font-bold px-6 ">Webinars</p>
+          </span>
+          <span className="flex flex-col items-center text-center">
+            <Image src="/gormic.png" alt="webinars9" width={48} height={48} />
+            <p className="text-center font-bold px-6">eBooks</p>
+          </span>
+          <span className="flex flex-col items-center text-center">
+            <Image src="/gormic.png" alt="webinars10" width={48} height={48} />
+            <p className="text-center font-bold px-6">Market Analysis</p>
+          </span>
+          <span className="flex flex-col items-center text-center">
+            <Image
+              src="/strategy.png"
+              alt="webinars11"
+              width={48}
+              height={48}
+            />
+            <p className="text-center font-bold px-6 ">Trading Strategies</p>
+          </span>
         </div>
       </div>
 
@@ -488,7 +465,7 @@ export default async function Home() {
 
       <div className="sivkasta ">
         <div className=" max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h3 className="text-2xl py-4 text-[#00dbfe] font-black pt-6 text-center lg:text-4xl ">
+          <h3 className="text-2xl py-4 text-blue-500 font-bold pb-6 pt-6 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>
         </div>
@@ -535,7 +512,7 @@ export default async function Home() {
       </div>
 
       <div className="sivkasta flex-col justify-center ">
-        <h3 className="text-2xl   py-4 text-[#00dbfe] font-black  pt-10 text-center lg:text-4xl ">
+        <h3 className="text-2xl   py-4 text-blue-500 font-bold pb-20 pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h3>
       </div>
@@ -603,13 +580,14 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="  lg:flex lg:justify-center " id="AboutUs">
-        <div className="max-w-screen-xl pl-1 md:pl-7 lg:mt-5 md:flex">
-          <div className=" ">
-            <h2 className="text-3xl px-4 font-black text-[#00dbfe] ">
-              About Us
-            </h2>
-            <p className=" pl-4 pt-8 text-gray-700 text-lg">
+      <div
+        className=" pl-10 lg:pl-0 pt-10 lg:flex lg:justify-evenly"
+        id="AboutUs"
+      >
+        <div className="max-w-sirina md:flex">
+          <div className="my-10">
+            <h2 className="text-3xl p-4 font-bold ">About Us</h2>
+            <p className="p-4  lg:w-[400px] ">
               With over 15 years in the industry, CapitalRevo is dedicated to
               providing traders with the best-in-class tools and support.
             </p>
@@ -642,8 +620,8 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-10 " id="ContactUs">
-        <h3 className="text-2xl  text-[#00dbfe] font-black mb-0  text-center lg:text-4xl">
+      <div className="pt-5 mb-20" id="ContactUs">
+        <h3 className="text-2xl py-4 text-blue-500 font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
       </div>

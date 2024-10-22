@@ -92,7 +92,10 @@ const BlogPostPage = async ({ params }: BlogPostProps) => {
                     const isExternal =
                       href.startsWith("https://") &&
                       !href.includes("capitalrevo.com");
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
                     if (isExternal) {
                       return (
                         <a
@@ -105,7 +108,10 @@ const BlogPostPage = async ({ params }: BlogPostProps) => {
                         </a>
                       );
                     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
                     return (
                       <a href={href} className="text-blue-500 hover:underline">
                         {children}
