@@ -8,7 +8,8 @@ import MorningStar from "@/public/whitemorningstarlogo.png";
 import Buisnisinsider from "@/public/whitebuisnisinsiderlogo.png";
 import katman from "@/public/katman.png";
 import ContactForm from "@/app/components/ContactForm";
-import trustpilotlogo from "@/app/images/Trustpilot-Rated43.png";
+import trustpilotlogo from "@/app/images/stars-45.svg";
+import trustpilotlogo2 from "@/app/images/trustpilot-1.svg";
 import CustomerCard from "./components/CustomerCard";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
@@ -89,11 +90,19 @@ export default async function Home() {
                 >
                   Get Started Now
                 </Link>
-                <div className="flex justify-center items-center mt-4 sm:mt-2 lg:-mt-2">
+                <div className="flex-row justify-center items-center mt-4 sm:mt-2 lg:-mt-4 ">
+                  <p className="text-xs font-black text-white text-center py-1">
+                    Rated 4.3
+                  </p>
                   <Image
                     src={trustpilotlogo}
                     alt="slika"
-                    className="max-h-screen object-contain"
+                    className="w-[116px] h-auto"
+                  />{" "}
+                  <Image
+                    src={trustpilotlogo2}
+                    alt="slika"
+                    className="w-[100px] h-auto"
                   />
                 </div>
               </div>
