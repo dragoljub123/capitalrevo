@@ -302,7 +302,7 @@ export default async function Home() {
           src="/mobiletrader7.png"
           alt="trade"
           width={1200}
-          height={600}
+          height={599}
           style={{ objectFit: "cover" }}
         />
       </div>
