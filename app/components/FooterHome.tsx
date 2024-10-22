@@ -78,13 +78,8 @@ export const FooterHome: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-<<<<<<< HEAD
             <p className="text-center lg:text-left lg:mx-10">
-              © 2009 - 2024. CapitalRevo
-=======
-            <p className="text-center lg:text-left lg:mx-20">
               © 2009 - 2024 CapitalRevo
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
             </p>
             <div className="flex space-x-4 text-sm md:pr-10">
               <Link href="/">Privacy Policy</Link>
@@ -218,11 +213,8 @@ export const FooterHome: React.FC = () => {
               <Link href="/">Risk Disclaimer</Link>
             </div>
           </div>
-<<<<<<< HEAD
-          <p className="mx-5 text-left mt-5 lg:text-left lg:mx-20">
-=======
-          <p className="text-left mt-10 lg:text-left lg:mx-20">
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
+
+          <p className="text-left mt-10 lg:text-left mx-5 lg:mx-20">
             © 2009 - 2024 CapitalRevo
           </p>
           <div className="mx-5 text-center px-1 py-8">

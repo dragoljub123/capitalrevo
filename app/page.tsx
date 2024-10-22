@@ -251,45 +251,47 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className=" pt-0 " id="TradingPlatform">
-        <div className=" lg:flex lg:justify-evenly lg:text-left">
-          <div className=" md:pl-10">
-            <h3 className="  text-blue-500 text-center text-4xl  font-bold p-4 md:text-left">
-              Innovative Trading Platform
-            </h3>
-            <p className="text-sm md:text-lg mt-2 md:mt-0 text-gray-600 text-center">
-              Experience the power of integrated trading tools with real-time
-              data, customizable charts, and mobile trading.
-            </p>
-          </div>
-          <div className="flex relative justify-center">
-            <div className="relative ">
-              <Link href="https://platform.capitalrevo.com/login">
-                <h2 className="  absolute top-1/2 p-2 md:p-6 w-fit h-fit bg-white/50 backdrop-blur-sm rounded-lg hover:bg-white text-xs  md:text-xl font-black text-gray-800 ">
-                  Real-time data
-                </h2>
-              </Link>
-              <Image
-                src="/Screenapp.svg"
-                alt="trade"
-                width={600}
-                height={390}
-                style={{ objectFit: "contain" }}
-              />
-              {/* Kockasti div koji je 30% preko slike */}
-              <div className="absolute top-2/3 right-0  w-fit h-fit p-2 bg-white/50 backdrop-blur-sm flex items-center justify-center hover:bg-white rounded-lg">
+      <div className=" mx-auto flex items-center justify-center ">
+        <div className=" pt-0 " id="TradingPlatform">
+          <div className=" lg:flex-row lg:justify-evenly lg:text-left">
+            <div className=" md:pl-10 ">
+              <h3 className="  text-[#00dbfe] text-center text-4xl  font-bold p-4 md:text-left lg:text-center">
+                Innovative Trading Platform
+              </h3>
+              <p className="text-sm md:text-lg mt-2 md:mt-0 text-gray-600 text-center">
+                Experience the power of integrated trading tools with real-time
+                data, customizable charts, and mobile trading.
+              </p>
+            </div>
+            <div className="flex relative justify-center">
+              <div className="relative ">
                 <Link href="https://platform.capitalrevo.com/login">
-                  <h2 className="text-xs md:text-xl font-black text-gray-800 p-2 md:p-4 ">
-                    Trading Platform
+                  <h2 className="  absolute top-1/2 p-2 md:p-6 w-fit h-fit bg-white/50 backdrop-blur-sm rounded-lg hover:bg-white text-xs  md:text-xl font-black text-gray-800 ">
+                    Real-time data
+                  </h2>
+                </Link>
+                <Image
+                  src="/Screenapp.svg"
+                  alt="trade"
+                  width={600}
+                  height={390}
+                  style={{ objectFit: "contain" }}
+                />
+                {/* Kockasti div koji je 30% preko slike */}
+                <div className="absolute top-2/3 right-0  w-fit h-fit p-2 bg-white/50 backdrop-blur-sm flex items-center justify-center hover:bg-white rounded-lg">
+                  <Link href="https://platform.capitalrevo.com/login">
+                    <h2 className="text-xs md:text-xl font-black text-gray-800 p-2 md:p-4 ">
+                      Trading Platform
+                    </h2>
+                  </Link>
+                </div>
+
+                <Link href="https://platform.capitalrevo.com/login">
+                  <h2 className=" absolute top-10 right-0 w-fit h-fit p-2 md:p-6 bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800 rounded-lg">
+                    Customizable charts
                   </h2>
                 </Link>
               </div>
-
-              <Link href="https://platform.capitalrevo.com/login">
-                <h2 className=" absolute top-10 right-0 w-fit h-fit p-2 md:p-6 bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800 rounded-lg">
-                  Customizable charts
-                </h2>
-              </Link>
             </div>
           </div>
         </div>
@@ -388,48 +390,6 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="my-0">
-        <div
-          className=" mx-auto flex items-center justify-center "
-          id="education"
-        >
-          <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-2xl py-4 text-blue-500 font-bold mb-2 mt-2 text-center lg:text-4xl ">
-              Learn to Trade with Confidence
-            </h2>
-            <p className=" mb-4 text-center text-sm text-gray-700">
-              Access webinars, eBooks, market analysis, and trading strategies
-              to enhance your <br /> trading knowledge and skills.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="m-10  lg:flex lg:justify-evenly lg:items-center">
-        <div className="max-w-sirina flex flex-col gap-10  sm:flex sm:flex-row">
-          <span className="flex flex-col items-center text-center ">
-            <Image src="/oblacic.png" alt="webinars8" width={48} height={48} />
-            <p className="text-center font-bold px-6 ">Webinars</p>
-          </span>
-          <span className="flex flex-col items-center text-center">
-            <Image src="/gormic.png" alt="webinars9" width={48} height={48} />
-            <p className="text-center font-bold px-6">eBooks</p>
-          </span>
-          <span className="flex flex-col items-center text-center">
-            <Image src="/gormic.png" alt="webinars10" width={48} height={48} />
-            <p className="text-center font-bold px-6">Market Analysis</p>
-          </span>
-          <span className="flex flex-col items-center text-center">
-            <Image
-              src="/strategy.png"
-              alt="webinars11"
-              width={48}
-              height={48}
-            />
-            <p className="text-center font-bold px-6 ">Trading Strategies</p>
-          </span>
-        </div>
-      </div>
-
       <div
         className=" px-5 lg:px-0  mx-auto mt-10 md:pl-20 lg:flex lg:justify-between lg:pl-10  lg:items-center max-w-screen-xl"
         id="News"
@@ -465,7 +425,7 @@ export default async function Home() {
 
       <div className="sivkasta ">
         <div className=" max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h3 className="text-2xl py-4 text-blue-500 font-bold pb-6 pt-6 text-center lg:text-4xl ">
+          <h3 className="text-2xl py-4 text-[#00dbfe] font-bold pb-6 pt-6 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>
         </div>
@@ -512,7 +472,7 @@ export default async function Home() {
       </div>
 
       <div className="sivkasta flex-col justify-center ">
-        <h3 className="text-2xl   py-4 text-blue-500 font-bold pb-20 pt-20 text-center lg:text-4xl ">
+        <h3 className="text-2xl   py-4 text-[#00dbfe] font-bold pb-20 pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h3>
       </div>
@@ -581,47 +541,52 @@ export default async function Home() {
         </div>
       </div>
       <div
-        className=" pl-10 lg:pl-0 pt-10 lg:flex lg:justify-evenly"
+        className=" pl-10 lg:pl-0 pt-10 lg:flex  lg:justify-center "
         id="AboutUs"
       >
-        <div className="max-w-sirina md:flex">
-          <div className="my-10">
-            <h2 className="text-3xl p-4 font-bold ">About Us</h2>
-            <p className="p-4  lg:w-[400px] ">
-              With over 15 years in the industry, CapitalRevo is dedicated to
-              providing traders with the best-in-class tools and support.
-            </p>
+        {" "}
+        <div className="max-w-screen-xl">
+          <div className="md:flex lg:justify-between lg:px-10">
+            <div className=" mr-32">
+              <h2 className="text-3xl p-4 font-bold text-[#00dbfe] ">
+                About Us
+              </h2>
+              <p className="p-4  lg:w-[400px] text-gray-700">
+                With over 15 years in the industry, CapitalRevo is dedicated to
+                providing traders with the best-in-class tools and support.
+              </p>
 
-            <p className="pl-4  text-gray-700 pb-5 text-lg ">
-              Our mission is to enable access to world-class trading <br />
-              opportunities for everyone.
-            </p>
-            <Link href="/about-us" className="pl-4 pt-8">
-              <button className="px-4 py-3 gap-2 w-60 h-14 bg-[#00dbfe] rounded-lg shadow-xs text-white text-[18px] hover:bg-[#308390]">
-                Learn More
-              </button>
-            </Link>
-          </div>
-          <div className="mt-5 lg:pr-10 lg:mt-0 text-lg">
-            <Smalcard
-              imageSrc1="/oblacici.png"
-              title="Our Mission"
-              text="To empower traders with cutting-edge tools, unparalleled support,and
-            the knowledge to succeed in the competitive world of online trading."
-            />
-            <div className="">
+              <p className="pl-4  text-gray-700 pb-5 text-lg ">
+                Our mission is to enable access to world-class trading <br />
+                opportunities for everyone.
+              </p>
+              <Link href="/about-us" className="pl-4 pt-8">
+                <button className="px-4 py-3 gap-2 w-60 h-14 bg-[#00dbfe] rounded-lg shadow-xs text-white text-[18px] hover:bg-[#308390]">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+            <div className="mt-5 lg:pr-10 lg:mt-0 text-lg">
               <Smalcard
-                imageSrc1="/gromicon.png"
-                title="Our History"
-                text="CapitalRevo has been at the forefront of the trading industry for over 
-              15 years,helping thousands of traders achieve their financial goals."
+                imageSrc1="/oblacici.png"
+                title="Our Mission"
+                text="To empower traders with cutting-edge tools, unparalleled support,and
+            the knowledge to succeed in the competitive world of online trading."
               />
+              <div className="">
+                <Smalcard
+                  imageSrc1="/gromicon.png"
+                  title="Our History"
+                  text="CapitalRevo has been at the forefront of the trading industry for over 
+              15 years,helping thousands of traders achieve their financial goals."
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="pt-5 mb-20" id="ContactUs">
-        <h3 className="text-2xl py-4 text-blue-500 font-bold mb-0 mt-20 text-center lg:text-4xl">
+        <h3 className="text-2xl py-4 text-[#00dbfe] font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
       </div>

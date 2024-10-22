@@ -5,14 +5,9 @@ import Image from "next/image";
 import Strategygetintouch from "@/public/strategygetintouch.svg";
 import WidgetsCalculators from "../components/WidgetsCalculators";
 import Link from "next/link";
-<<<<<<< HEAD
-import MobileWidgetsCalculators from "../components/MobileWidgetsCalculators";
-=======
 
 import MobileWidgetsCalculators from "../components/MobileWidgetsCalculators";
 
-
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
 export default function TradingPlatform() {
   return (
     <div className="">
@@ -32,16 +27,11 @@ export default function TradingPlatform() {
           </div>
         </div>
         <div className="flex relative justify-center pb-5">
-<<<<<<< HEAD
           <div className="relative ">
-=======
-            <div className="relative ">
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
             <Link href="https://platform.capitalrevo.com/login">
               <h2 className="  absolute top-1/2 p-4 w-fit h-fit bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800 ">
                 Real-time data
               </h2>
-<<<<<<< HEAD
             </Link>
             <img
               src="/Screenapp.svg"
@@ -68,38 +58,6 @@ export default function TradingPlatform() {
       <div className="dektop-widgets">
         <div className="max-w-screen-xl mx-auto">
           <h2 className=" text-[#00dbfe] text-center text-3xl font-black pt-10 pb-2">
-=======
-              </Link>
-              <img
-                src="/Screenapp.svg"
-                alt="CapitalRevo Trading platform"
-                width={600}
-                height={390}
-                style={{ objectFit: "contain" }}
-              />
-              
-              <div className="absolute top-2/3 right-0  w-fit h-fit p-2 bg-white/50 backdrop-blur-sm flex items-center justify-center hover:bg-white">
-              <Link href="https://platform.capitalrevo.com/login">
-                  <h2 className="text-xs md:text-xl font-black text-gray-800 p-2 md:px-10">
-                    Trading Platform
-                  </h2>
-                </Link>
-              </div>
-              <Link href="https://platform.capitalrevo.com/login">
-              <h2 className=" absolute top-10 right-0 w-fit h-fit p-4 bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800">
-                Customizable charts
-              </h2>
-              </Link>
-            </div>
-          </div>
-      </div>
-
-      
-
-      <div className="dektop-widgets">
-        <div className="max-w-screen-xl mx-auto">
-          <h2 className=" text-center text-3xl font-bold pt-10 pb-2">
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
             CapitalRevo Trading Tools!
           </h2>
           <p className="text-center text-[#475467] px-14 pb-2">
@@ -112,13 +70,7 @@ export default function TradingPlatform() {
             <MobileWidgetsCalculators />
           </div>
         </div>
-<<<<<<< HEAD
-      </div>{" "}
-=======
       </div>
-
-
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
       <div className="hidden md:block lg:flex max-w-screen-xl mx-auto xl:px-10">
         <Image
           src={Strategygetintouch}
@@ -128,7 +80,6 @@ export default function TradingPlatform() {
           className=" object-contain "
         />
       </div>
-<<<<<<< HEAD
       <div className="flex justify-center items-center md:hidden lg:hidden w-full h-screen relative">
         {" "}
         {/* Postavi relative */}
@@ -139,19 +90,7 @@ export default function TradingPlatform() {
           objectFit="cover"
           className="object-cover"
         />
-      </div>{" "}
-=======
-      <div className="flex justify-center items-center md:hidden lg:hidden w-full h-screen relative"> {/* Postavi relative */}
-    <Image
-        src="/TradeOngo.svg"
-        alt="Get the capitalrevo app for ios or android"
-        layout="fill" 
-        objectFit="cover" 
-        className="object-cover" 
-    />
-</div>
-
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
+      </div>
     </div>
   );
 }

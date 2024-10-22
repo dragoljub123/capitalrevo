@@ -47,27 +47,15 @@ export default function AiSupport() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
 
       <div className="">
         <VideoPlayer />
       </div>
-
       <div className="pt-5 bg-gray-50">
-        <h2 className="text-4xl py-4 lg:py-2 text-[#00dbfe] font-bold mb-2 text-center lg:text-4xl ">
+        <h2 className="text-4xl py-4 lg:py-2 text-blue-500 font-bold mb-2 text-center lg:text-4xl ">
           eBooks
         </h2>
 
-=======
-      <div className="">
-
-        <VideoPlayer />
-      </div>
-      <div className="pt-5 bg-gray-50">
-      <h2 className="text-4xl py-4 lg:py-2 text-blue-500 font-bold mb-2 text-center lg:text-4xl ">
-      eBooks
-        </h2>
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
         <Ebooks />
       </div>
     </div>
