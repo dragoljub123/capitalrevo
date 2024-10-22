@@ -22,7 +22,7 @@ export default function AiSupport() {
         CapitalRevo AI support
       </h2>
       <div className="hidden md:flex  justify-center ">
-        <hr className="border-t-[1px] border-[#990033] w-[50%] my-2 " />
+        <hr className="border-t-[1px] border-[#00dbfe] w-[50%] my-2 " />
       </div>
       <h3 className="hidden md:block  text-2xl mt-6 text-white font-bold text-center">
         Leave out the guessing from your trading success!
@@ -32,7 +32,7 @@ export default function AiSupport() {
           {/* Leva strana */}
 
           <div className="px-4 xl:px-10  ">
-            <h3 className="text-xl mb-4 font-bold text-[#990033] ">
+            <h3 className="text-xl mb-4 font-bold text-[#00dbfe] ">
               AI - Your Fast Track to Profitable Trading
             </h3>
 
@@ -94,9 +94,9 @@ export default function AiSupport() {
         </div>
       </div>
       <div className="hidden md:flex  justify-center ">
-        <hr className="border-t-[1px] border-[#990033] w-[50%] my-4 " />
+        <hr className="border-t-[1px] border-[#00dbfe] w-[50%] my-4 " />
       </div>
-      <div className=" hidden md:flex md:justify-center  pt-10">
+      <div className=" hidden md:flex md:justify-center  pt-5">
         <div className="max-w-screen-xl flex justify-center text-white ">
           <div className="w-full p-4 xl:p-10">
             <Image
@@ -159,14 +159,14 @@ export default function AiSupport() {
         </div>
       </div>
       <div className="hidden md:flex justify-center ">
-        <hr className="border-t-[1px] border-[#990033] w-[50%] my-4 " />
+        <hr className="border-t-[1px] border-[#00dbfe] w-[50%] my-4 " />
       </div>
-      <div className="hidden md:flex md:justify-center pt-10">
+      <div className="hidden md:flex md:justify-center pt-5">
         <div className="max-w-screen-xl flex justify-center text-white">
           {/* Deo sa tekstom */}
           <div className=" p-4 xl:p-10">
             {/* Naslov */}
-            <h1 className="text-[#990033] text-3xl font-bold ">
+            <h1 className="text-[#00dbfe] text-3xl font-bold ">
               Why Choose AI for Forex Trading?
             </h1>
 
@@ -205,7 +205,7 @@ export default function AiSupport() {
               simultaneously
             </p>
 
-            <p className="text-[#990033] text-xl font-bold my-8">
+            <p className="text-[#00dbfe] text-xl font-bold my-8">
               Ready to redefine your trading experience? <br />
               Let CapitalRevo&apos;s AI put you on the fast track to success.
             </p>

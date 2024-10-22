@@ -9,13 +9,13 @@ const TabsComponent = () => {
   const [activeTab, setActiveTab] = useState("advancedWidget");
 
   return (
-    <div className="mx-5 mt-20 lg:flex lg:justify-center mb-10">
+    <div className="mx-5 mt-0 md:mt-10 lg:flex lg:justify-center mb-10">
       <div className="max-w-sirina md:flex">
         <div className="md:pl-0 md:pr-40">
-          <div className="p-10 lg:p-0 lg:border-l-[4px] lg:border-gray-300">
+          <div className="p-10 lg:p-0 lg:border-l-[2px] lg:border-gray-300">
             <div className="flex text-sm gap-2 md:flex md:flex-col md:gap-0">
               <div
-                className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
+                className="border border-gray-300 rounded-lg p-2 hover:border-blue-500 lg:border-l-4 lg:border-t-0 lg:border-r-0 lg:border-b-0 lg:rounded-none lg:border-gray-300 lg:hover:border-l-blue-500 cursor-pointer"
                 onClick={() => setActiveTab("advancedWidget")}
               >
                 <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
@@ -23,7 +23,7 @@ const TabsComponent = () => {
                 </p>
               </div>
               <div
-                className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
+                className="border border-gray-300 rounded-lg p-2 hover:border-blue-500 lg:border-l-4 lg:border-t-0 lg:border-r-0 lg:border-b-0 lg:rounded-none lg:border-gray-300 lg:hover:border-l-blue-500 cursor-pointer"
                 onClick={() => setActiveTab("symbolOverviewWidget")}
               >
                 <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
@@ -33,7 +33,7 @@ const TabsComponent = () => {
             </div>
             <div className="flex text-sm gap-2 mt-4 md:flex md:flex-col md:gap-0 md:mt-0">
               <div
-                className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
+                className="border border-gray-300 rounded-lg p-2 hover:border-blue-500 lg:border-l-4 lg:border-t-0 lg:border-r-0 lg:border-b-0 lg:rounded-none lg:border-gray-300 lg:hover:border-l-blue-500 cursor-pointer"
                 onClick={() => setActiveTab("image")}
               >
                 <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
@@ -41,7 +41,7 @@ const TabsComponent = () => {
                 </p>
               </div>
               <div
-                className="-ml-1 border-l-4 border-gray-300 hover:border-blue-500 cursor-pointer"
+                className="border border-gray-300 rounded-lg p-2 hover:border-blue-500 lg:border-l-4 lg:border-t-0 lg:border-r-0 lg:border-b-0 lg:rounded-none lg:border-gray-300 lg:hover:border-l-blue-500 cursor-pointer"
                 onClick={() => setActiveTab("paymentMethods")}
               >
                 <p className="mx-2 my-4 mb-10 text-xs md:text-lg">
@@ -50,7 +50,8 @@ const TabsComponent = () => {
               </div>
             </div>
           </div>
-          <div className="p-10 flex justify-center items-center lg:p-0 lg:py-10">
+
+          <div className="p-10 flex justify-center items-center lg:p-0 lg:py-10 ">
             <Link href="https://platform.capitalrevo.com/login">
               <button className="px-4 py-3 gap-2 w-48 h-14 bg-[#1200FF] rounded-xl shadow-xs text-white">
                 Explore the Platform

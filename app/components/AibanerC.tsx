@@ -7,16 +7,16 @@ const AibanerC = () => {
       <div className="max-w-screen-xl flex justify-center text-white">
         {/* Leva strana */}
         <div className="md:p-12 lg:p-10 ">
-          <h2 className="md:text-2xl lg:text-4xl font-bold mb-4 underline decoration-[#990033] decoration-2 underline-offset-[12px] ">
+          <h2 className="md:text-2xl lg:text-4xl font-black text-[#00dbfe] mb-4  ">
             CapitalRevo AI support
           </h2>
-          <h3 className="md:text-xl lg:text-3xl mb-4 font-bold ">
+          <h3 className="md:text-xl lg:text-2xl mb-4 font-bold ">
             Leave out the guessing from your trading success!
           </h3>
 
           {/* Prvi paragraf */}
           <div className="mb-4 ">
-            <h3 className="text-lg font-semibold text-[#990033] ">
+            <h3 className="text-lg font-semibold ">
               Unmatched Processing Speed
             </h3>
             <p className="text-xs">
@@ -29,7 +29,7 @@ const AibanerC = () => {
 
           {/* Drugi paragraf */}
           <div className="mb-4">
-            <h3 className="text-lg font-semibold text-[#990033] ">
+            <h3 className="text-lg font-semibold">
               Continuous Learning and Improvement
             </h3>
             <p className="text-xs">
@@ -41,7 +41,7 @@ const AibanerC = () => {
 
           {/* Treći paragraf */}
           <div className="mb-4">
-            <h3 className="text-lg font-semibold text-[#990033] ">
+            <h3 className="text-lg font-semibold  ">
               Advanced Analytical Power
             </h3>
             <p className="text-xs">
@@ -53,7 +53,7 @@ const AibanerC = () => {
 
           {/* Četvrti paragraf */}
           <div className="mb-4">
-            <h3 className="text-lg font-semibold text-[#990033] ">
+            <h3 className="text-lg font-semibold  ">
               Emotionless, Data-Driven Decisions
             </h3>
             <p className="text-xs">
@@ -66,7 +66,7 @@ const AibanerC = () => {
 
           {/* Peti paragraf */}
           <div className="mb-4">
-            <h3 className="text-lg font-semibold text-[#990033] ">
+            <h3 className="text-lg font-semibold  ">
               Market Access For Everyone
             </h3>
             <p className="text-xs">

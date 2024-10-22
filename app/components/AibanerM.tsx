@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const AibanerM = () => {
   return (
-    <div className="mx-auto p-10 text-white">
+    <div className="mx-auto p-5 md:p-10 text-white">
       {/* Naslov */}
       <h2 className="text-2xl font-bold mb-2 ">CapitalRevo AI support</h2>
       <div className="   ">
-        <hr className="border-t-[2px] border-[#990033] w-[90%] my-2 " />
+        <hr className="border-t-[2px] border-[#00dbfe] w-[90%] my-2 " />
       </div>
 
       {/* Podnaslov */}
@@ -28,7 +28,7 @@ const AibanerM = () => {
 
       {/* Prvi paragraf */}
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-[#990033]">
+        <h3 className="text-lg font-semibold text-[#00dbfe]">
           Unmatched Processing Speed
         </h3>
         <p className="text-xs">
@@ -41,7 +41,7 @@ const AibanerM = () => {
 
       {/* Drugi paragraf */}
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-[#990033]">
+        <h3 className="text-lg font-semibold text-[#00dbfe]">
           Continuous Learning and Improvement
         </h3>
         <p className="text-xs">
@@ -53,7 +53,7 @@ const AibanerM = () => {
 
       {/* Treći paragraf */}
       <div className="mb-3">
-        <h3 className="text-lg font-semibold text-[#990033]">
+        <h3 className="text-lg font-semibold text-[#00dbfe]">
           Advanced Analytical Power
         </h3>
         <p className="text-xs">
@@ -65,7 +65,7 @@ const AibanerM = () => {
 
       {/* Četvrti paragraf */}
       <div className="mb-3">
-        <h3 className="text-lg font-semibold text-[#990033]">
+        <h3 className="text-lg font-semibold text-[#00dbfe]">
           Emotionless, Data-Driven Decisions
         </h3>
         <p className="text-xs">
@@ -77,7 +77,7 @@ const AibanerM = () => {
 
       {/* Peti paragraf */}
       <div className="mb-3">
-        <h3 className="text-lg font-semibold text-[#990033]">
+        <h3 className="text-lg font-semibold text-[#00dbfe]">
           Market Access For Everyone
         </h3>
         <p className="text-xs">
@@ -91,7 +91,7 @@ const AibanerM = () => {
       {/* Dugme Learn More */}
       <div className="mt-3 flex justify-center">
         <Link href="/ai-support">
-          <button className="bg-white text-navcolor py-2 px-4 rounded shadow hover:bg-gray-100 transition">
+          <button className="bg-white text-navcolor py-2 px-4 rounded shadow transition hover:bg-[#00dbfe]">
             Learn More
           </button>
         </Link>

@@ -3,8 +3,8 @@ import { Navbar } from "../components/Navbar";
 import Paketi from "../components/Paketi";
 import { Paket } from "@/app/utilitis/interface";
 import { client } from "@/sanity/lib/client";
-import CompareAccountsButton from "@/app/components/CompareAccountsButton";
 import { Metadata } from "next";
+import AccountExpand from "../components/AccountExpand";
 
 export const metadata: Metadata = {
   title: "Accounts | CapitalRevo",
@@ -34,66 +34,80 @@ export default async function Accounts() {
   return (
     <div className="mx-auto">
       <Navbar />
-      <div className="  flex-row justify-center ">
-        <div className="crafy  ">
-          <div className=" mx-auto flex items-center justify-center ">
-            <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-              <h2 className="text-4xl py-4 text-white font-bold mb-6 mt-10 lg:mt-20 text-center lg:text-4xl ">
-                Choose the Right Account for Your Trading Needs
-              </h2>
-              <p className=" mb-4 text-center text-sm  text-white max-w-[900px]">
-                At CapitalRevo, we understand that every trader has different
-                goals and requirements. That&apos;s why we offer a variety of
-                account types, tailored to suit your trading style, experience
-                level, and financial objectives.
-              </p>
+      <div className="mx-auto flex items-center justify-center">
+        <div className="  flex-row justify-center ">
+          <div className="crafy  rounded-lg  ">
+            <div className=" mx-auto flex items-center justify-center ">
+              <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
+                <h2 className="hidden lg:flex text-sm   text-white font-bold mb-6 mt-10 lg:mt-20 text-center md:text-4xl ">
+                  Choose the Right Account for Your Trading Needs
+                </h2>
+                <h2 className="text-white text-3xl font-black w-[300px] text-center lg:hidden mt-10 mb-5">
+                  Choose the Right Account for Your Trading Needs
+                </h2>
+                <p className=" mb-4 text-center text-sm w-[300px] md:w-[600px] md:text-sm xl:text-[16px]  text-white max-w-[900px] lg:mb-0">
+                  At CapitalRevo, we understand that every trader has different
+                  goals and requirements. That&apos;s why we offer a variety of
+                  account types, tailored to suit your trading style, experience
+                  level, and financial objectives.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="flex flex-col  justify-between items-center ">
-          <div className=" lg:flex  lg:gap-10 lg:justify-center lg:-mt-20 lg:p-0 ">
-            <div className="-mt-36 lg:mt-0 ">
-              <Paketi
-                title={paketi[0]?.title}
-                imageSrc="\Dot.png"
-                description={paketi[0]?.description}
-                listItems={paketi[0]?.listItems}
-              />
+          <div className="hidden lg:flex  justify-center mb-5">
+            <div className="max-w-screen-xl lg:flex lg:justify-center lg:-mt-32 lg:gap-5 lg:p-0 ">
+              <div className="pakets-container">
+                <Paketi
+                  title={paketi[0]?.title}
+                  imageSrc="\Dot.png"
+                  description={paketi[0]?.description}
+                  listItems={paketi[0]?.listItems}
+                />
+              </div>
+              <div className="pakets-container">
+                <Paketi
+                  title={paketi[4]?.title}
+                  imageSrc="\Dot.png"
+                  description={paketi[4]?.description}
+                  listItems={paketi[4]?.listItems}
+                />
+              </div>
+              <div className="pakets-container">
+                <Paketi
+                  title={paketi[1]?.title}
+                  imageSrc="\Dot.png"
+                  description={paketi[1]?.description}
+                  listItems={paketi[1]?.listItems}
+                />
+              </div>
+              <div className="pakets-container">
+                <Paketi
+                  title={paketi[2]?.title}
+                  imageSrc="\Dot.png"
+                  description={paketi[2]?.description}
+                  listItems={paketi[2]?.listItems}
+                />
+              </div>
+              <div className="pakets-container">
+                <Paketi
+                  title={paketi[3]?.title}
+                  imageSrc="\Dot.png"
+                  description={paketi[3]?.description}
+                  listItems={paketi[3]?.listItems}
+                />
+              </div>
             </div>
-            <Paketi
-              title={paketi[4]?.title}
-              imageSrc="\Dot.png"
-              description={paketi[4]?.description}
-              listItems={paketi[4]?.listItems}
-            />
-            <Paketi
-              title={paketi[1]?.title}
-              imageSrc="\Dot.png"
-              description={paketi[1]?.description}
-              listItems={paketi[1]?.listItems}
-            />
-          </div>
-          <div className="  lg:flex lg:justify-center lg:gap-5 lg:m-10 lg:p-0">
-            <Paketi
-              title={paketi[2]?.title}
-              imageSrc="\Dot.png"
-              description={paketi[2]?.description}
-              listItems={paketi[2]?.listItems}
-            />
-            <Paketi
-              title={paketi[3]?.title}
-              imageSrc="\Dot.png"
-              description={paketi[3]?.description}
-              listItems={paketi[3]?.listItems}
-            />
           </div>
         </div>
+      </div>
+      <div className="-mt-[180px] lg:hidden">
+        <AccountExpand />
       </div>
       <div className="">
         <div className=" mx-auto flex items-center justify-center ">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-4xl py-4 text-blue-500 font-bold mb-6 mt-0 text-center lg:text-4xl ">
+            <h2 className="text-4xl py-4 text-[#00dbfe] font-bold mb-6 lg:mb-0 mt-0 text-center lg:text-4xl ">
               Compare Accounts
             </h2>
             <p className=" mb-4 text-center text-sm  text-gray max-w-[900px]">
@@ -147,8 +161,10 @@ export default async function Accounts() {
               {/* Leverage */}
               <tr>
                 <td className="px-6 py-3 text-sm font-semibold">Leverage</td>
-                <td className="px-6 py-3 text-sm">N/A</td>
-                <td className="px-6 py-3 text-sm">N/A</td>
+                <td className="px-6 py-3 text-sm">1:30</td>{" "}
+                {/* Updated for Basic Account */}
+                <td className="px-6 py-3 text-sm">1:100</td>{" "}
+                {/* Updated for Silver Account */}
                 <td className="px-6 py-3 text-sm plavigradijent font-semibold">
                   1:200
                 </td>

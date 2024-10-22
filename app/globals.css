@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes smooth-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Podesi visinu skoka */
+  }
+}
+
+.smooth-bounce {
+  animation: smooth-bounce 2s ease-in-out infinite; /* Trajanje skoka 2 sekunde */
+}
+
 .card1 {
   width: auto;
   /*height: 181px;*/
@@ -38,53 +53,12 @@
   background-size: cover;
 }
 
-.pozadinaboja {
-  background: #0a0f1b;
-  background-size: cover;
-  height: auto;
-}
-.pozadinaboja2 {
-  background: #0a0f1b;
-  height: auto;
-}
-.granica {
-  border: 1px solid white;
-}
-.zlatnozuta {
-  color: #c69638;
-}
-.primarna {
-  color: #002857;
-}
-.poster {
-  width: 1300px;
-  height: 588px;
-  top: 1610px;
-  left: 70px;
-  gap: 0px;
-  border-radius: 40px;
-  opacity: 0;
-}
-.little-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: transparent;
-  border: 2px solid #ccc; /* Border color */
-  border-radius: 38px;
-  width: 250px;
-}
 .card3 {
   width: 320px;
   height: 320px;
   position: relative;
 }
-.howitworks {
-  width: fit;
-  height: auto;
-}
+
 .card-image3 {
   object-fit: cover;
 }
@@ -93,20 +67,42 @@
   margin-top: 20px;
 }
 .pakets {
-  border-radius: 18px;
   background-color: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  width: 220px;
+  height: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.5s ease; /* add smooth transition */
 }
-@media (min-width: 768px) {
-  .pakets {
-    width: 568px;
-    /* height: 542px;*/
-  }
+.pakets-container {
+  position: relative; /* Parent element remains relative */
+  width: 220px;
+  height: 150px;
+  /* Allow overflow for expanding content */
 }
 
-.zlatntext {
-  color: #c69638;
+.pakets:hover {
+  width: 360px;
+  height: auto;
+  top: 0; /* ensure it stays aligned correctly */
+  left: 0; /* keep aligned with its original position */
+  position: absolute;
+  overflow: visible;
+  z-index: 1;
 }
+.pakets-container:last-child .pakets:hover {
+  width: 360px;
+  height: auto;
+  top: 0;
+  left: auto; /* Resetuje osnovni left */
+  right: 0; /* Postavlja da se kartica otvara ulevo */
+  position: absolute;
+  overflow: visible;
+  z-index: 1;
+}
+
 .rec {
   /* Accent */
   background: #f77000;
@@ -178,28 +174,16 @@ ul {
     display: none;
   }
 }
-.slideUpAnimacija {
-  animation: slideUp 1s ease-out;
-}
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 .crafy {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 0px 160px;
   gap: 64px;
-  width: auto;
+  width: 1200px;
   height: auto;
-  background: linear-gradient(90deg, #00e5ff 0%, #1200ff 100%);
+  background: linear-gradient(90deg, #00dbfe 0%, #24616b 100%);
 } /*----------------paketi-----------*/
 .plan-name {
   margin: 5% 18% 0%;
@@ -218,9 +202,9 @@ ul {
   line-height: 1.2;
 }
 .bluebutton {
-  background-color: #1200ff;
+  background-color: #00dbfe;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  border: 1px solid #1200ff;
+  border: 1px solid #00dbfe;
   width: 320px;
   height: 48px;
   padding: 8px 18px;
@@ -232,7 +216,7 @@ ul {
   justify-content: center;
 }
 .bluebutton:hover {
-  background-color: #0000cc;
+  background-color: #38c3d8;
 }
 
 .text-citirano {
@@ -262,13 +246,6 @@ ul {
   margin-bottom: 1rem;
 }
 
-.naslovboja2 {
-  background-image: linear-gradient(90deg, #00e5ff 26.04%, #1200ff 100%);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .custom-prose ul {
   list-style-type: disc;
   padding-left: 1.25rem;
@@ -277,44 +254,58 @@ ul {
   line-height: 1.625;
 }
 /*---- widgeti ---trading tools --- podesavanja-------*/
+
 .common-iframes {
   width: 100%;
+
   max-width: 1200px;
+
   border-radius: 10px;
+
   overflow: hidden;
+
   border: none;
 }
 
 @media (max-width: 768px) {
   .currencycalculator {
-    height: 600px;
+    height: 400px;
   }
+
   .fibonacci-calculator {
-    height: 1240px;
+    height: 1200px !important;
   }
+
   .pivot-point {
+    height: 1200px;
+  }
+
+  .cfd-calculator {
+    height: 870px;
+  }
+
+  .stop-loss-limit {
     height: 980px;
   }
-  .cfd-calculator {
-    height: 768px;
-  }
-  .stop-loss-limit {
-    height: 971px;
-  }
-  .economic-calendar {
-    height: 971px;
-  }
-  .daily-signals {
-    height: 744px;
-  }
+
   .margin-calculator {
     height: 980px;
   }
+
   .pip-value {
-    height: 880px;
+    height: 950px;
   }
+
+  .economic-calendar {
+    height: 1271px;
+  }
+
+  .daily-signals {
+    height: 944px;
+  }
+
   .heatmap {
-    height: 1500px;
+    height: 1400px;
   }
 }
 
@@ -322,31 +313,50 @@ ul {
   .currencycalculator {
     height: 380px;
   }
+
   .fibonacci-calculator {
     height: 560px;
   }
+
   .pivot-point {
     height: 800px;
   }
+
   .cfd-calculator {
     height: 540px;
   }
+
   .stop-loss-limit {
     height: 740px;
   }
+
   .economic-calendar {
     height: 740px;
   }
+
   .daily-signals {
     height: 644px;
   }
+
   .margin-calculator {
     height: 710px;
   }
+
   .pip-value {
     height: 710px;
   }
+
   .heatmap {
-    height: 1800px;
+    height: 1280px;
   }
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll-bar.hide-scroll-bar {
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
 }

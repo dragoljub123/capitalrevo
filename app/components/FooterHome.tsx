@@ -1,29 +1,24 @@
 import React from "react";
 import Image from "next/image";
-import glogo from "../images/crlogo.png";
+import { Logo } from "./Logo";
+import glogo from "../images/CapRev logo LBH.png";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
 export const FooterHome: React.FC = () => {
   return (
-    <div className="bg-black">
-      <div className="max-w-sirina mx-auto bg-black text-white py-8 px-4">
+    <div className="bg-gray-700">
+      <div className="max-w-screen-xl mx-auto  text-white py-8 ">
         <div className="hidden md:block">
-          <div className="lg:flex justify-between items-center border-b-[1px] border-gray-400  pb-6 mb-6 lg:mx-20">
-            <div className="text-center lg:text-left lg:flex-col lg:items-center lg:space-x-6">
-              <Link href={"/"}>
-                <Image
-                  src={glogo}
-                  alt="CapitalRevo Logo"
-                  className="mx-auto lg:mx-10 w-full max-w-xs"
-                />
-              </Link>
-              <p className="text-sm mt-4 lg:mt-0 lg:mx-10">
+          <div className="lg:flex justify-between items-center border-b-[1px] border-gray-400  pb-6 mb-6 px-10">
+            <div className="text-center lg:text-left lg:flex-col lg:items-center ">
+              <Logo title="Capitalrevo" className="text-black" />
+              <p className="text-sm mt-4 lg:mt-0 ">
                 Empower Your Trading Journey with CapitalRevo
               </p>
-              <div className="social-icons flex justify-center lg:justify-start gap-4 mt-4 lg:mt-20 ">
+              <div className="social-icons flex justify-center lg:justify-start gap-4 mt-4 lg:mt-28 ">
                 <a
-                  className="hover:bg-tirkizna p-2 rounded-full transition duration-300 "
+                  className="hover:bg-tirkizna rounded-full transition duration-300 "
                   href="https://www.instagram.com/capital_revo/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -31,7 +26,7 @@ export const FooterHome: React.FC = () => {
                   <FaInstagram className="text-3xl" />
                 </a>
                 <a
-                  className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
+                  className="hover:bg-tirkizna rounded-full transition duration-300"
                   href="https://www.youtube.com/@Capital_Revo"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -40,7 +35,7 @@ export const FooterHome: React.FC = () => {
                 </a>
 
                 <a
-                  className="hover:bg-tirkizna p-2 rounded-full transition duration-300"
+                  className="hover:bg-tirkizna  rounded-full transition duration-300"
                   href="https://www.facebook.com/people/Capital-Revo/61552517622119/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,17 +78,17 @@ export const FooterHome: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            <p className="text-center lg:text-left lg:mx-20">
-              © 2023. CapitalRevo
+            <p className="text-center lg:text-left lg:mx-10">
+              © 2009 - 2024. CapitalRevo
             </p>
-            <div className="flex space-x-4 text-sm md:pr-20">
+            <div className="flex space-x-4 text-sm md:pr-10">
               <Link href="/">Privacy Policy</Link>
               <Link href="/">Terms of Service</Link>
               <Link href="/">Risk Disclaimer</Link>
             </div>
           </div>
-          <div className="text-center px-20 py-8">
-            <p className="text-gray-500 text-justify pb-5 text-xs leading-6">
+          <div className="text-center px-10 py-8">
+            <p className="text-gray-400 text-justify pb-5 text-xs leading-6">
               <u>CapitalRevo:</u> <br />
               CapitalRevo is operated by CapitalRevo Ltd with a registered
               address at Ground Floor, The Sotheby Building, Rodney Village,
@@ -113,7 +108,7 @@ export const FooterHome: React.FC = () => {
               certain jurisdictions, including the USA &#40;US Reportable
               Persons&#41;,Iran, and North Korea.
             </p>
-            <p className="text-gray-500 text-justify pb-5 text-xs leading-6">
+            <p className="text-gray-400 text-justify pb-5 text-xs leading-6">
               <u>Risk warning:</u>
               <br />
               Virtual instruments including CFDs are complex financial products
@@ -144,15 +139,13 @@ export const FooterHome: React.FC = () => {
         </div>
 
         <div className="block md:hidden">
-          <div className="  border-b-[1px] border-gray-400  pb-6 mb-6 lg:mx-20">
+          <div className="  border-b-[1px] border-gray-700  px-5 pb-6 mb-6 lg:mx-20">
             <div className=" lg:text-left lg:flex-col lg:items-center lg:space-x-6">
-              <Link href={"/"}>
-                <Image src={glogo} alt="CapitalRevo Logo" className="" />
-              </Link>
+              <Logo title="Capitalrevo" className="text-black" />
               <p className="text-sm mt-4 lg:mt-0 lg:mx-10">
                 Empower Your Trading Journey with CapitalRevo
               </p>
-              <div className="text-left  mt-8 mb-8 flex  ">
+              <div className="text-left  mt-8  flex  ">
                 <ul className="space-y-2 text-sm">
                   <li className="font-bold mb-2 ">Quick Links</li>
                   <li>
@@ -174,7 +167,7 @@ export const FooterHome: React.FC = () => {
                     <Link href="/blog">Blog</Link>
                   </li>
                 </ul>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-sm pl-10">
                   <li className="font-bold mb-2">Company</li>
                   <li>
                     <Link href="/about-us">About Us</Link>
@@ -186,7 +179,7 @@ export const FooterHome: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="social-icons flex lg:justify-start gap-4 mt-4 lg:mt-20 ">
+          <div className="social-icons flex lg:justify-start gap-4 mt-4 mx-3 lg:mt-20 ">
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300 "
               href="https://www.instagram.com/capital_revo/"
@@ -213,17 +206,17 @@ export const FooterHome: React.FC = () => {
               <FaFacebook className="text-2xl" />
             </a>
           </div>
-          <div className="flex flex-col lg:flex-row  space-y-4 lg:space-y-0">
-            <div className="flex space-x-4 text-[13px] mt-5">
+          <div className="mx-5 flex flex-col lg:flex-row  space-y-4 lg:space-y-0">
+            <div className="flex space-x-4 text-[11px] md:text-[13px] mt-5">
               <Link href="/">Privacy Policy</Link>
               <Link href="/">Terms of Service</Link>
               <Link href="/">Risk Disclaimer</Link>
             </div>
           </div>
-          <p className="text-left mt-10 lg:text-left lg:mx-20">
-            © 2023. CapitalRevo
+          <p className="mx-5 text-left mt-5 lg:text-left lg:mx-20">
+            © 2009 - 2024 CapitalRevo
           </p>
-          <div className="text-center px-1 py-8">
+          <div className="mx-5 text-center px-1 py-8">
             <p className="text-gray-500 text-justify pb-5 text-xs">
               <u>CapitalRevo:</u> <br />
               CapitalRevo is operated by CapitalRevo Ltd with a registered

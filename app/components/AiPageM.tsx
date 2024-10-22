@@ -8,7 +8,7 @@ const AiPageM = () => {
         CapitalRevo AI support
       </h2>
       <div className="  flex justify-center ">
-        <hr className="border-t-[2px] border-[#990033] w-[90%] my-1 " />
+        <hr className="border-t-[2px] border-[#00dbfe] w-[90%] my-1 " />
       </div>
       <h3 className=" text-xl mt-2 mb-2 text-white font-bold text-center">
         Leave out the guessing from your trading success!
@@ -24,7 +24,7 @@ const AiPageM = () => {
           className="w-full"
         />
       </div>
-      <h2 className="mb-4 text-lg font-bold   text-[#990033]">
+      <h2 className="mb-4 text-lg font-bold   text-[#00dbfe]">
         AI - Your Fast Track to Profitable Trading
       </h2>
 
@@ -71,7 +71,7 @@ const AiPageM = () => {
         </p>
       </div>
       <div className="  flex justify-center ">
-        <hr className="border-t-[2px] border-[#990033] w-[100%] my-2 mb-5 " />
+        <hr className="border-t-[2px] border-[#00dbfe] w-[100%] my-2 mb-5 " />
       </div>
       {/* Slika */}
       <div className="w-full mb-4">
@@ -129,7 +129,7 @@ const AiPageM = () => {
         every trade is executed at just the right moment.
       </p>
       <div className="  flex justify-center ">
-        <hr className="border-t-[2px] border-[#990033] w-[100%] my-2 mb-5" />
+        <hr className="border-t-[2px] border-[#00dbfe] w-[100%] my-2 mb-5" />
       </div>
       <div className="w-full mb-4">
         <Image
@@ -142,7 +142,7 @@ const AiPageM = () => {
       </div>
       <div className=" p-4 xl:p-10">
         {/* Naslov */}
-        <h1 className="text-[#990033] text-3xl font-bold ">
+        <h1 className="text-[#00dbfe] text-3xl font-bold ">
           Why Choose AI for Forex Trading?
         </h1>
 
@@ -180,7 +180,7 @@ const AiPageM = () => {
           simultaneously
         </p>
 
-        <p className="text-[#990033] text-xl font-bold my-8">
+        <p className="text-[#00dbfe] text-xl font-bold my-8">
           Ready to redefine your trading experience? <br />
           Let CapitalRevo&apos;s AI put you on the fast track to success.
         </p>

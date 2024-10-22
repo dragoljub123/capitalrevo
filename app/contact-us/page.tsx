@@ -18,14 +18,13 @@ export default function ContactUs() {
     <div className="mx-auto">
       <Navbar />
       <div className="bg-gray-50">
-        <div className="pt-10 md:pt-20 pb-10 flex-row justify-center items-center">
-          <h1 className=" text-blue-500 text-center text-4xl font-bold mt-10">
+        <div className="pt-10 md:pt-20 pb-5 flex-row justify-center items-center">
+          <h1 className=" text-[#00dbfe] text-center text-4xl font-bold mt-10">
             We&apos;re Here to Help.
             <br />
             Get in Touch with CapitalRevo
           </h1>
           <div className="flex justify-center ">
-            {" "}
             <p className="text-center text-[#475467] p-4 max-w-[900px] ">
               Our support team is dedicated to helping you get the most out of
               your trading experience. Whether you have a question about your
@@ -35,10 +34,10 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div className="mt-10 mb-10">
+      <div className="mt-5 mb-5">
         <ContactForm />
       </div>
-      <div className="pt-5 mb-20">
+      <div className=" mb-10">
         <h3 className="text-2xl py-4 text-black font-bold mb-0 mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
