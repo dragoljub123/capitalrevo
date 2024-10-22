@@ -74,7 +74,7 @@ export default async function Home() {
         <div className=" max-w-screen-xl mx-auto ">
           <div className=" pt-10 mx-auto flex flex-col lg:flex-row ">
             <div className=" max-w-screen-xl mx-auto flex flex-col justify-between   px-10 h-full ">
-              <h1 className="pt-10 pb-10 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
+              <h1 className="pt-10 pb-2 text-center text-4xl text-white font-bold md:text-5xl lg:mt-10   lg:text-left lg:w-[500px] xl:w-[700px]  lg:pb-5  ">
                 Empower Your Trading Journey with CapitalRevo
               </h1>
               <p className="text-white text-center lg:pr-20 lg:text-xl lg:-mt-3 lg:text-left ">
@@ -181,9 +181,9 @@ export default async function Home() {
       </div>
 
       <div className=" mx-auto flex items-center justify-center ">
-        <div className=" crafy rounded-lg" id="Accounts">
+        <div className=" crafy md:rounded-lg" id="Accounts">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-4xl py-4 lg:py-2 text-white font-bold mb-2 text-center lg:text-4xl ">
+            <h2 className="text-4xl py-2 lg:py-2 text-white font-bold mb-2 text-center lg:text-4xl ">
               Choose the Right Account for You
             </h2>
             <p className="  text-lg text-center font-bold  text-white">
@@ -258,7 +258,7 @@ export default async function Home() {
               <h3 className="  text-[#00dbfe] text-center text-4xl  font-bold p-4 md:text-left lg:text-center">
                 Innovative Trading Platform
               </h3>
-              <p className="text-sm md:text-lg mt-2 md:mt-0 text-gray-600 text-center">
+              <p className="text-sm md:text-lg mt-2 md:mt-0 mb-5 text-gray-600 text-center">
                 Experience the power of integrated trading tools with real-time
                 data, customizable charts, and mobile trading.
               </p>
@@ -374,7 +374,7 @@ export default async function Home() {
             <h3 className="text-[#00dbfe] font-bold text-center text-2xl pt-5">
               Unlimited access to our trading lesson library
             </h3>
-            <p className="text-sm text-center text-gray-600 sm:pr-20">
+            <p className="text-sm md:text-center text-gray-600 sm:pr-20">
               Embark on a comprehensive learning journey with hundreds of
               lessons catering to all skill levels, meticulously organized into
               courses for effortless progress through the material.
@@ -391,7 +391,7 @@ export default async function Home() {
       </div>
 
       <div
-        className=" px-5 lg:px-0  mx-auto mt-10 md:pl-20 lg:flex lg:justify-between lg:pl-10  lg:items-center max-w-screen-xl"
+        className=" px-5 lg:px-0  mx-auto lg:mt-10 md:pl-20 lg:flex lg:justify-between lg:pl-10  lg:items-center max-w-screen-xl"
         id="News"
       >
         <div className=" ">
@@ -404,7 +404,7 @@ export default async function Home() {
           </p>
         </div>
         <Link href="/news  ">
-          <button className="flex justify-center items-center mt-14 px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-xl shadow-xs text-white lg:mr-10">
+          <button className="flex justify-center items-center md:mt-14 px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-xl shadow-xs text-white lg:mr-10">
             Read More News
           </button>
         </Link>
@@ -425,7 +425,7 @@ export default async function Home() {
 
       <div className="sivkasta ">
         <div className=" max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h3 className="text-2xl py-4 text-[#00dbfe] font-bold pb-6 pt-6 text-center lg:text-4xl ">
+          <h3 className="text-2xl py-4 text-[#00dbfe] font-bold md:pb-6 pt-6 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>
         </div>
@@ -472,7 +472,7 @@ export default async function Home() {
       </div>
 
       <div className="sivkasta flex-col justify-center ">
-        <h3 className="text-2xl   py-4 text-[#00dbfe] font-bold pb-20 pt-20 text-center lg:text-4xl ">
+        <h3 className="text-2xl   py-4 text-[#00dbfe] font-bold md:pb-20 pt-5 md:pt-20 text-center lg:text-4xl ">
           Secure Payment Options
         </h3>
       </div>
@@ -541,13 +541,13 @@ export default async function Home() {
         </div>
       </div>
       <div
-        className=" pl-10 lg:pl-0 pt-10 lg:flex  lg:justify-center "
+        className=" pl-10 lg:pl-0 md:pt-10 lg:flex  lg:justify-center "
         id="AboutUs"
       >
         {" "}
         <div className="max-w-screen-xl">
           <div className="md:flex lg:justify-between lg:px-10">
-            <div className=" mr-32">
+            <div className=" lg:mr-32">
               <h2 className="text-3xl p-4 font-bold text-[#00dbfe] ">
                 About Us
               </h2>
@@ -556,7 +556,7 @@ export default async function Home() {
                 providing traders with the best-in-class tools and support.
               </p>
 
-              <p className="pl-4  text-gray-700 pb-5 text-lg ">
+              <p className="pl-4  text-gray-700 pb-5  ">
                 Our mission is to enable access to world-class trading <br />
                 opportunities for everyone.
               </p>
@@ -585,8 +585,8 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-5 mb-20" id="ContactUs">
-        <h3 className="text-2xl py-4 text-[#00dbfe] font-bold mb-0 mt-20 text-center lg:text-4xl">
+      <div className="md:pt-5 md:mb-20" id="ContactUs">
+        <h3 className="text-2xl py-4 text-[#00dbfe] font-bold mb-0 md:mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
       </div>
