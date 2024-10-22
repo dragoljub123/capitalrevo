@@ -67,7 +67,6 @@ const CompareAccounts: FC = () => {
                     <td className="px-6 py-3 text-sm font-semibold">
                       Leverage
                     </td>
-<<<<<<< HEAD
                     <td className="px-6 py-3 text-sm">1:30</td>{" "}
                     {/* Updated for Basic Account */}
                     <td className="px-6 py-3 text-sm">1:100</td>{" "}
@@ -77,13 +76,6 @@ const CompareAccounts: FC = () => {
                     </td>
                     <td className="px-6 py-3 text-sm">1:300</td>
                     <td className="px-6 py-3 text-sm">1:400</td>
-=======
-                    <td className="px-6 py-3 text-sm">1:30</td> {/* Updated for Basic Account */}
-  <td className="px-6 py-3 text-sm">1:100</td> {/* Updated for Silver Account */}
-  <td className="px-6 py-3 text-sm plavigradijent font-semibold">1:200</td>
-  <td className="px-6 py-3 text-sm">1:300</td>
-  <td className="px-6 py-3 text-sm">1:400</td>
->>>>>>> 7ac0c0d88ae4afbc8db901b4a09a2eea1aa47639
                   </tr>
 
                   {/* Swaps */}
