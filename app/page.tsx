@@ -122,7 +122,7 @@ export default async function Home() {
             <p className="text-white text-xl flex justify-center lg:items-center lg:mt-2 ">
               As featured in :
             </p>
-            <div className="flex justify-center lg:justify-start lg:items-center gap-4 md:gap-6 lg:gap-10">
+            <div className="flex justify-center items-center gap-4 md:gap-6 lg:gap-10 flex-wrap">
               <a
                 href="https://www.marketwatch.com/press-release/capital-revo-announces-its-cutting-edge-solutions-to-protect-client-data-92832702"
                 target="_blank"
@@ -130,7 +130,7 @@ export default async function Home() {
                 <Image
                   src={Marketwatch}
                   alt="MarketWatch Logo"
-                  className="hidden lg:block w-[80px] lg:w-[180px] h-auto"
+                  className="w-[100px] md:w-[130px] lg:w-[180px] h-auto"
                 />
               </a>
               <a
@@ -140,7 +140,7 @@ export default async function Home() {
                 <Image
                   src={MorningStar}
                   alt="Morning Star Logo"
-                  className="w-[75px] lg:w-[110px] h-auto"
+                  className="w-[65px] md:w-[75px] lg:w-[110px] h-auto"
                 />
               </a>
               <a
@@ -149,8 +149,8 @@ export default async function Home() {
               >
                 <Image
                   src={Buisnisinsider}
-                  alt="Digital Journal Logo"
-                  className="w-[75px] lg:w-[90px] h-auto"
+                  alt="Business Insider Logo"
+                  className="w-[65px] md:w-[75px] lg:w-[90px] h-auto"
                 />
               </a>
               <a
@@ -160,7 +160,7 @@ export default async function Home() {
                 <Image
                   src={katman}
                   alt="Yahoo!Finance Logo"
-                  className="w-[75px] lg:w-[90px] h-auto"
+                  className="w-[65px] md:w-[75px] lg:w-[90px] h-auto"
                 />
               </a>
             </div>
@@ -171,7 +171,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className=" w-[1280px] px-10 pb-5">
+        <div className=" w-[1280px]  md:px-10 pb-5">
           <div className="md:flex items-center justify-between p-2 md:p-4 lg:p-8  xl:h-[160px] bg-gradient-to-r from-[#24616b] to-[#061b1e] rounded-lg mt-5">
             {/* Left Side Heading */}
             <h2 className=" w-full p-2  text-xl xl:text-3xl font-black text-white md:w-1/2 ">
@@ -250,7 +250,7 @@ export default async function Home() {
         <AccountExpand />
       </div>
       <div className="flex justify-center">
-        <div className="max-w-screen-xl px-10 pt-10 pb-5 ">
+        <div className="max-w-screen-xl px-10 pt-5 pb-5 ">
           <h3 className=" text-3xl  text-[#00dbfe] font-black mb-6   lg:text-4xl text-center">
             What Our Clients Say
           </h3>
@@ -359,16 +359,16 @@ export default async function Home() {
       </div>
 
       <div className="flex flex-col items-center lg:hidden">
-        <div className="max-w-screen-xl flex flex-col justify-between sm:flex sm:flex-row px-10">
+        <div className="max-w-screen-xl flex flex-col justify-between sm:flex sm:flex-row px-5">
           <div>
-            <h2 className=" pt-5 text-2xl text-center  text-[#00dbfe] font-black lg:text-4xl">
+            <h2 className=" pt-5 text-2xl  text-[#00dbfe] font-black lg:text-4xl">
               CapitalRevo Education Center
             </h2>
-            <p className="mb-1 text-center text-gray-700  text-lg">
+            <p className="mb-1  text-gray-700  text-lg">
               Access dozens of trading lessons for all levels!
             </p>
 
-            <div className=" flex justify-center my-4">
+            <div className=" flex  my-4">
               <Link href="/education">
                 <Image
                   src="/CREdu.PNG"
@@ -380,17 +380,17 @@ export default async function Home() {
               </Link>
             </div>
 
-            <h3 className="text-[#00dbfe] font-bold text-center text-2xl pt-5">
+            <h3 className="text-[#00dbfe] font-bold  text-2xl pt-5">
               Unlimited access to our trading lesson library
             </h3>
-            <p className="text-sm md:text-center text-gray-600 sm:pr-20">
+            <p className="text-sm lg:text-center text-gray-600 sm:pr-20">
               Embark on a comprehensive learning journey with hundreds of
               lessons catering to all skill levels, meticulously organized into
               courses for effortless progress through the material.
             </p>
-            <div className="mt-4 mb-10 flex justify-center ">
+            <div className="mt-4 mb-10  ">
               <Link href="/education">
-                <button className="bg-[#00dbfe] text-white font-bold py-2 px-4 rounded shadow hover:bg-[#308390] transition">
+                <button className="bg-[#00dbfe] text-white font-bold px-4 py-3 gap-2 w-48 h-12 rounded-lg shadow hover:bg-[#308390] transition">
                   Learn More
                 </button>
               </Link>
@@ -404,7 +404,7 @@ export default async function Home() {
         id="News"
       >
         <div className=" ">
-          <h3 className="text-2xl py-2 text-[#00dbfe] font-black mb-6   lg:text-4xl  ">
+          <h3 className="text-2xl py-2 text-[#00dbfe] font-black    lg:text-4xl  ">
             Stay Informed
           </h3>
           <p className=" mb-4  text-sm text-gray-700 lg:text-lg">
@@ -418,12 +418,12 @@ export default async function Home() {
           </button>
         </Link>
       </div>
-      <div className="   mt-10 flex justify-center mb-5 ">
+      <div className="   mt-10 px-5 lg:px-0 lg:flex lg:justify-center  mb-5 ">
         <div className="max-w-screen-xl flex">
           <div className=" hidden lg:block ">
             <TradingViewWidgetNews />
           </div>
-          <div className=" hidden md:block lg:hidden  ">
+          <div className=" hidden md:block lg:hidden md: ">
             <TradingViewWidgetNews3 />
           </div>
           <div className=" block md:hidden ">
@@ -434,13 +434,13 @@ export default async function Home() {
 
       <div className="sivkasta ">
         <div className=" max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h3 className="text-2xl py-4 text-[#00dbfe] font-bold md:pb-6 pt-6 text-center lg:text-4xl ">
+          <h3 className="text-2xl py-4 text-[#00dbfe] font-bold md:pb-6 pt-5 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>
         </div>
         <div className="lg:flex lg:justify-center ">
           <div className=" flex flex-col justify-center items-center  ">
-            <p className=" p-5 lg:text-lg text-center text-gray-700">
+            <p className=" pb-5 md:p-5 lg:text-lg text-center text-gray-700">
               Use our trading calculator to see <br />
               your potential profits based on your <br /> trading activities.
             </p>
@@ -481,12 +481,12 @@ export default async function Home() {
       </div>
 
       <div className="sivkasta flex-col justify-center ">
-        <h3 className="text-2xl   py-4 text-[#00dbfe] font-bold md:pb-20 pt-5 md:pt-20 text-center lg:text-4xl ">
+        <h3 className="text-2xl   py-4 text-[#00dbfe] font-bold md:pb-10 pt-5 md:pt-10 text-center lg:text-4xl ">
           Secure Payment Options
         </h3>
       </div>
       <div className="sivkasta">
-        <div className="flex justify-center items-center pb-10">
+        <div className="flex justify-center items-center pb-10 lg:pb-5">
           <div className="w-full max-w-[1440px] flex justify-between items-center space-x-8 sm:mx-auto sm:px-20 px-10 lg:px-52">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-20">
               <a
@@ -550,32 +550,31 @@ export default async function Home() {
         </div>
       </div>
       <div
-        className=" pl-10 lg:pl-0 md:pt-10 lg:flex  lg:justify-center "
+        className=" px-5 lg:pl-0 md:pt-10 lg:flex  lg:justify-center "
         id="AboutUs"
       >
-        {" "}
         <div className="max-w-screen-xl">
           <div className="md:flex lg:justify-between lg:px-10">
             <div className=" lg:mr-32">
-              <h2 className="text-3xl p-4 font-bold text-[#00dbfe] ">
+              <h2 className="text-3xl px-4 font-bold text-[#00dbfe] ">
                 About Us
               </h2>
-              <p className="p-4  lg:w-[400px] text-gray-700">
+              <p className="p-4   text-gray-700 lg:text-lg">
                 With over 15 years in the industry, CapitalRevo is dedicated to
                 providing traders with the best-in-class tools and support.
               </p>
 
-              <p className="pl-4  text-gray-700 pb-5  ">
+              <p className="pl-4  text-gray-700 pb-5  lg:text-lg">
                 Our mission is to enable access to world-class trading <br />
                 opportunities for everyone.
               </p>
-              <Link href="/about-us" className="pl-4 pt-8">
+              <Link href="/about-us" className="px-4 lg:pl-4 pt-8">
                 <button className="px-4 py-3 gap-2 w-60 h-14 bg-[#00dbfe] rounded-lg shadow-xs text-white text-[18px] hover:bg-[#308390]">
                   Learn More
                 </button>
               </Link>
             </div>
-            <div className="mt-5 lg:pr-10 lg:mt-0 text-lg">
+            <div className="mt-5  lg:-mt-5 lg:text-lg">
               <Smalcard
                 imageSrc1="/oblacici.png"
                 title="Our Mission"
@@ -594,13 +593,13 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="md:pt-5 md:mb-20" id="ContactUs">
+      <div className="md:pt-5 lg:pt-0 " id="ContactUs">
         <h3 className="text-2xl py-4 text-[#00dbfe] font-bold mb-0 md:mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
       </div>
 
-      <div className="mt-10 ">
+      <div className="">
         <ContactForm />
       </div>
       <div className="flex justify-center">

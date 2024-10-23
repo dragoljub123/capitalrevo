@@ -13,7 +13,7 @@ const Smalcard: React.FC<props> = (props) => {
         <h2 className="lg:text-2xl text-center text-[#00dbfe]">
           {props.title}
         </h2>
-      </div>{" "}
+      </div>
       <div className=" p-4  text-gray-700">
         <p className="">{props.text}</p>
       </div>
