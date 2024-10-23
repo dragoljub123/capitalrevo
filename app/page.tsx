@@ -388,7 +388,7 @@ export default async function Home() {
               lessons catering to all skill levels, meticulously organized into
               courses for effortless progress through the material.
             </p>
-            <div className="mt-4 mb-10  ">
+            <div className="mt-4 mb-5  ">
               <Link href="/education">
                 <button className="bg-[#00dbfe] text-white font-bold px-4 py-3 gap-2 w-48 h-12 rounded-lg shadow hover:bg-[#308390] transition">
                   Learn More
