@@ -339,7 +339,7 @@ export default async function Home() {
             </ul>
             <div>
               <Link href="/education">
-                <button className="bg-[#00dbfe] text-white font-bold py-2 px-4 rounded shadow hover:bg-[#308390] transition">
+                <button className="bg-[#00dbfe] text-white font-bold px-4 py-3 gap-2 w-48 h-12 rounded-lg shadow hover:bg-[#308390] transition">
                   Learn More
                 </button>
               </Link>
@@ -359,7 +359,7 @@ export default async function Home() {
       </div>
 
       <div className="flex flex-col items-center lg:hidden">
-        <div className="max-w-screen-xl flex flex-col justify-between sm:flex sm:flex-row px-5">
+        <div className="max-w-screen-xl flex flex-col justify-between sm:flex sm:flex-row px-5 md:px-10">
           <div>
             <h2 className=" pt-5 text-2xl  text-[#00dbfe] font-black lg:text-4xl">
               CapitalRevo Education Center
@@ -400,7 +400,7 @@ export default async function Home() {
       </div>
 
       <div
-        className=" px-5 lg:px-0  mx-auto lg:mt-10 md:pl-20 lg:flex lg:justify-between lg:pl-10  lg:items-center max-w-screen-xl"
+        className=" px-5 lg:px-0  mx-auto lg:mt-10 md:pl-10 lg:flex lg:justify-between lg:pl-10  lg:items-center max-w-screen-xl"
         id="News"
       >
         <div className=" ">
@@ -413,7 +413,7 @@ export default async function Home() {
           </p>
         </div>
         <Link href="/news  ">
-          <button className="flex justify-center items-center md:mt-14 px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-xl shadow-xs text-white lg:mr-10">
+          <button className="flex justify-center items-center md:mt-5 px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-lg shadow-xs text-white lg:mr-10">
             Read More News
           </button>
         </Link>
