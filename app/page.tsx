@@ -172,7 +172,7 @@ export default async function Home() {
       </div>
       <div className="flex justify-center">
         <div className=" w-[1280px]  md:px-10 pb-5">
-          <div className="md:flex items-center justify-between p-2 md:p-4 lg:p-8  xl:h-[160px] bg-gradient-to-r from-[#24616b] to-[#061b1e] rounded-lg mt-5">
+          <div className="md:flex items-center justify-between p-2 md:p-4 lg:p-8  xl:h-[160px] bg-gradient-to-r from-[#24616b] to-[#061b1e] md:rounded-lg mt-5">
             {/* Left Side Heading */}
             <h2 className=" w-full p-2  text-xl xl:text-3xl font-black text-white md:w-1/2 ">
               Trade Forex, Indices, Stocks and more with the world&apos;s No. 1
