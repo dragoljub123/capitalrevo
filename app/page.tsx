@@ -192,7 +192,7 @@ export default async function Home() {
       <div className=" mx-auto flex items-center justify-center ">
         <div className=" crafy md:rounded-lg" id="Accounts">
           <div className="max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-            <h2 className="text-4xl py-2 lg:py-2 text-white font-bold mb-2 text-center lg:text-4xl ">
+            <h2 className="text-4xl py-2 lg:py-2 text-white font-black mb-2 text-center lg:text-4xl ">
               Choose the Right Account for You
             </h2>
             <p className="  text-lg text-center font-bold  text-white">
