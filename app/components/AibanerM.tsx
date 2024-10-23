@@ -91,7 +91,7 @@ const AibanerM = () => {
       {/* Dugme Learn More */}
       <div className="mt-3 ">
         <Link href="/ai-support">
-          <button className="bg-white text-navcolor py-2 px-4 w-48 h-12 rounded-lg shadow transition hover:bg-[#00dbfe]">
+          <button className="bg-white text-navcolor font-bold py-2 px-4 w-48 h-12 rounded-lg shadow transition hover:bg-[#00dbfe]">
             Learn More
           </button>
         </Link>

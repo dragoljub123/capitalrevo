@@ -12,7 +12,7 @@ export const FooterHome: React.FC = () => {
         <div className="hidden md:block">
           <div className="lg:flex justify-between items-center border-b-[1px] border-gray-400  pb-6 mb-6 px-10">
             <div className="text-center lg:text-left lg:flex-col lg:items-center ">
-              <Logo title="Capitalrevo" className="text-black" />
+              <Logo title="Capitalrevo" className="text-black " />
               <p className="text-sm mt-4 lg:mt-0 ">
                 Empower Your Trading Journey with CapitalRevo
               </p>
@@ -139,7 +139,7 @@ export const FooterHome: React.FC = () => {
         </div>
 
         <div className="block md:hidden">
-          <div className="  border-b-[1px] border-gray-700  px-5 pb-6 mb-6 lg:mx-20">
+          <div className="  border-b-[1px] border-gray-700  px-5 pb-6  lg:mx-20">
             <div className=" lg:text-left lg:flex-col lg:items-center lg:space-x-6">
               <Logo title="Capitalrevo" className="text-black" />
               <p className="text-sm mt-4 lg:mt-0 lg:mx-10">
@@ -179,7 +179,7 @@ export const FooterHome: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="social-icons flex lg:justify-start gap-4 mt-4 mx-3 lg:mt-20 ">
+          <div className="social-icons flex lg:justify-start gap-4  mx-3 lg:mt-20 ">
             <a
               className="hover:bg-tirkizna p-2 rounded-full transition duration-300 "
               href="https://www.instagram.com/capital_revo/"
@@ -214,10 +214,10 @@ export const FooterHome: React.FC = () => {
             </div>
           </div>
 
-          <p className="text-left mt-10 lg:text-left mx-5 lg:mx-20">
+          <p className="text-left mt-5 lg:text-left mx-5 lg:mx-20">
             © 2009 - 2024 CapitalRevo
           </p>
-          <div className="mx-5 text-center px-1 py-8">
+          <div className="mx-5 text-center px-1 mt-5">
             <p className="text-gray-500 text-justify pb-5 text-xs">
               <u>CapitalRevo:</u> <br />
               CapitalRevo is operated by CapitalRevo Ltd with a registered
