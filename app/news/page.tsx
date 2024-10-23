@@ -24,7 +24,7 @@ export default function News() {
       <Navbar />
       <div className="bg-gray-50">
         <div className="pt-20 pb-10 flex flex-col items-center">
-          <h1 className="text-blue-500 font-black text-center text-4xl md:mt-10">
+          <h1 className="text-[#00dbfe] font-black text-center text-4xl md:mt-10">
             Stay Updated with the Latest Market News
           </h1>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
@@ -39,7 +39,7 @@ export default function News() {
 
       <div className="max-w-screen-xl mx-auto xl:px-20">
         <div className="pt-5 pb-5 flex flex-col items-center">
-          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+          <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
             Daily Signals
           </h2>
         </div>
@@ -48,7 +48,7 @@ export default function News() {
 
       <div className="max-w-screen-xl mx-auto text-center">
         <div className="pt-5 pb-5 flex flex-col items-center">
-          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+          <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
             Economic Calendar
           </h2>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
@@ -66,7 +66,7 @@ export default function News() {
 
       <div className="max-w-screen-xl mx-auto text-center">
         <div className="pt-5 pb-5 flex flex-col items-center">
-          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+          <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
             Latest News
           </h2>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
@@ -92,7 +92,7 @@ export default function News() {
 
       <div className="max-w-screen-xl mx-auto text-center">
         <div className="pt-5 pb-5 flex flex-col items-center">
-          <h2 className="text-blue-500 text-center text-4xl font-black mt-6">
+          <h2 className="text-[#00dbfe] text-center text-4xl font-black mt-6">
             Expert Commentary
           </h2>
           <p className="text-center text-[#475467] p-4 max-w-[900px]">
