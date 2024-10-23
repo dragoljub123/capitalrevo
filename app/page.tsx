@@ -119,7 +119,7 @@ export default async function Home() {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row lg:justify-start gap-4 lg:gap-10  mt-8 lg:mt-0   lg:pl-10">
-            <p className="text-white text-xl flex justify-center lg:items-center lg:mt-2 ">
+            <p className="text-white text-lg md:text-xl flex justify-center lg:items-center lg:mt-2 ">
               As featured in :
             </p>
             <div className="flex justify-center items-center gap-4 md:gap-6 lg:gap-10 flex-wrap">
@@ -606,7 +606,7 @@ export default async function Home() {
               <Image src="/coverta.png" alt="mail" width={43} height={43} />
               <h3 className="font-black pb-2 pt-5">Email</h3>
               <p>Our friendly team is here to help.</p>
-              <p className="text-dugmeplava pt-2">
+              <p className="text-tirkizna pt-2">
                 <br />
                 support@capitalrevo.com
                 <br />
@@ -621,7 +621,7 @@ export default async function Home() {
               />
               <h3 className="font-black pb-2 pt-5">Office</h3>
               <p>Come say hello at our office HQ.</p>
-              <p className="text-dugmeplava pt-2">
+              <p className="text-tirkizna pt-2 px-2 md:px-0">
                 London, 18 King William St, EC4N 7BP, United Kingdom <br />
                 Rodney Bay, Rodney Village, Gros Islet, 1111, St. Lucia
               </p>
@@ -630,7 +630,7 @@ export default async function Home() {
               <Image src="/phonecall.png" alt="phone" width={43} height={43} />
               <h3 className="font-black pb-2 pt-5">Phone</h3>
               <p>Mon-Fri from 8am to 5pm.</p>
-              <p className="text-dugmeplava pt-2">
+              <p className="text-tirkizna pt-2">
                 <br />
                 +447441906409
                 <br />
