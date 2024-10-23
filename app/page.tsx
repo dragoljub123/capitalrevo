@@ -434,7 +434,7 @@ export default async function Home() {
 
       <div className="sivkasta ">
         <div className=" max-w-screen-xl mx-auto flex flex-col  justify-between items-center px-4 lg:px-0 h-full">
-          <h3 className="text-2xl py-4 text-[#00dbfe] font-bold md:pb-6 pt-5 text-center lg:text-4xl ">
+          <h3 className="text-2xl py-4 text-[#00dbfe] font-black md:pb-6 pt-5 text-center lg:text-4xl ">
             Calculate Your Potential Earnings
           </h3>
         </div>
@@ -594,7 +594,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="md:pt-5 lg:pt-0 " id="ContactUs">
-        <h3 className="text-2xl py-4 text-[#00dbfe] font-bold mb-0 md:mt-20 text-center lg:text-4xl">
+        <h3 className="text-2xl py-4 text-[#00dbfe] font-black mb-0 md:mt-20 text-center lg:text-4xl">
           Get in Touch
         </h3>
       </div>
