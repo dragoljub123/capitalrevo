@@ -78,9 +78,9 @@ const AibanerC = () => {
           </div>
 
           {/* Dugme Learn More */}
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 ">
             <Link href="/ai-support">
-              <button className="bg-white text-navcolor py-2 px-4 rounded shadow hover:bg-gray-100 transition">
+              <button className="bg-white text-navcolor font-bold px-4 py-2 gap-2 w-48 h-12  rounded-lg shadow hover:bg-tirkizna transition">
                 Learn More
               </button>
             </Link>

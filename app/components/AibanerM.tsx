@@ -5,7 +5,7 @@ const AibanerM = () => {
   return (
     <div className="mx-auto p-5 md:p-10 text-white">
       {/* Naslov */}
-      <h2 className="text-2xl font-bold mb-2 ">CapitalRevo AI support</h2>
+      <h2 className="text-2xl font-black mb-2 ">CapitalRevo AI support</h2>
       <div className="   ">
         <hr className="border-t-[2px] border-[#00dbfe] w-[90%] my-2 " />
       </div>
@@ -89,9 +89,9 @@ const AibanerM = () => {
       </div>
 
       {/* Dugme Learn More */}
-      <div className="mt-3 flex justify-center">
+      <div className="mt-3 ">
         <Link href="/ai-support">
-          <button className="bg-white text-navcolor py-2 px-4 rounded shadow transition hover:bg-[#00dbfe]">
+          <button className="bg-white text-navcolor py-2 px-4 w-48 h-12 rounded-lg shadow transition hover:bg-[#00dbfe]">
             Learn More
           </button>
         </Link>

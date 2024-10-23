@@ -251,7 +251,7 @@ export default async function Home() {
       </div>
       <div className="flex justify-center">
         <div className="max-w-screen-xl px-10 pt-5 pb-5 ">
-          <h3 className=" text-3xl  text-[#00dbfe] font-black mb-6   lg:text-4xl text-center">
+          <h3 className=" text-2xl  text-[#00dbfe] font-black mb-6   lg:text-4xl text-center">
             What Our Clients Say
           </h3>
 
@@ -264,10 +264,10 @@ export default async function Home() {
         <div className=" pt-0 " id="TradingPlatform">
           <div className=" lg:flex-row lg:justify-evenly lg:text-left">
             <div className=" md:pl-10 ">
-              <h3 className="  text-[#00dbfe] text-center text-4xl  font-bold p-4 md:text-left lg:text-center">
+              <h3 className="  text-[#00dbfe] text-center text-2xl md:text-4xl  font-black p-4 md:text-left lg:text-center">
                 Innovative Trading Platform
               </h3>
-              <p className="text-sm md:text-lg mt-2 md:mt-0 mb-5 text-gray-600 text-center">
+              <p className="text-lg leading-snug px-5 md:px-0  mt-2 md:mt-0 mb-5 text-gray-600 text-center">
                 Experience the power of integrated trading tools with real-time
                 data, customizable charts, and mobile trading.
               </p>
@@ -275,7 +275,7 @@ export default async function Home() {
             <div className="flex relative justify-center">
               <div className="relative ">
                 <Link href="https://platform.capitalrevo.com/login">
-                  <h2 className="  absolute top-1/2 p-2 md:p-6 w-fit h-fit bg-white/50 backdrop-blur-sm rounded-lg hover:bg-white text-xs  md:text-xl font-black text-gray-800 ">
+                  <h2 className="  absolute top-1/2 p-4 md:p-6 w-fit h-fit bg-white/50 backdrop-blur-sm rounded-lg hover:bg-white text-xs  md:text-xl font-black text-gray-800 ">
                     Real-time data
                   </h2>
                 </Link>
@@ -283,7 +283,7 @@ export default async function Home() {
                   src="/Screenapp.svg"
                   alt="trade"
                   width={600}
-                  height={390}
+                  height={400}
                   style={{ objectFit: "contain" }}
                 />
                 {/* Kockasti div koji je 30% preko slike */}
@@ -296,7 +296,7 @@ export default async function Home() {
                 </div>
 
                 <Link href="https://platform.capitalrevo.com/login">
-                  <h2 className=" absolute top-10 right-0 w-fit h-fit p-2 md:p-6 bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800 rounded-lg">
+                  <h2 className=" absolute top-10 right-0 w-fit h-fit p-4 md:p-6 bg-white/50 backdrop-blur-sm  hover:bg-white text-xs  md:text-xl font-black text-gray-800 rounded-lg">
                     Customizable charts
                   </h2>
                 </Link>
@@ -364,7 +364,7 @@ export default async function Home() {
             <h2 className=" pt-5 text-2xl  text-[#00dbfe] font-black lg:text-4xl">
               CapitalRevo Education Center
             </h2>
-            <p className="mb-1  text-gray-700  text-lg">
+            <p className="mb-1 leading-snug text-gray-700  text-lg">
               Access dozens of trading lessons for all levels!
             </p>
 
@@ -380,7 +380,7 @@ export default async function Home() {
               </Link>
             </div>
 
-            <h3 className="text-[#00dbfe] font-bold  text-2xl pt-5">
+            <h3 className="text-[#00dbfe] font-black  text-2xl pt-5">
               Unlimited access to our trading lesson library
             </h3>
             <p className="text-sm lg:text-center text-gray-600 sm:pr-20">
@@ -413,12 +413,12 @@ export default async function Home() {
           </p>
         </div>
         <Link href="/news  ">
-          <button className="flex justify-center items-center md:mt-5 px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-lg shadow-xs text-white lg:mr-10">
+          <button className="flex justify-center items-center font-bold md:mt-5 px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-lg shadow-xs text-white lg:mr-10">
             Read More News
           </button>
         </Link>
       </div>
-      <div className="   mt-10 px-5 lg:px-0 lg:flex lg:justify-center  mb-5 ">
+      <div className="   mt-10 px-5 lg:px-0 lg:flex lg:justify-center  lg:mb-5 ">
         <div className="max-w-screen-xl flex">
           <div className=" hidden lg:block ">
             <TradingViewWidgetNews />
@@ -428,7 +428,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className=" flex justify-center  md:hidden ">
+      <div className="  pb-10 px-5  md:hidden ">
         <TradingViewWidgetNews2 />
       </div>
 
@@ -445,7 +445,7 @@ export default async function Home() {
               your potential profits based on your <br /> trading activities.
             </p>
             <Link href="https://platform.capitalrevo.com/register?demo=false">
-              <button className="flex justify-center items-center px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-xl shadow-xs text-white">
+              <button className="flex justify-center items-center font-bold px-4 py-3 gap-2 w-48 h-12 bg-[#00dbfe] hover:bg-[#308390] rounded-xl shadow-xs text-white">
                 Try It Now
               </button>
             </Link>
@@ -481,7 +481,7 @@ export default async function Home() {
       </div>
 
       <div className="sivkasta flex-col justify-center ">
-        <h3 className="text-2xl   py-4 text-[#00dbfe] font-bold md:pb-10 pt-5 md:pt-10 text-center lg:text-4xl ">
+        <h3 className="text-2xl   py-4 text-[#00dbfe] font-black md:pb-10 pt-5 md:pt-10 text-center lg:text-4xl ">
           Secure Payment Options
         </h3>
       </div>
@@ -550,26 +550,23 @@ export default async function Home() {
         </div>
       </div>
       <div
-        className=" px-5 lg:pl-0 md:pt-10 lg:flex  lg:justify-center "
+        className=" px-5 lg:pl-0 pt-5 md:pt-10 lg:flex  lg:justify-center "
         id="AboutUs"
       >
         <div className="max-w-screen-xl">
           <div className="md:flex lg:justify-between lg:px-10">
             <div className=" lg:mr-32">
-              <h2 className="text-3xl px-4 font-bold text-[#00dbfe] ">
+              <h2 className="text-2xl lg:text-3xl px-4 font-black text-[#00dbfe] ">
                 About Us
               </h2>
               <p className="p-4   text-gray-700 lg:text-lg">
                 With over 15 years in the industry, CapitalRevo is dedicated to
-                providing traders with the best-in-class tools and support.
-              </p>
-
-              <p className="pl-4  text-gray-700 pb-5  lg:text-lg">
-                Our mission is to enable access to world-class trading <br />
+                providing traders with the best-in-class tools and support. Our
+                mission is to enable access to world-class trading <br />
                 opportunities for everyone.
               </p>
               <Link href="/about-us" className="px-4 lg:pl-4 pt-8">
-                <button className="px-4 py-3 gap-2 w-60 h-14 bg-[#00dbfe] rounded-lg shadow-xs text-white text-[18px] hover:bg-[#308390]">
+                <button className="px-4 py-3 gap-2 w-60 h-14 font-bold bg-[#00dbfe] rounded-lg shadow-xs text-white text-[18px] hover:bg-[#308390]">
                   Learn More
                 </button>
               </Link>

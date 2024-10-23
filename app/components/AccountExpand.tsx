@@ -62,8 +62,8 @@ const AccountExpand = () => {
 
         {/* Prikaz odabrane kartice */}
         <div className="w-2/3 max-w-md flex justify-center">
-          <div className="w-full bg-white p-4 rounded-lg shadow-lg">
-            <p className="text-lg text-center font-black text-gray-800">
+          <div className="w-full bg-white p-5 rounded-lg shadow-lg">
+            <p className="text-lg text-center font-black text-gray-700">
               {paketi[selectedIndex]?.title}
             </p>
             <div className="text-black  mt-2">
