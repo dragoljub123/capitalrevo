@@ -373,9 +373,9 @@ export default async function Home() {
                 <Image
                   src="/CREdu.PNG"
                   alt="education"
-                  width={300}
+                  width={400}
                   height={150}
-                  className="object-contain border-navcolor border-[4px] rounded-xl"
+                  className="w-full border-[#00dbfe] border-[4px] rounded-xl"
                 />
               </Link>
             </div>
@@ -426,10 +426,10 @@ export default async function Home() {
           <div className=" hidden md:block lg:hidden md: ">
             <TradingViewWidgetNews3 />
           </div>
-          <div className=" block md:hidden ">
-            <TradingViewWidgetNews2 />
-          </div>
         </div>
+      </div>
+      <div className=" flex justify-center  md:hidden ">
+        <TradingViewWidgetNews2 />
       </div>
 
       <div className="sivkasta ">

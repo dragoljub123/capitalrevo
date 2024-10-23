@@ -19,8 +19,10 @@ const DailyNewsWidget = () => {
   return (
     <div>
       <div className="pt-5 pb-5 flex-row justify-center items-center">
-        <h2 className="text-[#00dbfe] text-center text-xl lg:text-4xl font-bold md:mt-6 md:px-0">
-          <span className="underline underline-offset-[10px]">Daily News</span>{" "}
+        <h2 className="text-[#00dbfe] text-center text-xl lg:text-4xl font-bold px-5 md:mt-6 md:px-0">
+          <span className="underline underline-offset-[5px]  md:underline-offset-[10px]">
+            Daily News
+          </span>{" "}
           covering the biggest trends in finance!
         </h2>
       </div>
